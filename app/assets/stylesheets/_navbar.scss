@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+header {
+    background-color: #FFA502;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    .nav_logo {
+        text-decoration: none;
+        margin: 20px 20px;
+        line-height: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 20px 25px;
+        .button_Signup {
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .button_Login{
+            text-decoration: none;
+        }
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: #FBECBD;
+}
