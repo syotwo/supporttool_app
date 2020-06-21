@@ -5,7 +5,7 @@
       <ul>
         <% if logged_in? %>
           <li><a href="#"><%= current_user.name %></a></li>
-          <li>Logout</li>
+          <li><%= link_to 'Logout', logout_path, method: :delete %></li>
         <% else %>
           <li><%= link_to 'Signup', signup_path %></li>
           <li><%= link_to 'Login', login_path %></li>
@@ -14,3 +14,5 @@
     </div>
   </nav>
 </header>
+
+<%= render 'layouts/flash_messages' %>
