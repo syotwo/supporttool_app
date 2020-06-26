@@ -1,7 +1,6 @@
 <h1>Sign up</h1>
 
 <div>
-
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
       
@@ -26,6 +25,5 @@
       </div>
 
       <%= f.submit 'Sign up' %>
-    <% end %>
-    
+    <% end %>  
 </div>

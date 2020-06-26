@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'items/create'
-  get 'items/destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
 
@@ -12,5 +10,5 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:index, :show, :new, :create]
 
-  resources :items, only: [:create, :destroy]
+  resources :items
 end
