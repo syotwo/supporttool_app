@@ -1,4 +1,6 @@
+<h1>Tool一覧</h1>
 <% @items.each do |item| %>
-    <%= item.item_name %>
-
+    <div>
+        <p><%= link_to item.id, item_path(item) %> <%= item.item_name %></p>
+    </div>
 <% end %>

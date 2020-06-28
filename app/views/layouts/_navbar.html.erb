@@ -4,7 +4,7 @@
     <div>
       <ul>
         <% if logged_in? %>
-          <li><a href="#"><%= current_user.name %></a></li>
+          <li><%= link_to 'My profile', user_path(current_user) %></li>
           <li><%= link_to 'Logout', logout_path, method: :delete %></li>
         <% else %>
           <li><%= link_to 'Signup', signup_path %></li>

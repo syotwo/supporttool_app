@@ -5,19 +5,24 @@ class ItemsController < ApplicationController
     @items = Item.all
   end
 
+  def show 
+    @item = Item.find(params[:id])
+  end
+
   def new
     @item = Item.new
   end
 
   def create
-    @item = Item.new(item_params)
-    redirect_to root_path
-
-    # if @item.save
-    #   redirect_to items_path
-    # else
-    #   render action: :new
-    # end
+    @item = current_user.items.build(item_params)
+    
+    if @item.save
+      flash[:success] = 'tool を投稿しました。'
+      redirect_to items_path
+    else
+      flash.now[:danger] = 'tool が投稿されませんでした'
+      render :new
+    end
 
   end
 
