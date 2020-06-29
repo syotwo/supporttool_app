@@ -1,0 +1,8 @@
+<h1>Edit Tool</h1>
+<%= form_with(model: @item, local: true) do |form| %>
+  
+    <%= form.label :item_name , 'Tool name' %>
+    <%= form.text_field :item_name %>
+    <%= form.submit 'add' %>
+
+<% end %>
