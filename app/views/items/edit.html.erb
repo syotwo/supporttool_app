@@ -3,6 +3,7 @@
   
     <%= form.label :item_name , 'Tool name' %>
     <%= form.text_field :item_name %>
-    <%= form.submit 'add' %>
+    <%= form.submit 'save' %>
+    <%= link_to 'DELATE TOOL', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
 
 <% end %>
