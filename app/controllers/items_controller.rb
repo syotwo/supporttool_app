@@ -1,9 +1,11 @@
 class ItemsController < ApplicationController
   before_action :require_user_logged_in
-  before_action :correct_user, only: [:destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
-    @items = Item.all
+    if logged_in?
+      @items = current_user.items.all
+    end
   end
 
   def show 
@@ -42,20 +44,21 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    @item = Item.find(params[:id])
+    # before_action :correct_user
     @item.destroy
 
     redirect_to items_url
   end
 
   private
+  # ストロングパラメーター
   def item_params
     params.require(:item).permit(:item_name)
   end
 
   def correct_user
     @item = current_user.items.find_by(id: params[:id])
-    unless @mitem
+    unless @item
       redirect_to root_url
     end
   end
