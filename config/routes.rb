@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show, :new, :create]
 
   resources :items
+  resources :item_lists
 end

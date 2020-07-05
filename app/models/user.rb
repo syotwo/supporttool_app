@@ -7,4 +7,5 @@ class User < ApplicationRecord
     has_secure_password
 
     has_many :items
+    has_many :item_lists
 end
