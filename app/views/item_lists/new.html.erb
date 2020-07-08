@@ -1,2 +1,7 @@
-<h1>ItemLists#new</h1>
-<p>Find me in app/views/item_lists/new.html.erb</p>
+<h1>Create a new support kit</h1>
+
+<%= form_with(model: @item_list, local: true) do |f| %>
+    <%= f.label :list_name, 'Support-kit Name' %>
+    <%= f.text_field :list_name %>
+    <%= f.submit 'new' %>
+<% end %>

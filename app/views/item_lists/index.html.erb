@@ -1,5 +1,4 @@
-<h1>Toollist</h1>
-
+<%= link_to 'Create a new support kit', new_item_list_path %>
 <% @item_lists.each do |item_list| %>
     <p><%= link_to item_list.id, item_list_path(item_list) %><%= item_list.list_name %></p>
 <% end %>
