@@ -1,9 +1,12 @@
 <h1>Edit Tool</h1>
 <%= form_with(model: @item, local: true) do |form| %>
   
+    <%= image_tag @item.img.url %>
     <%= form.label :item_name , 'Tool name' %>
     <%= form.text_field :item_name %>
-    <%= form.submit 'save' %>
-    <%= link_to 'DELATE TOOL', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+    <p>
+        <%= link_to 'DELATE TOOL', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+        <%= form.submit 'save' %>
+    </p>
 
 <% end %>

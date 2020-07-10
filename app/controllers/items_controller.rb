@@ -53,7 +53,7 @@ class ItemsController < ApplicationController
   private
   # ストロングパラメーター
   def item_params
-    params.require(:item).permit(:item_name)
+    params.require(:item).permit(:item_name, :img)
   end
 
   def correct_user
