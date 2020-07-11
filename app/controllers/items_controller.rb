@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
 
   def index
     if logged_in?
-      @items = current_user.items.all
+      @items = Item.all
     end
   end
 
@@ -30,11 +30,9 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    @item = Item.find(params[:id])
   end
 
   def update
-    @item = Item.find(params[:id])
     if @item.update(item_params)
       redirect_to @item
     else

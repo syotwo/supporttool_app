@@ -1,2 +1,5 @@
 <h1>ItemLists#show</h1>
-<p>Find me in app/views/item_lists/show.html.erb</p>
+
+<p><%= @item_list.list_name %></p>
+<%= link_to 'Cancel', user_path %>
+<%= link_to 'Edit Support-Kit',  edit_item_list_path %>
