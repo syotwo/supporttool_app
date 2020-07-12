@@ -41,7 +41,7 @@ class ItemListsController < ApplicationController
   def destroy
     @item_list.destroy
     flash[:success] = 'Support-Kitを削除しました'
-    redirect_to　user_path
+    redirect_to item_lists_path
   end
 
   private

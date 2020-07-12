@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 header {
-    background-color: #FFA502;
-    height: 70px;
+    background-color: #FFFFFF;
+    height: 80px;
 }
 
 nav {
@@ -10,30 +10,31 @@ nav {
     justify-content: space-between;
     height: 70px;
     .nav_logo {
+        font-family: 'ヒラギノ丸ゴ ProN', 'Open Sans', sans-serif;
+        font-size: 23px;
+        color: #413D45;
         text-decoration: none;
         margin: 20px 20px;
         line-height: 30px;
     }
 
     ul {
+        font-family: 'sans-serif';
         list-style-type: none;
         display: flex;
         margin: 20px 25px;
         li {
             margin-left: 10px;
+            a  {
+                color: #413D45;
+                text-decoration: none;
+            }
         }
+        
         .button_Signup {
             text-decoration: none;
             margin-right: 15px;
         }
-        .button_Login{
-            text-decoration: none;
-        }
-        
     }
 }
 
-body {
-    margin: 0px;
-    background-color: #FBECBD;
-}

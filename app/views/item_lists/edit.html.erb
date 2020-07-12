@@ -1,5 +1,7 @@
 <%= form_with(model: @item_list, local: true) do |f| %>
     <%= f.label :list_name, 'Support-kit Name' %>
     <%= f.text_field :list_name %>
-    <%= f.submit 'new' %>
+
+    <%= link_to 'DELATE Support-Kit', @item_list, method: :delete, data: { confirm: 'You sure?' } %>
+    <%= f.submit 'save' %>
 <% end %>
