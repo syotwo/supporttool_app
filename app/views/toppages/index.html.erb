@@ -2,14 +2,17 @@
 <% if logged_in? %>
 
   <p>Welcome back: <%= current_user.name %></p>
+  
   <% @item_lists.each do |item_list| %>
-  <p><%= link_to item_list.id, item_list_path(item_list) %><%= item_list.list_name %></p>
+  <div class= item_lists>
+    <div class= item_list><%= link_to item_list.id, item_list_path(item_list) %><p><%= item_list.list_name %></p></div>
+  </div>
 <% end %>
 
 <% else %>
 <div>
   <div>
-    <h1>Welcome to the Supporttool</h1>
+    <h1>Welcome to the Support-Kit</h1>
     <%= link_to 'Sign up now!', signup_path %>
   </div>
 </div>

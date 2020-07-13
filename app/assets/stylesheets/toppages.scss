@@ -1,3 +1,14 @@
 // Place all the styles related to the toppages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.item_lists{
+    display: inline-flex;
+    width: 30%;
+    height: 250px;
+    margin: 20px;
+    .item_list {
+        background-color: #ffffff;
+        font-size: 17px;
+    }
+}
