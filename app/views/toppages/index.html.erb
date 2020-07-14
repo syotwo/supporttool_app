@@ -1,13 +1,19 @@
 
 <% if logged_in? %>
-
+<div class= user-name>
   <p>Welcome back: <%= current_user.name %></p>
-  
-  <% @item_lists.each do |item_list| %>
-  <div class= item_lists>
-    <div class= item_list><%= link_to item_list.id, item_list_path(item_list) %><p><%= item_list.list_name %></p></div>
-  </div>
-<% end %>
+</div>
+
+<div class= item-lists>    
+  <ul>
+    <% @item_lists.each do |item_list| %>
+      <li>
+          <p>@<%= item_list.user.name %></p>
+          <%= link_to item_list.list_name , item_list_path(item_list) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 
 <% else %>
 <div>
