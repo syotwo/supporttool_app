@@ -3,5 +3,9 @@
 <%= form_with(model: @item_list, local: true) do |f| %>
     <%= f.label :list_name, 'Support-kit Name' %>
     <%= f.text_field :list_name %>
+    <div>
+        <%= f.label :image, 'img' %>
+        <%= f.file_field :image %>
+    </div>
     <%= f.submit 'new' %>
 <% end %>

@@ -23,18 +23,20 @@
             height: 350px;
             background-color: #FDFDFD;
             margin: 0px 0px 70px 0px;
+            text-align: center;
             p {
                 margin: 20px 113px 0px 113px; 
                 font-size: 12px;
-                text-align: center;
                 color: #272727;
             }
             a {
                 color: #272727;
                 font-weight: bold;
-                display: block;
-                text-align: center;
+                display: block;    
                 text-decoration: none;
+            }
+            img {
+                
             }
         }
     }
