@@ -22,7 +22,7 @@ class ItemListImgUploader < CarrierWave::Uploader::Base
   # end
 
   # process resize_to_fit: [300, 300]
-  process resize_to_fill: [270, 250, "Center"]
+  process resize_to_fill: [320, 250, "Center"]
 
   # Process files as they are uploaded:
   # process scale: [200, 300]
