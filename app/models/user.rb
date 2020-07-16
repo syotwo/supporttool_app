@@ -11,14 +11,6 @@ class User < ApplicationRecord
 
     has_many :favorites
     has_many :fav_item_lists, through: :favorites, source: :item_list
-
-    def like(item_list)
-        favorites.find_or_create_by(item_list_id: item_list.id)
-    end
-
-    def unlike(item_list)
-        favorite = favorites.find(item_list_id: item_list.id)
-        favorite.destroy if favorite
-    end
+  
 
 end
