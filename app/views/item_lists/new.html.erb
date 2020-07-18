@@ -1,11 +1,9 @@
-<h1>Create a new Support-kit</h1>
+
 
 <%= form_with(model: @item_list, local: true) do |f| %>
-    <%= f.label :list_name, 'Support-kit Name' %>
-    <%= f.text_field :list_name %>
-    <div>
-        <%= f.label :image, 'img' %>
-        <%= f.file_field :image %>
-    </div>
-    <%= f.submit 'new' %>
+    <div><%= f.label :list_name, 'List Name' %></div>
+    <div><%= f.text_field :list_name %></div>
+    <div><%= f.label :image, 'Img' %></div>
+    <div><%= f.file_field :image %></div>
+    <div><%= f.submit 'Create a new Support-kit' %></div>
 <% end %>

@@ -11,8 +11,10 @@
       <li>
           <p>@<%= item_list.user.name %></p>
           <%= link_to item_list.list_name , item_list_path(item_list) %>
-          <%= image_tag item_list.image.url %>
+          <p class= item_list_products>products</p>
+          <%= image_tag item_list.image.url %> 
       </li>
+        
     <% end %>
   </ul>
 </div>
