@@ -2,7 +2,6 @@
 <% if logged_in? %>
 <div class= user-name>
   <p>Welcome back: <%= current_user.name %></p>
-  <p>あなたのやる気、気分を数値化、最適なサポートキットを紹介</p>
 </div>
 
 <div class= item-lists>    
@@ -23,6 +22,7 @@
 <div>
   <div>
     <h1>Welcome to the Support-Kit</h1>
+    <p>あなたのやる気、気分を数値化、最適なサポートキットを紹介</p>
     <%= link_to 'Sign up now!', signup_path %>
   </div>
 </div>

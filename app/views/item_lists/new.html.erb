@@ -1,9 +1,10 @@
 
-
-<%= form_with(model: @item_list, local: true) do |f| %>
-    <div><%= f.label :list_name, 'List Name' %></div>
-    <div><%= f.text_field :list_name %></div>
-    <div><%= f.label :image, 'Img' %></div>
-    <div><%= f.file_field :image %></div>
-    <div><%= f.submit 'Create a new Support-kit' %></div>
-<% end %>
+<div class= item_list_new>
+    <%= form_with(model: @item_list, local: true) do |f| %>
+        <div><%= f.label :list_name, 'List Name' ,{class: 'item-list-label-name'} %></div>
+        <div><%= f.text_field :list_name %></div>
+        <div><%= f.label :image, 'Cover Img' ,{class: 'item-list-label-image'} %></div>
+        <div><%= f.file_field :image %></div>
+        <div><%= f.submit 'Create a new Support-kit',{class: 'item-list-submit' } %></div>
+    <% end %>
+</div>
