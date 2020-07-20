@@ -29,10 +29,25 @@ p {
         color: #4A4A4A;
     }
     
-    #item_list_img {
-       
+    #item_list_image {
+        margin-left: -312px;
+        padding: 3px 0px;
+    }
     .item-list-submit {
         margin: 26px;
     }
 }
 
+.item_list_show {
+    background-color: #FFFFFF;
+    width: 560px;
+    height: 600px;
+    margin: 50px auto;
+    p {
+        
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+}

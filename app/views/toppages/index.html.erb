@@ -1,30 +1,28 @@
 
 <% if logged_in? %>
-<div class= user-name>
-  <p>Welcome back: <%= current_user.name %></p>
-</div>
+  <div class= user-name>
+    <p>Welcome back: <%= current_user.name %></p>
+  </div>
 
-<div class= item-lists>    
-  <ul>
-    <% @item_lists.each do |item_list| %>
-      <li>
-          <p>@<%= item_list.user.name %></p>
-          <%= link_to item_list.list_name , item_list_path(item_list) %>
-          <p class= item_list_products>products</p>
-          <%= image_tag item_list.image.url %> 
-      </li>
-        
-    <% end %>
-  </ul>
-</div>
-
+  <div class= topppages-index-login>    
+    <ul>
+      <% @item_lists.each do |item_list| %>
+        <li>
+            <p>@<%= item_list.user.name %></p>
+            <%= link_to item_list.list_name , item_list_path(item_list) %>
+            <p class= item_list_products>products</p>
+            <%= image_tag item_list.image.url %> 
+        </li>
+          
+      <% end %>
+    </ul>
+  </div>  
+  
 <% else %>
-<div>
-  <div>
-    <h1>Welcome to the Support-Kit</h1>
-    <p>あなたのやる気、気分を数値化、最適なサポートキットを紹介</p>
+  <div　class= topppages-index-logout>
+    <h1>Welcome to the Support</h1>
+    <p>全く新しいあなたの思考を解き放つ体験</p>
     <%= link_to 'Sign up now!', signup_path %>
   </div>
-</div>
 <% end %>
 

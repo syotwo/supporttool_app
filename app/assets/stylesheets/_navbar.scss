@@ -15,7 +15,7 @@ nav {
         color: #413D45;
         text-decoration: none;
         margin: 20px 20px;
-        line-height: 30px;
+        vertical-align: middle;
         span {
             font-size: 15px;
         }
@@ -26,11 +26,26 @@ nav {
         list-style-type: none;
         display: flex;
         margin: 20px 20px;
+        height: 35px;
         li {
             margin-left: 20px;
+            a.plus {
+                font-size: 21px;
+                display: inline-block;
+                text-align: center;
+                
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background: #F47D31;
+                color: #FFFFFF;
+                font-weight: lighter;
+            }
+            
             a  {
                 color: #413D45;
                 text-decoration: none;
+                vertical-align: middle;
             }
         }
         
