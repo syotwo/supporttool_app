@@ -11,7 +11,11 @@
             <p>@<%= item_list.user.name %></p>
             <%= link_to item_list.list_name , item_list_path(item_list) %>
             <p class= item_list_products>products</p>
-            <%= image_tag item_list.image.url %> 
+            <% if item_list.image? %>
+              <%= image_tag item_list.image.url %> 
+            <% else %>
+              <%= image_tag "/assets/default.jpg" %>
+            <% end %>
         </li>
           
       <% end %>

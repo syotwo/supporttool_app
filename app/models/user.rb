@@ -11,6 +11,4 @@ class User < ApplicationRecord
 
     has_many :favorites
     has_many :fav_item_lists, through: :favorites, source: :item_list
-  
-
 end
