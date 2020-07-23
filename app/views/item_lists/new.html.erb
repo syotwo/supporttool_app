@@ -6,7 +6,7 @@
         <div><%= f.label :list_name, 'List Name' ,{class: 'item-list-label-name'} %></div>
         <div><%= f.text_field :list_name %></div>
         <div><%= f.label :image, 'Cover Img' ,{class: 'item-list-label-image'} %></div>
-        <div><%= f.file_field :image %></div>
-        <div class= submit><%= f.submit 'Create a new Support-kit',{class: 'item-list-submit' } %></div>
+        <%= f.file_field :image %>
+        <div class= submit><%= f.submit 'Create',{class: 'item-list-submit' } %></div>
     <% end %>
 </div>

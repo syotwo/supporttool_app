@@ -5,11 +5,12 @@
 p {
     color: #413D45;
     font-family: 'sans-serif';
-}   
+}       
 
 .item_list_new  {
     background-color: #FFFFFF;
     margin: 50px 190px;
+    padding: 1px;
     p {
         text-align: left;
         color: #4A4A4A;
@@ -23,35 +24,44 @@ p {
         margin: 0px auto;
 
         .item-list-label-name {
-            margin-left: -494px;
+            display: block;
             font-size: 14px;
             color: #4A4A4A;
+            text-align-last: left;
+            margin-left: 52px;
+
         }
 
         #item_list_list_name {
+            display: block;
             width: 560px;
-            padding: 13px 0px;
-            margin: 0px 0px 26px 0px;
+            padding: 9px 0px;
+            margin: 5px 0px 26px 52px;
         }  
 
         .item-list-label-image {
-            margin-left: -493px;
+            display: block;
             font-size: 14px;
             color: #4A4A4A;
+            text-align-last: left;
+            margin-left: 52px;
         }
         
         #item_list_image {
-            margin-left: -312px;
+            display: block;
             padding: 3px 0px;
+            margin-left: 52px;
+            
         }
         .submit{
             text-align-last: right;
             .item-list-submit {
                 margin: 26px 55px;
-                padding: 8px;
-                background-color: #1DB954;
+                padding: 13px 25px;
+                background-color: #0FC694;
                 border: #1DB954;
                 border-radius: 50px;
+                color: #F5FCFA;
             }
         }
     }
@@ -68,5 +78,6 @@ p {
         font-weight: bold;
         text-align: center;
         padding: 20px;
+        font-size: 10px;
     }
 }
