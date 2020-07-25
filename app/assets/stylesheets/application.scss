@@ -14,9 +14,11 @@
  *= require_self
  */
  
+ @import "_variables";
+ 
  body {
     margin: 0px;
-    background-color: rgb(245,245,245);
+    background-color: $base-color;
 }
 
  

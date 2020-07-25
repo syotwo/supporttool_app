@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .user-name p {
-    color: #272727;
+    color: #B3B3B3;
     font-family: 'sans-serif';
     margin-left: 20px;
 }
@@ -20,30 +20,26 @@
         li {
             width: 29%;
             height: 430px;
-            background-color: #FDFDFD;
             margin: 0px 0px 70px 0px;
             text-align: center;
-            p {
-                margin: 20px 113px 0px 48px; 
-                font-size: 12px;
-                color: #272727;
-                text-align-last: left;
-            }
+            
             a {
-                width: 70%;
+                width: 95%;
                 height: 58px;
-                color: #272727;
+                color: #B3B3B3;
                 font-size: 19px;
                 font-weight: bold;
                 display: block;    
                 text-decoration: none;
                 text-align: left;
-                margin: 10px 0px 12px 48px;
+                margin: 10px 0px 7px 0px;
                
             }
             .item_list_products {
                 text-align: left;
-                margin: 0px 0px 20px 40px;
+                margin: 0px 0px 20px 0px;
+                font-size: 12px;
+                color: #B3B3B3;
             }
             img {
                 object-fit: cover;
@@ -55,6 +51,7 @@
 }
 
 .topppages-index-logout {
+    text-align: center;
     h1 {
         text-align: center;
         padding: 10px;

@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import "_variables";
 
 header {
-    background-color: #FFCE00;
+    background-color: $main-color;
     height: 73px;
 }
 
@@ -10,15 +11,12 @@ nav {
     justify-content: space-between;
     height: 70px;
     .nav_logo {
-        font-family: "SF Pro JP", "SF Pro Text", "Apple TP", "Myriad Set Pro", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 21px;
-        color: #413D45;
+        font-family: FontUniversalPrimary,FontUniversalSecondary,FontUniversalFallback,sans-serif;
+        font-size: 19px;
+        color: #fff;
         text-decoration: none;
         margin: 20px 20px;
         vertical-align: middle;
-        span {
-            font-size: 15px;
-        }
     }
 
     ul {
@@ -33,17 +31,16 @@ nav {
                 font-size: 21px;
                 display: inline-block;
                 text-align: center;
-                
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
-                background: #F47D31;
-                color: #FFFFFF;
+                background: $accent-color;
+                color: #B3B3B3;
                 font-weight: lighter;
             }
             
             a  {
-                color: #413D45;
+                color: #B3B3B3;
                 text-decoration: none;
                 vertical-align: middle;
             }

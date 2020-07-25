@@ -22,6 +22,7 @@ p {
     form {
         text-align: center;
         margin: 0px auto;
+        color: #4A4A4A;
 
         .item-list-label-name {
             display: block;
@@ -58,26 +59,36 @@ p {
             .item-list-submit {
                 margin: 26px 55px;
                 padding: 13px 25px;
-                background-color: #0FC694;
-                border: #1DB954;
+                background-color: #01d8ad;
+                border: #01d8ad;
                 border-radius: 50px;
                 color: #F5FCFA;
             }
+        }
+        .chechbox {
+            text-align-last: left;
+            margin: 26px 52px;
         }
     }
 }
 
 .item_list_show {
-    background-color: #FFFFFF;
-    width: 560px;
-    height: 600px;
-    margin: 50px auto;
-    p {
-        
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        padding: 20px;
-        font-size: 10px;
+    .item_list_show_box {
+        background-color: #FFFFFF;
+        width: 560px;
+        height: 600px;
+        margin: 70px auto;
+        p {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
     }
 }
+
+.item_list_edit {
+
+
+}
+

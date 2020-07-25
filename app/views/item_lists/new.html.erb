@@ -7,6 +7,26 @@
         <div><%= f.text_field :list_name %></div>
         <div><%= f.label :image, 'Cover Img' ,{class: 'item-list-label-image'} %></div>
         <%= f.file_field :image %>
+
+        <div class= chechbox>
+            <div>
+                <%= f.label :image, 'Your mood & color' %>
+            </div>
+            <div>
+                <%= check_box_tag :test1 %>
+                <%= label_tag :test1, "relax" %>
+                <%= check_box_tag :test1 %>
+                <%= label_tag :test1, "relax" %>
+                <%= check_box_tag :test1 %>
+                <%= label_tag :test1, "relax" %>
+                <%= check_box_tag :test1 %>
+                <%= label_tag :test1, "relax" %>
+                <%= check_box_tag :test1 %>
+                <%= label_tag :test1, "relax" %>
+            </div>
+        </div>
+
         <div class= submit><%= f.submit 'Create',{class: 'item-list-submit' } %></div>
+        
     <% end %>
 </div>

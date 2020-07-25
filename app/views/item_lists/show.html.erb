@@ -1,12 +1,9 @@
 
 <div class= item_list_show>
-    <p><%= @item_list.list_name %></p>
-
-    <% if @user %>
-        <%= link_to 'Cancel', user_path %>
+    <div class= item_list_show_box>
+        <p><%= @item_list.list_name %></p>
+        <%= link_to 'Cancel', user_path(@user) %>
         <%= link_to 'Edit Support-Kit',  edit_item_list_path %>
-    <% else %>
-         
-    <% end %>
+    </div>
 </div>
 

@@ -8,7 +8,6 @@
     <ul>
       <% @item_lists.each do |item_list| %>
         <li>
-            <p>@<%= item_list.user.name %></p>
             <%= link_to item_list.list_name , item_list_path(item_list) %>
             <p class= item_list_products>products</p>
             <% if item_list.image? %>
@@ -23,7 +22,8 @@
   
 <% else %>
   <div　class= topppages-index-logout>
-    <h1>Welcome to the Support</h1>
+    <h1>Welcome to the Creative Amp</h1>
+    <p>あなたの気分を補助するツール、それがSUPPORTです</p>
     <p>全く新しいあなたの思考を解き放つ体験</p>
     <%= link_to 'Sign up now!', signup_path %>
   </div>
