@@ -11,19 +11,29 @@ nav {
     justify-content: space-between;
     height: 70px;
     .nav_logo {
-        font-family: FontUniversalPrimary,FontUniversalSecondary,FontUniversalFallback,sans-serif;
-        font-size: 19px;
+        display: flex;
+        font-family: sans-serif;
+        font-size: 20px;
         color: #fff;
         text-decoration: none;
-        margin: 20px 20px;
+        margin: 20px 40px;
         vertical-align: middle;
+        .neuron {
+            margin: 0px 3px;
+            background: #fff;
+            border-radius: 50%;
+            img {
+            width: 40px;
+            height: 40px;
+            }
+        }
     }
 
     ul {
         font-family: 'sans-serif';
         list-style-type: none;
         display: flex;
-        margin: 20px 20px;
+        margin: 20px 40px;
         height: 35px;
         li {
             margin-left: 20px;
