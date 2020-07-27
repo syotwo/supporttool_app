@@ -8,8 +8,8 @@
     font-family: 'sans-serif';
     margin-left: 50px;
 }
-.topppages-index-login {
 
+.toppage {
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -56,21 +56,19 @@
     }
 }
 
-// .topppages-index-login {
-
-//     ul li:nth-child(3n+2){
-//         margin-bottom: 30px;
-//       }
-
-// }
-
-.topppages-index-logout {
+.logout {
     text-align: center;
+    p {
+        font-size: 13px;
+        margin-top: 30px;
+    }
     h1 {
         text-align: center;
         padding: 10px;
-        background-color: #fff;
-        
+        color: $font-color;
+        margin: 10px 200px 50px;
     }
-    
+    img {
+        width: 100%;   
+    }
 }

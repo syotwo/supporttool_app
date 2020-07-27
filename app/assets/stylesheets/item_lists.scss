@@ -80,12 +80,20 @@ p {
             text-align: center;
             padding: 20px;
         }
+        a {
+            color: $font-color;
+            text-decoration: none;
+        }
     }
 }
 
 .item_list_edit {
     color: $font-color;
     background-color: $card-color;
+    a {
+        color: $font-color;
+            text-decoration: none;
+    }
 }
 
 

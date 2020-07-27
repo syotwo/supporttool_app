@@ -45,12 +45,12 @@ nav {
                 height: 35px;
                 border-radius: 50%;
                 background: $accent-color;
-                color: #B3B3B3;
+                color: $font-color;
                 font-weight: lighter;
             }
             
             a  {
-                color: #B3B3B3;
+                color: $font-color;  
                 text-decoration: none;
                 vertical-align: middle;
             }

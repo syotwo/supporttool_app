@@ -4,12 +4,12 @@
     <p>Welcome back: <%= current_user.name %></p>
   </div>
 
-  <div class= topppages-index-login>    
+  <div class= toppage>    
     <ul>
       <% @item_lists.each do |item_list| %>
         <li>
             <%= link_to item_list.list_name , item_list_path(item_list) %>
-            <p class= item_list_products>products</p>
+            <p class= item_list_products>view</p>
             <% if item_list.image? %>
               <%= image_tag item_list.image.url %> 
             <% else %>
@@ -21,11 +21,28 @@
   </div>  
   
 <% else %>
-  <div　class= topppages-index-logout>
-    <h1>Welcome to the Creative</h1>
-    <p>あなたの気分を補助するツール、それがCreativeです</p>
+  <div class= logout>
+    <p>Welcome to Go Creative</p>
+    <h1>あなたの思考を解き放つためのコミュニティー<br>それがGo Creativeです</h1>
+    <%= image_tag "/assets/innovation.jpg" %>
     <p>全く新しいあなたの思考を解き放つ体験</p>
+    <p>あなたの思考を補助するツール</p>
     <%= link_to 'Sign up now!', signup_path %>
   </div>
+  <div class= toppage>    
+    <ul>
+      <% @item_lists.each do |item_list| %>
+        <li>
+            <%= link_to item_list.list_name , item_list_path(item_list) %>
+            <p class= item_list_products>view</p>
+            <% if item_list.image? %>
+              <%= image_tag item_list.image.url %> 
+            <% else %>
+              <%= image_tag "/assets/default.jpg" %>
+            <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>  
 <% end %>
 
