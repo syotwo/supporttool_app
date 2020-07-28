@@ -3,7 +3,7 @@
 <div class= item_list_new>
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :list_name, 'List Name' ,{class: 'item-list-label-name'} %></div>
+        <div><%= f.label :list_name, '今あなたが直面している問題' ,{class: 'item-list-label-name'} %></div>
         <div><%= f.text_field :list_name %></div>
         <div><%= f.label :image, 'Cover Img' ,{class: 'item-list-label-image'} %></div>
         <%= f.file_field :image %>
