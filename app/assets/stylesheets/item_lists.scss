@@ -23,10 +23,10 @@ p {
     form {
         text-align: center;
         margin: 0px auto;
-        .item-list-label-name {
+        .item_list_label_name {
             display: block;
             font-size: 14px;
-            text-align-last: left;
+            text-align: left;
             margin-left: 52px;
         }
 
@@ -37,10 +37,10 @@ p {
             margin: 5px 0px 26px 52px;
         }  
 
-        .item-list-label-image {
+        .item_list_label_image {
             display: block;
             font-size: 14px;
-            text-align-last: left;
+            text-align: left;
             margin-left: 52px;
         }
         
@@ -51,7 +51,7 @@ p {
         }
         .submit{
             text-align-last: right;
-            .item-list-submit {
+            .item_list_submit {
                 margin: 26px 55px;
                 padding: 13px 25px;
                 background-color: #01d8ad;

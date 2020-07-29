@@ -3,9 +3,9 @@
 <div class= item_list_new>
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :list_name, '今あなたが直面している問題' ,{class: 'item-list-label-name'} %></div>
+        <div><%= f.label :list_name, '今あなたが直面している問題' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>
-        <div><%= f.label :image, 'Cover Img' ,{class: 'item-list-label-image'} %></div>
+        <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
         <%= f.file_field :image %>
 
         <div class= chechbox>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class= submit><%= f.submit 'Create',{class: 'item-list-submit' } %></div>
+        <div class= submit><%= f.submit 'Create',{class: 'item_list_submit' } %></div>
         
     <% end %>
 </div>
