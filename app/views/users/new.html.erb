@@ -1,29 +1,27 @@
-<h1>Sign up</h1>
-
-<div>
+<div class= signup>
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
       
       <div>
-        <%= f.label :name, 'Name' %>
-        <%= f.text_field :name %>
+        <div><%= f.label :name, 'Name'%></div>
+        <%= f.text_field :name, placeholder: "name"  %>
       </div>
 
       <div>
-        <%= f.label :email, 'Email' %>
-        <%= f.email_field :email %>
+        <div class= signup_label_Email><%= f.label :email, 'Email' %></div>
+        <%= f.email_field :email, placeholder: "email"  %>
       </div>
 
       <div>
-        <%= f.label :password, 'Password' %>
-        <%= f.password_field :password %>
+        <div class= signup_label_Password><%= f.label :password, 'Password' %></div>
+        <%= f.password_field :password, placeholder: "password"  %>
       </div>
 
       <div>
-        <%= f.label :password_confirmation, 'Confirmation' %>
-        <%= f.password_field :password_confirmation %>
+        <div class= signup_label_Confirmation><%= f.label :password_confirmation, 'Confirmation' %></div>
+        <%= f.password_field :password_confirmation, placeholder: "password_confirmation"  %>
       </div>
 
-      <%= f.submit 'Sign up' %>
+      <%= f.submit 'Sign up',{class: 'signup_submit' } %>
     <% end %>  
 </div>

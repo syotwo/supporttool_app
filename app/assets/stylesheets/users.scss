@@ -1,8 +1,54 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "_variables";
+
 
 .field_with_errors {
     display: inline;
     // もしくは diplay: inline;
   }
+
+.signup {
+  width: 450px;
+  height: 390px; 
+  margin: 100px auto ;
+  color: $font_color;
+  
+
+    #user_name {
+      display: block; 
+      width: 100%;
+      margin-bottom: 26px;
+      padding: 9px 0px;
+  }
+    #user_email {
+      display: block; 
+      width: 100%;
+      margin-bottom: 26px;
+      padding: 9px 0px;
+  }
+
+    #user_password {
+      display: block; 
+      width: 100%;
+      margin-bottom: 26px;
+      padding: 9px 0px;
+  }
+    #user_password_confirmation {
+      display: block; 
+      width: 100%;
+      margin-bottom: 26px;
+      padding: 9px 0px;
+  }
+
+  .signup_submit{
+    text-align: right;
+    margin: 20px 0px 0px 364px;
+    padding: 13px 25px;
+    background-color: #01d8ad;
+    border: #01d8ad;
+    border-radius: 50px;
+    color: #F5FCFA;
+  }
+}

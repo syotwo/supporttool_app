@@ -11,13 +11,14 @@ p {
 .item_list_new  {
     color: $font-color;
     background-color: $card-color;
+    height: 345px;
     margin: 50px 190px;
-    padding: 1px;
+    padding: 26px;
     p {
         text-align: left;
         font-size: 24px;
         margin: 0;
-        padding: 26px 52px;
+        padding: 0px 0px 26px 0px;
     }
 
     form {
@@ -27,42 +28,38 @@ p {
             display: block;
             font-size: 14px;
             text-align: left;
-            margin-left: 52px;
         }
 
-        #item_list_list_name {
-            display: block;
-            width: 560px;
+        #item_list_list_name { 
+            width: 100%;
             padding: 9px 0px;
-            margin: 5px 0px 26px 52px;
+            margin: 5px 0px 26px 0px;
         }  
 
         .item_list_label_image {
             display: block;
             font-size: 14px;
             text-align: left;
-            margin-left: 52px;
         }
         
         #item_list_image {
-            display: block;
-            padding: 3px 0px;
-            margin-left: 52px;
+            width: 100%;
+            padding: 9px 0px;
+            margin: 5px 0px 26px 0px;
+        }
+        .chechbox {
+            text-align-last: left;
+
         }
         .submit{
             text-align-last: right;
             .item_list_submit {
-                margin: 26px 55px;
                 padding: 13px 25px;
                 background-color: #01d8ad;
                 border: #01d8ad;
                 border-radius: 50px;
                 color: #F5FCFA;
             }
-        }
-        .chechbox {
-            text-align-last: left;
-            margin: 26px 52px;
         }
     }
 }

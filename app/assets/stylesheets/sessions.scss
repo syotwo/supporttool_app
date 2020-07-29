@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.login {
+.login {    
     width: 450px;
     height: 180px; 
     margin: 100px auto ;
@@ -19,11 +19,11 @@
     }
     .login_submit{
         text-align: right;
-            margin: 20px 0px 0px 364px;
-            padding: 13px 25px;
-            background-color: #01d8ad;
-            border: #01d8ad;
-            border-radius: 50px;
-            color: #F5FCFA;
+        margin: 20px 0px 0px 364px;
+        padding: 13px 25px;
+        background-color: #01d8ad;
+        border: #01d8ad;
+        border-radius: 50px;
+        color: #F5FCFA;
     }
 }
