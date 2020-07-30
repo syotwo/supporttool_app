@@ -14,37 +14,34 @@
   height: 390px; 
   margin: 100px auto ;
   color: $font_color;
-  
-
     #user_name {
       display: block; 
-      width: 100%;
+      width: 97%;
       margin-bottom: 26px;
-      padding: 9px 0px;
+      padding: 9px 0px 9px 10px;
   }
     #user_email {
       display: block; 
-      width: 100%;
+      width: 97%;
       margin-bottom: 26px;
-      padding: 9px 0px;
+      padding: 9px 0px 9px 10px;
   }
 
     #user_password {
       display: block; 
-      width: 100%;
+      width: 97%;
       margin-bottom: 26px;
-      padding: 9px 0px;
+      padding: 9px 0px 9px 10px;
   }
     #user_password_confirmation {
       display: block; 
-      width: 100%;
+      width: 97%;
       margin-bottom: 26px;
-      padding: 9px 0px;
+      padding: 9px 0px 9px 10px;
   }
 
   .signup_submit{
-    text-align: right;
-    margin: 20px 0px 0px 364px;
+    margin: 20px 0px 0px 355px;
     padding: 13px 25px;
     background-color: #01d8ad;
     border: #01d8ad;
