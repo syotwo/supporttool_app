@@ -65,18 +65,12 @@
         height: 100%;
         box-sizing: border-box; 
         filter: grayscale(10%);
-        filter: opacity(60%);
+        filter: opacity(90%);
         }
         .logout_word {
             position: absolute;
-            top: 100px;
-            right: 100px;
-         
-            .logout_word_top {
-                font-size: 13px;
-                padding-top: 30px;
-                margin: 0;
-            }
+            top: 90px;
+            right: 50px;
             h1 {
                 font-size: 45px;
                 text-align: center;

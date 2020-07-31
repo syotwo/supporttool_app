@@ -3,12 +3,8 @@
 <div class= item_list_new>
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :list_name, 'あなたが感じている問題' ,{class: 'item_list_label_name'} %></div>
+        <div><%= f.label :list_name, 'あなたの気分や使用した時の状況' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>
-        <div><%= f.label :list_name, '利用した物や方法' ,{class: 'item_list_label_name'} %></div>
-        <div><%= f.text_field :list_name %></div>
-   
-
         <div class= chechbox>
             <div>
                 <%= f.label :image, 'Your mood & color' %>
