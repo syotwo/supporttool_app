@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "_variables";
+@font-face {
+    font-family: 'NotoSansCJKjp-DemiLight';
+    src: url('/assets/NotoSansCJKjp-DemiLight.otf') format('opentype');
+}
 
 .user-name p {
     color: #B3B3B3;
@@ -18,7 +22,7 @@
         list-style: none;
         font-family: 'sans-serif';
         padding: 0px;
-        margin: 60px 50px 0px 50px;
+        margin: 60px 70px 0px 70px;
         li {
             width: 29%;
             height: 380px;
@@ -69,18 +73,25 @@
         }
         .logout_word {
             position: absolute;
-            top: 90px;
-            right: 50px;
+            top: 80px;
+            left: 60px;
+            text-align: left;
+            
             h1 {
                 font-size: 45px;
-                text-align: center;
                 padding: 10px;
                 color: $font-color;
                 margin-bottom: 0px;
+                font-family: 'NotoSansCJKjp-DemiLight';
             }
             .logout_word_buttom {
                 color: $font-color;
-                margin: 0;
+                padding: 10px;
+                font-size: 45px;
+                margin: 0px;
+            }
+            a {
+                margin-left: 20px;
             }
         }
     }  
