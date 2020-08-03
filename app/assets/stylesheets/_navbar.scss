@@ -31,18 +31,21 @@ nav {
             }  
         }
         .title {
-            margin: auto 6px;
+            margin: auto 6px; 
+            color: #ffffff; 
+            font-size: 22px;   
         }
     }
 
     ul {
-        font-family: 'sans-serif';
         list-style-type: none;
         display: flex;
         margin: 20px 70px;
         height: 35px;
         li {
             margin-left: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
             a.plus {
                 font-size: 21px;
                 display: inline-block;
@@ -51,14 +54,22 @@ nav {
                 height: 35px;
                 border-radius: 50%;
                 background: $accent-color;
-                color: $font-color;
+                color: #ecf3ec;
                 font-weight: lighter;
             }
-            
             a  {
                 color: $font-color;  
                 text-decoration: none;
                 vertical-align: middle;
+            }
+            .signup {
+                color: #eee3eb;
+            }
+            .login{
+                color: #eee3eb;
+            }
+            .username {
+                color: #eee3eb;
             }
         }
         

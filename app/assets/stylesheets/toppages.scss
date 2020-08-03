@@ -8,9 +8,11 @@
 }
 
 .user-name p {
-    color: #B3B3B3;
+    color: $accent-color;
     font-family: 'sans-serif';
-    margin-left: 50px;
+    margin-left: 70px;
+    font-size: 18px;
+
 }
 
 .toppage {
@@ -23,6 +25,7 @@
         font-family: 'sans-serif';
         padding: 0px;
         margin: 60px 70px 0px 70px;
+       
         li {
             width: 29%;
             height: 380px;
@@ -30,10 +33,11 @@
             padding: 0px 10px;
             text-align: center;
             background-color: $card-color;
+            border-radius: 4px;
             a {
                 width: 100%;
                 height: 30px;
-                color: #fff;
+                color: #fcf9f7;
                 font-size: 19px;
                 font-weight: bold;
                 display: block;    
@@ -43,13 +47,12 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-               
             }
             .item_list_products {
                 text-align: left;
                 margin: 0px 0px 13px 0px;
                 font-size: 12px;
-                color: #fff;
+                color: #fcf9f7;
             }
             img {
                 object-fit: cover;
@@ -69,29 +72,33 @@
         height: 100%;
         box-sizing: border-box; 
         filter: grayscale(10%);
-        filter: opacity(90%);
+        filter: opacity(5%);
         }
         .logout_word {
             position: absolute;
             top: 80px;
             left: 60px;
-            text-align: left;
-            
+            text-align: left;    
             h1 {
                 font-size: 45px;
                 padding: 10px;
                 color: $font-color;
                 margin-bottom: 0px;
-                font-family: 'NotoSansCJKjp-DemiLight';
+                font-family: $main-font;
+                color: #dce9f0;
             }
             .logout_word_buttom {
                 color: $font-color;
-                padding: 10px;
+                padding: 0px 10px 20px 10px;
                 font-size: 45px;
                 margin: 0px;
+                font-family: $main-font;
+                color: #dce9f0;
             }
             a {
                 margin-left: 20px;
+                color: $accent-color;
+                text-decoration: none;
             }
         }
     }  
