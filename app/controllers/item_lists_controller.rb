@@ -21,7 +21,7 @@ class ItemListsController < ApplicationController
 
     if @item_list.save
       flash[:success] = 'Support-Kitを投稿しました'
-      redirect_to item_lists_path
+      redirect_to  new_item_path
     else
       flash.now[:danger] = 'Support-Kitを投稿に失敗しました。'
       render :new

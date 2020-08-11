@@ -7,23 +7,7 @@
         <div><%= f.text_field :list_name %></div>
         <div><%= f.label :list_name, 'その時の気分は？' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>
-        <div class= chechbox>
-            <div>
-                <%= f.label :image, 'Your mood & color' %>
-            </div>
-            <div>
-                <%= check_box_tag :test1 %>
-                <%= label_tag :test1, "relax" %>
-                <%= check_box_tag :test1 %>
-                <%= label_tag :test1, "relax" %>
-                <%= check_box_tag :test1 %>
-                <%= label_tag :test1, "relax" %>
-                <%= check_box_tag :test1 %>
-                <%= label_tag :test1, "relax" %>
-                <%= check_box_tag :test1 %>
-                <%= label_tag :test1, "relax" %>
-            </div>
-        </div>
-        <div class= submit><%= f.submit 'Create',{class: 'item_list_submit' } %></div>   
+        
+        <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
     <% end %>
 </div>

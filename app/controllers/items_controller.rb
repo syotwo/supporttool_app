@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :require_user_logged_in
+  before_action :require_user_logged_in, only: [:create]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
@@ -17,7 +17,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = current_user.items.build(item_params)
+    # @item = current_user.items.build(item_params)
     #本来の記述である@item = current_user.items.build(params[:user])だとrails4から適応のstrong paramsでエラー
     
     if @item.save

@@ -2,13 +2,15 @@
 <div class= item_list_show>
     <div class= item_list_show_box>
         <p><%= @item_list.list_name %></p>
-        <%= form_with(model: @item_list, local: true) do |f| %>
+        
+    </div>
+    <%= form_with(model: @item_list, local: true) do |f| %>
             <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
             <%= f.file_field :image %>
+            <%= f.submit 'Create' %>
         <% end %>
 
         <%= link_to 'Cancel', user_path(@user) %>
         <%= link_to 'Edit Support-Kit',  edit_item_list_path %>
-    </div>
 </div>
 
