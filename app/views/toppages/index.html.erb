@@ -1,10 +1,9 @@
 
 <% if logged_in? %>
-  <div class= user-name>
-    <p>Welcome back: <%= current_user.name %></p>
-  </div>
-
-  <div class= toppage>    
+  <div class= toppage>  
+    <div class= user-name>
+      <p class= welcome>Welcome back: </p><p class= name><%= current_user.name %></p>
+    </div>
     <ul>
       <% @item_lists.each do |item_list| %>
         <li>
@@ -25,7 +24,7 @@
     <div class= logout_image>
       <%= image_tag "/assets/top.jpg" %>
       <div class =logout_word>
-        <h1>プロダクトによる<br>心のセルフマネージメント</h1>
+        <h1>ツールによる<br>心のセルフマネージメント</h1>
         <p class =logout_word_buttom></p>
         <%= link_to 'Sign up now!', signup_path %>
       </div>
