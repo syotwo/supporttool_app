@@ -12,7 +12,7 @@ p {
     color: $font-color;
     background-color: $card-color;
     height: 100%;
-    margin: 50px 190px;
+    margin: 100px 190px;
     padding: 26px;
     p {
         text-align: left;
@@ -89,6 +89,7 @@ p {
 .item_list_edit {
     color: $font-color;
     background-color: $card-color;
+    margin-top: 80px;
     a {
         color: $font-color;
             text-decoration: none;

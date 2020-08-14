@@ -9,43 +9,48 @@
     // もしくは diplay: inline;
   }
 
-.signup {
+.signupform {
   width: 450px;
   height: 390px; 
-  margin: 100px auto ;
+  margin: 160px auto ;
   color: $font_color;
+  padding: 40px 40px 0px;
+  background-color: rgb(87, 85, 85);
+  border-radius: 4px;
     #user_name {
       display: block; 
       width: 97%;
-      margin-bottom: 26px;
+      margin-bottom: 8px;
       padding: 9px 0px 9px 10px;
   }
     #user_email {
       display: block; 
       width: 97%;
-      margin-bottom: 26px;
+      margin-bottom: 8px;
       padding: 9px 0px 9px 10px;
   }
 
     #user_password {
       display: block; 
       width: 97%;
-      margin-bottom: 26px;
+      margin-bottom: 8px;
       padding: 9px 0px 9px 10px;
   }
     #user_password_confirmation {
       display: block; 
       width: 97%;
-      margin-bottom: 26px;
+      margin-bottom: 8px;
       padding: 9px 0px 9px 10px;
   }
 
   .signup_submit{
-    margin: 20px 0px 0px 355px;
+    margin: 27px 0px 0px 344px;
     padding: 13px 25px;
     background-color: #01d8ad;
     border: #01d8ad;
     border-radius: 50px;
-    color: #F5FCFA;
+    color: #f9fcfb;
+    font-weight: bold;
+    font-size: 15px;
   }
 }

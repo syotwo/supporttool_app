@@ -4,12 +4,18 @@
 header {
     background-color: $main-color;
     height: 73px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 100%;
+    border-bottom: solid 1px #2d2d3a;
+    
     .nav_logo {
         display: flex;
         font-family: sans-serif;
@@ -66,10 +72,10 @@ nav {
                 vertical-align: middle;
             }
             .signup {
-                color: #eee3eb;
+                color: #e2d8df;
             }
             .login{
-                color: #eee3eb;
+                color: #e2d8df;
             }
             .username {
                 color: #eee3eb;

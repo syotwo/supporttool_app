@@ -3,7 +3,7 @@
 <div class= item_list_new>
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :list_name, 'どのような状況で利用しましたか？' ,{class: 'item_list_label_name'} %></div>
+        <div><%= f.label :list_name, 'Your Mood' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>
         <div><%= f.label :list_name, 'その時の気分は？' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>

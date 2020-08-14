@@ -4,19 +4,23 @@
     <div class= user-name>
       <p class= welcome>Welcome back: </p><p class= name><%= current_user.name %></p>
     </div>
-    <ul>
-      <% @item_lists.each do |item_list| %>
-        <li>
-            <%= link_to item_list.list_name , item_list_path(item_list) %>
-            <p class= item_list_products>products</p>
+      <ul>
+        <% @item_lists.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <p class= item_list_products>products</p>
+            </div>  
             <% if item_list.image? %>
               <%= image_tag item_list.image.url %> 
             <% else %>
               <%= image_tag "/assets/default.jpg" %>
             <% end %>
-        </li>
-      <% end %>
-    </ul>
+          </li>
+        <% end %>
+      </ul>
+
+
   </div>  
   
 <% else %>
@@ -24,7 +28,7 @@
     <div class= logout_image>
       <%= image_tag "/assets/top.jpg" %>
       <div class =logout_word>
-        <h1>ツールによる<br>心のセルフマネージメント</h1>
+        <h1>モノによる心のセルフマネージメント<br>モノを使用した時の感情をデータ化</h1>
         <p class =logout_word_buttom></p>
         <%= link_to 'Sign up now!', signup_path %>
       </div>
@@ -33,18 +37,20 @@
   </div>
   <div class= toppage>    
     <ul>
-      <% @item_lists.each do |item_list| %>
-        <li>
-            <%= link_to item_list.list_name , item_list_path(item_list) %>
-            <p class= item_list_products>view</p>
+        <% @item_lists.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <p class= item_list_products>products</p>
+            </div>  
             <% if item_list.image? %>
               <%= image_tag item_list.image.url %> 
             <% else %>
               <%= image_tag "/assets/default.jpg" %>
             <% end %>
-        </li>
-      <% end %>
-    </ul>
+          </li>
+        <% end %>
+      </ul>
   </div>  
 <% end %>
 

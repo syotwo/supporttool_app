@@ -1,11 +1,8 @@
 <div class= item_new>
     <h1>Add Products</h1>
     <%= form_with(model: @item, local: true) do |form| %>  
-
-        <%= form.label :img %>
         <%= form.file_field :img %>
-
-        <%= form.label :product_name %>
+        <%= form.label :product_name, {class: 'productname' } %>
         <%= form.text_field :item_name %>
         <div class= submit><%= form.submit 'ADD TO LIST',{class: 'item_list_submit' } %></div>   
 

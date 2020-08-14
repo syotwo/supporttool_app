@@ -2,14 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.login {    
-    width: 450px;
+.loginform {    
+    width: 330px;
     height: 180px; 
-    margin: 100px auto ;
+    margin: 140px auto ;
+    padding: 40px 60px 140px;
+    background-color: rgb(87, 85, 85);
+    border-radius: 4px;
+    h1 {
+        color: rgb(241, 238, 238);
+    }
     #session_email {
         width: 95%;
         text-align: left;
-        margin: 10px 0px;
+        margin: 10px 0px 12px;
         padding: 10px 10px;
     }
     #session_password {
@@ -19,11 +25,13 @@
     }
     .login_submit{
         text-align: right;
-        margin: 20px 0px 0px 364px;
+        margin: 22px 0px 0px 242px;
         padding: 13px 25px;
         background-color: #01d8ad;
         border: #01d8ad;
         border-radius: 50px;
         color: #F5FCFA;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
