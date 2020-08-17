@@ -8,6 +8,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 10000;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 nav {
@@ -15,10 +16,8 @@ nav {
     justify-content: space-between;
     height: 100%;
     border-bottom: solid 1px #2d2d3a;
-    
     .nav_logo {
         display: flex;
-        font-family: sans-serif;
         font-size: 20px;
         font-weight: bold;
         color: #fff;
@@ -40,8 +39,8 @@ nav {
         }
         .title {
             margin: auto 6px; 
-            color: #ffffff; 
-            font-size: 22px; 
+            color: #f3ebf1; 
+            font-size: 27px; 
             white-space: nowrap  
         }
     }
@@ -53,8 +52,9 @@ nav {
         height: 35px;
         li {
             margin-left: 20px;
-            font-family: sans-serif;
+            padding: auto 0px;
             font-weight: bold;
+            line-height: 30px;
             a.plus {
                 font-size: 21px;
                 display: inline-block;
@@ -79,6 +79,8 @@ nav {
             }
             .username {
                 color: #eee3eb;
+                display: block;
+                height: 35px;
             }
         }
         

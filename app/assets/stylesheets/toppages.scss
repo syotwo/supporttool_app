@@ -2,32 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "_variables";
-@font-face {
-    font-family: 'NotoSansCJKjp-DemiLight';
-    src: url('/assets/NotoSansCJKjp-DemiLight.otf') format('opentype');
-}
 
 .toppage {
-    padding-top: 80px;
+    padding-top: 60px;
     
     .user-name{
         display: flex;
-        // margin-top: 80px;
-    
+        margin-top: 40px;
         p.welcome {
-            color: $accent-color;
-            font-family: 'sans-serif';
             margin-left: 70px;
+            color: #e8e8ec;
             font-size: 32px;
             letter-spacing: 0.03em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         p.name {
-            color: $accent-color;
-            font-family: 'sans-serif';
+            color: #e8e8ec;
             font-size: 32px;
             letter-spacing: 0.03em;
             margin-left: 10px;
             font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     }
     ul{
@@ -36,19 +31,17 @@
         justify-content: space-between;
         align-items: flex-end;
         list-style: none;
-        font-family: 'sans-serif';
         padding: 0px;
-        margin: 60px 70px 0px 70px;
-       
+        margin: 30px 70px 0px 70px;
         li {
             width: 31%;
             height: 380px;
-            margin: 0px 0px 100px 0px;  
+            margin: 0px 0px 50px 0px;  
             text-align: center;
-            background-color: $card-color;
             border-radius: 4px;
             position: relative;
-            .box_text {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            .box_text {   
                 a {
                     width: 100%;
                     height: 30px;
@@ -58,25 +51,20 @@
                     display: block;    
                     text-decoration: none;
                     text-align: left;
-                    margin: 12px 0px 10px 10px;
+                    margin: 0px 0px 0px 10px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     letter-spacing: 0.01em;
-                    // position: absolute;
-                    // top: -10px;
-                    // left: 20px;
                     z-index: 1;
                 }
                 .item_list_products {
                     text-align: left;
-                    margin: 0px 0px 13px 10px;
+                    margin: 0px 0px 9px 10px;
                     font-size: 12px;
                     color: #eff0f1;
-                    // position: absolute;
-                    // top: 50px;
-                    // left: 20px;
                     z-index: 1;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 }
             }
             img {
@@ -84,6 +72,7 @@
                 width: 100%;
                 height: 280px;
                 display:block;
+                border-radius: 10px;
             }
         }
     }
@@ -92,8 +81,10 @@
 .logout {
     text-align: center;
     padding-top: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
         position: relative;
+        height: 250px;
         img {
         width: 100%;
         height: 100%;
@@ -110,8 +101,13 @@
                 font-size: 45px;
                 padding: 10px;
                 color: $font-color;
-                margin-bottom: 0px;
-                font-family: $main-font;
+                color: #dce9f0;
+            }
+            .logout_word_middle {
+                color: $font-color;
+                padding: 0px 10px 20px 10px;
+                font-size: 25px;
+                margin: 0px;
                 color: #dce9f0;
             }
             .logout_word_buttom {
@@ -119,13 +115,14 @@
                 padding: 0px 10px 20px 10px;
                 font-size: 45px;
                 margin: 0px;
-                font-family: $main-font;
                 color: #dce9f0;
             }
             a {
                 margin-left: 20px;
                 color: $accent-color;
                 text-decoration: none;
+                display: block;
+                padding-bottom: 1px;
             }
         }
     }  
