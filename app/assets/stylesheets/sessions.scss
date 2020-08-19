@@ -5,12 +5,14 @@
 .loginform {    
     width: 330px;
     height: 180px; 
-    margin: 140px auto ;
-    padding: 40px 60px 140px;
-    background-color: rgb(87, 85, 85);
+    margin: 160px auto ;
+    padding: 25px 60px 140px;
+    background-color: #3c3944d8;
     border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     h1 {
-        color: rgb(241, 238, 238);
+        color: #edebf1;
+        font-size: 39px;
     }
     #session_email {
         width: 95%;
@@ -27,10 +29,10 @@
         text-align: right;
         margin: 22px 0px 0px 242px;
         padding: 13px 25px;
-        background-color: #01d8ad;
-        border: #01d8ad;
+        background-color: #edebf1;
+        border: #edebf1;
         border-radius: 50px;
-        color: #F5FCFA;
+        color: #393740;
         font-weight: bold;
         font-size: 15px;
     }

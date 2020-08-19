@@ -17,8 +17,11 @@ class ItemsController < ApplicationController
   end
 
   def create
+    binding.pry
     # @item = current_user.items.build(item_params)
     #本来の記述である@item = current_user.items.build(params[:user])だとrails4から適応のstrong paramsでエラー
+    
+    @item = Item.new(item_params)
     
     if @item.save
       flash[:success] = 'tool を投稿しました。'
