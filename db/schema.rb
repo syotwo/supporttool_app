@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_19_051653) do
+ActiveRecord::Schema.define(version: 2020_08_21_013753) do
 
   create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -36,7 +36,9 @@ ActiveRecord::Schema.define(version: 2020_08_19_051653) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "img"
     t.bigint "item_list_id", null: false
+    t.bigint "user_id", null: false
     t.index ["item_list_id"], name: "index_items_on_item_list_id"
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -51,4 +53,5 @@ ActiveRecord::Schema.define(version: 2020_08_19_051653) do
   add_foreign_key "favorites", "users"
   add_foreign_key "item_lists", "users"
   add_foreign_key "items", "item_lists"
+  add_foreign_key "items", "users"
 end

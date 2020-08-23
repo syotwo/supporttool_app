@@ -10,6 +10,8 @@ class ItemListsController < ApplicationController
   def show
     @item_list = ItemList.find(params[:id])
     @user = User.find(session[:user_id])
+    @items = @item_list.items.all
+    
   end
 
   def new
@@ -17,11 +19,13 @@ class ItemListsController < ApplicationController
   end
 
   def create
-    @item_list = current_user.item_lists.build(item_list_params)
+    @item_list = current_user.item_lists.new(item_list_params)
 
     if @item_list.save
       flash[:success] = 'Support-Kitを投稿しました'
-      redirect_to new_item_path
+      redirect_to item_list_path(@item_list.id)
+      # redirect_to @item_listが省略型
+      #リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
     else
       flash.now[:danger] = 'Support-Kitを投稿に失敗しました。'
       render :new

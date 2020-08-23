@@ -1,4 +1,5 @@
 
+
 <% if logged_in? %>
   <div class= toppage>  
     <div class= user-name>
@@ -24,15 +25,13 @@
 <% else %>
   <div class= logout>
     <div class= logout_image>
-      <%= image_tag "" %>
+      <%= image_tag "/assets/ring.jpg" %>
       <div class =logout_word>
-        <h1>ツールで<br>マインドマネージメント<br></h1>
-        <p class =logout_word_middle></p>
-        <p class =logout_word_buttom></p>
+        <h1>お気に入りの先端アイテムで、<br>マインドマネージメント。<br></h1>
       </div>
-    </div>
-    
+    </div>  
   </div>
+
   <div class= toppage>    
     <ul>
         <% @item_lists.each do |item_list| %>
@@ -51,4 +50,5 @@
       </ul>
   </div>  
 <% end %>
+
 

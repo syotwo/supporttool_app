@@ -1,16 +1,27 @@
 
 <div class= item_list_show>
-    <div class= item_list_show_box>
-        <p><%= @item_list.list_name %></p>
-        
-    </div>
-    <%= form_with(model: @item_list, local: true) do |f| %>
-            <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
-            <%= f.file_field :image %>
-            <%= f.submit 'Create' %>
-        <% end %>
 
-        <%= link_to 'Cancel', user_path(@user) %>
-        <%= link_to 'Edit Support-Kit',  edit_item_list_path %>
+    <div class= item_list_show_box>
+        <% if @item_list.image? %>
+            <div class= item_list_show_box_img>
+                <%= image_tag @item_list.image.url %> 
+            </div>
+        <% else %>
+            <%= image_tag "/assets/default.jpg" %>
+        <% end %>
+            <p><%= @item_list.list_name %></p>
+            <%= link_to 'Add a product', new_item_path %>
+    </div>
+
+
+
+    <%= form_with(model: @item_list, local: true) do |f| %>
+        <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
+        <%= f.file_field :image %>
+        <%= f.submit 'Create' %>
+    <% end %>
+
+    <%= link_to 'Cancel', user_path(@user) %>
+    <%= link_to 'Edit Support-Kit',  edit_item_list_path %>
 </div>
 

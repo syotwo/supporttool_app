@@ -6,8 +6,9 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
     has_secure_password
 
-    has_many :item_lists
+    has_many :item_lists, dependent: :destroy
+    has_many :items
 
-    has_many :favorites
-    has_many :fav_item_lists, through: :favorites, source: :item_list
+    # has_many :favorites
+    # has_many :fav_item_lists, through: :favorites, source: :item_list
 end

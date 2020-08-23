@@ -8,6 +8,35 @@ p {
     font-family: 'sans-serif';
 }       
 
+.item_list_show {
+    .item_list_show_box {
+        color: $font-color;
+        background-color: $card-color;
+        width: 560px;
+        height: 120%;
+        margin: 130px auto;
+        .item_list_show_box_img {
+            width: 560px;
+            height: 300px;
+            img {
+             width: 560px; 
+             height: 300px;  
+            }
+        }
+        p {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        a {
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+}
+
 .item_list_new  {
     color: $font-color;
     background-color: $card-color;
@@ -67,25 +96,7 @@ p {
     }
 }
 
-.item_list_show {
-    .item_list_show_box {
-        color: $font-color;
-        background-color: $card-color;
-        width: 560px;
-        height: 600px;
-        margin: 70px auto;
-        p {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-        }
-        a {
-            color: $font-color;
-            text-decoration: none;
-        }
-    }
-}
+
 
 .item_list_edit {
     color: $font-color;

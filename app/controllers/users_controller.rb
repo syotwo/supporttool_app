@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   before_action :require_user_logged_in, only: [:show]
 
-
   def show
     @user = User.find(params[:id])
     @item_lists = current_user.item_lists.all
