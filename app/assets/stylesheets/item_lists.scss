@@ -13,6 +13,7 @@ p {
         color: $font-color;
         background-color: $card-color;
         width: 560px;
+        padding: 0px 0px 40px 0px;
         height: 120%;
         margin: 130px auto;
         .item_list_show_box_img {
@@ -23,16 +24,34 @@ p {
              height: 300px;  
             }
         }
-        p {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-            margin: 0 auto;
+
+        .item_list_show_box_wrap {
+            display: flex;
+            p {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                padding: 20px;
+                margin: 0 auto;
+            }
+            .item_list_show_edit a {
+                color: $font-color;
+                text-decoration: none;
+            }
         }
-        a {
-            color: $font-color;
+
+        .item_list_show_add  {
+            width: 188px;
+            margin: 0 auto;
+            a {
             text-decoration: none;
+            padding: 13px 25px;
+            background-color: #edebf1;
+            border: #edebf1;
+            border-radius: 50px;
+            color: #393740;
+            border-radius: 50px;
+            }
         }
     }
 }
@@ -41,8 +60,9 @@ p {
     color: $font-color;
     background-color: $card-color;
     height: 100%;
-    margin: 100px 190px;
+    margin: 100px auto;
     padding: 26px;
+    width: 590px;
     p {
         text-align: left;
         font-size: 25px;
@@ -63,7 +83,7 @@ p {
 
         #item_list_list_name { 
             width: 100%;
-            padding: 9px 0px;
+            padding: 9px 0px 9px 7px;
             margin: 5px 0px 26px 0px;
         }  
 

@@ -1,5 +1,5 @@
 class ItemListsController < ApplicationController
-  before_action :require_user_logged_in, only: [:create]
+  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
 
@@ -9,8 +9,8 @@ class ItemListsController < ApplicationController
 
   def show
     @item_list = ItemList.find(params[:id])
-    @user = User.find(session[:user_id])
-    @items = @item_list.items.all
+    # @user = User.find(session[:user_id])
+    @item = Item.new
     
   end
 

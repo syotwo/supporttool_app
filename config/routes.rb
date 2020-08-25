@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:index, :show, :new, :create] 
 
-  resources :items
-  resources :item_lists
+  resources :items 
+  resources :item_lists do
+    resources :items, only: [:index, :create] 
+  end
   resources :favorites, only: [:create, :destroy]
 end

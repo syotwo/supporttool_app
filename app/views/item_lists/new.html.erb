@@ -5,6 +5,10 @@
     <%= form_with(model: @item_list, local: true) do |f| %>
         <div><%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %></div>
         <div><%= f.text_field :list_name %></div>
+        <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
+        <%= f.file_field :image %>
         <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
     <% end %>
 </div>
+
+¥

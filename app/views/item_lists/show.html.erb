@@ -7,21 +7,17 @@
                 <%= image_tag @item_list.image.url %> 
             </div>
         <% else %>
-            <%= image_tag "/assets/default.jpg" %>
+            <%= image_tag "/assets/default.png" %>
         <% end %>
-            <p><%= @item_list.list_name %></p>
-            <%= link_to 'Add a product', new_item_path %>
+            <div class= item_list_show_box_wrap>
+                <p><%= @item_list.list_name %></p>
+                <div class="item_list_show_edit">
+                    <%= link_to 'Edit',  edit_item_list_path %>
+                </div>
+            </div>
+            <div class="item_list_show_add">
+                <%= link_to '＋ Add a product', new_item_path(item_list_id: 3) %>
+            </div> 
     </div>
-
-
-
-    <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
-        <%= f.file_field :image %>
-        <%= f.submit 'Create' %>
-    <% end %>
-
-    <%= link_to 'Cancel', user_path(@user) %>
-    <%= link_to 'Edit Support-Kit',  edit_item_list_path %>
 </div>
 

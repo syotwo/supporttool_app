@@ -5,7 +5,7 @@ class ItemList < ApplicationRecord
 
   mount_uploader :image, ItemListImgUploader
 
-  has_many :items, class_name: "Item", foreign_key: "item_list_id"
+  has_many :items, dependent: :destroy
 
   # has_many :favorites, dependent: :destroy
   # has_many :users, through: :favorites

@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
   def create
     # @item = current_user.items.build(item_params)
     #本来の記述である@item = current_user.items.build(params[:user])だとrails4から適応のstrong paramsでエラー
-    binding.pry
+    # binding.pry
     @item = @item_list.items.new(item_params)
     
     if @item.save
