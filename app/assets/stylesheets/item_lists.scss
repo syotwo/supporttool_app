@@ -54,6 +54,33 @@ p {
             }
         }
     }
+    .item_list_show_addproducts {
+        background-color: $card-color;
+        .item_list_show_add_wrap {
+            display: flex;
+            width: 740px;
+            margin: 0 auto;
+
+            .productname{
+            
+            }
+            #item_item_name {
+                padding: 9px 7px;   
+                margin: 0px 10px 0px 0px; 
+            }
+            .submit{
+                .item_list_submit {
+                    margin: 0px 0px 0px 40px;
+                    padding: 13px 25px;
+                    background-color: #edebf1;
+                    border: #edebf1;
+                    border-radius: 50px;
+                    color: #393740;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
 }
 
 .item_list_new  {
@@ -121,10 +148,60 @@ p {
 .item_list_edit {
     color: $font-color;
     background-color: $card-color;
-    margin-top: 80px;
-    a {
-        color: $font-color;
-            text-decoration: none;
+    height: 100%;
+    margin: 100px auto;
+    padding: 26px;
+    width: 590px;
+    p {
+        text-align: left;
+        font-size: 25px;
+        font-weight: bold;
+        color: #f8f4f2;
+        margin: 0;
+        padding: 0px 0px 26px 0px;
+    }
+
+    form {
+        text-align: center;
+        margin: 0px auto;
+        .item_list_label_name {
+            display: block;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        #item_list_list_name { 
+            width: 100%;
+            padding: 9px 0px 9px 7px;
+            margin: 5px 0px 26px 0px;
+        }  
+
+        .item_list_label_image {
+            display: block;
+            font-size: 14px;
+            text-align: left;
+        }
+        
+        #item_list_image {
+            width: 100%;
+            padding: 9px 0px;
+            margin: 5px 0px 26px 0px;
+        }
+        .chechbox {
+            text-align-last: left;
+
+        }
+        .submit{
+            text-align-last: right;
+            .item_list_submit {
+                padding: 13px 25px;
+                background-color: #edebf1;
+                border: #edebf1;
+                border-radius: 50px;
+                color: #393740;
+                border-radius: 50px;
+            }
+        }
     }
 }
 

@@ -75,14 +75,28 @@ nav {
             }
             .signup {
                 color: $navfont-color;
+                font-weight: bold;
+                font-size: 17px;
             }
             .login{
                 color: $navfont-color;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            .logout {
+                color: $navfont-color;
+                display: block;
+                font-weight: bold;
+                font-size: 17px;
+                height: 35px;
+                padding: 0;
             }
             .username {
                 color: $navfont-color;
                 display: block;
                 height: 35px;
+                font-weight: bold;
+                font-size: 17px;
             }
         }
         

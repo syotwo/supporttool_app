@@ -20,14 +20,16 @@ class ItemsController < ApplicationController
     # @item = current_user.items.build(item_params)
     #本来の記述である@item = current_user.items.build(params[:user])だとrails4から適応のstrong paramsでエラー
     # binding.pry
-    @item = @item_list.items.new(item_params)
+    @item = Item.new(item_params)
+    @item.user_id = current_user.id
+   
     
     if @item.save
       flash[:success] = 'tool を投稿しました。'
-      redirect_to items_path
+      redirect_back(fallback_location: root_path)
     else
       flash.now[:danger] = 'tool が投稿されませんでした'
-      render :new
+      redirect_back(fallback_location: root_path)
     end
    
   end
@@ -54,7 +56,7 @@ class ItemsController < ApplicationController
   private
   # ストロングパラメーター
   def item_params
-    params.require(:item).permit(:item_name, :img, :user_id)
+    params.require(:item).permit(:item_list_id, :item_name, :img)
   end
 
   # def correct_user

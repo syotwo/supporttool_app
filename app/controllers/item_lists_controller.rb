@@ -9,7 +9,6 @@ class ItemListsController < ApplicationController
 
   def show
     @item_list = ItemList.find(params[:id])
-    # @user = User.find(session[:user_id])
     @item = Item.new
     
   end

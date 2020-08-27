@@ -3,7 +3,10 @@
 <% if logged_in? %>
   <div class= toppage>  
     <div class= user-name>
-      <p class= welcome>Welcome back: </p><p class= name><%= current_user.name %></p>
+      <p class= welcome>Welcome back: </p>
+      <p class= name><%= current_user.name %></p>
+      <%= image_tag "/assets/exploler.png" %>
+      <%= link_to "Find out best items for you" %>
     </div>
       <ul>
         <% @item_lists.each do |item_list| %>
@@ -27,7 +30,7 @@
     <div class= logout_image>
       <%= image_tag "/assets/ring.jpg" %>
       <div class =logout_word>
-        <h1>感情に紐づいたアイテムで、<br>マインドマネージメント。</h1>
+        <h1>アイテムで、<br>マインドマネージメント。</h1>
         <p>あなたのアイテムの使い方<br>そこで得られた体験を共有すること価値があるのです</p>
       </div>
     </div>  
@@ -50,6 +53,9 @@
         <% end %>
       </ul>
   </div>  
+  
+
+
 <% end %>
 
 

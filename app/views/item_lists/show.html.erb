@@ -1,6 +1,4 @@
-
 <div class= item_list_show>
-
     <div class= item_list_show_box>
         <% if @item_list.image? %>
             <div class= item_list_show_box_img>
@@ -15,9 +13,18 @@
                     <%= link_to 'Edit',  edit_item_list_path %>
                 </div>
             </div>
-            <div class="item_list_show_add">
-                <%= link_to '＋ Add a product', new_item_path(item_list_id: 3) %>
+    </div>
+
+    <div class="item_list_show_addproducts">
+        <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
+            <div class="item_list_show_add_wrap"> 
+                <%= form.label :product_name, {class: 'productname' } %>
+                <%= form.text_field :item_name %>
+                <%= form.file_field :img %>
+                <%= form.hidden_field :item_list_id, value:@item_list.id %>
+                <div class= submit><%= form.submit '＋　Add Products',{class: 'item_list_submit' } %></div>   
             </div> 
+        <% end %>
     </div>
 </div>
 
