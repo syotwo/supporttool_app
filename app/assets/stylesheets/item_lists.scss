@@ -15,7 +15,7 @@ p {
         width: 560px;
         padding: 0px 0px 40px 0px;
         height: 120%;
-        margin: 130px auto;
+        margin: 130px auto 50px;
         .item_list_show_box_img {
             width: 560px;
             height: 300px;
@@ -25,19 +25,37 @@ p {
             }
         }
 
-        .item_list_show_box_wrap {
+        .wrap {
             display: flex;
             p {
+                
                 font-size: 30px;
                 font-weight: bold;
                 text-align: center;
-                padding: 20px;
-                margin: 0 auto;
+                margin: 15px auto;
             }
-            .item_list_show_edit a {
-                color: $font-color;
-                text-decoration: none;
+            .edit {
+                a {
+                    display: block;
+                   
+                    .markedit {
+                        margin: 28px 20px 0px 0px;
+                        width: 23px;
+                        height: 23px;
+                    }
+                }     
             }
+            
+        }
+        ul {
+            padding-left: 20px;
+            li {
+                list-style: none;
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+                }
+            }    
         }
 
         .item_list_show_add  {
@@ -56,7 +74,7 @@ p {
     }
     .item_list_show_addproducts {
         background-color: $card-color;
-        .item_list_show_add_wrap {
+        .wrap {
             display: flex;
             width: 740px;
             margin: 0 auto;
@@ -69,13 +87,17 @@ p {
                 margin: 0px 10px 0px 0px; 
             }
             .submit{
+                #item_item_name {
+                    padding: 10px 200px;
+                }
                 .item_list_submit {
                     margin: 0px 0px 0px 40px;
-                    padding: 13px 25px;
+                    padding: 12px 25px;
+                    font-size: 18px;
                     background-color: #edebf1;
                     border: #edebf1;
                     border-radius: 50px;
-                    color: #393740;
+                    color: #0f0f11;
                     border-radius: 50px;
                 }
             }

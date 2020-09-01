@@ -23,12 +23,11 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     @item.user_id = current_user.id
    
-    
     if @item.save
-      flash[:success] = 'tool を投稿しました。'
+      flash[:success] = 'productを投稿しました。'
       redirect_back(fallback_location: root_path)
     else
-      flash.now[:danger] = 'tool が投稿されませんでした'
+      flash.now[:danger] = 'productが投稿されませんでした'
       redirect_back(fallback_location: root_path)
     end
    

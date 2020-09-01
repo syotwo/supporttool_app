@@ -1,30 +1,46 @@
-<div class= item_list_show>
-    <div class= item_list_show_box>
+<div class= "item_list_show">
+    <div class= "item_list_show_box">
         <% if @item_list.image? %>
-            <div class= item_list_show_box_img>
+            <div class= "item_list_show_box_img">
                 <%= image_tag @item_list.image.url %> 
             </div>
         <% else %>
-            <%= image_tag "/assets/default.png" %>
+            
         <% end %>
-            <div class= item_list_show_box_wrap>
+            <div class= "wrap">
                 <p><%= @item_list.list_name %></p>
-                <div class="item_list_show_edit">
-                    <%= link_to 'Edit',  edit_item_list_path %>
+                <div class= "edit">
+                    <%= link_to image_tag("markedit.png", class: "markedit"), edit_item_list_path(@item_list) %>
                 </div>
             </div>
+            <ul>
+                <% @items.each do |item| %>
+                    <li>
+                        <div class= "text">
+                            <%= link_to item.item_name, item_path(item) %>
+                            <%= link_to image_tag(item.img.url), item_path(item) %>  
+        
+                        </div>  
+                    </li>
+                <% end %>
+            </ul>
+            
+            
     </div>
-
-    <div class="item_list_show_addproducts">
-        <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
-            <div class="item_list_show_add_wrap"> 
-                <%= form.label :product_name, {class: 'productname' } %>
-                <%= form.text_field :item_name %>
-                <%= form.file_field :img %>
-                <%= form.hidden_field :item_list_id, value:@item_list.id %>
-                <div class= submit><%= form.submit '＋　Add Products',{class: 'item_list_submit' } %></div>   
-            </div> 
-        <% end %>
-    </div>
+    
+    <% if current_user %>
+        <div class="item_list_show_addproducts">
+            <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
+                <div class= "wrap"> 
+                    <%= form.text_field :item_name, placeholder: "Item_Name" %>
+                    <%= form.file_field :img %>
+                    <%= form.hidden_field :item_list_id, value:@item_list.id %>
+                    <div class= "submit"><%= form.submit '＋　Add Products',{class: 'item_list_submit' } %></div>   
+                </div> 
+            <% end %>
+        </div>
+    <% else %>
+    
+    <% end %>
 </div>
 
