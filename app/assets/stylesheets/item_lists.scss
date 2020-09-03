@@ -90,27 +90,52 @@ p {
             }
         }
     }
-    .item_list_show_addproducts {
+    .addproducts {
         background-color: $card-color;
         .wrap {
             display: flex;
             width: 740px;
             margin: 0 auto;
-
+            padding: 5px 0px;
             .productname{
             
             }
             #item_item_name {
                 padding: 9px 7px;   
-                margin: 0px 10px 0px 0px; 
+                margin: auto 10px;
+                padding: 0px 0px 0px 17px;
+                border: none;
+                outline: none;
+                width: 400px; 
+                height: 48px;
+            }
+            .addproducts_img_label {
+                height: 48px;
+                margin: 1px 0px;
+                img {
+                width: 48px;
+                height: 48px;
+                
+                }
+            }
+            .addproducts_img_name_label {
+                background-color: #DBDBDB;
+                line-height: 47px;
+                color: #757575;
+                white-space: nowrap;
+                height: 48px;
+                margin: 1px 0px;
+                padding: 0px 12px 0px 10px;
+                
+
             }
             .submit{
 
-                .item_list_submit {
+                .addproductst_submit {
                     margin: 0px 0px 0px 40px;
-                    padding: 12px 25px;
+                    padding: 11px 25px;
                     font-size: 18px;
-                    background-color: #edebf1;
+                    background-color: #f5f4f7;
                     border: #edebf1;
                     border-radius: 50px;
                     color: #0f0f11;

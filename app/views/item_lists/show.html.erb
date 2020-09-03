@@ -30,13 +30,15 @@
     </div>
     
     <% if current_user %>
-        <div class="item_list_show_addproducts">
+        <div class="addproducts">
             <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
                 <div class= "wrap"> 
                     <%= form.text_field :item_name, placeholder: "Products_Name" %>
-                    <%= form.file_field :img %>
+                    <%= form.label :img, image_tag("default_mini.png"), class: "addproducts_img_label" %>
+                    <%= form.label :img, "Cover img", class: "addproducts_img_name_label" %>
+                    <%= form.file_field :img, class: "fileInput",style: "display:none;" %>
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
-                    <div class= "submit"><%= form.submit '＋　Add Products',{class: 'item_list_submit' } %></div>   
+                    <div class= "submit"><%= form.submit '＋　Add Products',{class: 'addproductst_submit' } %></div>   
                 </div> 
             <% end %>
         </div>
