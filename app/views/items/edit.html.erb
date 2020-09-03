@@ -1,13 +1,10 @@
-<h1>Edit Tool</h1>
-<%= form_with(model: @item, local: true) do |form| %>
-  
-    <%= image_tag @item.img.url %>
-    <br>
-    <%= form.label :item_name , 'Tool name' %>
-    <%= form.text_field :item_name %>
-    <p>
+<div class="item_edit">
+    <h1>Edit Tool</h1>
+    <%= form_with(model: @item, local: true) do |form| %>
+        <%= form.label :item_name , 'Tool name' %>
+        <%= form.text_field :item_name %>
+        <%= form.file_field :img %>
         <%= link_to 'DELATE TOOL', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
         <%= form.submit 'save' %>
-    </p>
-
-<% end %>
+    <% end %>
+</div>

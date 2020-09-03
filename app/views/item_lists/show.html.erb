@@ -1,38 +1,39 @@
 <div class= "item_list_show">
-    <div class= "item_list_show_box">
+    <div class= "box">
         <% if @item_list.image? %>
-            <div class= "item_list_show_box_img">
+            <div class= "box_img">
                 <%= image_tag @item_list.image.url %> 
             </div>
         <% else %>
             
         <% end %>
-            <div class= "wrap">
+            <div class= "wrap_item_list">
                 <p><%= @item_list.list_name %></p>
-                <div class= "edit">
-                    <%= link_to image_tag("markedit.png", class: "markedit"), edit_item_list_path(@item_list) %>
+                <div class= "edit_item_list">
+                    <%= link_to image_tag("markedit.png", class: "markedit_item_list"), edit_item_list_path(@item_list) %>
                 </div>
             </div>
             <ul>
                 <% @items.each do |item| %>
-                    <li>
-                        <div class= "text">
-                            <%= link_to item.item_name, item_path(item) %>
-                            <%= link_to image_tag(item.img.url), item_path(item) %>  
-        
-                        </div>  
+                    <li class=item_list_show_card>
+                        <%= link_to image_tag(item.img.url), item_path(item), {class: 'item_img' } %>  
+                        <div class= "wrap_item_list">
+                            <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
+                        </div>
+                        <%= form_with(model: @item, local: true) do |form| %>
+                            <%= link_to 'DELATE', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+                        <% end %>
                     </li>
                 <% end %>
-            </ul>
-            
-            
+                
+            </ul>     
     </div>
     
     <% if current_user %>
         <div class="item_list_show_addproducts">
             <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
                 <div class= "wrap"> 
-                    <%= form.text_field :item_name, placeholder: "Item_Name" %>
+                    <%= form.text_field :item_name, placeholder: "Products_Name" %>
                     <%= form.file_field :img %>
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
                     <div class= "submit"><%= form.submit '＋　Add Products',{class: 'item_list_submit' } %></div>   

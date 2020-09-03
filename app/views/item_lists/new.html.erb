@@ -1,9 +1,11 @@
 <div class= item_list_new>
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
-        <div><%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %></div>
-        <div><%= f.text_field :list_name %></div>
-        <div><%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %></div>
+        <%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %>
+        <%= f.text_field :list_name, placeholder: "Example:  Meditation Supplement" %>
+        <%= f.label :list_description , 'Description how to use' ,{class: 'item_list_label_name'} %>
+        <%= f.text_area :list_description , placeholder: "Add a description" %>
+        <%= f.label :image, 'Cover Img' ,{class: 'item_list_label_image'} %>
         <%= f.file_field :image %>
         <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
     <% end %>

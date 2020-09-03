@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_action :require_user_logged_in, only: [:create]
-  # before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :set_item, only: [:edit, :update, :destroy]
 
   def index
     if logged_in?
@@ -49,7 +49,7 @@ class ItemsController < ApplicationController
     # before_action :correct_user
     @item.destroy
 
-    redirect_to items_url
+    redirect_back(fallback_location: item_list_items_path)
   end
 
   private
@@ -58,12 +58,9 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:item_list_id, :item_name, :img)
   end
 
-  # def correct_user
-  #   @item = current_user.items.find_by(id: params[:id])
-  #   unless @item
-  #     redirect_to root_url
-  #   end
-  # end
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
 end
 

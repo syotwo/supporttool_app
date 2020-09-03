@@ -9,14 +9,14 @@ p {
 }       
 
 .item_list_show {
-    .item_list_show_box {
+    .box {
         color: $font-color;
         background-color: $card-color;
         width: 560px;
         padding: 0px 0px 40px 0px;
         height: 120%;
         margin: 130px auto 50px;
-        .item_list_show_box_img {
+        .box_img {
             width: 560px;
             height: 300px;
             img {
@@ -25,7 +25,7 @@ p {
             }
         }
 
-        .wrap {
+        .wrap_item_list {
             display: flex;
             p {
                 
@@ -34,11 +34,11 @@ p {
                 text-align: center;
                 margin: 15px auto;
             }
-            .edit {
+            .edit_item_list {
                 a {
                     display: block;
                    
-                    .markedit {
+                    .markedit_item_list {
                         margin: 28px 20px 0px 0px;
                         width: 23px;
                         height: 23px;
@@ -48,12 +48,30 @@ p {
             
         }
         ul {
+            display: flex;
             padding-left: 20px;
-            li {
+            .item_list_show_card {
+                width: 300px;
                 list-style: none;
-                a {
+                .item_img {
+                    display: block;
+                    img {
+                        border-radius: 5px;
+                        width: 300px;
+                        height: 250px;
+                    }
+                }
+                .item_name {
+                    display: block;
                     color: $font-color;
                     text-decoration: none;
+                    text-align: center;
+                }
+                .markedit_item {
+                    margin: 28px 20px 0px 0px;
+                    width: 23px;
+                    height: 23px;
+
                 }
             }    
         }
@@ -87,9 +105,7 @@ p {
                 margin: 0px 10px 0px 0px; 
             }
             .submit{
-                #item_item_name {
-                    padding: 10px 200px;
-                }
+
                 .item_list_submit {
                     margin: 0px 0px 0px 40px;
                     padding: 12px 25px;
@@ -109,14 +125,16 @@ p {
     color: $font-color;
     background-color: $card-color;
     height: 100%;
-    margin: 100px auto;
-    padding: 26px;
+    margin: 110px auto;
+    padding: 38px 50px;
     width: 590px;
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     p {
         text-align: left;
-        font-size: 25px;
+        font-size: 35px;
         font-weight: bold;
-        color: #f8f4f2;
+        color: rgb(252, 252, 252);
         margin: 0;
         padding: 0px 0px 26px 0px;
     }
@@ -124,28 +142,45 @@ p {
     form {
         text-align: center;
         margin: 0px auto;
+        color: rgb(223, 221, 221);
         .item_list_label_name {
             display: block;
             font-size: 14px;
+            font-weight: 100;
             text-align: left;
+            margin-left: 1px;
         }
 
         #item_list_list_name { 
-            width: 100%;
-            padding: 9px 0px 9px 7px;
-            margin: 5px 0px 26px 0px;
+            width: 95%;
+            padding: 12px 0px 12px 12px;
+            margin: 6px 19px 26px 0px;
+            background-color: rgb(247, 245, 245);
+            border: none;
+            outline: none;
+        }  
+        #item_list_list_description { 
+            width: 95%;
+            padding: 12px 0px 12px 12px;
+            margin: 6px 19px 26px 0px;
+            background-color: rgb(247, 245, 245);
+            border: none;
+            outline: none;
         }  
 
         .item_list_label_image {
             display: block;
             font-size: 14px;
             text-align: left;
+            margin-left: 1px;
         }
         
         #item_list_image {
             width: 100%;
             padding: 9px 0px;
-            margin: 5px 0px 26px 0px;
+            margin: 5px 0px 0px 0px;
+            border: none;
+            outline: none;
         }
         .chechbox {
             text-align-last: left;
@@ -155,11 +190,13 @@ p {
             text-align-last: right;
             .item_list_submit {
                 padding: 13px 25px;
-                background-color: #edebf1;
+                background-color: #f6f5f8;
                 border: #edebf1;
                 border-radius: 50px;
-                color: #393740;
-                border-radius: 50px;
+                color: #121114;
+                font-size: 17px;
+                border-radius: 4px;
+                margin: 0px 19px 0px 0px;
             }
         }
     }
@@ -186,28 +223,45 @@ p {
     form {
         text-align: center;
         margin: 0px auto;
+        color: rgb(223, 221, 221);
         .item_list_label_name {
             display: block;
             font-size: 14px;
+            font-weight: 100;
             text-align: left;
+            margin-left: 1px;
         }
 
         #item_list_list_name { 
-            width: 100%;
-            padding: 9px 0px 9px 7px;
-            margin: 5px 0px 26px 0px;
+            width: 95%;
+            padding: 12px 0px 12px 12px;
+            margin: 6px 19px 26px 0px;
+            background-color: rgb(247, 245, 245);
+            border: none;
+            outline: none;
+        }  
+        #item_list_list_description { 
+            width: 95%;
+            padding: 12px 0px 12px 12px;
+            margin: 6px 19px 26px 0px;
+            background-color: rgb(247, 245, 245);
+            border: none;
+            outline: none;
         }  
 
         .item_list_label_image {
             display: block;
             font-size: 14px;
             text-align: left;
+            margin-left: 1px;
         }
         
         #item_list_image {
             width: 100%;
             padding: 9px 0px;
-            margin: 5px 0px 26px 0px;
+            margin: 5px 0px 0px 0px;
+            border: none;
+            outline: none;
         }
         .chechbox {
             text-align-last: left;
@@ -217,11 +271,13 @@ p {
             text-align-last: right;
             .item_list_submit {
                 padding: 13px 25px;
-                background-color: #edebf1;
+                background-color: #f6f5f8;
                 border: #edebf1;
                 border-radius: 50px;
-                color: #393740;
-                border-radius: 50px;
+                color: #121114;
+                font-size: 17px;
+                border-radius: 4px;
+                margin: 0px 19px 0px 0px;
             }
         }
     }
