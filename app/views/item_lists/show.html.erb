@@ -1,18 +1,12 @@
 <div class= "item_list_show">
     <div class= "box">
-        <% if @item_list.image? %>
-            <div class= "box_img">
-                <%= image_tag @item_list.image.url %> 
-            </div>
-        <% else %>
-            
-        <% end %>
-            <div class= "wrap_item_list">
-                <p><%= @item_list.list_name %></p>
+            <div class= "item_list_wrap">
+                <p class= list_name><%= @item_list.list_name %></p>
                 <div class= "edit_item_list">
                     <%= link_to image_tag("markedit.png", class: "markedit_item_list"), edit_item_list_path(@item_list) %>
                 </div>
             </div>
+            <p class= list_description><%= @item_list.list_description %></p>
             <ul>
                 <% @items.each do |item| %>
                     <li class=item_list_show_card>
@@ -25,7 +19,6 @@
                         <% end %>
                     </li>
                 <% end %>
-                
             </ul>     
     </div>
     

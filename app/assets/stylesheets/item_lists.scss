@@ -12,52 +12,51 @@ p {
     .box {
         color: $font-color;
         background-color: $card-color;
-        width: 560px;
+        width: 860px;
         padding: 0px 0px 40px 0px;
         height: 120%;
         margin: 130px auto 50px;
-        .box_img {
-            width: 560px;
-            height: 300px;
-            img {
-             width: 560px; 
-             height: 300px;  
-            }
-        }
-
-        .wrap_item_list {
-            display: flex;
-            p {
-                
+        .item_list_wrap {
+            display: flex;   
+            .list_name {
                 font-size: 30px;
                 font-weight: bold;
                 text-align: center;
                 margin: 15px auto;
+                width: 700px;
             }
             .edit_item_list {
                 a {
-                    display: block;
-                   
+                    display: block;    
                     .markedit_item_list {
                         margin: 28px 20px 0px 0px;
                         width: 23px;
                         height: 23px;
                     }
                 }     
-            }
-            
+            }      
+        }
+        p {
+            padding: 0px 20px;
+        }
+        .list_description {
         }
         ul {
             display: flex;
-            padding-left: 20px;
-            .item_list_show_card {
-                width: 300px;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 800px;
+            padding: 0px;
+            margin: 0px auto;
+            li.item_list_show_card {
+                width:30%;
                 list-style: none;
+                margin: 0px 5px 0px 10px;
                 .item_img {
                     display: block;
                     img {
                         border-radius: 5px;
-                        width: 300px;
+                        width: 250px;
                         height: 250px;
                     }
                 }
@@ -82,16 +81,16 @@ p {
             a {
             text-decoration: none;
             padding: 13px 25px;
-            background-color: #edebf1;
-            border: #edebf1;
+            background-color: #0888f8;
+            border: none;
             border-radius: 50px;
-            color: #393740;
+            color: #FCFCFC;
             border-radius: 50px;
             }
         }
     }
     .addproducts {
-        background-color: $card-color;
+        
         .wrap {
             display: flex;
             width: 740px;
@@ -106,16 +105,17 @@ p {
                 padding: 0px 0px 0px 17px;
                 border: none;
                 outline: none;
-                width: 400px; 
+                width: 260px; 
                 height: 48px;
+                border-radius: 4px;
             }
             .addproducts_img_label {
                 height: 48px;
-                margin: 1px 0px;
+                margin: auto 0px;
                 img {
                 width: 48px;
                 height: 48px;
-                
+                border-radius: 4px 0px 0px 4px;
                 }
             }
             .addproducts_img_name_label {
@@ -124,22 +124,20 @@ p {
                 color: #757575;
                 white-space: nowrap;
                 height: 48px;
-                margin: 1px 0px;
+                margin: auto 0px;
                 padding: 0px 12px 0px 10px;
-                
-
+                border-radius: 0px 4px 4px 0px;
             }
             .submit{
-
                 .addproductst_submit {
-                    margin: 0px 0px 0px 40px;
-                    padding: 11px 25px;
+                    margin: 0px 0px 0px 10px;
+                    padding: 10px 15px;
                     font-size: 18px;
-                    background-color: #f5f4f7;
-                    border: #edebf1;
+                    background-color: #0888f8;
+                    border: none;
                     border-radius: 50px;
-                    color: #0f0f11;
-                    border-radius: 50px;
+                    color: #FCFCFC;
+                    border-radius: 4px;
                 }
             }
         }
@@ -215,10 +213,10 @@ p {
             text-align-last: right;
             .item_list_submit {
                 padding: 13px 25px;
-                background-color: #f6f5f8;
-                border: #edebf1;
+                background-color: #0888f8;
+                border: none;
                 border-radius: 50px;
-                color: #121114;
+                color: #FCFCFC;
                 font-size: 17px;
                 border-radius: 4px;
                 margin: 0px 19px 0px 0px;
@@ -296,10 +294,10 @@ p {
             text-align-last: right;
             .item_list_submit {
                 padding: 13px 25px;
-                background-color: #f6f5f8;
-                border: #edebf1;
+                background-color: #0888f8;
+                border: none;
                 border-radius: 50px;
-                color: #121114;
+                color: #FCFCFC;
                 font-size: 17px;
                 border-radius: 4px;
                 margin: 0px 19px 0px 0px;
