@@ -1,13 +1,20 @@
-<% @item_lists.each do |item_list| %>
-    <li>
-    <div class="box_text">
-        <%= link_to item_list.list_name , item_list_path(item_list) %>
-        <p class= item_list_products>products</p>
-    </div>  
-    <% if item_list.image? %>
-        <%= image_tag item_list.image.url %> 
-    <% else %>
-        <%= image_tag "/assets/default.jpg" %>
-    <% end %>
-    </li>
-<% end %>
+<div class="item_list_index">
+    <ul>
+        <% @item_lists.each do |item_list| %>
+        <li>
+            <div class="box_text">
+            <%= link_to item_list.list_name , item_list_path(item_list) %>
+            <div class= "countitems">
+                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+            </div>
+            </div>  
+            <% if item_list.image? %>
+            <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+            <% else %>
+            <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+            <% end %>
+        </li>
+        <% end %>
+    </ul>
+</div>

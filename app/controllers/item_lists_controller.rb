@@ -3,8 +3,7 @@ class ItemListsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
 
 
-  def index
-    @item_lists = current_user.item_lists.all
+  def index  
   end
 
   def show

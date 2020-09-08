@@ -3,8 +3,15 @@
     <a class="nav_logo" href="/">
       <div class= "angle30"><%= image_tag('angle30.png') %></div>
       <div class= "title"><span>Cutting Edge</span></div>
-      
     </a>
+
+    <div class="searchbox">
+      <%= search_form_for @search do |f| %>
+        <%= f.search_field :list_name_cont %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+
     <ul>
       <% if logged_in? %>
         <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>

@@ -1,9 +1,10 @@
-.alert.alert {
+.alert {
     text-align: center;
     padding: 2px 0px;
     background-color: #f5f0f0;
     font-size: 13px;
-    margin-top: 74px;
+    position: relative;
+    top: 74px;
     height: 15px;
     line-height: 16px;
 }
