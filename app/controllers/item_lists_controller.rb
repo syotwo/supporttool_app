@@ -15,10 +15,12 @@ class ItemListsController < ApplicationController
 
   def new
     @item_list = ItemList.new
+    @user = current_user
   end
 
   def create
     @item_list = current_user.item_lists.new(item_list_params)
+    @user = current_user
 
     if @item_list.save
       flash[:success] = 'リストを投稿しました'

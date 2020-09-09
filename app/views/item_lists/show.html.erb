@@ -31,7 +31,10 @@
                     <%= form.label :img, "Cover img", class: "addproducts_img_name_label" %>
                     <%= form.file_field :img, class: "fileInput",style: "display:none;" %>
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
-                    <div class= "submit"><%= form.submit '＋　Add Products',{class: 'addproductst_submit' } %></div>   
+                    <div class= "submit">
+                        <%= form.submit '＋',{class: 'submit_plus' } %>
+                        <%= form.submit 'Add Products',{class: 'addproductst_submit' } %>
+                    </div>     
                 </div> 
             <% end %>
         </div>

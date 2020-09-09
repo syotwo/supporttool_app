@@ -7,8 +7,8 @@
 
     <div class="searchbox">
       <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont %>
-        <%= f.submit %>
+        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <button type="submit" id="search"><i class="fas fa-search searchicon"></i></button>
       <% end %>
     </div>
 

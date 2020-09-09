@@ -1,7 +1,7 @@
 <div class= signupform>
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
-      
+      <h1>Signup</h1>
       <div>
         <div><%= f.label :name, 'Name'%></div>
         <%= f.text_field :name, placeholder: "name"  %>
