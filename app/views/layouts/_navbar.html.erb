@@ -2,15 +2,13 @@
   <nav>
     <a class="nav_logo" href="/">
       <div class= "angle30"><%= image_tag('angle30.png') %></div>
-      <div class= "title"><span>Cutting Edge</span></div>
+      <div class= "title"><span>CuttingEdge</span></div>
     </a>
-
-    <div class="searchbox">
-      <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
-        <button type="submit" id="search"><i class="fas fa-search searchicon"></i></button>
-      <% end %>
-    </div>
+    
+    <%= search_form_for @search do |f| %>
+      <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+      <button type="submit" id="search"><i class="fas fa-search searchicon"></i></button>
+    <% end %>
 
     <ul>
       <% if logged_in? %>

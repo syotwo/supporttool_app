@@ -137,10 +137,13 @@ p {
             li.item_list_show_card {
                 width:30%;
                 list-style: none;
-                margin: 0px 5px 0px 10px;
-                .item_img {
+                margin: 0px 20px 0px 10px;
+                a.item_img {
                     display: block;
                     img {
+                        object-fit: cover;
+                        width: 100%;
+                        box-sizing: border-box;
                         border-radius: 5px;
                         width: 250px;
                         height: 250px;
@@ -156,7 +159,10 @@ p {
                     margin: 28px 20px 0px 0px;
                     width: 23px;
                     height: 23px;
-
+                }
+                a {
+                    text-decoration: none;
+                    color: #F3770B;
                 }
             }    
         }
@@ -220,8 +226,9 @@ p {
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     text-align: right;
                     margin: 0px 0px 0px 10px;
+                    padding: 0px;
                     height: 48px;
-                    width: 38px;
+                    width: 33px;
                     font-size: 20px;
                     font-weight: bold;
                     background-color: #0888f8;
@@ -235,7 +242,7 @@ p {
                     height: 48px;
                     width: 130px;
                     font-size: 20px;
-                    padding: 0;
+                    padding: 0px 0px 0px 2px;
                     background-color: #0888f8;
                     border: none;
                     color: #FCFCFC;
@@ -353,6 +360,7 @@ p {
     margin: 100px auto;
     padding: 26px;
     width: 590px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     p {
         text-align: left;
         font-size: 25px;
@@ -361,7 +369,6 @@ p {
         margin: 0;
         padding: 0px 0px 26px 0px;
     }
-
     form {
         text-align: center;
         margin: 0px auto;
@@ -388,7 +395,7 @@ p {
             margin: 6px 19px 26px 0px;
             background-color: rgb(247, 245, 245);
             border: none;
-            outline: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         }  
 
         .item_list_label_image {
