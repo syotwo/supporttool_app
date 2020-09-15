@@ -5,12 +5,13 @@
     </div>
     <%= form_with(model: @item_list, local: true) do |f| %>
         <%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %>
-        <%= f.text_field :list_name, placeholder: "Example:  Meditation Supplement" %>
+        <%= f.text_field :list_name, placeholder: "Example: Night Meditation " %>
         <%= f.label :list_description , 'Description how to use' ,{class: 'item_list_label_name'} %>
         <%= f.text_area :list_description , placeholder: "Add a description" %>
         <div class="wrap">  
             <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
-            <p class= img_name><%= f.label :image, "Cover img", class: "addproducts_img_name_label" %></p>
+            <%= f.label :image, "Cover img", class: "img_name" %>
+            <%= f.file_field :image, class: "fileInput",style: "display:none;" %>    
         </div>
         <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
     <% end %>

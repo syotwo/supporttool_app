@@ -1,8 +1,8 @@
 <header>
   <nav>
     <a class="nav_logo" href="/">
-      <div class= "angle30"><%= image_tag('angle30.png') %></div>
-      <div class= "title"><span>CuttingEdge</span></div>
+      <div class= "logo_icon"><%= image_tag('start_white.svg') %></div>
+      <div class= "title"><span>BrainRestarter</span></div>
     </a>
     
     <%= search_form_for @search do |f| %>
@@ -13,7 +13,7 @@
     <ul>
       <% if logged_in? %>
         <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
-        <li><%= link_to current_user.name , user_path(current_user) , { class: 'username' }%></li>
+        
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>          
         <li><%= link_to 'Signup', signup_path , { class: 'signup' }%></li>

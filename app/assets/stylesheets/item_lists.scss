@@ -9,9 +9,20 @@ p {
 }       
 
 .item_list_index {
-    padding: 150px 20px 0px 20px;
+    padding: 73px 20px 0px 20px;
+    .result_title {
+        white-space: nowrap;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        margin: 80px 0px 10px 0px;
+        background: linear-gradient(#8896d4, #5be4cb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }  
     ul{
-        overflow-x: auto;
+        overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
@@ -20,16 +31,19 @@ p {
         padding: 10px 0px 0px 0px;
         margin: 0px  0px ;
         border-radius: 4px;
-        ::-webkit-scrollbar-thumb {
+        &::-webkit-scrollbar {
+            height:8px;  
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #5a5555;
             border-radius: 10px;
-            background:#09C9D9;
           }
         li {
             display: inline-block;
             width: 28%;
             background-color: $card-color;
             height: 307px;
-            margin: 0px 10px 0px 0px; 
+            margin: 0px 18px 0px 0px; 
             padding: 10px 14px 1px 14px; 
             text-align: center;
             border-radius: 4px;
@@ -89,19 +103,17 @@ p {
                 }
             }
         }
-    }
+    }   
 }
 
 .item_list_show {
     .box {
         color: $font-color;
-        background-color: $card-color;
-        width: 860px;
-        padding: 0px 0px 40px 0px;
+        width: 1000px;
         height: 120%;
         margin: 130px auto 50px;
-        border: solid 1px #b9abab;
         border-radius: 4px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         .item_list_wrap {
             display: flex;   
             .list_name {
@@ -122,38 +134,52 @@ p {
                 }     
             }      
         }
-        p {
-            padding: 0px 20px;
-        }
-        .list_description {
+        p.list_description {
+            font-weight: 100;
+            white-space: pre-wrap;
+            margin: 10px 30px;
+            font-size: 15px;
+            color: #e2e5ec;
         }
         ul {
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
-            width: 800px;
-            padding: 0px;
-            margin: 0px auto;
+            width: 1000px;
+            min-height: 250px;
+            padding: 37px 0px 0px 0px;
+            margin: 30px auto;
+            border-top: 1px solid #474545;
+            border-bottom: 1px solid #474545;
             li.item_list_show_card {
-                width:30%;
+                width: 220px;  
                 list-style: none;
-                margin: 0px 20px 0px 10px;
+                margin: 0px 15px 40px 15px;
                 a.item_img {
                     display: block;
+                    width: 220px;
+                    height: 220px;
                     img {
-                        object-fit: cover;
-                        width: 100%;
-                        box-sizing: border-box;
                         border-radius: 5px;
-                        width: 250px;
-                        height: 250px;
+                        max-width: 100%;
+	                    height: 220px;
                     }
                 }
-                .item_name {
+                a.item_name {
                     display: block;
                     color: $font-color;
                     text-decoration: none;
-                    text-align: center;
+                    text-align: left;
+                    margin: 3px 3px 0px 3px;
+                    width: 220px;
+                    height: 70px;
+                    text-align: justify;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    letter-spacing: -0.06em;
+                    z-index: 1;  
+                    font-size: 15px;
+                    font-weight: 100;    
                 }
                 .markedit_item {
                     margin: 28px 20px 0px 0px;
@@ -325,7 +351,7 @@ p {
                 white-space: nowrap;
                 height: 22px;
                 font-size: 18px;
-                padding: 0px 12px 26px 8    px;
+                padding: 0px 12px 26px 8px;
                 border-radius: 0px 4px 4px 0px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-weight: 400;
@@ -405,12 +431,27 @@ p {
             margin-left: 1px;
         }
         
-        #item_list_image {
-            width: 100%;
-            padding: 9px 0px;
-            margin: 5px 0px 0px 0px;
-            border: none;
-            outline: none;
+        .wrap {
+            display: flex;
+            .img_label {
+                img {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px 0px 0px 4px;
+                }
+            }
+            .img_name {
+                background-color: #DBDBDB;
+                line-height: 47px;
+                color: #757575;
+                white-space: nowrap;
+                height: 22px;
+                font-size: 18px;
+                padding: 0px 12px 26px 8px;
+                border-radius: 0px 4px 4px 0px;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                font-weight: 400;
+            }
         }
         .chechbox {
             text-align-last: left;

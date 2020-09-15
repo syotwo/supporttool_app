@@ -18,11 +18,9 @@
  
  body {
     margin: 0px;
-    background-color: $base-color;
-
-    // background: -moz-linear-gradient(left,#031224, #000);
-    // background: -webkit-linear-gradient(left,#031224, #000);
-    // background: radial-gradient(to right, rgb(48, 48, 48), #000);
+    background: -moz-radial-gradient(#141518, #2a2a2b);
+    background: -webkit-radial-gradient(#141518, #2a2a2b);
+    background: radial-gradient(#141518, #2a2a2b);
 }
 
  
