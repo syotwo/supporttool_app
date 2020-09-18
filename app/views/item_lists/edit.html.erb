@@ -2,9 +2,9 @@
     <p>Create a new list</p>
     <%= form_with(model: @item_list, local: true) do |f| %>
         <%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %>
-        <%= f.text_field :list_name, placeholder: "Example:  Meditation Supplement" %>
-        <%= f.label :list_description , 'Description how to use' ,{class: 'item_list_label_name'} %>
-        <%= f.text_area :list_description , placeholder: "Add a description" %>
+        <%= f.text_field :list_name, placeholder: "Example:  Deep Sleep" %>
+        <%= f.label :list_description , 'how to use' ,{class: 'item_list_label_name'} %>
+        <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
         <div class="wrap">  
             <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
             <%= f.label :image, "Cover img", class: "img_name" %>

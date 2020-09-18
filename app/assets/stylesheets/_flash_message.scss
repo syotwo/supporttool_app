@@ -1,14 +1,16 @@
 .alert {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     text-align: center;
-    padding: 2px 0px;
+    padding: 0px;
     background-color: #f3770b;
-    color: #021424;
-    font-size: 14px;
+    color: #fdfdfc;
+    font-size: 15px;
     letter-spacing: 0.05em;
     position: relative;
-    top: 74px;
-    height: 15px;
-    line-height: 16px;
+    top: 73px;
+    height: 20px;
+    line-height: 20px;
+    outline: none;
+    border: none;
 }
 

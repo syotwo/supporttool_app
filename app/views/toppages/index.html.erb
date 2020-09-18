@@ -1,5 +1,5 @@
 
-
+<%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage>
     <div class="recentlyadded">
@@ -22,12 +22,34 @@
           </li>
         <% end %>
         </ul> 
-    </div>   
-    
-    <div class="goodsleepset">
-      <p class="goodsleepset-title">GoodSleep Set</p>
+    </div>  
+
+    <div class="sleepset">
+      <p class="sleepset-title">CreativeBoost</p>
       <ul>
-        <% @goodsleepsets.each do |item_list| %>
+        <% @creativesets.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <div class= "countitems">
+                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+              </div>
+            </div>  
+            <% if item_list.image? %>
+              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+            <% else %>
+              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
+
+    <div class="sleepset">
+      <p class="sleepset-title">BetterSleep</p>
+      <ul>
+        <% @sleepsets.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -72,16 +94,14 @@
 <% else %>
   <div class= logout>
     <div class= logout_image>
-      <%= image_tag "/assets/top.jpg" %>
       <div class =logout_word>
         <h1>社会が変わるのではなく<br>抜本的に個人が変わる</h1>
-        <p>あなたの脳をエキスパンドするためのアイテムリスト<br></p>
+        <p>あなたの脳をエキスパンドする<%= image_tag("itemicon.png") %>アイテムで<br>迷いなく前に進む</p>
         <p class =word_bottom>未来は今が作る。アルベルトアインシュタイン</p>
       </div>
     </div>  
-  </div>
 
-    <div class= toppage>
+    <div class= logout_toppage>
     <div class="recentlyadded">
       <p class="recentlyadded_title">RecentlyAdded</p>
       <ul>
@@ -103,11 +123,31 @@
         <% end %>
         </ul> 
     </div>   
-    
-    <div class="goodsleepset">
-      <p class="goodsleepset-title">GoodSleep Set</p>
+    <div class="sleepset">
+      <p class="sleepset-title">CreativeBoost</p>
       <ul>
-        <% @goodsleepsets.each do |item_list| %>
+        <% @creativesets.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <div class= "countitems">
+                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+              </div>
+            </div>  
+            <% if item_list.image? %>
+              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+            <% else %>
+              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
+    <div class="sleepset">
+      <p class="sleepset-title">BetterSleep Set</p>
+      <ul>
+        <% @sleepsets.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>

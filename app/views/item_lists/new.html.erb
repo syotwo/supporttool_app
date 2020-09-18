@@ -1,18 +1,7 @@
-<div class= item_list_new>
-    <div class="wrap">
-        <p>How are you feeling？&nbsp;</p>
-        <p><%= @user.name%></p>
-    </div>
-    <%= form_with(model: @item_list, local: true) do |f| %>
-        <%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %>
-        <%= f.text_field :list_name, placeholder: "Example: Night Meditation " %>
-        <%= f.label :list_description , 'Description how to use' ,{class: 'item_list_label_name'} %>
-        <%= f.text_area :list_description , placeholder: "Add a description" %>
-        <div class="wrap">  
-            <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
-            <%= f.label :image, "Cover img", class: "img_name" %>
-            <%= f.file_field :image, class: "fileInput",style: "display:none;" %>    
-        </div>
-        <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
-    <% end %>
+<% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+    
+<div class="item_list_new">
+    <%= render 'layouts/form_itemlist' %>    
 </div>
