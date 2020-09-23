@@ -1,8 +1,7 @@
 class ItemListsController < ApplicationController
   before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
-
-
+  
   def index  
   end
 
@@ -19,6 +18,8 @@ class ItemListsController < ApplicationController
   end
 
   def create
+    api_test
+
     @item_list = current_user.item_lists.new(item_list_params)
     @user = current_user
 
@@ -64,6 +65,38 @@ class ItemListsController < ApplicationController
     end
   end
 
+  def api_test
+    # encoding: UTF-8
+    require 'net/https'
+    require 'uri'
+    require 'json'
+
+    subscription_key = "a9938c3fe7814070b389e67cff1120c6"
+    endpoint = "https://syomiyata.cognitiveservices.azure.com/"
+
+    path = '/text/analytics/v3.0/sentiment'
+
+    uri = URI(endpoint + path)
+
+    documents = { 'documents': [
+        { 'id' => '1', 'language' => 'en', 'text' => 'I really enjoy the new XBox One S. It has a clean look, it has 4K/HDR resolution and it is affordable.' },
+        { 'id' => '2', 'language' => 'es', 'text' => 'Este ha sido un dia terrible, llegué tarde al trabajo debido a un accidente automobilistico.' }
+    ]}
+
+    puts 'Please wait a moment for the results to appear.'
+
+    request = Net::HTTP::Post.new(uri)
+    request['Content-Type'] = "application/json"
+    request['Ocp-Apim-Subscription-Key'] = subscription_key
+    request.body = documents.to_json
+
+    response = Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+        http.request (request)
+    end
+
+puts JSON::pretty_generate (JSON (response.body))
+
+  end
 # binding.pry
 end
 

@@ -59,3 +59,6 @@ gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 
 gem 'ransack'
+
+source 'https://rubygems.org'
+gem 'azure_cognitiveservices_textanalytics', '~>0.17.3'
