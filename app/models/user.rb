@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
     has_many :item_lists, dependent: :destroy
     has_many :items
+    has_many :emotions
 
     # has_many :favorites
     # has_many :fav_item_lists, through: :favorites, source: :item_list
