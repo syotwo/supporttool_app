@@ -46,8 +46,9 @@ class EmotionsController < ApplicationController
 
 
     sheet = emotion_params
+    sheet_text = sheet.values
     documents = { 'documents': [
-        { 'id' => '1', 'language' => 'ja', "text" => "#{sheet}" },
+        { 'id' => '1', 'language' => 'ja', "text" => "#{sheet_text}" }
     ]}
 
 
