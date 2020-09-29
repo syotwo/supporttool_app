@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   
-  get 'emotions/index'
-  get 'emotions/create'
-  get 'emotions/destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
 

@@ -1,0 +1,54 @@
+@import "_variables";
+
+.emotion_index {
+    background: $card-color;
+    width: 550px;
+    height: 400px;
+    margin: 70px auto;
+    padding: 50px;
+    h1 {
+        width: 250px;
+        color: #fff;
+        margin: 0px auto 30px;
+    }
+}
+
+.emotion_new {
+    background: $card-color;
+    width: 550px;
+    height: 400px;
+    margin: 70px auto;
+    padding: 50px;
+    h1 {
+        width: 310px;
+        color: #fff;
+        margin: 0px auto 30px;
+    }
+    form {
+        margin: 30px auto;
+    }
+    textarea {
+        width: 250px;
+        width: 200px;
+        padding: 12px 0px 12px 12px;
+        margin: 6px 19px 26px 0px;
+        background-color: rgb(247, 245, 245);
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    }
+    .submit{
+        text-align: right;
+        margin: 0px 0px 0px 440px;
+        padding: 13px 25px;
+        background: $accent-color;
+        border: #fff;
+        border-radius: 4px;
+        color: #FCFCFC;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    }
+}
+

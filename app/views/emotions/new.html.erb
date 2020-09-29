@@ -1,5 +1,13 @@
-<h1>Wellness Checker</h1>
-<%= form_with model: @emotion do |form| %>
-  <%= form.text_area :sheet %>
-  <%= form.submit :check %>
-<% end %>
+<div class="emotion_new">
+  <h1>Wellness Check</h1>
+  <%= form_with model: @emotion do |form| %>
+    <%= form.text_area :sheet %>
+    <%= form.submit 'check' ,{class: 'submit' } %>
+  <% end %>
+
+  <p>＊Wellness Checkerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
+
+  <div>
+    <%= @sentiment %>
+  </div>
+</div>

@@ -2,6 +2,17 @@ class EmotionsController < ApplicationController
   before_action :require_user_logged_in
 
   def index
+    if @sentiment_params = request.query_parameters
+      if @confidencescores = @sentiment_params["confidenceScores"]
+      @negative = @confidencescores["negative"]
+      @neutral = @confidencescores["neutral"]
+      @positive = @confidencescores["positive"]
+      end
+    # binding.pry
+    end
+  end
+
+  def show
   end
 
   def new
@@ -10,19 +21,20 @@ class EmotionsController < ApplicationController
 
   def create
     api_test
-    # binding.pry
     @emotion = current_user.emotions.new(emotion_params)
-
+    # binding.pry
     if @emotion.save
       flash[:success] = 'sheetを投稿しました'
-      redirect_to emotions_path
+      redirect_to emotions_path(@sentiment)
     else
       flash.now[:danger] = 'sheetの投稿に失敗しました。'
     end
     
+    
   end
 
   def destroy
+
   end
 
   private
@@ -44,13 +56,11 @@ class EmotionsController < ApplicationController
 
     uri = URI(endpoint + path)
 
-
-    sheet = emotion_params
-    sheet_text = sheet.values
+    emotion = emotion_params
+    sheet_text = emotion["sheet"]
     documents = { 'documents': [
         { 'id' => '1', 'language' => 'ja', "text" => "#{sheet_text}" }
     ]}
-
 
     puts 'Please wait a moment for the results to appear.'
 
@@ -63,7 +73,11 @@ class EmotionsController < ApplicationController
         http.request (request)
     end
 
-puts JSON::pretty_generate (JSON (response.body))
-
+    result = JSON.parse(response.body)
+    @sentiment = result["documents"][0]
+    
+    # puts JSON::pretty_generate (JSON (response.body))
+    
   end
+
 end

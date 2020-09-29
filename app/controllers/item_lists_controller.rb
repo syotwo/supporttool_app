@@ -63,6 +63,6 @@ class ItemListsController < ApplicationController
     end
   end
 
-# binding.pry
+  # binding.pry
 end
 
