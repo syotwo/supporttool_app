@@ -1,5 +1,5 @@
 class EmotionsController < ApplicationController
-  before_action :require_user_logged_in
+  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
 
   def index
     if @sentiment_params = request.query_parameters
@@ -29,8 +29,7 @@ class EmotionsController < ApplicationController
     else
       flash.now[:danger] = 'sheetの投稿に失敗しました。'
     end
-    
-    
+     
   end
 
   def destroy

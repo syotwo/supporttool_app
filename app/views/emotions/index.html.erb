@@ -1,9 +1,8 @@
 <div class="emotion_index">
     <h1>Your Wellness</h1>
-
-    <p>negative<%= @negative %></p>
-    <p>neutral<%= @neutral %></p>
-    <p>positive<%= @positive %></p>
+    <div class= chart>
+        <%= pie_chart @confidencescores %>
+    </div>
 </div>
 
 
