@@ -97,6 +97,9 @@
                 border-radius: 4px;
                 margin: 0px 19px 0px 0px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                &:hover {
+                    filter: brightness(110%);
+                  }
             }
         }
     }

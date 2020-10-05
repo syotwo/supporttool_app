@@ -38,5 +38,8 @@
         color: #FCFCFC;
         font-weight: bold;
         font-size: 15px;
+        &:hover {
+            filter: brightness(115%);
+          }
     }
 }

@@ -97,11 +97,12 @@
       <div class =logout_word>
         <h1>クリエイティブクラスのための<br>パフォーマンス最大化ツール</h1>
         <p>スポーツアスリートだけでなく<br>全てのクリエイター達にも<br>フィジカル管理を</p>
-        <p class =word_bottom></p>
+        <p><%= link_to 'Reset Brain', signup_path , { class: 'resetbrain' }%></p>
       </div>
+      <div class="top_image"><%= image_tag("/assets/top_image.png")%></div>
     </div>  
     <div class= wellness>
-      <h1 class= wellness_word_top><br>セルフマネージメントをして<br>迷いなくクリエイティブに没頭</h1>
+      <h1 class= wellness_word_top><br>セルフマネージメントで<br>迷いなくクリエイティブに没頭</h1>
       <p class="wellness_word_bottom">体調管理はwellness cheackにお任せ</p>
       <p><%= link_to "Wellness cheack", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
