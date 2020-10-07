@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_24_062325) do
+ActiveRecord::Schema.define(version: 2020_10_07_032537) do
 
   create_table "emotions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "sheet"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_09_24_062325) do
     t.string "img"
     t.bigint "item_list_id", null: false
     t.bigint "user_id", null: false
+    t.text "item_link"
     t.index ["item_list_id"], name: "index_items_on_item_list_id"
     t.index ["user_id"], name: "index_items_on_user_id"
   end

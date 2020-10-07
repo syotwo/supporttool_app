@@ -198,6 +198,26 @@ p {
                     font-size: 15px;
                     font-weight: 100;    
                 }
+                .item_link_box {
+                    background-color: #167DE4;
+                    padding: 2px 40px;
+                    display: flex;
+                    border-radius: 4px;
+                    margin: 0px 0px 50px 0px;
+                    a {
+                        &::before {
+                            content: "View On Link ";
+                            }
+                        letter-spacing: 0.2em;
+                        color: $font-color;
+                        display: block;
+                        padding: 5px;
+                        font-size: 16px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    
+                }
                 .markedit_item {
                     margin: 28px 20px 0px 0px;
                     width: 23px;
@@ -236,19 +256,29 @@ p {
             .productname{
             
             }
-            #item_item_name {
+            #item_item_link {
                 padding: 9px 7px;   
-                margin: auto 20px;
+                margin: auto 0px;
                 padding: 0px 0px 0px 13px;
                 border: none;
                 outline: none;
-                width: 260px; 
+                width: 220px; 
+                height: 48px;
+                border-radius: 4px;font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            }
+            #item_item_name {
+                padding: 9px 7px;   
+                margin: auto 5px;
+                padding: 0px 0px 0px 13px;
+                border: none;
+                outline: none;
+                width: 220px; 
                 height: 48px;
                 border-radius: 4px;font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             }
             .addproducts_img_label {
                 height: 48px;
-                margin: auto 0px auto -10px;
+                margin: auto 0px auto 5px;
                 img {
                 width: 48px;
                 height: 48px;
@@ -267,13 +297,14 @@ p {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             }
             .submit{
+                width: 200px;
                 &:hover {
                         filter: brightness(110%);
                       }
                 .submit_plus {
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     text-align: right;
-                    margin: 0px 0px 0px 10px;
+                    margin: 0px 0px 0px 5px;
                     padding: 0px;
                     height: 48px;
                     width: 33px;
@@ -297,7 +328,7 @@ p {
                     border-radius: 0px 4px 4px 0px;
                     position:relative; 
                     top: -1px; 
-                    left: -5px;
+                    left: -6px;
                     outline: none;
                 }
             }

@@ -1,11 +1,11 @@
 <%= render 'layouts/navbar' %>
-<h1>Tool</h1>
-
-<% if @item.img? %>
-    <%= image_tag @item.img.url %>
-    <p><%= @item.item_name %></p>
-<% else %>
-    <%= image_tag "default.png" %>
-    <p><%= @item.item_name %></p>
-<% end %>
+<div class="item_show">
+    <% if @item.img? %>
+        <%= image_tag @item.img.url %>
+        <p><%= @item.item_name %></p>
+    <% else %>
+        <%= image_tag "default.png" %>
+        <p><%= @item.item_name %></p>
+    <% end %>
+</div>
 

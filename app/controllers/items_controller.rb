@@ -55,7 +55,7 @@ class ItemsController < ApplicationController
   private
   # ストロングパラメーター
   def item_params
-    params.require(:item).permit(:item_list_id, :item_name, :img)
+    params.require(:item).permit(:item_list_id, :item_name, :img , :item_link)
   end
 
   def set_item

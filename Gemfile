@@ -70,4 +70,6 @@ gem 'azure_cognitiveservices_textanalytics', '~>0.17.3'
 gem "chartkick"
 gem 'groupdate'
 
+gem 'rinku'
+
 

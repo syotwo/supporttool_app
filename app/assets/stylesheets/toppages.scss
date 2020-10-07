@@ -27,7 +27,7 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         list-style: none;
-        height: auto;
+        height: 362px;
         padding: 10px 0px 0px 0px;
         margin: 20px 0px;
         border-radius: 4px;
@@ -42,7 +42,7 @@
             display: inline-block;
             width: 28%;
             background: $card-color;
-            height: auto;
+            height: 307px;
             margin: 0px 14px 0px 0px; 
             padding: 20px 18px 10px 18px; 
             text-align: center;
@@ -92,17 +92,17 @@
             }
             a {
                 display: block;
-                height: auto;
+                height: 240px;
                 img {
                     object-fit: cover;
-                    width: 100%;
+                    width: 94%;
                     box-sizing: border-box;
-                    height: 200px;
+                    height: 100%;
                     border-radius:  4px;
                     filter: brightness(105%);
                     &:hover {
                         filter: brightness(90%);
-                        transition: 0.2s ;
+                        transition: 0.2s;
                       }
                 }
             }
@@ -403,6 +403,7 @@
                 height: auto;
                 margin: 0px 0px 0px 50px;
                 padding: 10px 15px;
+                filter: grayscale(20%);        
             }
         }
     }  
@@ -412,7 +413,7 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-align: left;
         padding: 35px 0px 0px 0px;
-        background: url(/assets/top_image_wellness.jpg);
+        background: url(/assets/top_image_wellness.jpg); 
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center center;

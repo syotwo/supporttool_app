@@ -1,5 +1,5 @@
 class EmotionsController < ApplicationController
-  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
+  # before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
 
   def index
     if @sentiment_params = request.query_parameters

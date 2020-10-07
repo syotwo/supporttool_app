@@ -17,9 +17,15 @@
                         <div class= "wrap_item_list">
                             <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
                         </div>
-                        
+                        <% if item.item_link %>
+                        <div class="item_link_box">
+                            <%= raw Rinku.auto_link(item.item_link, :all, 'target="_blank"') %>
+                        </div>
+                        <% else %>
+                        <% end %> 
                     </li>
                 <% end %>
+                
             </ul>     
     </div>
     
@@ -28,6 +34,7 @@
             <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
                 <div class= "wrap"> 
                     <%= form.text_field :item_name, placeholder: "Products_Name" %>
+                    <%= form.text_field :item_link, placeholder: "Products_url" %>
                     <%= form.label :img, image_tag("default_mini.png"), class: "addproducts_img_label" %>
                     <%= form.label :img, "Cover img", class: "addproducts_img_name_label" %>
                     <%= form.file_field :img, class: "fileInput",style: "display:none;" %>
