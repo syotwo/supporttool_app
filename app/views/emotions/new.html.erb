@@ -1,11 +1,10 @@
 <div class="emotion_new">
   <h1>Wellness Check</h1>
-  <p class= minitue>３min</p>
-  <%= form_with url: @emotion do |form| %>
-  <div class="question_icon_1"></div><div class="question_1">あなたの気持ちをチェックします。<br>今日一日で起きた出来事について以下３つの質問に答えてください</div>
-  <div class="question_icon_2"></div><div class="question_2">何がありましたか？</div>
-  <div class="question_icon_3"></div><div class="question_3">どんな感情ですか？</div>
-  <div class="question_icon_4"></div><div class="question_4">浮かんだイメージを教えてください</div>
+  <%= form_with(model: @emotion, local: true) do |form| %>
+    <div class="question_1">あなたの気持ちをチェックします。<br>今日一日で起きた出来事について以下３つの質問に答えてください</div>
+    <div class="question_2">何がありましたか？</div>
+    <div class="question_3">どんな感情ですか？</div>
+    <div class="question_4">浮かんだイメージを教えてください</div>
     <div><%= form.text_area :sheet, placeholder: "メッセージを入力"%></div>
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>

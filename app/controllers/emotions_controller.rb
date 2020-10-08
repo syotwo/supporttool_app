@@ -20,9 +20,10 @@ class EmotionsController < ApplicationController
   end
 
   def create
-    api_test
-    @emotion = current_user.emotions.new(emotion_params)
     # binding.pry
+    emotion_api
+    @emotion = current_user.emotions.new(emotion_params)
+    
     if @emotion.save
       flash[:success] = 'sheetを投稿しました'
       redirect_to emotions_path(@sentiment)
@@ -42,7 +43,7 @@ class EmotionsController < ApplicationController
     params.require(:emotion).permit(:sheet)
   end
 
-  def api_test
+  def emotion_api
     # encoding: UTF-8
     require 'net/https'
     require 'uri'
