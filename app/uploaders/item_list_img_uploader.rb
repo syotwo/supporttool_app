@@ -17,12 +17,12 @@ class ItemListImgUploader < CarrierWave::Uploader::Base
   def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:
   #   # ActionController::Base.helpers.asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
-      "default.png"
+      # [version_name, "default.png"].compact.join('_')
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   end
 
   # process resize_to_fit: [300, 300]
-  process resize_to_fill: [320, 250, "Center"]
+  process resize_to_fill: [320, 267, "Center"]
 
   
 

@@ -32,12 +32,13 @@
         text-align: right;
         margin: 22px 0px 0px 242px;
         padding: 13px 25px;
-        background: $accent-color;
+        background: $card-color;
         border: #edebf1;
         border-radius: 4px;
-        color: #FCFCFC;
+        color: $accent-color;
         font-weight: bold;
         font-size: 15px;
+        border: solid 2px $accent-color;
         &:hover {
             filter: brightness(115%);
           }

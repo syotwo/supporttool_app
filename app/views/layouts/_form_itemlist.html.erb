@@ -10,7 +10,8 @@
     <div class="wrap">  
         <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
         <%= f.label :image, "Cover img", class: "img_name" %>
-        <%= f.file_field :image, class: "fileInput",style: "display:none;" %>    
+        <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
+         <%= link_to 'DELATE TOOL', @item_list, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %> 
     </div>
     <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
 <% end %>

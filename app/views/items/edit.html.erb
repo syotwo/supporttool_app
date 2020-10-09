@@ -6,7 +6,6 @@
         <%= form.text_field :item_name %>
          <%= form.text_field :item_link, placeholder: "Products_url" %>
         <%= form.file_field :img %>
-        <%= link_to 'DELATE TOOL', @item, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
         <%= form.submit 'save' %>
     <% end %>
 </div>

@@ -105,14 +105,15 @@ nav {
                 width: 38px;
                 height: 38px;
                 border-radius: 50%;
-                background: $accent-color;
+                background: $submit-color;
                 font-weight: 300;
                 font-size: 34px;
-                color: rgb(252, 249, 249);
+                color: $accent-color;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 position:relative; 
-                top: -3px; 
+                top: -2px; 
                 left: 0px;
+                border: solid 2px $accent-color;
                 &:hover {
                     filter: brightness(115%);
                     transition: 0.1s;
@@ -123,13 +124,14 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $navfont-color;
+                color: $accent-color;
                 font-weight: bold;
                 font-size: 17px;
-                background: $accent-color;
+                background: $submit-color;
                 padding: 3px 17px;
                 border-radius: 5px;
                 margin: auto 0px;
+                border: solid 2px $accent-color;
                 &:hover {
                     filter: brightness(115%);
                     transition: 0.1s;
@@ -141,8 +143,9 @@ nav {
                 color: $navfont-color;
                 font-weight: bold;
                 font-size: 17px;
+             
                 &:hover {
-                    color: $accent-color;
+                    color: $submit-color;
                     transition: 0.1s;
                   }
             }
@@ -154,10 +157,10 @@ nav {
                 font-weight: bold;
                 font-size: 17px;
                 height: 35px;
-                padding: 0;
                 margin: 0;
+                line-height: 2em;
                 &:hover {
-                    color: $accent-color;
+                    color: $submit-color;
                     transition: 0.1s;
                   }
             }

@@ -54,13 +54,13 @@
   .signup_submit{
     margin: 27px 0px 0px 354px;
     padding: 13px 25px;
-    background: $accent-color;
-    border: #fff;
+    background: $card-color;
     border-radius: 4px;
-    color: #FCFCFC;
+    color: $accent-color;
     font-weight: bold;
     font-size: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    border: solid 2px $accent-color;
     &:hover {
       filter: brightness(115%);
     }
