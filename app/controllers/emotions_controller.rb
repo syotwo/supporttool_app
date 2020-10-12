@@ -10,6 +10,7 @@ class EmotionsController < ApplicationController
       end
     # binding.pry
     end
+    @item_lists = ItemList.all.order(created_at: :desc)
   end
 
   def show

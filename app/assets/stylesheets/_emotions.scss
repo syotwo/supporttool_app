@@ -1,21 +1,132 @@
 @import "_variables";
 
 .emotion_index {
-    background: $card-color;
-    width: 550px;
-    height: 400px;
-    margin: 70px auto;
-    padding: 30px 30px 100px 30px;
-    h1 {
-        width: 250px;
-        color: #fff;
-        margin: 0px auto 30px;
-    }
-    .chart{   
-        #chart-1 {
-            background-color: #c2c7ce;
-            padding: 30px 0px;
-            margin: 0 auto;
+    
+    
+    .emotion_chartbox {
+        height: 400px;
+        margin: 70px auto;
+        padding: 30px 30px 100px 30px;
+        background: $card-color;
+        width: 600px;
+        h1 {
+            width: 250px;
+            color: #fff;
+            margin: 0px auto 30px;
+        }
+        .chart{   
+            #chart-1 {
+                background-color: #c2c7ce;
+                padding: 30px 0px;
+                margin: 0 auto;
+            }
+        }
+    } 
+    .recommend {
+        padding: 0px 40px;
+        width:100%;
+        .recommend_title {
+            white-space: nowrap;
+            font-size: 24px;
+            letter-spacing: 0.001em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            display: flex;
+            margin: 40px 0px 10px 0px;
+            // background: linear-gradient(#8896d4, #5be4cb);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            color: $list_category_title;
+            padding: 0px 0px 10px 0px;
+            border-bottom: solid 1px $list_category_underline_color;
+        }  
+        ul{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            list-style: none;
+            height: auto;
+            padding: 10px 0px 20px 0px;
+            margin: 20px 0px;
+            border-radius: 4px;
+            &::-webkit-scrollbar {
+                height:8px;  
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #5a5555;
+                border-radius: 10px;
+                }
+            li {
+                display: inline-block;
+                width: 26%;
+                background: $card-color;
+                height: auto;
+                margin: 0px 14px 0px 0px; 
+                padding: 22px 18px 25px 18px; 
+                text-align: center;
+                border-radius: 4px;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                .box_text {   
+                    margin: 0px 0px 0px 8px;
+                    a {
+                        width: 100%;
+                        height: 26px;
+                        color: $font-color;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: block;    
+                        text-decoration: none;
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        letter-spacing: 0.01em;
+                        z-index: 1;
+                    }
+                    .countitems {
+                        display: flex;
+                        margin: 3px 0px 9px;
+                        .counts {
+                            text-align: left;
+                            height: 15px;
+                            width: 18px;    
+                            font-size: 12px;
+                            font-weight: 100;
+                            color: $products_color;
+                            z-index: 1;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+                        .products {
+                            text-align: left;
+                            height: 15px;    
+                            margin: 0px;
+                            font-size: 12px;
+                            font-weight: 100;
+                            color: $products_color;
+                            z-index: 1;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    height: auto;
+                    width: 100%;
+                    img {
+                        object-fit: cover;
+                        width: 95%;
+                        box-sizing: border-box;
+                        height: 100%;
+                        border-radius:  4px;
+                        filter: brightness(105%);
+                        &:hover {
+                            filter: brightness(90%);
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -82,8 +193,8 @@
     textarea {
         width: 300px;
         height: 60px;
-        padding: 12px 0px 12px 15px;
-        margin: 6px 19px 0px 233px;
+        padding: 12px 3px 12px 15px;
+        margin: 6px 0px 0px 233px;
         background-color: #f3f5f7;
         border-radius: 6px;
         border: none;

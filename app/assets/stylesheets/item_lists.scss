@@ -317,7 +317,9 @@ p {
                     border: none;
                     color: $accent-color;
                     border-radius: 4px 0px 0px 4px;
-                    border: solid 2px $accent-color;
+                    border-top: solid 2px $accent-color;
+                    border-left: solid 2px $accent-color;
+                    border-bottom: solid 2px $accent-color;
                 }
                 .addproductst_submit {
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -334,7 +336,10 @@ p {
                     top: -1px; 
                     left: -6px;
                     outline: none;
-                    border: solid 2px $accent-color;
+                    border-top: solid 2px $accent-color;
+                    border-right: solid 2px $accent-color;
+                    border-bottom: solid 2px $accent-color;
+
                 }
             }
         }

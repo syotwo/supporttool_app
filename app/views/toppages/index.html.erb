@@ -2,8 +2,8 @@
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage>
-    <div class="recentlyadded">
-      <p class="recentlyadded_title">RecentlyAdded</p>
+    <div class="recommend">
+      <p class="recommend_title">Recommend For You</p>
       <ul>
         <% @item_lists.each do |item_list| %>
           <li>
@@ -108,8 +108,8 @@
     </div>
 
     <div class= logout_toppage>
-    <div class="recentlyadded">
-      <p class="recentlyadded_title">RecentlyAdded</p>
+    <div class="recommend">
+      <p class="recommend_title">Recommend For You</p>
       <ul>
         <% @item_lists.each do |item_list| %>
           <li>
