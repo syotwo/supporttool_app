@@ -24,20 +24,24 @@ nav {
         text-decoration: none;
         vertical-align: middle;
         position:relative; 
-        right:6px;
+        right: 6px;
         .logo_icon {
             border-radius: 50%;
-            width: 35px;
-            height: 35px;
+            width: 43px;
+            height: 43px;
             margin: auto 0px;
+            background-color: $accent-color;
             img {
             display: block;
-            width: 35px;
-            height: 35px;
+            width: 29px;
+            height: 29px;
+            position:relative; 
+            right: -10px;
+            top: 7px;
             }  
         }
         .title {
-            margin: auto 0px;
+            margin: auto 5px;
             span {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 letter-spacing: -0.7px;
@@ -145,7 +149,7 @@ nav {
                 font-size: 17px;
              
                 &:hover {
-                    color: $submit-color;
+                    color: $accent-color;
                     transition: 0.1s;
                   }
             }
@@ -160,7 +164,7 @@ nav {
                 margin: 0;
                 line-height: 2em;
                 &:hover {
-                    color: $submit-color;
+                    color: $accent-color;
                     transition: 0.1s;
                   }
             }
