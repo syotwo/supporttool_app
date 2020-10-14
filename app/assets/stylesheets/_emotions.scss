@@ -213,6 +213,9 @@
         font-size: 15px;
         border: solid 2px $accent-color;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        &:hover {
+            filter: brightness(130%);
+          }
     }
     p {
         margin: 15px 0px;
