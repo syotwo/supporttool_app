@@ -355,6 +355,29 @@ p {
     width: 590px;
     border-radius: 4px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    .wrap_top {
+        width: 575px;
+        display: flex;
+        justify-content: space-between;
+        .item_list_delate { 
+            filter: brightness(70%);
+            &:hover {
+                filter: brightness(95%);
+              }
+            a {
+                img {
+                    width: 25px; 
+                    height: 25px;
+                    padding: 4px;  
+                    margin: 4px 3px 0px 0px;
+                    background-color: #DBDBDB;
+                    
+                    border-radius: 4px;
+                    border: none;
+                }   
+            }
+        }
+    }
     p {
         text-align: left;
         font-size: 25px;

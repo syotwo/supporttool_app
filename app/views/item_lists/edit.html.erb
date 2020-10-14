@@ -1,5 +1,8 @@
 <div class= item_list_edit>
-    <p>Create a new list</p>
+    <div class="wrap_top">
+        <p>Create a new list</p>
+        <div class="item_list_delate"><%= link_to image_tag("delate.png"), @item_list, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></div>
+    </div>
     <%= form_with(model: @item_list, local: true) do |f| %>
         <%= f.label :list_name, 'Your Situation & Mood' ,{class: 'item_list_label_name'} %>
         <%= f.text_field :list_name, placeholder: "Example:  Deep Sleep" %>
@@ -9,7 +12,6 @@
             <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
             <%= f.label :image, "Cover img", class: "img_name" %>
             <%= f.file_field :image, class: "fileInput",style: "display:none;" %>    
-             <%= link_to 'DELATE TOOL', @item_list, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
         </div>
         <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
     <% end %>

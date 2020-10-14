@@ -2,14 +2,7 @@ class EmotionsController < ApplicationController
   before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
 
   def index
-    if @sentiment_params = request.query_parameters
-      if @confidencescores = @sentiment_params["confidenceScores"]
-      @negative = @confidencescores["negative"]
-      @neutral = @confidencescores["neutral"]
-      @positive = @confidencescores["positive"]
-      end
-    # binding.pry
-    end
+    confidence_value
     @item_lists = ItemList.all.order(created_at: :desc)
   end
 
@@ -78,7 +71,17 @@ class EmotionsController < ApplicationController
     @sentiment = result["documents"][0]
     
     # puts JSON::pretty_generate (JSON (response.body))
-    
+  end
+
+  def confidence_value
+    if @sentiment_params = request.query_parameters
+      if @confidencescores = @sentiment_params["confidenceScores"]
+      @negative = @confidencescores["negative"]
+      @neutral = @confidencescores["neutral"]
+      @positive = @confidencescores["positive"]
+      end
+    # binding.pry
+    end
   end
 
 end
