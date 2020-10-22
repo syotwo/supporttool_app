@@ -18,7 +18,7 @@
             <% if item_list.image? %>
               <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
             <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+              <%= link_to image_tag("default.png"), item_list_path(item_list) %>
             <% end %>
           </li>
         <% end %>
@@ -90,14 +90,14 @@
         <% end %>
         </ul> 
     </div>   
-  </div> 
+  </div>  
 
 <% else %>
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1>クリエイティブクラスのための<br>パフォーマンス最大化ツール</h1>
-        <p>スポーツアスリートだけでなく<br>全てのクリエイター達にも<br>フィジカル管理を</p>
+        <h1>あなたのための<br>パフォーマンス最大化ツール</h1>
+        <p>スポーツアスリートだけでなく<br>全ての人にも<br>フィジカル管理を</p>
         <p><%= link_to 'Reset Brain', signup_path , { class: 'resetbrain' }%></p>
       </div>
       <div class="top_image"><%= image_tag("/assets/top_image.png")%></div>
