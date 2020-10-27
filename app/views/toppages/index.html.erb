@@ -2,7 +2,6 @@
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage>
-  
     <div class="recommend">
       <p class="recommend_title">Recommend For You</p>
       <ul>
@@ -99,6 +98,13 @@
         <h1>あなたのための<br>パフォーマンス最大化ツール</h1>
         <p>スポーツアスリートだけでなく<br>全ての人にも<br>フィジカル管理を</p>
         <p><%= link_to 'Reset Brain', signup_path , { class: 'resetbrain' }%></p>
+        <div class="test_login">
+          <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+          <%= f.hidden_field :email, value: "test@test.com" %>
+          <%= f.hidden_field :password, value: "test" %>
+          <%= f.submit "簡単ログイン"%> 
+        </div>
+<% end %>
       </div>
       <div class="top_image"><%= image_tag("/assets/top_image.png")%></div>
     </div>  

@@ -334,21 +334,21 @@
     .logout_image {
         display: flex;
         padding: 170px 40px 80px 40px;
-        // background:center / cover no-repeat url("top_4.jpg") ;
-        // background-position: right 10% top 33%;
+        background:center / cover no-repeat url("top1.jpg") ;
+        background-position: right 10% top 33%;
         .logout_word {
             text-align: left;   
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 45px;
                 margin: 0;
-                color: $accent-color;
+                color: #e0ebf5;
                 white-space: nowrap;
                 margin-left: 3px;
                 letter-spacing: -0.15em;
-                background: linear-gradient(to right,rgb(68, 164, 253), rgb(157, 173, 247));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                // background: linear-gradient(to right,rgb(68, 164, 253), rgb(157, 173, 247));
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
                 padding-right: 3px;
             }
             p {
@@ -356,7 +356,7 @@
                 font-size: 18px;
                 text-decoration: none;
                 margin-left: 6px;
-                color: #c7cbce;
+                color: #dbdfe2;
                 font-weight: 200;
             }
             .resetbrain {
@@ -379,6 +379,26 @@
                     filter: brightness(130%);
                     transition: 0.2s;
                   }          
+            }
+            .test_login {
+                form {
+                    input {
+                        color: #eaeef1;
+                        background: $complementary-color;
+                        width: 200px;
+                        font-size: 20px;
+                        border: none;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        padding: 17px 6px; 
+                        margin: 0px 0px 0px 7px;
+                        border: solid 2px $accent-color;
+                        &:hover {
+                            filter: brightness(130%);
+                            transition: 0.2s;
+                        }  
+                    }
+                }
             }
         }
         .top_image {    

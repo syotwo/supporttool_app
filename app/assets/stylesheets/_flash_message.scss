@@ -1,8 +1,10 @@
+@import "_variables";
+
 .alert {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     text-align: center;
     padding: 0px;
-    background-color: #f18e55;
+    background-color: $complementary-color;
     color: #fdfdfc;
     font-size: 15px;
     letter-spacing: 0.05em;
