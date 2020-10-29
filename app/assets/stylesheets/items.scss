@@ -43,7 +43,13 @@
 
 .item_show {
     width: 520px;
-    margin: 130px auto;
+    margin: 200px auto;
+    img {
+        display: block;
+        border-radius:  4px;
+        width: 250px;
+    }
+
 }
 
 .item_edit {
