@@ -10,9 +10,18 @@
       <div class= "selectset_box_category">
         <p>reset</p>
         <div class= "selectset_box_category_name">
-          <%= link_to "brain", { anchor: "brainset" } %>
-          <%= link_to "body", { anchor: "bodyset" } %>
-          <%= link_to "mind", { anchor: "mindset" } %>
+          <%= link_to root_path(anchor: "brainset") do %>
+            <%= image_tag "/assets/brain.png" %>
+            <p>brain</p>
+          <% end %>
+          <%= link_to root_path(anchor: "bodyset") do %>
+            <%= image_tag "/assets/body.png" %>
+            <p>body</p>
+          <% end %>
+          <%= link_to root_path(anchor: "mindset") do %>
+            <%= image_tag "/assets/mind.png" %>
+            <p>mind</p>
+          <% end %>
         </div>
       </div>
     </div>
@@ -34,6 +43,7 @@
             <% else %>
               <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
             <% end %>
+            <div id="brainset"></div>
           </li>
         <% end %>
         </ul> 
@@ -78,7 +88,7 @@
             <% else %>
               <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
             <% end %>
-            <div id="soulset"></div>
+            <div id="mindset"></div>
           </li>
         <% end %>
         
