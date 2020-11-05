@@ -4,11 +4,12 @@
   <div class= toppage>
     <div class= "selectset">
       <div class= "selectset_box_current_user">
+        <%= image_tag "/assets/smile.png" %>
         <p>How are you feeling?&nbsp;</p>
         <p class= "selectset_current_user_name"><%= current_user.name%></p>
       </div>
+      <p class= reset>reset</p>
       <div class= "selectset_box_category">
-        <p>reset</p>
         <div class= "selectset_box_category_name">
           <%= link_to root_path(anchor: "brainset") do %>
             <%= image_tag "/assets/brain.png" %>

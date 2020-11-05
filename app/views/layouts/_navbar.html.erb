@@ -9,7 +9,7 @@
     
     <%= search_form_for @search do |f| %>
       <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
-      <button type="submit" id="search"><i class="fas fa-search searchicon"></i></button>
+      <button type="submit" id="search"><%= image_tag("/assets/search.png") %></button>
     <% end %>
 
     <ul>
