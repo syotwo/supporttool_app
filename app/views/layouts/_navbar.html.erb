@@ -4,7 +4,7 @@
       <div class= "logo_icon">
         <%= image_tag("/assets/restart.png") %>
       </div>
-      <div class= "title"><span>BrainRestarter</span></div>
+      <div class= "title"><span>HeadStrong</span></div>
     </a>
     
     <%= search_form_for @search do |f| %>
@@ -17,7 +17,7 @@
         <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
     <% else %>
-        <li><%= link_to 'Restart', signup_path , { class: 'resetbrain' }%></li>
+        <li><%= link_to 'Signup', signup_path , { class: 'resetbrain' }%></li>
         <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>

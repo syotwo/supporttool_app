@@ -190,10 +190,10 @@
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1>クリエイティブクラスのための<br>パフォーマンス最大化ツール</h1>
-        <p>アスリートだけでなくクリエイターにも体調管理を</p>
+        <h1>アイテムで、自分の脳をハックして<br>パフォーマンスを最大化しよう</h1>
+        <p>頭が良くなるアイテムリスト</p>
         <div class="box_login">
-          <p><%= link_to 'Restart', signup_path , { class: 'resetbrain' }%></p>
+          <p><%= link_to 'Signup', signup_path , { class: 'resetbrain' }%></p>
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
             <%= f.hidden_field :email, value: "test@test.com" %>
@@ -281,5 +281,4 @@
     <% end %>
   </div>
 <% end %>
-
 
