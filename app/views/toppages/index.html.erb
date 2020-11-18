@@ -8,7 +8,7 @@
         <p>How are you feeling?&nbsp;</p>
         <p class= "selectset_current_user_name"><%= current_user.name%></p>
       </div>
-      <p class= reset>reset</p>
+      <p class= reset></p>
       <div class= "selectset_box_category">
         <div class= "selectset_box_category_name">
           <%= link_to root_path(anchor: "brainset") do %>
@@ -190,14 +190,14 @@
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1>アイテムで、自分の脳をハックして<br>パフォーマンスを最大化しよう</h1>
-        <p>頭が良くなるアイテムリスト</p>
+        <h1>アイテムで、脳をハックして<br>パフォーマンスを最大化</h1>
+        <p>ただ買うだけじゃ勿体無い<br>「良い一日」に変える<br>アイテムを選ぶ </p>
         <div class="box_login">
-          <p><%= link_to 'Signup', signup_path , { class: 'resetbrain' }%></p>
+          
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-            <%= f.hidden_field :email, value: "test@test.com" %>
-            <%= f.hidden_field :password, value: "test" %>
+            <%= f.hidden_field :email, value: "testuser@testuser.com" %>
+            <%= f.hidden_field :password, value: "testuser" %>
             <%= f.submit "簡単ログイン"%> 
             <% end %>
           </div>
@@ -206,7 +206,7 @@
     </div> 
 
     <div class= wellness>
-      <div>あなたを完全な状態にして、ただ作るだけ</div>
+      <div></div>
       <h1 class= wellness_word_top><br>現在のあなたのパフォーマンスを評価します<br></h1>
       <p class="wellness_word_bottom">体調管理はwellness checkerに任せて<br>迷いなくクリエイティブへ没頭</p>
       <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
@@ -214,7 +214,10 @@
 
     <div class= logout_toppage>  
     <div class="set">
-      <p class="set-title">CreativeBoost</p>
+      <div class= creativebooster_box>
+        <%= image_tag "/assets/creativebooster.png" %>
+        <p class="set-title">CreativeBoost</p>
+      </div>
       <ul>
         <% @creativesets.each do |item_list| %>
           <li>
@@ -258,7 +261,7 @@
 
     <% if logged_in? %>
       <div class="myset">
-        <p class="myset_title">My Set</p>
+        <p class="myset_title">2Weeks brain upgrade</p>
         <ul>
           <% @mysets.each do |item_list| %>
             <li>

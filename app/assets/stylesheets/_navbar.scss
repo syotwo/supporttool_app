@@ -2,7 +2,7 @@
 @import "_variables";
 
 header {
-    background-color: $main-color;
+    background: $base-color;
     height: 73px;
     position: fixed;
     width: 100%;
@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 60px 0px 67px;
+    padding: 0px 80px 0px 90px;
     .nav_logo {
         display: block;
         display: flex;
@@ -34,11 +34,11 @@ nav {
             // background-image: linear-gradient(to right, #434343 0%, black 100%);
             img {
             display: block;
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             position:relative; 
-            right: 2px;
-            top: -8px;
+            right: 5px;
+            top: -4px;
             }  
         }
         .title {
@@ -91,7 +91,7 @@ nav {
     ul {
         list-style-type: none;
         display: flex;
-        margin: auto 0px;
+       
         height: 36px;
         color: $navfont-color;
         padding: 0;
@@ -149,7 +149,8 @@ nav {
                 color: $navfont-color;
                 font-weight: bold;
                 font-size: 17px;
-             
+                display: block;
+                margin: 4px 0px 0px 0px;
                 &:hover {
                     color: $accent-color;
                     transition: 0.1s;

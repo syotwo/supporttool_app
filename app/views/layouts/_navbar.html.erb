@@ -2,14 +2,15 @@
   <nav>
     <a class="nav_logo" href="/">
       <div class= "logo_icon">
-        <%= image_tag("/assets/restart.png") %>
+        <%= image_tag("/assets/reset.png") %>
       </div>
       <div class= "title"><span>HeadStrong</span></div>
     </a>
-    
-    <%= search_form_for @search do |f| %>
-      <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
-      <button type="submit" id="search"><%= image_tag("/assets/search.png") %></button>
+    <% if logged_in? %>
+      <%= search_form_for @search do |f| %>
+        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <button type="submit" id="search"><%= image_tag("/assets/search.png") %></button>
+      <% end %>
     <% end %>
 
     <ul>

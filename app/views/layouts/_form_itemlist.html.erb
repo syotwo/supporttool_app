@@ -5,8 +5,6 @@
 <%= form_with(model: @item_list, local: true) do |f| %>
     <%= f.label :list_name, 'Situation' ,{class: 'item_list_label_name'} %>
     <%= f.text_field :list_name, placeholder: "Strong Mind ,Nutral Mind , High Resilience ,Deep Sleep" %>
-    Select Mood<%= f.radio_button :mood, "positive" %>positive <%= f.radio_button :mood, "negative" %>negative <%= f.radio_button :mood, "neutral" %>neutral
-    Select Scene<%= f.radio_button :place, "家" %>家 <%= f.radio_button :sex, "自然" %>自然
     <%= f.label :list_description , 'how to use' ,{class: 'item_list_label_name'} %>
     <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
     <div class="wrap">  
