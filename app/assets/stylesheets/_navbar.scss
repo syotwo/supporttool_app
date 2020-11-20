@@ -30,7 +30,7 @@ nav {
             width: 43px;
             height: 43px;
             margin: auto 0px;
-            background:radial-gradient(#44A4FD, #44A4FD);
+            background: $accent-color;
             // background-image: linear-gradient(to right, #434343 0%, black 100%);
             img {
             display: block;
@@ -46,7 +46,7 @@ nav {
             span {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 letter-spacing: -0.7px;
-                color: #f8f7f7; 
+                color: $navfont-color; 
                 font-size: 26px; 
             }
         }  
@@ -91,7 +91,6 @@ nav {
     ul {
         list-style-type: none;
         display: flex;
-       
         height: 36px;
         color: $navfont-color;
         padding: 0;
