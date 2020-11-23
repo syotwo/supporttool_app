@@ -296,53 +296,41 @@
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
-        display: flex;
-        padding: 110px 80px 20px 80px;
-        background:center / cover  no-repeat url("top.jpg");
+        padding: 55px 80px 180px 80px;
+        background:center / cover  no-repeat url("");
         background-position: right 50% top 0%;
         background-size: 86%;
         .logout_word {
-            text-align: left;   
-            h1 {
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 41px;
-                margin: 0;
-                color: #fcfcfd;
-                white-space: nowrap;
-                margin-left: 3px;
-                letter-spacing: -0.14em;
-                // background: linear-gradient(to right,rgb(68, 164, 253), rgb(157, 173, 247));
-                // -webkit-background-clip: text;
-                // -webkit-text-fill-color: transparent;
-                padding-right: 3px;
-            }
+            text-align: left;  
+            
             p {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 16px;
+                font-size: 23px;
                 text-decoration: none;
                 margin-left: 6px;
                 color: #eaeef1;
                 font-weight: 200;
                 letter-spacing: -0.1em;
+
             }
-            .box_login {
-                .test_login {
-                    form {
-                        input {
-                            color: #f4f6f8;
-                            background: $accent-color;
-                            width: 150px;
-                            font-size: 17px;
-                            border: none;
-                            font-weight: bold;
-                            border-radius: 5px;
-                            padding: 5px 0px; 
-                            margin: 0px 0px 0px 7px;
-                            &:hover {
-                                filter: brightness(112%);
-                                transition: 0.2s;
-                            }  
-                        }
+        }
+        .box_login {
+            .test_login {
+                form {
+                    input {
+                        color: #f4f6f8;
+                        background: $accent-color;
+                        width: 150px;
+                        font-size: 17px;
+                        border: none;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        padding: 5px 0px; 
+                        margin: 0px 0px 0px 7px;
+                        &:hover {
+                            filter: brightness(112%);
+                            transition: 0.2s;
+                        }  
                     }
                 }
             }

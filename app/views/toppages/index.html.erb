@@ -161,8 +161,6 @@
         </ul> 
     </div>   
 
-    
-
     <div class="set">
       <p class="set-title">Sleep</p>
       <ul>
@@ -190,17 +188,16 @@
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1>アイテムで、脳をハックして<br>日頃使っているヘルスケアアイテムをシェアする</h1>
-        <p>なんとなく嫌な一日から<br>「良い一日」に変える<br>アイテムをシェアする</p>
-        <div class="box_login">
-          
-          <div class="test_login">
-            <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-            <%= f.hidden_field :email, value: "testuser@testuser.com" %>
-            <%= f.hidden_field :password, value: "testuser" %>
-            <%= f.submit "簡単ログイン"%> 
-            <% end %>
-          </div>
+        <p>アイテム×感情でインデックス</p>
+        <p>ツイートからあなたの気分を測定<br>体調ケアアイテムを紹介</p>
+      </div>
+      <div class="box_login">
+        <div class="test_login">
+          <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+          <%= f.hidden_field :email, value: "testuser@testuser.com" %>
+          <%= f.hidden_field :password, value: "testuser" %>
+          <%= f.submit "簡単ログイン"%> 
+          <% end %>
         </div>
       </div>
     </div> 
