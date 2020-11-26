@@ -2,29 +2,10 @@
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage>
-    <div class= "selectset">
-      <div class= "selectset_box_current_user">
-        <%= image_tag "/assets/smile.png" %>
-        <p>How are you feeling?&nbsp;</p>
-        <p class= "selectset_current_user_name"><%= current_user.name%></p>
-      </div>
-      <p class= reset></p>
-      <div class= "selectset_box_category">
-        <div class= "selectset_box_category_name">
-          <%= link_to root_path(anchor: "brainset") do %>
-            <%= image_tag "/assets/brain.png" %>
-            <p>brain</p>
-          <% end %>
-          <%= link_to root_path(anchor: "bodyset") do %>
-            <%= image_tag "/assets/body.png" %>
-            <p>body</p>
-          <% end %>
-          <%= link_to root_path(anchor: "mindset") do %>
-            <%= image_tag "/assets/mind.png" %>
-            <p>mind</p>
-          <% end %>
-        </div>
-      </div>
+    <div class= wellness>
+      <div></div>
+      <h1 class= wellness_word_top>SNSの呟きからあなたの気分を測定</h1>
+      <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
     <div class="set">
       <p class="set-title">Creative Boost</p>
@@ -188,25 +169,23 @@
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <p class= top>アイテム×感情＝アイテムリストでインデックス</p>
-        <p></p>
-        <p class= bottom>SNSの呟きからあなたの気分を測定<br>セルフケアアイテムを紹介</p>
-      </div>
-      <div class="box_login">
-        <div class="test_login">
-          <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-          <%= f.hidden_field :email, value: "testuser@testuser.com" %>
-          <%= f.hidden_field :password, value: "testuser" %>
-          <%= f.submit "簡単ログイン"%> 
-          <% end %>
+        <h1 class= top>アイテム×感情＝アイテムリストでインデックス</h1>
+        <p class= middle>あなたの気分に最適なサプリ、ケアアイテムを提供</p>
+        <div class="box_login">
+          <div class="test_login">
+            <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+            <%= f.hidden_field :email, value: "testuser@testuser.com" %>
+            <%= f.hidden_field :password, value: "testuser" %>
+            <%= f.submit "簡単ログイン"%> 
+            <% end %>
+          </div>
         </div>
       </div>
     </div> 
 
     <div class= wellness>
       <div></div>
-      <h1 class= wellness_word_top><br>現在のあなたのパフォーマンスを評価します<br></h1>
-      <p class="wellness_word_bottom">体調管理はwellness checkerに任せて<br>迷いなくクリエイティブへ没頭</p>
+      <h1 class= wellness_word_top>SNSの呟きからあなたの気分を測定</h1>
       <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
 

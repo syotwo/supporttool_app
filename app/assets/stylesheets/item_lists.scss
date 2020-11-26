@@ -123,7 +123,7 @@ p {
     .box {
         padding: 20px 0px;
         color: $font-color;
-        width: 742px;
+        width: 670px;
         height: 120%;
         margin: 110px auto 50px;
         padding: 30px 50px 10px;
@@ -135,7 +135,7 @@ p {
                 font-size: 29px;
                 font-weight: bold;
                 text-align: center;
-                margin: 40px auto;
+                margin: 20px auto 40px;
                 width: 700px;
                 color: #eaeef1;
             }
@@ -169,7 +169,7 @@ p {
             li.item_list_show_card {
                 width: 200px;  
                 list-style: none;
-                padding: 50px 20px;
+                padding: 0px 0px 30px;
                 margin: 0px 0px 20px 0px;
                 border-radius: 5px;
                 a.item_img {
@@ -202,7 +202,7 @@ p {
                     font-weight: 100;    
                 }
                 .item_link_box {
-                    background-color: #167DE4;
+                    background-color: #5aaa05;
                     padding: 2px 30px;
                     display: flex;
                     border-radius: 4px;
