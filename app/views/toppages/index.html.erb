@@ -3,127 +3,19 @@
 <% if logged_in? %>
   <div class= toppage>
     <div class= wellness>
-      <div></div>
-      <h1 class= wellness_word_top>SNSの呟きからあなたの気分を測定</h1>
+      <p class= wellness_username>How are you feeling?<%= current_user.name%></p>
+      <h1 class= wellness_word_top>体調管理はwellness checkerにお任せ</h1>
+      <p class= wellness_word_bottom>簡単チェックで気分を測定</p>
       <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
-    <div class="set">
-      <p class="set-title">Creative Boost</p>
-      <ul>
-        <% @creativesets.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-    </div> 
 
-    <div class="set">
-      <p class="set-title">Reduce Anxiety</p>
+    <div class="digital_worker">
+      <div class= digital_worker_box>
+        <%= image_tag "/assets/pc.png" %>    
+        <p class="digital_worker_title">Digital Worker</p>
+      </div>
       <ul>
-        <% @sleepsets.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-    </div> 
-    
-    <div class="myset">
-      <p class="myset_title">My Set</p>
-      <ul>
-        <% @mysets.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-            <div id="brainset"></div>
-          </li>
-        <% end %>
-        </ul> 
-    </div>   
-    <div class="myset">
-      <p class="myset_title">Brain</p>
-      <ul>
-        <% @brainsets.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-            <div id="bodyset"></div>
-          </li>
-        <% end %>
-        </ul> 
-    </div>   
-
-    <div class="myset">
-      <p class="myset_title">Body</p>
-      <ul>
-        <% @bodysets.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-            <div id="mindset"></div>
-          </li>
-        <% end %>
-        
-        </ul> 
-    </div>   
-
-    <div class="myset">
-      <p class="myset_title">Mind</p>
-      <ul>
-        <% @mindsets.each do |item_list| %>
+        <% @brainkit.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -140,12 +32,15 @@
           </li>
         <% end %>
         </ul> 
-    </div>   
+    </div>  
 
-    <div class="set">
-      <p class="set-title">Sleep</p>
+    <div class="sleep">
+      <div class= sleep_box>
+        <%= image_tag "/assets/moon.svg" %>    
+        <p class="sleep_title">Sleep</p>
+      </div>
       <ul>
-        <% @sleepsets.each do |item_list| %>
+        <% @sleepkit.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -185,18 +80,20 @@
 
     <div class= wellness>
       <div></div>
-      <h1 class= wellness_word_top>SNSの呟きからあなたの気分を測定</h1>
+      <h1 class= wellness_word_top>体調管理はwellness checkerにお任せ</h1>
+      <p class= wellness_word_middle>簡単チェックで気分を測定</p>
+      <p class= wellness_word_bottom>wellness checkerはあなたのデータを分析、トラッキングもしません</p>
       <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
 
     <div class= logout_toppage>  
-    <div class="set">
+    <div class="kit">
       <div class= creativebooster_box>
         <%= image_tag "/assets/creativebooster.png" %>
-        <p class="set-title">Itemlists</p>
+        <p class="kit_title">Itemlists</p>
       </div>
       <ul>
-        <% @creativesets.each do |item_list| %>
+        <% @creativekit.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -214,10 +111,10 @@
         <% end %>
       </ul>
     </div> 
-    <div class="sleepset">
-      <p class="sleepset-title"><%= image_tag("/assets/moon.svg") %>Itemlists</p>
+    <div class="sleepkit">
+      <p class="sleepkit_title"><%= image_tag("/assets/moon.svg") %>Itemlists</p>
       <ul>
-        <% @sleepsets.each do |item_list| %>
+        <% @sleepkit.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -237,10 +134,10 @@
     </div> 
 
     <% if logged_in? %>
-      <div class="myset">
-        <p class="myset_title">2Weeks brain upgrade</p>
+      <div class="mykit">
+        <p class="mykit_title">2Weeks brain upgrade</p>
         <ul>
-          <% @mysets.each do |item_list| %>
+          <% @mykit.each do |item_list| %>
             <li>
               <div class="box_text">
                 <%= link_to item_list.list_name , item_list_path(item_list) %>

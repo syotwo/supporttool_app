@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 80px 0px 90px;
+    padding: 0px 80px 0px 80px;
     .nav_logo {
         display: block;
         display: flex;
@@ -25,6 +25,7 @@ nav {
         vertical-align: middle;
         position:relative; 
         right: 6px;
+        margin: 0px 0px 0px 5px;
         .logo_icon {
             border-radius: 50%;
             width: 43px;
@@ -43,6 +44,7 @@ nav {
         }
         .title {
             margin: auto 5px;
+            white-space: nowrap;
             span {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 letter-spacing: 0px;
@@ -57,7 +59,7 @@ nav {
         color: #468f86;
         height: 38px;
         input {
-            color: #468f86;
+            color: #469188;
             width: 240px;
             height: 38px;
             padding-left: 13px;
@@ -68,12 +70,16 @@ nav {
             font-size: 14px;
             letter-spacing: -0.01em;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            
+            &::placeholder{
+                color: #31beae;
+            }
+            &:focus {
+                color: #3cebd6;
+                background-color: #238B7F;
+            }
         }
-        ::placeholder{
-            color: #2cafa0;
-
-          }
+        
+        
         #search {
             width: 38px;
             height: 36px;
