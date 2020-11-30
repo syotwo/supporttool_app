@@ -5,7 +5,8 @@
     <div class= wellness>
       <p class= wellness_username>How are you feeling?<%= current_user.name%></p>
       <h1 class= wellness_word_top>体調管理はwellness checkerにお任せ</h1>
-      <p class= wellness_word_bottom>簡単チェックで気分を測定</p>
+      <p class= wellness_word_middle>簡単チェックで気分を測定</p>
+      <p class= wellness_word_bottom>wellness checkerはあなたのデータを分析、トラッキングもしません</p>
       <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
     </div>
 
@@ -15,7 +16,7 @@
         <p class="digital_worker_title">Digital Worker</p>
       </div>
       <ul>
-        <% @brainkit.each do |item_list| %>
+        <% @digitalkit.each do |item_list| %>
           <li>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -34,6 +35,31 @@
         </ul> 
     </div>  
 
+    <div class="sleep">
+      <div class= sleep_box>
+        <%= image_tag "/assets/moon.svg" %>    
+        <p class="sleep_title">Daily Care</p>
+      </div>
+      <ul>
+        <% @dailykit.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <div class= "countitems">
+                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+              </div>
+            </div>  
+            <% if item_list.image? %>
+              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+            <% else %>
+              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
+    
     <div class="sleep">
       <div class= sleep_box>
         <%= image_tag "/assets/moon.svg" %>    
@@ -65,7 +91,7 @@
     <div class= logout_image>
       <div class =logout_word>
         <h1 class= top>アイテム×感情＝アイテムリストでインデックス</h1>
-        <p class= middle>あなたの気分に最適なサプリ、ケアアイテムを提供</p>
+        <p class= middle>あなたの気分に最適なサプリ、ケアアイテムを提供します</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
