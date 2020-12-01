@@ -7,6 +7,10 @@ class ToppagesController < ApplicationController
      @mykit = ItemList.where(user_id: session[:user_id]).recent
      @creativekit = ItemList.creative_category.recent
      @dailykit = ItemList.daily_category.recent
+     @reducestresskit = ItemList.reducestress_category
+     @focuskit = ItemList.focus_category
+
+     
     #  binding.pry
   end
 end

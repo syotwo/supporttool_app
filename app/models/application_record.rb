@@ -6,6 +6,8 @@ class ApplicationRecord < ActiveRecord::Base
   scope :sleep_category, -> { where('list_name like ? or list_name like ?','%Sleep%','%ベッド%') }
   scope :creative_category, -> { where('list_name like ? or list_name like ?','%Creative%','%クリエイティブ%') }
   scope :daily_category, -> { where('list_name like ? or list_name like ?','%daily%','%ケア%') }  
+  scope :reducestress_category, -> { where('list_name like ? or list_name like ?','%stress%','%ストレス%') }  
+  scope :focus_category, -> { where('list_name like ? or list_name like ?','%focus%','%フォーカス%') }  
   
   
 end
