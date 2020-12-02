@@ -132,13 +132,14 @@ p {
         border-radius: 4px;
         .item_list_wrap {
             display: flex;  
-            .list_name {
+            p.list_name {
                 font-size: 29px;
                 font-weight: bold;
                 text-align: center;
                 margin: 20px auto 40px;
                 width: 700px;
                 color: #eaeef1;
+                
             }
             .edit_item_list {
                 a {
@@ -474,4 +475,19 @@ p {
     }
 }
 
-
+@media screen and (max-width: 640px) {
+    .item_list_show {
+        padding: 20px 0px;
+        .box {
+            width: 250px;
+            .item_list_wrap {
+                width: 250px;
+            }
+            ul {
+                justify-content: center;
+                width: 250px;
+                margin: 0;
+            }
+        }
+    }
+}
