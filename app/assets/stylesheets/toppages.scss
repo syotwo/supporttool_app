@@ -1457,9 +1457,23 @@
     .logout {
         .logout_image {
             padding: 50px 20px;
+            .logout_word {
+                h1 {
+                    white-space: initial; 
+                }
+            }
         }
         .wellness {
             padding: 0px 20px;
+            .wellness_word_top {
+                white-space: initial;
+            }
+            .wellness_word_middle {
+                white-space: initial;
+            }
+            .wellness_word_bottom {
+                white-space: initial;
+            }
         }
         .logout_toppage {
             padding: 0px 20px;
