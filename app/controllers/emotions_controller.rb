@@ -55,7 +55,7 @@ class EmotionsController < ApplicationController
     documents = { 'documents': [
         { 'id' => '1', 'language' => 'ja', "text" => "#{sheet_text}" }
     ]}
-
+    binding.pry
     puts 'Please wait a moment for the results to appear.'
 
     request = Net::HTTP::Post.new(uri)

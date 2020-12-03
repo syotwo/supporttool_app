@@ -5,28 +5,6 @@
             <%= pie_chart @confidencescores %>
         </div>
     </div>
-    
-    <div class="recommend">
-        <p class="recommend_title">Recommend For You</p>
-        <ul>
-        <% @item_lists.each do |item_list| %>
-            <li>
-            <div class="box_text">
-                <%= link_to item_list.list_name , item_list_path(item_list) %>
-                <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
-                </div>
-            </div>  
-            <% if item_list.image? %>
-                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-            </li>
-        <% end %>
-        </ul> 
-    </div> 
 </div>
 
 
