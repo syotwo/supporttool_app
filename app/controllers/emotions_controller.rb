@@ -14,16 +14,16 @@ class EmotionsController < ApplicationController
   end
 
   def create
-    # binding.pry
     emotion_api
-    @emotion = current_user.emotions.new(emotion_params)
-    
-    if @emotion.save
-      flash[:success] = 'sheetを投稿しました'
-      redirect_to emotions_path(@sentiment)
-    else
-      flash.now[:danger] = 'sheetの投稿に失敗しました。'
-    end
+    # binding.pry
+    # @emotion = current_user.emotions.new(emotion_params)
+    redirect_to emotions_path(@sentiment)
+    # if @emotion.save
+    #   flash[:success] = 'sheetを投稿しました'
+      
+    # else
+    #   flash.now[:danger] = 'sheetの投稿に失敗しました。'
+    # end
      
   end
 
@@ -34,7 +34,7 @@ class EmotionsController < ApplicationController
   private
 
   def emotion_params
-    params.require(:emotion).permit(:sheet)
+    params.require(:emotion).permit!
   end
 
   def emotion_api
@@ -49,13 +49,16 @@ class EmotionsController < ApplicationController
     path = '/text/analytics/v3.0/sentiment'
 
     uri = URI(endpoint + path)
+    # binding.pry
+    # emotion = emotion_params
+    # sheet_text = emotion["sheet"]
 
-    emotion = emotion_params
-    sheet_text = emotion["sheet"]
+    emotion_text = emotion_params.values.join
+
     documents = { 'documents': [
-        { 'id' => '1', 'language' => 'ja', "text" => "#{sheet_text}" }
+        { 'id' => '1', 'language' => 'ja', "text" => emotion_text }
     ]}
-    binding.pry
+    
     puts 'Please wait a moment for the results to appear.'
 
     request = Net::HTTP::Post.new(uri)

@@ -3,15 +3,8 @@
   <%= form_with(model: @emotion, local: true) do |form| %>
     <div class="question_1">現在のあなたの気分をチェックします。</div>
     <div class="question_2">どんな気分ですか？当てはまるものすべて選択してください</div>    
-    <div class="field">
-      <%= form.check_box :sheet %>
-      <%= form.label :sheet, "笑顔" %>
-    </div>
-    <div class="field2">
-      <%= form.check_box :sheet %>
-      <%= form.label :sheet, "悲しい" %>
-    </div>
-    
+    <label><input name="emotion[mood][]" type="checkbox" value="笑顔" />笑顔</label>
+    <label><input name="emotion[mood][]" type="checkbox" value="悲しい" />悲しい</label>
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
   <p>＊Wellness Checkerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
