@@ -3,11 +3,14 @@
 <% if logged_in? %>
   <div class= toppage>
     <div class= wellness>
-      <p class= wellness_username>How are you feeling?<%= current_user.name%></p>
-      <h1 class= wellness_word_top> 体調管理は<%= image_tag "/assets/smile.png" %>wellness checkerにお任せ</h1>
-      <p class= wellness_word_middle>簡単チェックで気分を測定</p>
-      <p class= wellness_word_bottom>wellness checkerはあなたのデータを分析、トラッキングもしません</p>
-      <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
+      <p class= wellness_username>How are you feeling? &nbsp;<%= current_user.name%></p>
+      <h1 class= wellness_word_top> 体調管理は &nbsp;Before After Checker&nbsp; にお任せ</h1>
+      <p class= wellness_word_middle>簡単チェックでアイテム使用前後の気分を可視化</p>
+      <p class= wellness_word_bottom>Before After checker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <%= link_to new_emotion_path , { class: 'wellness_cheack' } do %>
+        <%= image_tag("/assets/checker.png") %>
+        <p>Before After Cheacker</p>
+      <% end %>
     </div>
 
     <div class="digital">
