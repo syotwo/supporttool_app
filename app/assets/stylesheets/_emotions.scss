@@ -10,7 +10,7 @@
         background: $card-color;
         width: 600px;
         h1 {
-            width: 250px;
+            text-align: center;
             color: #fff;
             margin: 0px auto 30px;
         }
@@ -134,9 +134,8 @@
 .emotion_new {
     background: $card-color;
     width: 550px;
-    height: 540px;
     margin: 70px auto;
-    padding: 30px 30px 50px 30px;
+    padding: 40px 50px 0px 50px;
     border-radius: 5px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     h1 {
@@ -156,29 +155,32 @@
             width: 30px;
             border-radius: 50%;
         }
-      
         .question_2 {
-            
             height: 33px;
             border-radius: 8px;
-           
             margin: 0px 0px 20px;
             padding: 7px 0px 0px 0px;
         }
-        .question_3 {
-            
-            height: 33px;
-            border-radius: 8px;
-            background-color: #e5e7ec;
-            margin: 20px 0px;
-            padding: 7px 0px 0px 8px;
-        }
-        .question_4 {
-            height: 50px;
-            border-radius: 8px;
-            background-color: #e5e7ec;
-            margin: 20px 0px 0px;
-            padding: 7px 0px 5px 8px;
+        .emotion_select_box {
+            background-color: #abcbe0;
+            border-radius: 4px;
+            padding: 20px 0px 20px 30px;
+            label {
+                font-size: 26px;
+                input {
+                    margin: 0px 6px 5px 30px;
+                }
+                #text {
+                    display: block;
+                    margin: 0px 5px 0px 0px;
+                }
+            }
+            .pleasure {
+                font-size: 26px;
+                input {
+                    margin: 0px 6px 5px 0px;
+                }
+            }
         }
     }
     textarea {
@@ -194,7 +196,7 @@
     }
     .submit{
         text-align: right;
-        margin: 0px 0px 0px 454px;
+        margin: 25px 0px 0px 454px;
         padding: 13px 25px;
         background: $card-color;
         border: #fff;

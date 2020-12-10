@@ -1,13 +1,19 @@
 <div class="emotion_new">
-  <h1>Wellness Checker</h1>
+  <h1>Before After Checker</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
     <div class="question_1">現在のあなたの気分をチェックします。</div>
     <div class="question_2">どんな気分ですか？当てはまるものすべて選択してください</div>    
-    <label><input name="emotion[mood][]" type="checkbox" value="笑顔" />笑顔</label>
-    <label><input name="emotion[mood][]" type="checkbox" value="悲しい" />悲しい</label>
+    <div class="emotion_select_box">
+      <label class= pleasure><input name="emotion[mood][]" type="checkbox" value="喜び" />&#x1f600;</label>
+      <label><input name="emotion[mood][]" type="checkbox" value="悲しい" />&#x1f622;</label>
+      <label><input name="emotion[mood][]" type="checkbox" value="怒り" />&#x1f620;</label>
+      <label><input name="emotion[mood][]" type="checkbox" value="驚き" />&#x1f632;</label>
+      <label><input name="emotion[mood][]" type="checkbox" value="恐れ" />&#x1f61f;</label>
+      <label><input name="emotion[mood][]" type="checkbox" value="嫌悪" />&#x1f641;</label>
+    </div>
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
-  <p>＊Wellness Checkerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
+  <p>＊Before After Checkerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
   <div>
     <%= @sentiment %>
   </div>

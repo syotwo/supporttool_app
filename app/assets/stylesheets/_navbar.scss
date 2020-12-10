@@ -20,7 +20,6 @@ nav {
         display: block;
         display: flex;
         font-size: 20px;
-        color: #fff;
         text-decoration: none;
         vertical-align: middle;
         position:relative; 
@@ -35,11 +34,11 @@ nav {
             // background-image: linear-gradient(to right, #434343 0%, black 100%);
             img {
             display: block;
-            width: 48px;
-            height: 48px;
+            width: 46px;
+            height: 46px;
             position:relative; 
-            right: 2px;
-            top: -4px;
+            right: 1px;
+            top: -3px;
             }  
         }
         .title {
@@ -50,6 +49,7 @@ nav {
                 letter-spacing: 0px;
                 color: $navfont-color; 
                 font-size: 27px; 
+                font-weight: 600;
             }
         }  
     }

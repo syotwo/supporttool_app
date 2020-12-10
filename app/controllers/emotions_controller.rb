@@ -15,7 +15,7 @@ class EmotionsController < ApplicationController
 
   def create
     emotion_api
-    # binding.pry
+    # binding.prys
     # @emotion = current_user.emotions.new(emotion_params)
     redirect_to emotions_path(@sentiment)
     # if @emotion.save
