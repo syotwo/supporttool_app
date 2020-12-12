@@ -823,9 +823,9 @@
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
         padding: 55px 80px 0px 80px;
-        background:center / cover  no-repeat url("");
-        background-position: right 50% top 0%;
-        background-size: 86%;
+        background:center / cover  no-repeat url("/assets/topimage.jpg");
+        background-position: right 50% top -25%;
+        background-size: 100%;
         height: 430px;
         .logout_word {
             text-align: left;  
@@ -834,14 +834,8 @@
                 font-size: 35px;
                 margin: 30px 0px 0px 0px;
                 color: #fbfdfd;
-                letter-spacing: -0.15em;
+                letter-spacing: -0.2em;
                 white-space: nowrap;
-                img {
-                    height: 55px;
-                    position: relative;
-                    top: 14px;
-                    left: 10px;
-                }
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -852,6 +846,12 @@
                 font-weight: 200;
                 letter-spacing: -0.1em;
                 height: 100px;
+                img {
+                    height: 55px;
+                    position: relative;
+                    top: 20px;
+                    left: 10px;
+                }
             }
             .box_login {
                 .test_login {
@@ -889,19 +889,25 @@
     .wellness{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-align: left;
-        padding: 0px 80px 0px;
-        height: 400px;
+        padding: 40px 80px 0px;
         background: url(); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom -130px right 00px;
+        p.wellness_username {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-size: 37px;
+            margin: 0px;
+            color: #fbfdfd;
+            letter-spacing: 0em;
+        }
         .wellness_word_top {
             padding: 1px;
-            margin: 30px 0px 0px 0px; 
-            font-size: 35px;
+            margin: 0px 0px 0px 0px; 
+            font-size: 37px;
             color: #fbfdfd;
             letter-spacing: -0.08em;
-            white-space: nowrap;  
+            white-space: nowrap;
             img {
                 height: 35px;
                 position: relative;
@@ -917,40 +923,50 @@
             letter-spacing: -0.07em;
         }
         .wellness_word_bottom {
-            margin: 0px 0px 50px 0px;
+            margin: 20px 0px 20px 0px;
             font-size: 17px;
             text-decoration: none;
-            color: #e2e5e5;
+            color: #dee0e0;
             white-space: nowrap;
             letter-spacing: -0.07em;
         }
         .wellness_cheack {
-            display: block;
+            
+            display: flex;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align-last: center;
             margin: 0px 0px 0px 0px;
             text-decoration: none;
             background: $accent-color;
-            width: 200px;
+            width: 236px;
             font-weight: bold;
             color: #f4f6f8;
             border-radius: 5px;
             white-space: nowrap;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.06em;
             vertical-align: middle;
-            font-size: 18px;
+            font-size: 17px;
             border: none;
             border-radius: 5px;
-            padding: 9px 0px; 
+            padding: 0px 5px; 
             margin: 0px 0px 0px 0px;
             &:hover {
-                filter: brightness(112%);
+                filter: brightness(130%);
                 transition: 0.2s;
-              }            
+              } 
+            img {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: 3px 0px 0px 0px;
+            }
+            p {
+                margin: 10px 0px;
+            }          
         }
     }
     .logout_toppage {
-        padding: 0px 80px 100px 86px;
+        padding: 0px 80px 100px 80px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
         .digital {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -977,6 +993,128 @@
                     display: block;
                     position: relative;
                     right: 5px;
+                    // background: linear-gradient(#8896d4, #5be4cb);
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    color: $list_category_title;
+                    padding: 0px 0px 10px 0px;
+                }
+            }
+            ul{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                list-style: none;
+                height: auto;
+                padding: 10px 0px 20px 0px;
+                margin: 10px 0px;
+                border-radius: 4px;
+                &::-webkit-scrollbar {
+                    height:8px;  
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #5a5555;
+                    border-radius: 10px;
+                    }
+                li {
+                    display: inline-block;
+                    width: 26%;
+                    background: $card-color;
+                    height: auto;
+                    margin: 0px 14px 0px 0px; 
+                    padding: 22px 18px 25px 18px; 
+                    text-align: center;
+                    border-radius: 4px;
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    .box_text {   
+                        margin: 0px 0px 0px 8px;
+                        a {
+                            width: 100%;
+                            height: 26px;
+                            color: $font-color;
+                            font-size: 18px;
+                            font-weight: bold;
+                            display: block;    
+                            text-decoration: none;
+                            text-align: left;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            letter-spacing: 0.01em;
+                            z-index: 1;
+                        }
+                        .countitems {
+                            display: flex;
+                            margin: 3px 0px 9px;
+                            .counts {
+                                text-align: left;
+                                height: 15px;
+                                width: 18px;    
+                                font-size: 12px;
+                                font-weight: 100;
+                                color: $products_color;
+                                z-index: 1;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .products {
+                                text-align: left;
+                                height: 15px;    
+                                margin: 0px;
+                                font-size: 12px;
+                                font-weight: 100;
+                                color: $products_color;
+                                z-index: 1;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                        }
+                    }
+                    a {
+                        display: block;
+                        height: auto;
+                        width: 100%;
+                        img {
+                            object-fit: cover;
+                            width: 95%;
+                            box-sizing: border-box;
+                            height: 100%;
+                            border-radius:  4px;
+                            filter: brightness(105%);
+                            &:hover {
+                                filter: brightness(80%);
+                                transition: 0.2s;
+                              }
+                        }
+                    }
+                }
+            }
+        }
+        .covid19 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 50px 0px 0px 0px;
+            .covid19_box {
+                display: flex;
+                height: 35px;
+                border-bottom: solid 1px $list_category_underline_color;
+                img {
+                    width: 25px;
+                    height: 25px;
+                    display: block;
+                    position: relative;
+                    right: 0px;
+                    top: 2px;
+                }
+                .covid19_title {
+                    white-space: nowrap;
+                    font-size: 24px;
+                    letter-spacing: 0.001em;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 500;
+                    display: flex;
+                    margin: 0px 0px 10px 0px;
+                    display: block;
+                    position: relative;
+                    right: -4px;
                     // background: linear-gradient(#8896d4, #5be4cb);
                     // -webkit-background-clip: text;
                     // -webkit-text-fill-color: transparent;

@@ -168,9 +168,8 @@
   <div class= logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1 class= top>現代を生き抜くためのモノと知恵</h1>
-        <p class= middle>アイテム×感情＝アイテムリストでインデックス</p>
-        <p>サプリ、ガジェットで今日から簡単マインドマネージメント</p>
+        <h1 class= top>あなたの気分に最適なサプリ、ケアアイテムを提供します</h1>
+        <p class= middle>アイテム&nbsp; ×&nbsp; 感情&nbsp; ＝<%= image_tag "/assets/kit_toppage.png" %>アイテムリストでインデックス</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -184,11 +183,13 @@
     </div> 
 
     <div class= wellness>
-      <div></div>
-      <h1 class= wellness_word_top> 体調管理は<%= image_tag "/assets/smile.png" %>wellness checkerにお任せ</h1>
-      <p class= wellness_word_middle>簡単チェックで気分を測定</p>
-      <p class= wellness_word_bottom>wellness checkerはあなたのデータを分析、トラッキングもしません</p>
-      <p><%= link_to "Wellness Cheacker", new_emotion_path, { class: 'wellness_cheack' } %></p>
+      <h1 class= wellness_word_top> 体調管理は &nbsp;Before After Checker&nbsp; にお任せ</h1>
+      <p class= wellness_word_middle>簡単チェックでアイテム使用前後の気分を可視化</p>
+      <p class= wellness_word_bottom>Before After checker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <%= link_to new_emotion_path , { class: 'wellness_cheack' } do %>
+        <%= image_tag("/assets/checker.png") %>
+        <p>Before After Cheacker</p>
+      <% end %>
     </div>
 
     <div class= logout_toppage>  
@@ -216,6 +217,32 @@
         <% end %>
         </ul> 
     </div>  
+
+    <div class="covid19">
+      <div class= covid19_box>
+        <%= image_tag "/assets/covid19.png" %>    
+        <p class="covid19_title">Covid-19</p>
+      </div>
+      <ul>
+        <% @reducestresskit.each do |item_list| %>
+          <li>
+            <div class="box_text">
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+              <div class= "countitems">
+                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+              </div>
+            </div>  
+            <% if item_list.image? %>
+              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+            <% else %>
+              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
 
     <div class="reducestress">
       <div class= reducestress_box>
