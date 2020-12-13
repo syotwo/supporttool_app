@@ -14,7 +14,10 @@
     <% end %>
     <ul>
       <% if logged_in? %>
-        <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
+        <div class="plus_box">
+          <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
+          <li><%= link_to '新規アイテムリスト', new_item_list_path , { class: 'plus_itemlist' }%></li>
+        </div>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>
         <li><%= link_to 'Signup', signup_path , { class: 'resetbrain' }%></li>
