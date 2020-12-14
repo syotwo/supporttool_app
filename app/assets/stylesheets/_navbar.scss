@@ -105,6 +105,10 @@ nav {
         margin: 10px 0px 0px 0px;
         .plus_box {
             display: flex;
+            &:hover {
+                filter: brightness(135%);
+                transition: 0.1s;
+              }
             li {
                 a.plus {
                     text-decoration: none;
@@ -124,10 +128,7 @@ nav {
                     top: -2px; 
                     left: 0px;
                     border: solid 2px $accent-color;
-                    &:hover {
-                        filter: brightness(135%);
-                        transition: 0.1s;
-                      }
+                    
                 }
                 .plus_itemlist {
                     text-decoration: none;
@@ -140,11 +141,6 @@ nav {
                     margin: 0px 0px 0px 10px;
                     line-height: 2.2em;
                     letter-spacing: -0.2em;
-                    &:hover {
-                        filter: brightness(135%);
-                        transition: 0.1s;
-                      }
-    
                 }
             }
         }
@@ -179,7 +175,7 @@ nav {
                 font-weight: bold;
                 font-size: 17px;
                 display: block;
-                margin: 4px 0px 0px 0px;
+                margin: 4px 0px 0px 15px;
                 &:hover {
                     color: $accent-color;
                     transition: 0.1s;
