@@ -131,6 +131,7 @@ nav {
                     
                 }
                 .plus_itemlist {
+                    white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
                     color: $accent-color;
@@ -138,9 +139,10 @@ nav {
                     font-weight: bold;
                     font-size: 17px;
                     height: 35px;
-                    margin: 0px 0px 0px 10px;
+                    margin: 0px 0px 0px 8px;
                     line-height: 2.2em;
-                    letter-spacing: -0.2em;
+                    letter-spacing: -0.18em;
+
                 }
             }
         }
