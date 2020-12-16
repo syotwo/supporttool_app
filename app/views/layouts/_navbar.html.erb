@@ -1,11 +1,21 @@
 <header>
   <nav>
+    <% if logged_in? %>
     <a class="nav_logo" href="/">
       <div class= "logo_icon">
         <%= image_tag("/assets/kit.png") %>
       </div>
-      <div class= "title"><span>vital catalog</span></div>
+      <div class= "title"><p class= "title_left">&nbsp;Hack Pack&nbsp;</p></div>
     </a>
+    <% else %>
+    <a class="nav_logo" href="/">
+      <div class= "logo_icon">
+        <%= image_tag("/assets/kit.png") %>
+      </div>
+      <div class= "title"><p class= "title_left">&nbsp;Hack Pack&nbsp;</p><p class= "title_right">- TOOLS TO HELP YOU</p></div>
+    </a>
+    <% end %>
+
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
         <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
@@ -16,7 +26,7 @@
       <% if logged_in? %>
         <div class="plus_box">
           <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
-          <li><%= link_to '新規アイテムリスト', new_item_list_path , { class: 'plus_itemlist' }%></li>
+          <li><%= link_to '新しいパッケージを作成', new_item_list_path , { class: 'plus_itemlist' }%></li>
         </div>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>
