@@ -10,7 +10,7 @@
     <% else %>
     <a class="nav_logo" href="/">
       <div class= "logo_icon">
-        <%= image_tag("/assets/kit.png") %>
+        <%= image_tag("/assets/gift.png") %>
       </div>
       <div class= "title"><p class= "title_left">&nbsp;Hack Pack&nbsp;</p><p class= "title_right">- TOOLS TO HELP YOU</p></div>
     </a>
@@ -30,7 +30,7 @@
         </div>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>
-        <li><%= link_to 'Signup', signup_path , { class: 'resetbrain' }%></li>
+        <li><%= link_to 'Find Tool', signup_path , { class: 'resetbrain' }%></li>
         <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>
