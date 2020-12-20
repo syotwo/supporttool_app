@@ -25,6 +25,7 @@ nav {
         position:relative; 
         right: 6px;
         margin: 0px 0px 0px 5px;
+        
         .logo_icon {
             border-radius: 50%;
             width: 43px;
@@ -34,11 +35,11 @@ nav {
             // background-image: linear-gradient(to right, #434343 0%, black 100%);
             img {
             display: block;
-            width: 51px;
-            height: 51px;
+            width: 47px;
+            height: 47px;
             position:relative; 
-            right: 4px;
-            top: -6px;
+            right: 2px;
+            top: -4px;
             }  
         }
         .title {
@@ -114,6 +115,7 @@ nav {
         color: $navfont-color;
         padding: 0;
         margin: 10px 0px 0px 0px;
+        
         .plus_box {
             display: flex;
             &:hover {
@@ -124,21 +126,23 @@ nav {
                 a.plus {
                     text-decoration: none;
                     vertical-align: middle;
-                    font-size: 29px;
                     display: inline-block;
                     text-align: center;
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
                     background: $submit-color;
                     font-weight: 300;
-                    font-size: 34px;
+                    font-size: 30px;
                     color: $accent-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
-                    top: -2px; 
-                    left: 0px;
-                    border: solid 2px $accent-color;
+                    top: -0px; 
+                    left: 10px;
+                    border-top: solid 2px $accent-color;
+                    border-bottom: solid 2px $accent-color;
+                    border-left: solid 2px $accent-color;
+                    border-radius: 20px 0px 0px 20px;
+                    
                     
                 }
                 .plus_itemlist {
@@ -151,8 +155,13 @@ nav {
                     font-size: 17px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
+                    padding: 0px 13px 0px 0px;
                     line-height: 2.2em;
                     letter-spacing: -0.18em;
+                    border-top: solid 2px $accent-color;
+                    border-bottom: solid 2px $accent-color;
+                    border-right: solid 2px $accent-color;
+                    border-radius: 0px 20px 20px 0px;
 
                 }
             }

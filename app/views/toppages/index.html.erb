@@ -18,6 +18,7 @@
       <ul>
         <% @item_lists.each do |item_list| %>
           <li>
+            <p><%= item_list.created_at %></p>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
@@ -35,7 +36,7 @@
     <div class= logout_image>
       <div class =logout_word>
         <h1 class= top>Are You A Creater ,Engneer,Programmer?<br>Tools To Help You For Create</h1>
-        <p>すべてのクリエイターのためのライフハックツール<br>あなたの問題を解決したり、心をワクワクさせた<br>ツールと知恵を共有</p>
+        <p>クリエイターのためのライフハックツール<br>あなたの問題を解決したり、使ってみて気づいた、<br>ツールや知恵を共有</p>
         <p class= middle></p>
         <div class="box_login">
           <div class="test_login">
@@ -64,6 +65,7 @@
       <ul>
         <% @item_lists.each do |item_list| %>
           <li>
+            
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
