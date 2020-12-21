@@ -24,21 +24,24 @@ nav {
         vertical-align: middle;
         position:relative; 
         right: 6px;
-        margin: 0px 0px 0px 5px;
+        margin: 0px 0px 0px 0px;
         .title {
             display: flex;
             .title_left {
-                color: $navfont-color; 
-                font-size:25px; 
-                font-weight: 900;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                color: $accent-color; 
+                line-height: 0em;
+                font-size: 33px; 
+                font-weight: 500;
                 letter-spacing: -0.9px;
                 margin: auto 0px;
                 white-space: nowrap;
-                padding: 2px 0px 0px 0px;
+                padding: 2px 0px 3px 0px;
             }
             .title_right {
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 color: rgb(210, 218, 218); 
-                font-size: 13px; 
+                font-size: 14px; 
                 font-weight: 00;
                 letter-spacing: -0.9px;
                 margin: auto 0px;
@@ -50,7 +53,7 @@ nav {
    form.item_list_search {
         display: flex;
         margin: 10px 50px 15px 0px;
-        color: #468f86;
+        color: $subfont_color;
         height: 38px;
         input {
             color: #469188;
@@ -66,11 +69,11 @@ nav {
             line-height: 3em;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             &::placeholder{
-                color: #31beae;
+                color: $subfont_color;
             }
             &:focus {
                 color: #3cebd6;
-                background-color: #238B7F;
+                background-color: $subfont_color;
             }
         }
         #search {
@@ -115,18 +118,17 @@ nav {
                     height: 35px;
                     background: $submit-color;
                     font-weight: 300;
-                    font-size: 30px;
+                    font-size: 28px;
                     color: $accent-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
                     top: -0px; 
                     left: 10px;
+                    padding: 0px 0px 0px 5px;
                     border-top: solid 2px $accent-color;
                     border-bottom: solid 2px $accent-color;
                     border-left: solid 2px $accent-color;
                     border-radius: 20px 0px 0px 20px;
-                    
-                    
                 }
                 .plus_itemlist {
                     white-space: nowrap;
@@ -135,16 +137,17 @@ nav {
                     color: $accent-color;
                     display: block;
                     font-weight: bold;
-                    font-size: 17px;
+                    font-size: 15px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
-                    padding: 0px 13px 0px 0px;
+                    padding: 0px 18px 0px 2px;
                     line-height: 2.2em;
-                    letter-spacing: -0.18em;
+                    letter-spacing: 0em;
                     border-top: solid 2px $accent-color;
                     border-bottom: solid 2px $accent-color;
                     border-right: solid 2px $accent-color;
                     border-radius: 0px 20px 20px 0px;
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 
                 }
             }

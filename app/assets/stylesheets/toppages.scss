@@ -163,8 +163,9 @@
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
         padding: 55px 80px 0px 80px;
-        background:center / cover no-repeat url("/assets/top2.jpg");
-        background-position: 0 58px;
+        background:center / cover no-repeat url("/assets/top_image.png");
+        background-size: 50%;
+        background-position: 400px 58px;
         height: 430px;
         .logout_word {
             text-align: left;  
