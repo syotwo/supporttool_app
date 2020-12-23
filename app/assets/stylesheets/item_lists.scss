@@ -123,7 +123,7 @@ p {
     .box {
         padding: 20px 0px;
         color: $font-color;
-        width: 670px;
+        width: 630px;
         height: 120%;
         margin: 110px auto 50px;
         padding: 30px 50px 10px;
@@ -133,12 +133,13 @@ p {
         .item_list_wrap {
             display: flex;  
             p.list_name {
-                font-size: 29px;
+                font-size: 32px;
                 font-weight: bold;
                 text-align: center;
                 margin: 20px auto 40px;
                 width: 700px;
                 color: #eaeef1;
+                text-align: left;
                 
             }
             .edit_item_list {
@@ -158,50 +159,47 @@ p {
             white-space: pre-wrap;
             margin: 0px;
             padding: 0px 3px 20px;
-            font-size: 14px;
+            font-size: 16px;
             color: #f3f4f5;
+            text-align: left;
         }
         ul {
-            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             min-height: 100px;
             padding: 0px 1px 1px 1px;
             margin: 10px auto;
             li.item_list_show_card {
-                width: 200px;  
                 list-style: none;
-                padding: 0px 0px 30px;
-                margin: 0px 0px 20px 0px;
-                border-radius: 5px;
-                a.item_img {
-                    display: block;
-                    width: 200px;
-                    height: 200px;
-                    img {
-                        border-radius: 5px;
-                        max-width: 100%;
-                        height: 200px;
-                        &:hover {
-                            filter: brightness(80%);
-                          }
+                padding: 0px 0px 0px;
+                margin: 0px 0px 60px 0px;
+                .item_list_card_wrap {
+                    a.item_name {
+                        display: block;
+                        color: $font-color;
+                        text-decoration: none;
+                        text-align: left;
+                        margin: 0px 0px 7px 0px;
+                        height: 40px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        letter-spacing: -0.05em;
+                        z-index: 1;  
+                        font-size: 24px;
+                        font-weight: 700;    
                     }
-                }
-                a.item_name {
-                    display: block;
-                    color: $font-color;
-                    text-decoration: none;
-                    text-align: left;
-                    margin: 7px 0px;
-                    width: 200px;
-                    height: 70px;
-                    text-align: justify;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    letter-spacing: -0.05em;
-                    z-index: 1;  
-                    font-size: 15px;
-                    font-weight: 100;    
+                    a.item_img {
+                        display: block;
+                        img {
+                            border-radius: 5px;
+                            width: 200px;
+                            height: 200px;
+                            &:hover {
+                                filter: brightness(80%);
+                            }
+                        }
+                    }
                 }
                 .item_link_box {
                     background-color: #5aaa05;

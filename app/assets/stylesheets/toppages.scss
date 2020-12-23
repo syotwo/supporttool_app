@@ -88,23 +88,27 @@
         padding: 0px 80px 0px 85px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 50px 0px 0px 0px;
-        p {
-            font-size: 20px;
-            font-weight: 600;
-            border-bottom: 1px solid $list_category_underline_color;
+        display: flex;
+        ul.left {
+            background: $main-color;
+            width: 190px;
+            list-style: none;
+            margin: 0;
+            li {
+            }
         }
-        ul{
-            padding: 10px 0px 20px 0px;
-            margin: 10px 0px;
+        ul.right {
+            padding: 0px 0px 20px 0px;
+            margin: 0px 0px;
             border-radius: 4px;
-            width: 550px;
+            width: 100%;
+            list-style: none;
             li {
                 background: $card-color;
                 height: auto;
                 margin: 0px 0px 10px 0px; 
-                padding: 22px 18px 25px 18px; 
+                padding: 14px 18px 25px 8px; 
                 text-align: center;
-                border-radius: 4px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 p {
                     text-align: left;
@@ -312,7 +316,8 @@
             font-weight: 600;
             border-bottom: 1px solid $list_category_underline_color;
         }
-        ul{
+        ul
+        {
             display:flex;
             width:100%;
             flex-wrap:wrap;
@@ -396,7 +401,7 @@
     
 /* smartPhone */
 @media screen and (max-width: 640px) {
-    .toppage { 
+    .toppage_login { 
         padding: 50px 20px;
         .wellness {   
             .wellness_word_top {
@@ -409,11 +414,8 @@
                 white-space: initial;
             }
         }
-        .digital {
-            ul {
-                li { 
-                }
-            }
+        ul.left {
+            display: none;
         }
     }
     .logout {

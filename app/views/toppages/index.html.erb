@@ -14,11 +14,13 @@
     </div>
 
     <div class="itemlist">
-      <p>Toollists</p>
-      <ul>
+      <ul class="left">
+       <li></li>
+      </ul>
+      <ul class="right">
         <% @item_lists.each do |item_list| %>
           <li>
-            <p><%= item_list.created_at %></p>
+            <p><%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %></p>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
@@ -61,11 +63,10 @@
     </div>
 
     <div class="itemlist">
-      <p>Toollists</p>
+      <p></p>
       <ul>
         <% @item_lists.each do |item_list| %>
           <li>
-            
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">

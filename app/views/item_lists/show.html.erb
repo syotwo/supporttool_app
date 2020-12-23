@@ -13,16 +13,16 @@
             <ul>
                 <% @items.each do |item| %>
                     <li class=item_list_show_card>
-                        <%= link_to image_tag(item.img.url), item_path(item), {class: 'item_img' } %>  
-                        <div class= "wrap_item_list">
-                            <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
+                        <div class="item_list_card_wrap">
+                        <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
+                            <%= link_to image_tag(item.img.url), item_path(item), {class: 'item_img' } %>
+                            
                         </div>
                         <% if item.item_link.present? %>
                             <div class="item_link_box">
                                 <%= raw Rinku.auto_link(item.item_link, :all, 'target="_blank"') %>
                             </div>
                         <% else %>
-
                         <% end %> 
                     </li>
                 <% end %>
