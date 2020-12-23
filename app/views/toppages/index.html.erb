@@ -15,6 +15,7 @@
 
     <div class="itemlist">
       <ul class="left">
+      <p>My Tool</p>
        <li></li>
       </ul>
       <ul class="right">
@@ -25,7 +26,7 @@
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
                 <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+                <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
               </div>
             </div>  
           </li>
@@ -38,7 +39,7 @@
     <div class= logout_image>
       <div class =logout_word>
         <h1 class= top>Are You A Creater ,Engneer,Programmer?<br>Tools To Help You For Create</h1>
-        <p>クリエイターのためのライフハックツール<br>あなたの問題を解決したり、使ってみて気づいた、<br>ツールと知恵を共有するコミュニティです</p>
+        <p>クリエイターのためのライフハックツール<br>あなたの問題を解決したり、使ってみて気づいた、<br>ツールと知恵を共有するためのコミュニティです</p>
         <p class= middle></p>
         <div class="box_login">
           <div class="test_login">
@@ -71,7 +72,7 @@
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
                 <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "products", item_list_path(item_list), { class: 'products' } %>
+                <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
               </div>
             </div>  
             <% if item_list.image? %>

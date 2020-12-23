@@ -90,11 +90,19 @@
         margin: 50px 0px 0px 0px;
         display: flex;
         ul.left {
-            background: $main-color;
-            width: 190px;
+            width: 214px;
+            height: 900px;
             list-style: none;
-            margin: 0;
+            margin: 0px;
+            color: $font-color;
+            text-align: left;
+            padding: 0px 0px 0px 0px;
+            p {
+                font-weight: 800;
+                font-size: 14px;
+            }
             li {
+                padding: 0;
             }
         }
         ul.right {
@@ -106,9 +114,10 @@
             li {
                 background: $card-color;
                 height: auto;
-                margin: 0px 0px 10px 0px; 
+                margin: 0px 0px 0px 0px; 
                 padding: 14px 18px 25px 8px; 
                 text-align: center;
+                border-bottom: 1px solid $base-color;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 p {
                     text-align: left;
