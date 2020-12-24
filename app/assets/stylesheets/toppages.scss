@@ -174,27 +174,40 @@
 
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    p.introduce {
+        height: 40px;
+        text-align: center;
+        background: $accent-color;
+        position: relative;
+        top: 2px;
+        margin: 0;
+        line-height: 3.3em;
+        letter-spacing: 0.01em;
+        color: #fbfdfd;
+        font-size: 13px;
+        font-weight: 900;
+    }
     .logout_image {
-        padding: 55px 80px 0px 80px;
+        padding: 55px 0px 0px 0px;
         background:center / cover no-repeat url("/assets/top_image.png");
         background-size: 50%;
-        background-position: 400px 58px;
+        background-position: 420px 94px;
         height: 430px;
         .logout_word {
             text-align: left;  
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 40px;
-                margin: 50px 0px 0px 0px;
+                font-size: 50px;
+                margin: 10px 0px 20px 80px;
                 color: #fbfdfd;
-                letter-spacing: -0.0em;
+                letter-spacing: -0.03em;
                 white-space: nowrap;
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 17px;
                 text-decoration: none;
-                margin: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 80px;
                 color: #e2e5e5;
                 font-weight: 200;
                 letter-spacing: -0.1em;
@@ -212,13 +225,14 @@
                         input {
                             color: #f4f6f8;
                             background: $accent-color;
-                            width: 150px;
+                            width: 175px;
                             font-size: 17px;
                             border: none;
                             font-weight: bold;
                             border-radius: 5px;
-                            padding: 5px 0px; 
-                            margin: 0px 0px 0px 0px;
+                            padding: 10px 0px; 
+                            margin: 40px 0px 0px 80px;
+                            
                             &:hover {
                                 filter: brightness(112%);
                                 transition: 0.2s;

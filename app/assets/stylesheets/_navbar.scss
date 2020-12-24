@@ -2,7 +2,7 @@
 @import "_variables";
 
 header {
-    background: $base-color;
+    background: $main-color;
     height: 58px;
     position: fixed;
     width: 100%;
@@ -29,7 +29,7 @@ nav {
             display: flex;
             .title_left {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                color: $accent-color; 
+                color: $navfont-color; 
                 line-height: 0em;
                 font-size: 33px; 
                 font-weight: 500;
@@ -100,7 +100,7 @@ nav {
         display: flex;
         color: $navfont-color;
         padding: 0;
-        margin: 10px 0px 0px 0px;
+        margin: auto 0px;
         
         .plus_box {
             display: flex;
@@ -110,6 +110,7 @@ nav {
               }
             li {
                 a.plus {
+                    background: $accent-color;
                     text-decoration: none;
                     vertical-align: middle;
                     display: inline-block;
@@ -118,22 +119,21 @@ nav {
                     height: 35px;
                     font-weight: 300;
                     font-size: 32px;
-                    color: $accent-color;
+                    color: $navfont-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
                     top: -0px; 
                     left: 10px;
                     padding: 0px 0px 0px 5px;
-                    border-top: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
-                    border-left: solid 2px $accent-color;
+                   
                     border-radius: 20px 0px 0px 20px;
                 }
                 .plus_itemlist {
+                    background: $accent-color;
                     white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
-                    color: $accent-color;
+                    color: $navfont-color;
                     display: block;
                     font-weight: bold;
                     font-size: 15px;
@@ -142,9 +142,7 @@ nav {
                     padding: 0px 18px 0px 2px;
                     line-height: 2.3em;
                     letter-spacing: 0em;
-                    border-top: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
-                    border-right: solid 2px $accent-color;
+                  
                     border-radius: 0px 20px 20px 0px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 
