@@ -15,13 +15,20 @@
 
     <div class="itemlist">
       <ul class="left">
-      <p>ツールリスト</p>
-       <li></li>
+        <p>マイツールリスト</p>
+        <% @mytools.each do |item_list| %>
+            <li>
+              <%= link_to item_list.list_name , item_list_path(item_list) %>
+            </li>
+        <% end %>
       </ul>
       <ul class="right">
         <% @item_lists.each do |item_list| %>
           <li>
-            <p><%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+            <p>
+              <%= link_to item_list.user.name, item_list_path(item_list), { class: 'counts' } %>が
+              <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
+            </p>
             <div class="box_text">
               <%= link_to item_list.list_name , item_list_path(item_list) %>
               <div class= "countitems">
@@ -40,7 +47,7 @@
       <div class =logout_word>
         <p class= introduce>Are you a Creater, Engineer, Programmer ?</p>
         <h1 class= top><br>Tools To Help You For Create</h1>
-        <p class= middle>クリエイターのためのライフハックに関する<br>ツールと知恵を共有するためのコミュニティです<br></p>
+        <p class= middle>クリエイターのライフハックに関する<br>ツールと知恵を共有するためのコミュニティです<br>アイテムの効果的な使い方、未来をよりよく生きる知恵を共有しよう</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
