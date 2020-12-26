@@ -2,6 +2,14 @@
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage_login>
+    <div class= logout_image>
+      <div class =logout_word>
+        <h1 class= top><br>未来の先のその先へ<br>生きる力を<br>あなたに</h1>
+        <p class= middle>ライフハックに関する<br>ガジェット共有コミュニティ<br>未来をよりよく生きる知恵を共有しよう<br></p>
+        <div class="box_login">
+        </div>
+      </div>
+    </div> 
     <div class= checker>
       <p class= checker_username>How are you feeling? &nbsp;<%= current_user.name%></p>
       <h1 class= checker_word_top> 体調管理は &nbsp;Daily Planner&nbsp; にお任せ</h1>
@@ -26,7 +34,7 @@
         <% @item_lists.each do |item_list| %>
           <li>
             <p>
-              <%= link_to item_list.user.name, item_list_path(item_list), { class: 'counts' } %>が
+              <span><%= item_list.user.name %></span> が
               <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
             </p>
             <div class="box_text">
@@ -46,8 +54,8 @@
     <div class= logout_image>
       <div class =logout_word>
         <p class= introduce>Are you a Creater, Engineer, Programmer ?</p>
-        <h1 class= top><br>Tools To Help You For Create</h1>
-        <p class= middle>クリエイターのライフハックに関する<br>ツールと知恵を共有するためのコミュニティです<br>アイテムの効果的な使い方、未来をよりよく生きる知恵を共有しよう</p>
+        <h1 class= top><br>未来の先のその先へ<br>生きる力を<br>あなたに</h1>
+        <p class= middle>ライフハックに関する<br>ガジェット共有コミュニティ<br>未来をよりよく生きる知恵を共有しよう<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -69,28 +77,6 @@
         <p>Daily Planner</p>
       <% end %>
     </div>
-
-    <div class="itemlist">
-      <p></p>
-      <ul>
-        <% @item_lists.each do |item_list| %>
-          <li>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
-            <% if item_list.image? %>
-              <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-            <% else %>
-              <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-            <% end %>
-          </li>
-        <% end %>
-      </ul> 
-    </div>   
-  </div>
+    
 <% end %>
 
