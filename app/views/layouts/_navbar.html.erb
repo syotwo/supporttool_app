@@ -2,11 +2,17 @@
   <nav>
     <% if logged_in? %>
     <a class="nav_logo" href="/">
-      <div class= "title"><p class= "title_left">&nbsp;Future Tools&nbsp;</p></div>
+      <div class= "nav_img">
+        <%= image_tag("/assets/tool3.png") %>
+      </div>
+      <div class= "nav_title"><p class= "title">&nbsp;Future Tools&nbsp;</p></div>
     </a>
     <% else %>
     <a class="nav_logo" href="/"> 
-      <div class= "title"><p class= "title_left">&nbsp;Future Tools&nbsp;</p><p class= "title_right"></p></div>
+      <div class= "nav_img">
+        <%= image_tag("/assets/tool3.png") %>
+      </div>
+      <div class= "nav_title"><p class= "title">&nbsp;Future Tools&nbsp;</p></div>
     </a>
     <% end %>
 
@@ -24,7 +30,7 @@
         </div>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>
-        <li><%= link_to 'Find Tool', signup_path , { class: 'resetbrain' }%></li>
+        <li><%= link_to 'Find Tool', signup_path , { class: 'signup' }%></li>
         <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>

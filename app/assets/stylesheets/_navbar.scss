@@ -22,12 +22,20 @@ nav {
         font-size: 20px;
         text-decoration: none;
         vertical-align: middle;
-        position:relative; 
-        right: 6px;
         margin: 0px 0px 0px 0px;
-        .title {
+        .nav_img {
+            position:relative; 
+            right: 8px;
+            top: 3px;
+            margin: 0px 0px 3px 0px;
+            img {
+            width: 53px;
+            height: 53px;    
+            }
+        }
+        .nav_title {
             display: flex;
-            .title_left {
+            .title {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 color: $navfont-color; 
                 line-height: 0em;
@@ -37,16 +45,9 @@ nav {
                 margin: auto 0px;
                 white-space: nowrap;
                 padding: 2px 0px 3px 0px;
-            }
-            .title_right {
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                color: rgb(210, 218, 218); 
-                font-size: 14px; 
-                font-weight: 00;
-                letter-spacing: -0.9px;
-                margin: auto 0px;
-                padding: 3px 0px 0px 0px;
-                white-space: nowrap;
+                position:relative; 
+                right: 15px;
+                
             }
         }  
     }
@@ -155,7 +156,7 @@ nav {
             line-height: 30px;
             font-weight: 100;
             color: $navfont-color;
-            .resetbrain {
+            .signup {
                 white-space: nowrap;
                 display: block;
                 text-decoration: none;
@@ -163,7 +164,7 @@ nav {
                 color: $accent-color;
                 font-weight: bold;
                 font-size: 17px;
-                background: $submit-color;
+                background: $main-color;
                 padding: 3px 17px;
                 border-radius: 5px;
                 margin: auto 0px;
