@@ -23,7 +23,10 @@
 
     <div class="itemlist">
       <ul class="left">
-        <p>マイツールリスト</p>
+        <div class="left_box">
+          <%= image_tag("/assets/myitem_img.png") %>
+          <p>マイアイテム</p>
+        </div>
         <% @mytools.each do |item_list| %>
             <li>
               <%= link_to item_list.list_name , item_list_path(item_list) %>

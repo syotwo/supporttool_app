@@ -143,12 +143,22 @@
             color: $font-color;
             text-align: left;
             padding: 0px 0px 0px 0px;
-            p {
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-weight: 100;
-                font-size: 14px;
-                color: $subfont-color;
-                margin: 10px 0px 3px 0px;
+            .left_box {
+                display: flex;
+                img {
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    top: 6px;
+                }
+                p {
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    font-weight: 100;
+                    font-size: 14px;
+                    color: $subfont-color;
+                    margin: 10px 0px 3px 0px;
+                    letter-spacing: -0.15em;
+                }
             }
             li {
                 font-weight: 600;
