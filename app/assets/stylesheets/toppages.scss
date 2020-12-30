@@ -112,7 +112,7 @@
             vertical-align: middle;
             font-size: 17px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 0px 5px; 
             margin: 30px 80px 0px 85px;
             &:hover {
@@ -253,7 +253,7 @@
     .logout_image {
         padding: 55px 0px 0px 0px;
         height: 430px;
-        background: #7f7d9b url("/assets/top_image4.png") no-repeat center center;
+        background: $card-color url("/assets/top_image4.png") no-repeat center center;
         background-size:cover;
         background-size: 560px;
         background-position: 480px 60px;
@@ -294,10 +294,9 @@
                             font-size: 17px;
                             border: none;
                             font-weight: bold;
-                            border-radius: 5px;
+                            border-radius: 10px;
                             padding: 10px 0px; 
                             margin: 0px 0px 0px 80px;
-                            
                             &:hover {
                                 filter: brightness(112%);
                                 transition: 0.2s;
@@ -377,7 +376,7 @@
             vertical-align: middle;
             font-size: 17px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 0px 5px; 
             margin: 30px 80px 0px 85px;
             &:hover {
