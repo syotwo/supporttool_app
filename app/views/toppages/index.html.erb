@@ -2,32 +2,49 @@
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage_login>
+    <div class="face_box">
+      <span class="material-icons">
+      emoji_emotions
+      </span>
+      <p class =login_username>Welcome Back, <%= current_user.name %></p>
+    </div>
+    
+    <% if logged_in? %>
+      <%= search_form_for @search do |f| %>
+        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <button type="submit" id="search"><%= image_tag("/assets/search2.png") %></button>
+      <% end %>
+    <% end %>
+    <div class="tool_box">
+      <span class="material-icons">
+      devices_other
+      </span>
+      <p>Tools</p>
+    </div>
     <div class="itemlist">
-      <ul class="left">
-        <div class="left_box">
-          <%= image_tag("/assets/myitem_img.png") %>
-          <p>マイアイテム</p>
-        </div>
-        <% @mytools.each do |item_list| %>
-            <li>
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-            </li>
-        <% end %>
-      </ul>
-      <ul class="right">
+      <ul class="main">
         <% @item_lists.each do |item_list| %>
           <li>
-            <p>
-              <span><%= item_list.user.name %></span> が
-              <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
-            </p>
-            <div class="box_text">
-              <%= link_to item_list.list_name , item_list_path(item_list) %>
-              <div class= "countitems">
-                <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
-              </div>
-            </div>  
+            <div class="itemlist_word">
+              <p>
+                <span><%= item_list.user.name %></span> が
+                <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
+              </p>
+              <div class="box_text">
+                <%= link_to item_list.list_name , item_list_path(item_list) %>
+                <div class= "countitems">
+                  <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                  <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
+                </div>
+              </div> 
+            </div> 
+            <div class="itemlist_topimg">
+              <% if item_list.image? %>
+                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
+              <% else %>
+                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+              <% end %>
+            </div>
           </li>
         <% end %>
       </ul> 

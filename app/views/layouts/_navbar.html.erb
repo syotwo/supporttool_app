@@ -1,25 +1,23 @@
 <header>
   <nav>
     <% if logged_in? %>
-    <a class="nav_logo" href="/">
-      <div class= "nav_img">
-        <%= image_tag("/assets/nav_image3.png") %>
-      </div>
-    </a>
+    <div class="nav_title_box">
+      <a class="nav_logo" href="/"> 
+        <div class= "nav_img">
+          <%= image_tag("/assets/nav_image3.png") %>
+        </div>
+        <div class= "nav_title"><p class= "title">&nbsp;Future Pack &nbsp;</p></div>
+      </a>
+    </div>
     <% else %>
-    <a class="nav_logo" href="/"> 
-      <div class= "nav_img">
-        <%= image_tag("/assets/nav_image3.png") %>
-      </div>
-      <div class= "nav_title"><p class= "title">&nbsp;Package Future &nbsp;</p></div>
-    </a>
-    <% end %>
-
-    <% if logged_in? %>
-      <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
-        <button type="submit" id="search"><%= image_tag("/assets/search2.png") %></button>
-      <% end %>
+    <div class="nav_title_box">
+      <a class="nav_logo" href="/"> 
+        <div class= "nav_img">
+          <%= image_tag("/assets/nav_image3.png") %>
+        </div>
+        <div class= "nav_title"><p class= "title">&nbsp;Future Pack &nbsp;</p></div>
+      </a>
+    </div>
     <% end %>
     <ul>
       <% if logged_in? %>
