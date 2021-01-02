@@ -2,9 +2,11 @@
 <div class="item_list_index">
     <% if logged_in? %>
         <%= search_form_for @search do |f| %>
-            <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
-            <button type="submit" id="search"><%= image_tag("/assets/search2.png") %></button>
-        <% end %>
+        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <button type="submit" id="search">
+          <span class="material-icons">search</span>
+        </button>
+      <% end %>
     <% end %>
     <div class="itemlist">
       <ul class="main">

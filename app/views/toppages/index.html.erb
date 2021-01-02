@@ -36,9 +36,8 @@
               <div class= "countitems">
                     <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
                     <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
-                  </div>
               </div>
-            
+            </div>
             <div class="itemlist_word">
               <div class="box_text">
                 <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -64,12 +63,10 @@
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-            <%= f.hidden_field :email, value: "testuser@testuser.com" %>
-            <%= f.hidden_field :password, value: "testuser" %>
-            <%= link_to new_user_path , { class: 'signup' } do %>
+              <%= f.hidden_field :email, value: "testuser@testuser.com" %>
+              <%= f.hidden_field :password, value: "testuser" %>
               <%= image_tag("/assets/tool.png") %>
-              <p>Search The Future Tool</p>
-            <% end %>
+              <%= f.submit "Search The Future Tool"%>
             <% end %>
           </div>
         </div>
