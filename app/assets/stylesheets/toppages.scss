@@ -111,12 +111,16 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .itemlist_topimg {   
                     a {
-                        img {
-                            display: block;
-                            background-color: #fff;
+                        display: block;
+                        img {  
                             margin: 5px 10px 0px 7px;
                             width: 150px;
                             border-radius: 8px;
+                            filter: brightness(0.9);
+                            &:hover {
+                                filter: brightness(95%);
+                                transition: 0.2s;
+                              }
                         }
                     }
                     .countitems {
@@ -181,7 +185,8 @@
     .logout_image {
         padding: 55px 0px 0px 0px;
         height: 430px;
-        background: $card-color url("/assets/top_image4.png") no-repeat center center;
+        background: radial-gradient($base-color, #006DBA);
+        background: url("/assets/top_image4.png") no-repeat center center;
         background-size:cover;
         background-size: 560px;
         background-position: 480px 60px;
@@ -429,24 +434,13 @@
     .toppage_login { 
         padding: 100px 0px;
         .face_box {
-            margin: 0px 0px 10px 20px;
+            margin: 0px 0px 15px 20px;
         }
         form.item_list_search {
-            margin: 0px 0px 0px 20px;
-        }
-        .wellness {   
-            .wellness_word_top {
-                white-space: initial;
-            }
-            .wellness_word_middle {
-                white-space: initial;
-            }
-            .wellness_word_bottom {
-                white-space: initial;
-            }
+            margin: 0px 0px 30px 20px;
         }
         .tool_box {
-            margin: 20px 0px 0px 22px;
+            margin: 0px 0px 0px 22px;
         }
         .itemlist {
             padding: 0px 20px;

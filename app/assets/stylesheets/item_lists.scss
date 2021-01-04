@@ -136,11 +136,15 @@ p {
             }
             .itemlist_topimg {   
                 a {
+                    display: block;
                     img {
                         display: block;
                         margin: 5px 10px 0px 7px;
                         width: 120px;
-                        border-radius: 8px;
+                        border-radius: 8px; 
+                        &:hover {
+                            filter: brightness(80%);
+                        }
                     }
                 }
             }

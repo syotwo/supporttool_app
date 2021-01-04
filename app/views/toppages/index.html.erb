@@ -27,7 +27,7 @@
       <ul class="main">
         <% @item_lists.each do |item_list| %>
           <li>
-          <div class="itemlist_topimg">
+            <div class="itemlist_topimg">
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
               <% else %>
