@@ -12,26 +12,28 @@
       <ul class="main">
         <% @item_lists.each do |item_list| %>
           <li>
-            <div class="itemlist_word">
-              <p>
-                <span><%= item_list.user.name %></span> が
-                <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
-              </p>
-              <div class="box_text">
-                <%= link_to item_list.list_name , item_list_path(item_list) %>
-                <div class= "countitems">
-                  <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                  <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
-                </div>
-              </div> 
-            </div> 
             <div class="itemlist_topimg">
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
               <% else %>
                 <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
               <% end %>
+              <div class= "countitems">
+                    <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
+                    <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
+              </div>
             </div>
+            <div class="itemlist_word">
+              <div class="box_text">
+                <%= link_to item_list.list_name , item_list_path(item_list) %>
+                <p>
+                  <span><%= item_list.user.name %></span> が
+                  <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
+                </p>
+                
+              </div> 
+            </div> 
+            
           </li>
         <% end %>
       </ul> 

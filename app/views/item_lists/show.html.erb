@@ -14,8 +14,8 @@
                 <% @items.each do |item| %>
                     <li class=item_list_show_card>
                         <div class="item_list_card_wrap">
-                            <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
                             <%= link_to image_tag(item.img.url), item_path(item), {class: 'item_img' } %>
+                            <%= link_to item.item_name, item_path(item), {class: 'item_name' } %>
                         </div>
                         <% if item.item_link.present? %>
                             <div class="item_link_box">
@@ -41,7 +41,7 @@
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
                     <div class= "submit">
                         <%= form.submit '＋',{class: 'submit_plus' } %>
-                        <%= form.submit 'アイテムを追加',{class: 'addproductst_submit' } %>
+                        <%= form.submit 'add a item',{class: 'addproductst_submit' } %>
                     </div>     
                 </div> 
             <% end %>
