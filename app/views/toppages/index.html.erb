@@ -21,7 +21,7 @@
       <span class="material-icons">
       devices_other
       </span>
-      <p>Tools</p>
+      <p>Item & Use</p>
     </div>
     <div class="itemlist">
       <ul class="main">
@@ -57,14 +57,14 @@
     <div class= logout_image>
       <div class =logout_word>
         <h1 class= top><br>社会を変えるんじゃない<br>個人が<br>抜本的に変わるんだ</h1>
-        <p class= middle>ライフハックに関する<br>ガジェット共有コミュニティ<br>未来をよりよく生きる知恵を共有しよう<br></p>
+        <p class= middle>ライフハックに関する<br>アイテム共有コミュニティ<br>未来をよりよく生きる知恵を共有しよう<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
               <%= image_tag("/assets/tool.png") %>
-              <%= f.submit "Search The Future Tool"%>
+              <%= f.submit "Search The Future Item"%>
             <% end %>
           </div>
         </div>
