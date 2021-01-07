@@ -226,23 +226,10 @@ p {
                 padding: 0px 0px 0px;
                 margin: 0px 0px 60px 0px;
                 .item_list_card_wrap {
-                    a.item_name {
-                        display: block;
-                        color: $font-color;
-                        text-decoration: none;
-                        text-align: left;
-                        margin: 0px 0px 7px 0px;
-                        height: 40px;
-                        text-align: justify;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        letter-spacing: 0em;
-                        z-index: 1;  
-                        font-size: 24px;
-                        font-weight: 700;    
-                    }
+                    display: flex;
                     a.item_img {
                         display: block;
+                        margin: 10px 0px 0px 0px;
                         img {
                             border-radius: 5px;
                             width: 200px;
@@ -252,29 +239,49 @@ p {
                             }
                         }
                     }
-                }
-                .item_link_box {
-                    background-color: #8dd83e;
-                    padding: 2px 30px;
-                    display: flex;
-                    border-radius: 4px;
-                    margin: 0px 0px 50px 0px;
-                    width: 140px;
-                    a {
-                        &::before {
-                            content: "Cheack Price　";
+                    .item_name_box {
+                        margin: 0px 0px 0px 20px;
+                        a.item_name {
+                            display: block;
+                            color: $font-color;
+                            text-decoration: none;
+                            text-align: left;
+                            margin: 0px 0px 7px 0px;
+                            height: 40px;
+                            text-align: justify;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            letter-spacing: 0em;
+                            z-index: 1;  
+                            font-size: 24px;
+                            font-weight: 700;    
                         }
-                        letter-spacing: 0.2em;
-                        color: #f2f5ef;
-                        display: block;
-                        padding: 7px 6px 7px 6px;
-                        font-size: 15px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        font-weight: bold;
+                        .item_link_box {
+                            background-color: #8dd83e;
+                            padding: 2px 30px;
+                            display: flex;
+                            border-radius: 4px;
+                            margin: 0px 0px 50px 0px;
+                            width: 140px;
+                            a {
+                                &::before {
+                                    content: "VIEW ON LINK";
+                                }
+                                letter-spacing: 0.2em;
+                                color: #f2f5ef;
+                                display: block;
+                                padding: 7px 0px 7px 2px;
+                                font-size: 15px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                font-weight: bold;
+                            }
+                            
+                        }
                     }
                     
                 }
+                
                 .markedit_item {
                     margin: 28px 20px 0px 0px;
                     width: 23px;
