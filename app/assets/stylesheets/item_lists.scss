@@ -296,6 +296,13 @@ p {
                 }
             }    
         }
+        p {
+            span {
+                font-size: 22px;
+                position: relative;
+                top: 5px;
+            }
+        }
 
         .item_list_show_add  {
             width: 188px;
