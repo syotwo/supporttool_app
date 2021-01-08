@@ -18,22 +18,24 @@
               <% else %>
                 <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
               <% end %>
-              <div class= "countitems">
-                    <%= link_to item_list.items.count, item_list_path(item_list), { class: 'counts' } %>
-                    <%= link_to "items", item_list_path(item_list), { class: 'products' } %>
-              </div>
             </div>
             <div class="itemlist_word">
               <div class="box_text">
-                <%= link_to item_list.list_name , item_list_path(item_list) %>
+                <div class="list_name">
+                  <%= link_to item_list.list_name , item_list_path(item_list) %>
+                </div>
+                <% if item_list.list_description? %>
+                  <div class="list_description">
+                    <%= link_to item_list.list_description , item_list_path(item_list) %>
+                  </div>
+                <% else %>
+                <% end %>
                 <p>
                   <span><%= item_list.user.name %></span> が
-                  <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>に投稿
+                  <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
                 </p>
-                
               </div> 
             </div> 
-            
           </li>
         <% end %>
       </ul> 

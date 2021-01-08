@@ -101,10 +101,10 @@
             list-style: none;
             li {
                 display: flex;
-                background: $card-color;
+                
                 height: auto;
                 margin: 0px 0px 10px 0px; 
-                padding: 20px 15px 18px; 
+                padding: 20px 0px 18px; 
                 text-align: center;
                 border-radius: 20px;
                 border-bottom: 1px solid $base-color;
@@ -115,7 +115,7 @@
                         display: block;
                         img {  
                             z-index: 1;
-                            margin: 0px 10px 0px 7px;
+                            margin: 0px 10px 0px 0px;
                             width: 220px;
                             border-radius: 8px;
                             filter: brightness(0.9);
@@ -131,9 +131,11 @@
                     .box_text {   
                         margin: 0px 0px 0px 8px;
                         .list_name {
+                            
                             a {
                                 margin: 0px 0px 7px 0px;
                                 width: 100%;
+                                width: 400px;
                                 color: $font-color;
                                 font-size: 21px;
                                 font-weight: bold;
@@ -155,11 +157,11 @@
                                 text-decoration: none;
                                 text-align: left;
                                 text-overflow: ellipsis;
+                                overflow: hidden;
                                 letter-spacing: 0.01em;
                                 font-weight: 200;
                                 z-index: 1;
-                                height: 72px;
-                                overflow: hidden;
+                                max-height: 60px;
                             }
                         }
                         p {
@@ -181,10 +183,10 @@
     .logout_image {
         padding: 55px 0px 0px 0px;
         height: 430px;
-        background: url("/assets/top_image.png") no-repeat center center;
+        background: url("/assets/top_ver2.png") no-repeat center center;
         background-size:cover;
-        background-size: 560px;
-        background-position: 480px 60px;
+        background-size: 610px;
+        background-position: 450px 33px;
         .logout_word {
             text-align: left;  
             h1 {
