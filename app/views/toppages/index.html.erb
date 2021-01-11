@@ -39,16 +39,10 @@
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
-                <% if item_list.list_description? %>
-                  <div class="list_description">
-                    <%= link_to item_list.list_description , item_list_path(item_list) %>
-                  </div>
-                <% else %>
-                <% end %>
                 <p>
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
-                </p>
+                </p>  
               </div> 
             </div> 
             
@@ -76,8 +70,8 @@
     </div> 
     <div class= checker>
       <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Daily Planner&nbsp; にお任せ</h1>
-      <p class= checker_word_middle>使用ツールを選んで簡単習慣化</p>
-      <p class= checker_word_bottom>Daily Planner&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <p class= checker_word_middle>あなたの心の余裕を測定します</p>
+      <p class= checker_word_bottom>＊ Daily Planner&nbsp;はあなたのデータを分析、トラッキングもしません</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
         <%= image_tag("/assets/checker.png") %>
         <p>Daily Planner</p>
