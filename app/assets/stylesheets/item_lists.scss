@@ -253,16 +253,16 @@ p {
                             width: 140px;
                             a {
                                 &::before {
-                                    content: "VIEW ON LINK";
+                                    content: "$000 From Amazon ";
                                 }
-                                letter-spacing: 0.2em;
+                                letter-spacing: 0.02em;
                                 color: #f2f5ef;
                                 display: block;
-                                padding: 7px 0px 7px 2px;
-                                font-size: 15px;
+                                padding: 10px 0px 10px 2px;
+                                font-size: 14px;
                                 white-space: nowrap;
                                 overflow: hidden;
-                                font-weight: bold;
+                                font-weight: 500;
                             }
                             
                         }
