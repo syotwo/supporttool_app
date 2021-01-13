@@ -9,6 +9,9 @@
                     </div>
                 <% end %>
             </div>
+            <% if @item_list.image.url.present?%>
+                    <%= link_to image_tag(@item_list.image.url) %>
+                <% end %>
             <p class= list_description><%= @item_list.list_description %></p>
             <ul>
                 <% @items.each do |item| %>
