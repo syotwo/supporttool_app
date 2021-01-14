@@ -32,7 +32,7 @@
         color: $subfont_color;
         height: 38px;
         input {
-            color: $navfont-color;
+            color: $font-color;
             width: 350px;
             height: 48px;
             padding-left: 13px;
@@ -47,7 +47,7 @@
             position: relative;
             left: 27px;
             &::placeholder{
-                color: $subfont_color;
+                color: $font_color;
             }
             &:focus {
                 color: $subfont-color;
@@ -60,7 +60,7 @@
             border: none;
             padding: 5px 0px 43px 5px;
             background: $card-color;
-            color: #DEDEDE;
+            color: $font-color;
             border-radius: 4px 0px 0px 4px;
             position:relative;
             top: 0px;
@@ -100,7 +100,7 @@
             list-style: none;
             display: flex;
             flex-wrap:wrap;
-            max-width: 900px;
+            
             justify-content: space-between;
             li {
                 margin: 0px 0px 20px 0px; 
@@ -152,7 +152,7 @@
                             text-align: left;
                             font-size: 12px;
                             margin: 0px 0px 0px 0px;
-                            color: #99b8cc;
+                            color: #e0e8ee;
                             font-weight: 200;
                         } 
                         .list_description {
@@ -185,10 +185,10 @@
     .logout_image {
         padding: 55px 0px 0px 0px;
         height: 430px;
-        background: url("/assets/top_ver2.png") no-repeat center center;
+        background: $base-color url("/assets/top_image4.png") no-repeat center center;
         background-size:cover;
         background-size: 500px;
-        background-position: 490px 50px;
+        background-position: 540px 70px;
         .logout_word {
             text-align: left;  
             h1 {

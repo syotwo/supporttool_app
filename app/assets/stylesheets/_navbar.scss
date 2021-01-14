@@ -29,7 +29,7 @@ nav {
             top: 8px;
             margin: 0px 0px 3px 0px;
             img {
-            background-color: $card-color;
+            background-color: #444342;
             width: 42px;
             height: 42px;   
             border-radius: 8px; 
@@ -120,7 +120,7 @@ nav {
                 font-size: 17px;
                 background: $main-color;
                 padding: 3px 17px;
-                border-radius: 20px;
+                border-radius: 8px;
                 margin: auto 0px;
                 border: solid 2px $accent-color;
                 &:hover {
