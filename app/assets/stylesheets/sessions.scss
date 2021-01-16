@@ -16,6 +16,8 @@
         font-size: 39px;
     }
     #session_email {
+        border-radius: 4px;
+        border: none;
         width: 95%;
         text-align: left;
         margin: 10px 0px 12px;
@@ -23,6 +25,8 @@
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }
     #session_password {
+        border-radius: 4px;
+        border: none;
         width: 95%;
         text-align: left;
         padding: 10px 10px;
@@ -34,7 +38,7 @@
         padding: 13px 25px;
         background: $accent-color;
         border: #edebf1;
-        border-radius: 20px;
+        border-radius: 4px;
         color: $font-color;
         font-weight: bold;
         font-size: 15px;

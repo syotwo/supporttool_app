@@ -26,9 +26,13 @@
       width: 97%;
       margin: 7px 0px 19px;
       padding: 9px 0px 9px 10px;
+      border-radius: 4px;
+      border: none;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_email {
+      border-radius: 4px;
+      border: none;
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
@@ -37,6 +41,8 @@
   }
 
     #user_password {
+      border-radius: 4px;
+      border: none;
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
@@ -44,6 +50,8 @@
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_password_confirmation {
+      border-radius: 4px;
+      border: none;
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
@@ -55,7 +63,7 @@
     margin: 27px 0px 0px 352px;
     padding: 13px 25px;
     background: $accent-color;
-    border-radius: 20px;
+    border-radius: 4px;
     color: $font-color;
     font-weight: bold;
     font-size: 15px;

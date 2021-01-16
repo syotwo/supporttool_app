@@ -6,7 +6,7 @@
         <div class= "nav_img">
           <%= image_tag("/assets/nav_image3.png") %>
         </div>
-        <div class= "nav_title"><p class= "title">&nbsp;Next Style&nbsp;</p></div>
+        <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
       </a>
     </div>
     <% else %>
@@ -15,7 +15,7 @@
         <div class= "nav_img">
           <%= image_tag("/assets/nav_image3.png") %>
         </div>
-        <div class= "nav_title"><p class= "title">&nbsp;Next Style&nbsp;</p></div>
+        <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
       </a>
     </div>  
     <% end %>
@@ -25,6 +25,7 @@
           <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
           <li><%= link_to 'new item', new_item_list_path , { class: 'plus_itemlist' }%></li>
         </div>
+        <p class="user_menu_img">user</p>
         <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
       <% else %>
         <li><%= link_to 'Sign Up', signup_path , { class: 'signup' }%></li>
