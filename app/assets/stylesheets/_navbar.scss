@@ -29,7 +29,7 @@ nav {
             top: 8px;
             margin: 0px 0px 3px 0px;
             img {
-            background-color: #444342;
+            background-color: #ffffff;
             width: 42px;
             height: 42px;   
             border-radius: 8px; 
@@ -75,7 +75,7 @@ nav {
                     height: 35px;
                     font-weight: 300;
                     font-size: 32px;
-                    color: $navfont-color;
+                    color: $subfont-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
                     top: -0px; 
@@ -88,7 +88,7 @@ nav {
                     white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
-                    color: $navfont-color;
+                    color: $subfont-color;
                     display: block;
                     font-weight: bold;
                     font-size: 15px;

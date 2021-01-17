@@ -36,7 +36,7 @@
             </div>
             <div class="itemlist_word">
               <div class="box_text">
-                <p class= case>For you:</p>
+                <p class= case>type: </p>
                 <p class= level></p>
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
@@ -56,8 +56,8 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1 class= top><br>社会を変えるんじゃない<br>個人が<br>抜本的に変わるんだ</h1>
-        <p class= middle>ライフハックに関する<br>アイテム共有コミュニティ<br>未来をよりよく生きる知恵を共有しよう<br></p>
+        <h1 class= top><br>未来へ生き抜く<br>現代の<br>「剣」と「盾」</h1>
+        <p class= middle><br>社会を変えるんじゃない<br>個人から抜本的に変わるんだ<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -69,14 +69,14 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>  
     <div class= checker>
-      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Daily Planner&nbsp; にお任せ</h1>
+      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Stress Cheacker&nbsp; にお任せ</h1>
       <p class= checker_word_middle>あなたの心の余裕を測定します</p>
-      <p class= checker_word_bottom>＊ Daily Planner&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <p class= checker_word_bottom>＊ Stress Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
         <%= image_tag("/assets/checker.png") %>
-        <p>Daily Planner</p>
+        <p>Stress Cheacker</p>
       <% end %>
     </div>
     
