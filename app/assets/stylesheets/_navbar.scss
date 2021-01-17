@@ -38,12 +38,11 @@ nav {
         .nav_title {
             display: flex;
             .title {
-                font-family: 'Ubuntu' ;
+                font-family: 'Exo', sans-serif;
                 color: $navfont-color; 
                 line-height: 1.8em;
-                font-size: 30px; 
-                font-weight: 700;
-                letter-spacing: -1.5px;
+                font-size: 32px; 
+                letter-spacing: -2px;
                 margin: auto 0px;
                 white-space: nowrap;
                 padding: 2px 0px 3px 0px;

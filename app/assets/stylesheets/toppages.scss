@@ -11,15 +11,16 @@
         height: 27px;
         margin: 0px 0px 16px 80px;
         span {
-            font-size: 30px;
-            margin: 4px 0px 0px 0px;
-            color: $subfont-color;
+            font-size: 28px;
+            margin: 5px 5px 0px 0px;
+            color: $font-color;
         }
         .login_username {
-            margin: 0px 0px 20px 4px;
+            font-family: 'Exo', sans-serif;
+            margin: 2px 0px 20px 4px;
             padding: 0px 0px 0px 0px;
-            color: $subfont-color;
-            font-size: 26px;
+            color: $font-color;
+            font-size: 27px;
             font-weight: 700;
         }
     }
@@ -77,15 +78,17 @@
         margin: 40px 0px 0px 82px;
         span {
             display: block;
-            font-size: 28px;
-            color: $subfont-color;
-            margin: 1px 0px 0px 0px;
+            font-size: 30px;
+            color: $font-color;
+            margin: 1px 3px 0px 0px;
         }
         p {
+            font-family: 'Exo', sans-serif;
             margin: 0px 0px 0px 8px;
             padding: 0px 0px 0px 0px;
-            font-size: 20px;
+            font-size: 26px;
             font-weight: 800;
+            color: $font-color;
         }
     }
     .itemlist {
@@ -100,7 +103,6 @@
             list-style: none;
             display: flex;
             flex-wrap:wrap;
-            
             justify-content: space-between;
             li {
                 margin: 0px 0px 20px 0px; 
@@ -152,7 +154,7 @@
                             text-align: left;
                             font-size: 12px;
                             margin: 0px 0px 0px 0px;
-                            color: #e0e8ee;
+                            color: $subfont-color;
                             font-weight: 200;
                         } 
                         .list_description {
@@ -220,7 +222,7 @@
                 .test_login {
                     form {
                         &:hover {
-                            filter: brightness(112%);
+                            filter: brightness(110%);
                             transition: 0.2s;
                         } 
                         img {
@@ -233,12 +235,12 @@
                         input {
                             color: #f4f6f8;
                             background: $accent-color;
-                            width: 250px;
+                            width: 276px;
                             font-size: 17px;
                             border: none;
                             font-weight: bold;
                             border-radius: 5px;
-                            padding: 15px 10px 15px 30px; 
+                            padding: 15px 10px 15px 40px; 
                             margin: 0px 0px 0px 25px;  
                         }
                     }
@@ -263,14 +265,6 @@
         background:center / cover no-repeat url("/assets/healthcare_top.jpg");
         background-position: 0px 0px;
         height: 310px;
-        p.checker_username {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            font-size: 37px;
-            margin: 0px;
-            color: #fbfdfd;
-            letter-spacing: 0em;
-            margin: 0px 80px 0px 85px ;
-        }
         .checker_word_top {
             padding: 1px;
             margin: 0px 80px 0px 85px ;
@@ -308,7 +302,7 @@
             background: $accent-color;
             width: 180px;
             font-weight: bold;
-            color: #f4f6f8;
+            color: $font-color;
             border-radius: 5px;
             white-space: nowrap;
             letter-spacing: -0.06em;
@@ -330,6 +324,7 @@
             }
             p {
                 margin: 10px 0px;
+                color: $navfont-color;
             }          
         }
     }
