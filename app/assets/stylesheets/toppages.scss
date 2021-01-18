@@ -154,7 +154,7 @@
                             text-align: left;
                             font-size: 12px;
                             margin: 0px 0px 0px 0px;
-                            color: $subfont-color;
+                            color: #8c9eb7;
                             font-weight: 200;
                         } 
                         .list_description {
@@ -222,7 +222,7 @@
                 .test_login {
                     form {
                         &:hover {
-                            filter: brightness(110%);
+                            filter: brightness(115%);
                             transition: 0.2s;
                         } 
                         img {

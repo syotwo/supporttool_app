@@ -3,25 +3,17 @@
       <%= render 'layouts/error_messages', model: f.object %>
       <h1>Signup</h1>
       <div>
-        <div><%= f.label :name, 'Name'%></div>
-        <%= f.text_field :name, placeholder: "name"  %>
+        <%= f.text_field :name, placeholder: "What's your name?"  %>
       </div>
-
       <div>
-        <div class= signup_label_Email><%= f.label :email, 'Email' %></div>
-        <%= f.email_field :email, placeholder: "email"  %>
+        <%= f.email_field :email, placeholder: "Enter your email"  %>
       </div>
-
       <div>
-        <div class= signup_label_Password><%= f.label :password, 'Password' %></div>
-        <%= f.password_field :password, placeholder: "password"  %>
+        <%= f.password_field :password, placeholder: "Enter your password"  %>
       </div>
-
       <div>
-        <div class= signup_label_Confirmation><%= f.label :password_confirmation, 'Confirmation' %></div>
-        <%= f.password_field :password_confirmation, placeholder: "password_confirmation"  %>
+        <%= f.password_field :password_confirmation, placeholder: "Password_confirmation"  %>
       </div>
-
       <%= f.submit 'Sign up',{class: 'signup_submit' } %>
     <% end %>  
 </div>

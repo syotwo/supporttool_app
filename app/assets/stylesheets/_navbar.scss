@@ -61,7 +61,7 @@ nav {
         .plus_box {
             display: flex;
             &:hover {
-                filter: brightness(135%);
+                filter: brightness(115%);
                 transition: 0.1s;
               }
             li {
@@ -99,7 +99,6 @@ nav {
                     letter-spacing: 0em;
                     border-radius: 0px 8px 8px 0px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-
                 }
             }
         }
