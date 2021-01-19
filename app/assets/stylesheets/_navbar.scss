@@ -52,7 +52,7 @@ nav {
             }
         }  
     }
-    ul {
+    ul.menu_right {
         list-style-type: none;
         display: flex;
         color: $navfont-color;
@@ -113,6 +113,24 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
+                color: $font-color;
+                font-weight: bold;
+                font-size: 17px;
+                background: $accent-color;
+                padding: 3px 17px;
+                border-radius: 8px;
+                margin: auto 10px;
+                border: solid 2px $accent-color;
+                &:hover {
+                    filter: brightness(130%);
+                    transition: 0.1s;
+                  }
+            }
+            .login{
+                white-space: nowrap;
+                display: block;
+                text-decoration: none;
+                vertical-align: middle;
                 color: $accent-color;
                 font-weight: bold;
                 font-size: 17px;
@@ -126,42 +144,54 @@ nav {
                     transition: 0.1s;
                   }
             }
-            .login{
-                text-decoration: none;
-                vertical-align: middle;
+            
+            
+        }
+        .user_accodion {
+            display: flex;
+            p {
                 color: $navfont-color;
-                font-weight: bold;
-                font-size: 17px;
-                display: block;
-                margin: 4px 0px 0px 15px;
-                &:hover {
-                    color: $accent-color;
-                    transition: 0.1s;
-                  }
             }
-            .logout { 
-                text-decoration: none;
-                vertical-align: middle;
-                color: $navfont-color;
-                display: block;
-                font-weight: bold;
-                font-size: 17px;
-                height: 35px;
-                margin: 0px 0px 0px 15px;
-                line-height: 2em;
-                &:hover {
-                    color: $accent-color;
-                    transition: 0.1s;
-                  }
+            li {
+                .logout { 
+                    text-decoration: none;
+                    vertical-align: middle;
+                    color: $navfont-color;
+                    display: block;
+                    font-weight: bold;
+                    font-size: 17px;
+                    height: 35px;
+                    margin: 0px 0px 0px 15px;
+                    line-height: 2em;
+                    &:hover {
+                        color: $accent-color;
+                        transition: 0.1s;
+                    }
+                }
+
             }
         }
-        
         .button_Signup {
             text-decoration: none;
             margin-right: 15px;
         }
     }
+
+
+    .menu {
+        color: white;
+        a {
+            color: white;
+        }
+    }  
+    .menu ul {
+        display: none;
+    }
+    .menu ul.active {
+        display: block;
+    }
 }
+
 
 @media screen and (max-width: 640px) {
     nav {

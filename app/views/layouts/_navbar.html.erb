@@ -19,19 +19,36 @@
       </a>
     </div>  
     <% end %>
-    <ul>
+    <ul class= menu_right>
       <% if logged_in? %>
         <div class="plus_box">
           <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
           <li><%= link_to 'new item', new_item_list_path , { class: 'plus_itemlist' }%></li>
         </div>
-        <p class="user_menu_img">user</p>
-        <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
+        <div class="user_accodion">
+          <p class="menu js-menu">user</p>
+          <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
+        </div>
+
       <% else %>
         <li><%= link_to 'Sign Up', signup_path , { class: 'signup' }%></li>
         <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>
+
+    <ul class="menu">
+      <li>
+        <a href="">親メニュー</a>
+        <ul>
+          <li><a href="">子メニュー1</a></li>
+          <li><a href="">子メニュー2</a></li>
+          <li><a href="">子メニュー3</a></li>
+        </ul>
+      </li>
+      <%= javascript_pack_tag 'navbar' %>
+    </ul>
+  
+
   </nav>
 </header>
 
