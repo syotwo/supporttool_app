@@ -175,9 +175,22 @@ nav {
         display: none;
     }
     .menu ul.active {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         display: block;
         position: fixed;
         padding: 0;
+        margin: 10px 0px 0px 0px;
+        .logout {
+            position: relative;
+            right: 83px;
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 2px;
+            padding: 15px 50px 15px 16px ;
+            color: $font-color;
+            font-size: 18px;
+            font-weight: 500;
+        }
     }
 }
 
