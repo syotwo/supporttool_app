@@ -25,10 +25,15 @@
           <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
           <li><%= link_to 'new item', new_item_list_path , { class: 'plus_itemlist' }%></li>
         </div>
-        <div class="user_accodion">
-          <p class="menu js-menu">user</p>
-          <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
-        </div>
+        <ul class="menu">
+          <li>
+            <a href=""><span class="material-icons">account_circle</span></a>
+            <ul>
+              <li><%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%></li>
+            </ul>
+          </li>
+          <%= javascript_pack_tag 'navbar' %>
+        </ul>
 
       <% else %>
         <li><%= link_to 'Sign Up', signup_path , { class: 'signup' }%></li>
@@ -36,17 +41,7 @@
       <% end %>
     </ul>
 
-    <ul class="menu">
-      <li>
-        <a href="">親メニュー</a>
-        <ul>
-          <li><a href="">子メニュー1</a></li>
-          <li><a href="">子メニュー2</a></li>
-          <li><a href="">子メニュー3</a></li>
-        </ul>
-      </li>
-      <%= javascript_pack_tag 'navbar' %>
-    </ul>
+    
   
 
   </nav>
