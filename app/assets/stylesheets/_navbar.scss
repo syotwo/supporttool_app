@@ -166,6 +166,7 @@ nav {
                 color: white;
                 span {
                     font-size: 46px;
+                    color: $navfont_color;
                 }
                 
             }
@@ -179,18 +180,34 @@ nav {
         display: block;
         position: fixed;
         padding: 0;
-        margin: 10px 0px 0px 0px;
-        .logout {
+        margin: 0px 0px 0px 0px;
+        li {
             position: relative;
-            right: 83px;
-            text-decoration: none;
-            background-color: #fff;
-            border-radius: 2px;
-            padding: 15px 50px 15px 16px ;
-            color: $font-color;
-            font-size: 18px;
-            font-weight: 500;
-        }
+            right: 142px;
+            display: flex;
+            img {
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 15px;
+                left: 40px;
+            }
+            .logout {  
+                box-shadow: 0 0 20px #114775;
+                text-decoration: none;
+                background: #fbfbfd;
+                border-radius: 2px;
+                padding: 10px 50px 10px 55px ;
+                color: $font-color;
+                font-size: 18px;
+                font-weight: 500;
+                &:hover {
+                    background-color: $card-color;
+                  }
+
+            }   
+        } 
     }
 }
 

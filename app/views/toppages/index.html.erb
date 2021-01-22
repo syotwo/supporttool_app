@@ -11,7 +11,7 @@
     
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <%= f.search_field :list_name_cont, placeholder: "What kind of weapon ?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>
@@ -45,8 +45,7 @@
                   <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
                 </p>    
               </div> 
-            </div> 
-            
+            </div>   
           </li>
         <% end %>
       </ul> 
@@ -70,12 +69,11 @@
       </div>
     </div>  
     <div class= checker>
-      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Stress Cheacker&nbsp; にお任せ</h1>
-      <p class= checker_word_middle>あなたの心の余裕を測定します</p>
-      <p class= checker_word_bottom>＊ Stress Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Performance Cheacker&nbsp; にお任せ</h1>
+      <p class= checker_word_middle>あなたの心の余裕率を測定します</p>
+      <p class= checker_word_bottom>＊ Performance Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-        <%= image_tag("/assets/checker.png") %>
-        <p>Stress Cheacker</p>
+        <p>Performance Cheacker</p>
       <% end %>
     </div>
     
