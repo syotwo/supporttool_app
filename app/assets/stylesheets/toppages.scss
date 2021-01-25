@@ -104,7 +104,7 @@
             flex-wrap:wrap;
             justify-content: space-between;
             li {
-                margin: 0px 0px 20px 0px; 
+                margin: 0px 0px 30px 0px; 
                 padding: 0px 0px 18px; 
                 text-align: center;
                 border-radius: 2px;
@@ -121,11 +121,6 @@
                             object-fit: cover;
                             margin: 0px 0px 0px 0px;
                             border-radius: 4px 4px 0px 0px;
-                            filter: brightness(0.9);
-                            &:hover {
-                                filter: brightness(95%);
-                                transition: 0.2s;
-                              }
                         }
                     }
                 }
@@ -189,7 +184,7 @@
         background: $base-color url("/assets/top_image4.png") no-repeat center center;
         background-size:cover;
         background-size: 500px;
-        background-position: 540px 70px;
+        background-position: 540px 75px;
         .logout_word {
             text-align: left;  
             h1 {
@@ -229,22 +224,22 @@
                             transition: 0.2s;
                         } 
                         img {
-                            width: 50px;
+                            width: 30px;
                             position: relative; 
-                            top: 19px;
-                            left: 80px; 
-                            transform: rotate(24deg);  
+                            top: 10px;
+                            left: 90px; 
+                            transform: rotate(10deg);  
                         }
                         input {
                             color: #f4f6f8;
                             background: $accent-color;
-                            width: 276px;
+                            width: 286px;
                             font-size: 17px;
                             border: none;
                             font-weight: bold;
                             border-radius: 5px;
-                            padding: 15px 10px 15px 40px; 
-                            margin: 0px 0px 0px 25px;  
+                            padding: 16px 10px 15px 40px; 
+                            margin: 23px 0px 0px 43px;  
                         }
                     }
                 }        
@@ -303,7 +298,7 @@
             text-align-last: center;
             text-decoration: none;
             background: $accent-color;
-            width: 200px;
+            width: 221px;
             font-weight: bold;
             color: $font-color;
             border-radius: 5px;
@@ -312,8 +307,8 @@
             vertical-align: middle;
             font-size: 17px;
             border: none;
-            border-radius: 20px;
-            padding: 0px 5px; 
+            border-radius: 4px;
+            padding: 2px 5px; 
             margin: 30px 80px 0px 85px;
             &:hover {
                 filter: brightness(120%);
@@ -326,7 +321,7 @@
                 margin: 3px 0px 0px 3px;
             }
             p {
-                margin: 10px 0px;
+                margin: 10px 15px;
                 color: $subfont-color;
             }          
         }

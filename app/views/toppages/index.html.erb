@@ -11,7 +11,7 @@
     
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "What kind of weapon ?" %>
+        <%= f.search_field :list_name_cont, placeholder: "What weapon do you need?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>
@@ -61,7 +61,7 @@
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
-              <%= image_tag("/assets/tool.png") %>
+              <%= image_tag("/assets/login_imag_hand.png") %>
               <%= f.submit "Search The Future Weapon"%>
             <% end %>
           </div>
@@ -69,11 +69,11 @@
       </div>
     </div>  
     <div class= checker>
-      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Performance Cheacker&nbsp; にお任せ</h1>
+      <h1 class= checker_word_top> 毎日の体調管理は &nbsp;Stress Point Cheacker&nbsp; にお任せ</h1>
       <p class= checker_word_middle>あなたの心の余裕率を測定します</p>
-      <p class= checker_word_bottom>＊ Performance Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <p class= checker_word_bottom>＊ Stress Point Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-        <p>Performance Cheacker</p>
+        <p>Stress Point Cheacker</p>
       <% end %>
     </div>
     
