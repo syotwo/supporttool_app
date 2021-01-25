@@ -150,25 +150,7 @@
                             margin: 0px 0px 0px 0px;
                             color: #8c9eb7;
                             font-weight: 200;
-                        } 
-                        .list_description {
-                            a {
-                                margin: 10px 0px 7px 0px;
-                                width: 100%;
-                                color: $font-color;
-                                font-size: 14px;
-                                display: block;    
-                                text-decoration: none;
-                                text-align: left;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                letter-spacing: 0.01em;
-                                font-weight: 200;
-                                z-index: 1;
-                                max-height: 60px;
-                            }
-                        }
-                        
+                        }         
                     }          
                 }
             }
@@ -180,7 +162,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
         padding: 55px 0px 0px 0px;
-        height: 430px;
+        height: 460px;
         background: $base-color url("/assets/top_image4.png") no-repeat center center;
         background-size:cover;
         background-size: 500px;
@@ -204,7 +186,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 17px;
                 text-decoration: none;
-                margin: 0px 0px 0px 80px;
+                margin: 20px 0px 0px 80px;
                 color: #ffffff;
                 font-weight: 200;
                 letter-spacing: -0.1em;
@@ -231,6 +213,7 @@
                             transform: rotate(10deg);  
                         }
                         input {
+                            font-family: 'Exo', sans-serif;
                             color: #f4f6f8;
                             background: $accent-color;
                             width: 286px;
