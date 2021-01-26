@@ -16,7 +16,7 @@
             color: $font-color;
         }
         .login_username {
-            font-family: 'Exo', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             margin: 2px 0px 20px 4px;
             padding: 0px 0px 0px 0px;
             color: $font-color;
@@ -80,10 +80,10 @@
             display: block;
             font-size: 30px;
             color: $font-color;
-            margin: 1px 3px 0px 0px;
+            margin: 5px 3px 0px 0px;
         }
         p {
-            font-family: 'Exo', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             margin: 0px 0px 0px 8px;
             padding: 0px 0px 0px 0px;
             font-size: 26px;
@@ -103,20 +103,26 @@
             display: flex;
             flex-wrap:wrap;
             justify-content: space-between;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
             li {
                 margin: 0px 0px 30px 0px; 
                 padding: 0px 0px 18px; 
                 text-align: center;
-                border-radius: 2px;
-                position: relative;
-                background-color: $card_color; 
+                border-radius: 4px;
+                position: relative; 
+                box-shadow: 0 0 15px #d4dee9;
+                box-shadow: -4px -2px 8px 0px #f0f1f1, 4px 2px 6px 0px #d4dee9;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .itemlist_topimg {   
                     a {
                         display: block;
                         img {  
-                            width: 290px;
-                            height: 170px;
+                            filter: contrast(150%);
+                            filter: saturate(150%);
+                            width: 300px;
+                            height: 200px;
                             max-width: 100%;
                             object-fit: cover;
                             margin: 0px 0px 0px 0px;
@@ -126,15 +132,17 @@
                 }
                 .itemlist_word {   
                     margin: 0px 0px 0px 2px;
-                    min-height: 85px;
+                    min-height: 70px;
                     .box_text {   
-                        margin: 13px 10px 0px 10px;
+                        margin: 13px 9px 0px 9px;
                         .list_name {
                             a {
+                                height: 60px;
+                                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 19px;
+                                font-size: 22px;
                                 font-weight: bold;
                                 display: block;    
                                 text-decoration: none;
@@ -145,10 +153,10 @@
                             }
                         }
                         p {
-                            text-align: left;
+                            text-align: right;
                             font-size: 12px;
                             margin: 0px 0px 0px 0px;
-                            color: #8c9eb7;
+                            color: #afafb3;
                             font-weight: 200;
                         }         
                     }          
