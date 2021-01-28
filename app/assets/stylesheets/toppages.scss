@@ -78,16 +78,16 @@
         margin: 40px 0px 0px 82px;
         span {
             display: block;
-            font-size: 30px;
+            font-size: 27px;
             color: $font-color;
-            margin: 5px 3px 0px 0px;
+            margin: 1px 3px 0px 0px;
         }
         p {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             margin: 0px 0px 0px 8px;
             padding: 0px 0px 0px 0px;
-            font-size: 26px;
-            font-weight: 800;
+            font-size: 25px;
+            font-weight: 600;
             color: $font-color;
         }
     }
@@ -137,12 +137,11 @@
                         margin: 13px 9px 0px 9px;
                         .list_name {
                             a {
-                                height: 60px;
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 22px;
+                                font-size: 20px;
                                 font-weight: bold;
                                 display: block;    
                                 text-decoration: none;
@@ -158,7 +157,13 @@
                             margin: 0px 0px 0px 0px;
                             color: #afafb3;
                             font-weight: 200;
-                        }         
+                        }  
+                        .price {
+                            text-align: left;
+                            font-size: 17px;
+                            color: $third-font-color;
+                            font-weight: bold;
+                        }       
                     }          
                 }
             }
@@ -181,7 +186,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 55px;
                 margin: 0px 0px 0px 80px;
-                color: #ffffff;
+                color: #fdfeff;
                 letter-spacing: 0em;
                 white-space: nowrap;
                 line-height: 1.1em;

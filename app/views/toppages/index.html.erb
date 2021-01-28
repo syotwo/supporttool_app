@@ -21,7 +21,7 @@
       <span class="material-icons">
       devices_other
       </span>
-      <p>Active Weapon(攻めのアイテム)</p>
+      <p>Weapon</p>
     </div>
     <div class="itemlist">
       <ul class="main">
@@ -36,10 +36,10 @@
             </div>
             <div class="itemlist_word">
               <div class="box_text">
-                <p class= level></p>
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
+                <p class= price>$ 000.0</p>
                 <p>
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
