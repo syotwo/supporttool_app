@@ -5,7 +5,7 @@
 }
 .item_list_new  {
     color: $font-color;
-    background: $card_color;
+    background-color: $navfont-color;
     height: 100%;
     margin: 110px auto;
     padding: 38px 50px;
@@ -60,9 +60,16 @@
         } 
         .wrap {
             display: flex;
+            width: 150px;
+            &:hover {
+                filter: brightness(86%);
+              }
             .img_label {
                 margin: 0;
+                
                 img {
+                    border: solid 2px #a7a7aa;
+                    border-right: none;
                     width: 48px;
                     height: 48px;
                     border-radius: 4px 0px 0px 4px;
@@ -74,11 +81,14 @@
                 color: #757575;
                 white-space: nowrap;
                 height: 22px;
+                margin: 0;
                 font-size: 18px;
                 padding: 0px 12px 26px 8px;
                 border-radius: 0px 4px 4px 0px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-weight: 400;
+                border: solid 2px #a7a7aa;
+                border-left: none;
             }
         }
         .chechbox {
@@ -92,10 +102,9 @@
                 border: none;
                 color: $navfont-color;
                 font-size: 17px;
-                border-radius: 4px;
                 margin: 0px 19px 0px 0px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                border-radius: 20px;
+                border-radius: 8px;
                 &:hover {
                     filter: brightness(125%);
                   }

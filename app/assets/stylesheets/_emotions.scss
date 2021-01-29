@@ -1,14 +1,12 @@
 @import "_variables";
 
 .emotion_index {
-    
-    
     .emotion_chartbox {
-        height: 400px;
         margin: 70px auto;
-        padding: 30px 30px 100px 30px;
-        background: $card-color;
+        padding: 30px 40px 60px;
+        background: #7b9fc9;
         width: 600px;
+        border-radius: 8px;
         h1 {
             text-align: center;
             color: $font-color;
@@ -17,142 +15,35 @@
         .chart{   
             #chart-1 {
                 background-color: #c2c7ce;
-                padding: 30px 0px;
+                padding: 50px 0px;
                 margin: 0 auto;
+                border-radius: 8px;
             }
         }
     } 
-    .recommend {
-        padding: 0px 40px;
-        width:100%;
-        .recommend_title {
-            white-space: nowrap;
-            font-size: 24px;
-            letter-spacing: 0.001em;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 500;
-            display: flex;
-            margin: 40px 0px 10px 0px;
-            // background: linear-gradient(#8896d4, #5be4cb);
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
-            padding: 0px 0px 10px 0px;
-            border-bottom: solid 1px $list_category_underline_color;
-        }  
-        ul{
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-            list-style: none;
-            height: auto;
-            padding: 10px 0px 20px 0px;
-            margin: 20px 0px;
-            border-radius: 4px;
-            &::-webkit-scrollbar {
-                height:8px;  
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: #5a5555;
-                border-radius: 10px;
-                }
-            li {
-                display: inline-block;
-                width: 26%;
-                background: $card-color;
-                height: auto;
-                margin: 0px 14px 0px 0px; 
-                padding: 22px 18px 25px 18px; 
-                text-align: center;
-                border-radius: 4px;
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                .box_text {   
-                    margin: 0px 0px 0px 8px;
-                    a {
-                        width: 100%;
-                        height: 26px;
-                        color: $font-color;
-                        font-size: 18px;
-                        font-weight: bold;
-                        display: block;    
-                        text-decoration: none;
-                        text-align: left;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        letter-spacing: 0.01em;
-                        z-index: 1;
-                    }
-                    .countitems {
-                        display: flex;
-                        margin: 3px 0px 9px;
-                        .counts {
-                            text-align: left;
-                            height: 15px;
-                            width: 18px;    
-                            font-size: 12px;
-                            font-weight: 100;
-                            color: $subfont-color;
-                            z-index: 1;
-                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                        }
-                        .products {
-                            text-align: left;
-                            height: 15px;    
-                            margin: 0px;
-                            font-size: 12px;
-                            font-weight: 100;
-                            color: $subfont-color;
-                            z-index: 1;
-                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                        }
-                    }
-                }
-                a {
-                    display: block;
-                    height: auto;
-                    width: 100%;
-                    img {
-                        object-fit: cover;
-                        width: 95%;
-                        box-sizing: border-box;
-                        height: 100%;
-                        border-radius:  4px;
-                        filter: brightness(105%);
-                        &:hover {
-                            filter: brightness(90%);
-                            transition: 0.2s;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 .emotion_new {
-    background: $card-color;
+    background: $submit-card-color;
     width: 550px;
     margin: 70px auto;
-    padding: 40px 50px 0px 50px;
+    padding: 40px 70px 30px;
     border-radius: 5px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     h1 {
+        font-size: 40px;
         text-align: center;
         color: $font-color;
-        margin: 5px auto 30px;
-    }
-    .minitue {
-        margin: 0;
-        color: #e4e8ee;
-    }
-    
+        margin: 0px auto 40px;
+    }    
     form {
         margin: 0px auto;
         .question_1 {
-            color: $text_font_color;
+            color: $font_color;
+            font-size: 18px;
         }
         .question_2 {
+            font-size: 18px;
             color: $text_font_color;
             height: 33px;
             border-radius: 8px;
@@ -160,9 +51,9 @@
             padding: 7px 0px 0px 0px;
         }
         .emotion_select_box {
-            background-color: #abcbe0;
+            background-color: #dbdbdf;
             border-radius: 4px;
-            padding: 20px 0px 20px 30px;
+            padding: 40px 0px 40px 40px;
             label {
                 font-size: 26px;
                 input {
@@ -194,14 +85,14 @@
     }
     .submit{
         text-align: right;
-        margin: 25px 0px 0px 454px;
-        padding: 15px 25px;
+        margin: 25px 0px 10px 454px;
+        padding: 17px 25px;
         background: $accent-color;
         border: none;
-        border-radius: 20px;
+        border-radius: 8px;
         color: $submit-font-color;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         &:hover {
             filter: brightness(130%);
@@ -209,7 +100,7 @@
     }
     p {
         margin: 15px 0px;
-        color: #a4abb3;
+        color: $font-color;
         font-weight: 100;
         font-size: 13px;
     }

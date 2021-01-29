@@ -112,7 +112,7 @@
                 text-align: center;
                 border-radius: 4px;
                 position: relative; 
-                box-shadow: -4px -2px 8px 0px #f0f1f1, 4px 2px 6px 0px #8e9bac;
+                box-shadow: -4px -2px 8px 0px #dae2e4, 4px 2px 6px 0px #8e9bac;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .itemlist_topimg {   
                     a {
@@ -255,7 +255,7 @@
         .checker_word_top {
             padding: 1px;
             margin: 0px 80px 20px 85px ;
-            font-size: 37px;
+            font-size: 40px;
             color: $submit-font-color;
             letter-spacing: -0.08em;
             white-space: nowrap;
@@ -274,12 +274,12 @@
             letter-spacing: -0.07em;
         }
         .checker_word_bottom {
-            margin: 10px 80px 20px 85px;
+            margin: 15px 80px 20px 85px;
             font-size: 17px;
             text-decoration: none;
-            color: #fbfdfd;
+            color: $navfont-color;
             white-space: nowrap;
-            letter-spacing: -0.07em;
+            letter-spacing: -0.1em;
         }
         a.checker_submit {
             display: flex;
@@ -287,7 +287,7 @@
             text-align-last: center;
             text-decoration: none;
             background: $accent-color;
-            width: 221px;
+            width: 259px;
             font-weight: bold;
             border-radius: 5px;
             white-space: nowrap;

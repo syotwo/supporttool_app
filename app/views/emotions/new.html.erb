@@ -1,8 +1,8 @@
 <div class="emotion_new">
-  <h1>Energy Cheacker</h1>
+  <h1>Will Power Cheacker</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
-    <div class="question_1">現在のあなたの気分をチェックします。</div>
-    <div class="question_2">どんな気分ですか？当てはまるものすべて選択してください</div>    
+    <div class="question_1">現在のあなたの意志力をチェックします。</div>
+    <div class="question_2">気分はどんな状態ですか？当てはまるものすべて選択してください</div>    
     <div class="emotion_select_box">
       <label class= pleasure><input name="emotion[mood][]" type="checkbox" value="喜び" />&#x1f600;</label>
       <label><input name="emotion[mood][]" type="checkbox" value="悲しい" />&#x1f622;</label>
@@ -13,7 +13,7 @@
     </div>
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
-  <p>＊Before After Checkerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
+  <p>＊Will Power Cheackerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
   <div>
     <%= @sentiment %>
   </div>

@@ -39,7 +39,7 @@
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
-                <p class= price>$ 000.0</p>
+                <p class= price>$ 000.0〜</p>
                 <p>
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%m/%d/%Y ") %>
@@ -69,13 +69,13 @@
       </div>
     </div>  
     <div class= checker>
-      <h1 class= checker_word_top> 健康管理は &nbsp;Will Power Cheacker&nbsp; にお任せ</h1>
-      <p class= checker_word_middle>Will Powerとは意志力のことです</p>
-      <p class= checker_word_middle>簡単チェック、計測します</p>
-      <p class= checker_word_bottom>＊ Energy Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <h1 class= checker_word_top> 体調管理は &nbsp;Will Power Cheacker&nbsp; にお任せ</h1>
+      <p class= checker_word_middle></p>
+      <p class= checker_word_middle>簡単チェックで、あなたの意志力を計測します</p>
+      <p class= checker_word_bottom>＊ Will Power Cheacker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
         <%= image_tag("/assets/energy_cheacker_img.png") %>
-        <p>Energy Cheacker</p>
+        <p>Will Power Cheacker</p>
       <% end %>
     </div>
     
