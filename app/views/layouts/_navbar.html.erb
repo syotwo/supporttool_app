@@ -1,23 +1,25 @@
   <header>
   <nav>
     <% if logged_in? %>
-    <div class="nav_title_box">
-      <a class="nav_logo" href="/"> 
-        <div class= "nav_img">
-          <span class="material-icons">watch</span>
+    <a class="nav_logo" href="/"> 
+       <div class="nav_img_box">
+          <div class= "nav_img">
+            <span class="material-icons">watch</span>
+          </div>
         </div>
         <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
       </a>
-    </div>
     <% else %>
-    <div class="nav_title_box">
       <a class="nav_logo" href="/"> 
-        <div class= "nav_img">
-          <span class="material-icons">watch</span>
+       <div class="nav_img_box">
+          <div class= "nav_img">
+            <span class="material-icons">watch</span>
+          </div>
         </div>
         <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
       </a>
-    </div>  
+   
+
     <% end %>
     <ul class= menu_right>
       <% if logged_in? %>

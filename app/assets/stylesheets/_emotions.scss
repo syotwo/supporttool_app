@@ -11,7 +11,7 @@
         width: 600px;
         h1 {
             text-align: center;
-            color: #fff;
+            color: $font-color;
             margin: 0px auto 30px;
         }
         .chart{   
@@ -199,7 +199,7 @@
         background: $accent-color;
         border: none;
         border-radius: 20px;
-        color: $subfont-color;
+        color: $submit-font-color;
         font-weight: bold;
         font-size: 15px;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;

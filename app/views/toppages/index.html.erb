@@ -42,7 +42,7 @@
                 <p class= price>$ 000.0</p>
                 <p>
                   <span><%= item_list.user.name %></span> が
-                  <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
+                  <%= item_list.created_at.strftime("%m/%d/%Y ") %>
                 </p>    
               </div> 
             </div>   
@@ -69,11 +69,12 @@
       </div>
     </div>  
     <div class= checker>
-      <h1 class= checker_word_top> 体調管理は &nbsp;Active Power! Cheacker&nbsp; にお任せ</h1>
-      <p class= checker_word_middle>あなたの心の余裕率を測定します</p>
-      <p class= checker_word_bottom>＊ Active Power! Cheacker Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
+      <h1 class= checker_word_top> 体調管理は &nbsp;Energy Cheacker&nbsp; にお任せ</h1>
+      <p class= checker_word_middle>あなたの体力レベルを測定します</p>
+      <p class= checker_word_bottom>＊ Energy Cheacker&nbsp;はあなたのデータを分析、トラッキングもしません</p>
       <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-        <p>Active Power! Cheacker</p>
+        <%= image_tag("/assets/energy_cheacker_img.png") %>
+        <p>Energy Cheacker</p>
       <% end %>
     </div>
     
