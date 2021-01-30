@@ -24,6 +24,7 @@ nav {
         text-decoration: none;
         vertical-align: middle;
         margin: auto 0px;
+        filter: brightness(110%);
         .nav_img_box {
             .nav_img {
                 position:relative; 
@@ -85,7 +86,7 @@ nav {
                     height: 35px;
                     font-weight: 300;
                     font-size: 32px;
-                    color: $navfont-color;
+                    color: $submit-font-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
                     top: 0px; 
@@ -98,7 +99,7 @@ nav {
                     white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
-                    color: $navfont-color;
+                    color: $submit-font-color;
                     display: block;
                     font-weight: bold;
                     font-size: 15px;
@@ -133,6 +134,7 @@ nav {
                 border: solid 2px $accent-color;
                 position: relative;
                 bottom: 1px;
+                filter: brightness(103%);
                 &:hover {
                     filter: brightness(130%);
                     transition: 0.1s;
@@ -153,6 +155,7 @@ nav {
                 border: solid 2px $accent-color;
                 position: relative;
                 bottom: 1px;
+                filter: brightness(107%);
                 &:hover {
                     filter: brightness(130%);
                     transition: 0.1s;
