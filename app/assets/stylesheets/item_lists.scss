@@ -177,8 +177,10 @@ p {
             .edit_item_list {
                 a {
                     display: block;    
-                    .markedit_item_list {
-                        margin: 11px 20px 0px 0px;
+                    span {
+                        font-size: 37px;
+                        color: $gray-color;
+                        margin: 16px 20px 0px 0px;
                         width: 23px;
                         height: 23px;
                     }
@@ -415,17 +417,26 @@ p {
 
 .item_list_edit {
     color: $font-color;
-    background: $card_color;
+    background-color: $submit-card-color;
     height: 100%;
     margin: 110px auto;
     padding: 38px 50px;
     width: 590px;
     border-radius: 4px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-    .wrap_top {
+    .wrap_formhead {
         width: 575px;
         display: flex;
         justify-content: space-between;
+        p {
+            width: 100%;
+            font-size: 33px;
+            font-weight: bold;
+            color: #1f2b3b;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 26px 0px;
+            text-align: center;
+        }
         .item_list_delate { 
             filter: brightness(70%);
             &:hover {
@@ -461,6 +472,7 @@ p {
             font-weight: 100;
             text-align: left;
             margin-left: 1px;
+            color: $font-color;
         }
 
         #item_list_list_name { 
@@ -521,7 +533,7 @@ p {
             .item_list_submit {
                 padding: 13px 25px;
                 background: $accent-color;
-                color: $font-color;
+                color: $submit-font-color;
                 border: none;
                 font-size: 17px;
                 border-radius: 4px;

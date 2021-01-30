@@ -1,7 +1,11 @@
 <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
-    
+
 <div class="item_list_new">
+    <div class="wrap_formhead">
+        <p>What kind of weapon？&nbsp;</p>
+        <p class= wrap_formhead_username><%= @user.name%></p>
+    </div>
     <%= render 'layouts/form_itemlist' %>    
 </div>
