@@ -20,6 +20,7 @@ class ItemListsController < ApplicationController
   def create
     @item_list = current_user.item_lists.new(item_list_params)
     @user = current_user
+    # binding.pry
 
     if @item_list.save
       flash[:success] = 'リストを投稿しました'
@@ -53,7 +54,7 @@ class ItemListsController < ApplicationController
 
   # Strong Parameter
   def item_list_params
-    params.require(:item_list).permit(:list_name, :image, :list_description)
+    params.require(:item_list).permit(:list_name, :image, :list_description, :list_item_type)
   end
 
   def correct_user

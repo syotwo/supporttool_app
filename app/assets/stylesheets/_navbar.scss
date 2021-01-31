@@ -33,10 +33,10 @@ nav {
                 background-color: $accent-color;
                 background: linear-gradient(to bottom, $accent-color, #c92c7d);
                 border-radius: 4px;
-                transform:skewX(-10deg); 
+                transform:skewX(-12deg); 
                 span {
                 display: block;
-                transform:skewX(10deg); 
+                transform:skewX(12deg); 
                 font-size: 36px;
                 padding: 5px 8px;
                 color: $navfont-color;

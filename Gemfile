@@ -72,3 +72,4 @@ group :production, :staging do
   gem 'unicorn'
 end
 
+gem 'acts-as-taggable-on', '~> 6.0'

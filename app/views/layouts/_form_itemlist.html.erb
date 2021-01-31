@@ -8,5 +8,10 @@
         <%= f.label :image, "Cover img", class: "img_name" %>
         <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
     </div>
+    <p>type</p>
+    <%= image_tag("/assets/sord.png") %>
+    <%= f.radio_button :list_item_type, "Sord" %>Sord(攻めのアイテム) 
+    <%= image_tag("/assets/shield.png") %>
+    <%= f.radio_button :list_item_type, "Shield" %>Shield(守りのアイテム)
     <div class= submit><%= f.submit 'Next',{class: 'item_list_submit' } %></div>   
 <% end %>
