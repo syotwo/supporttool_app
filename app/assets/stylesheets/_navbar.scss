@@ -29,16 +29,17 @@ nav {
             .nav_img {
                 position:relative; 
                 right: -2px;
+                top: 2px;
                 margin: 0px 0px 0px 0px;
                 background-color: $accent-color;
                 background: linear-gradient(to bottom, $accent-color, #c92c7d);
-                border-radius: 4px;
+                border-radius: 8px;
                 transform:skewX(-12deg); 
                 span {
                 display: block;
                 transform:skewX(12deg); 
-                font-size: 36px;
-                padding: 5px 8px;
+                font-size: 32px;
+                padding: 6px 6px;
                 color: $navfont-color;
                 
                 }

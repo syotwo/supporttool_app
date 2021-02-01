@@ -114,19 +114,42 @@
                 position: relative; 
                 box-shadow: -4px -2px 8px 0px #dae2e4, 4px 2px 6px 0px #8e9bac;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                .list_item_type {
-                    width: 100px;
-                    background-color: $accent-color;
-                    display: flex;
-                    border-radius: 5px;
-                    .list_item_type_name {
-                        color: $font-color;
-                        margin: 0;
+                .list_item_type_box {
+                    width: 120px;
+                    border-radius: 5px 5px 0px 0px;
+                    position: relative;
+                    z-index: 30;
+                    .list_type_sord_box {
+                        display: flex;
+                        background-color: $accent-color;
+                        border-radius: 8px;
+                        .list_item_type_name {
+                            color: $font-color;
+                            margin: 0;
+                            padding: 12px 10px; 
+                        }
+                        img {
+                            display: block;
+                            width: 38px;
+                            height: 38px;
+                            margin: 7px 0px 0px 0px;
+                        }
                     }
-                    img {
-                        display: block;
-                        width: 30px;
-                        height: 30px;
+                    .list_type_shield_box {
+                        display: flex;
+                        background-color: $sord-color;
+                        border-radius: 8px;
+                        .list_item_type_name {
+                            color: $font-color;
+                            margin: 0;
+                            padding: 12px 10px; 
+                        }
+                        img {
+                            display: block;
+                            width: 38px;
+                            height: 38px;
+                            margin: 7px 0px 0px 0px;
+                        }
                     }
                     
                 }
@@ -172,7 +195,7 @@
                         } 
                         .price {
                             text-align: left;
-                            font-size: 17px;
+                            font-size: 13px;
                             color: $third-font-color;
                             font-weight: bold;
                         }      
