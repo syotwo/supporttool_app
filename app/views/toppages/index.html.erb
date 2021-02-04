@@ -31,13 +31,11 @@
               <div class="list_item_type_box">
                 <% if item_list.list_item_type == "Sord" then %>
                 <div class="list_type_sord_box">
-                  <p class= list_item_type_name>type: </p>
-                  <%= image_tag("/assets/sord.png") %>
+                  <p class= list_item_type_name>type: <span>&#x2694;</span></p>
                 </div>
                 <% elsif item_list.list_item_type == "Shield" then%>
                 <div class="list_type_shield_box">
-                  <p class= list_item_type_name>type: </p>
-                  <%= image_tag("/assets/shield.png") %>
+                  <p class= list_item_type_name>type: <span>&#x1f6e1;</span></p>
                 </div>
                 <% end %>
               </div>
