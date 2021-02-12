@@ -1,4 +1,4 @@
-  <header>
+<header>
   <nav>
     <% if logged_in? %>
     <a class="nav_logo" href="/"> 
@@ -18,8 +18,7 @@
         </div>
         <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
       </a>
-   
-
+      
     <% end %>
     <ul class= menu_right>
       <% if logged_in? %>
@@ -45,10 +44,6 @@
         <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>
-
-    
-  
-
   </nav>
 </header>
 
