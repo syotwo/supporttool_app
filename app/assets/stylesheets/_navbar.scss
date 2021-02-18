@@ -33,11 +33,11 @@ nav {
                 margin: 0px 0px 0px 0px;
                 background-color: $accent-color;
                 background: linear-gradient(to bottom, $accent-color, #c92c7d);
-                border-radius: 8px;
-                transform:skewX(-12deg); 
+                border-radius: 50%;
+                // transform:skewX(-6deg); 
                 span {
                 display: block;
-                transform:skewX(12deg); 
+                // transform:skewX(6deg); 
                 font-size: 32px;
                 padding: 6px 6px;
                 color: #d8d8da;
@@ -216,7 +216,7 @@ nav {
                 box-shadow: 0 0 20px #114775;
                 text-decoration: none;
                 background: #fbfbfd;
-                border-radius: 2px;
+                border-radius: 8px;
                 padding: 10px 50px 10px 55px ;
                 color: $font-color;
                 font-size: 18px;
