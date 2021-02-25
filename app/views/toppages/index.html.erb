@@ -31,11 +31,11 @@
               <div class="list_item_type_box">
                 <% if item_list.list_item_type == "Sord" then %>
                 <div class="list_type_sord_box">
-                  <p class= list_item_type_name>type: <span>&#x2694;</span></p>
+                  <p class= list_item_type_name><span>&#x2694;</span></p>
                 </div>
                 <% elsif item_list.list_item_type == "Shield" then%>
                 <div class="list_type_shield_box">
-                  <p class= list_item_type_name>type: <span>&#x1f6e1;</span></p>
+                  <p class= list_item_type_name><span>&#x1f6e1;</span></p>
                 </div>
                 <% end %>
               </div>
@@ -84,7 +84,8 @@
       <div class= checker>
         <h1 class= checker_word_top> 体調管理は &nbsp;Performance Tracker&nbsp; にお任せ</h1>
         <p class= checker_word_middle></p>
-        <p class= checker_word_middle>簡単チェックで、あなたのパフォーマンスレベルを計測します</p>
+        <p class= checker_word_middle>簡単チェックで、パフォーマンスレベルを計測<br></p>
+        <p></p>
         <p class= checker_word_bottom>＊ Performance Tracker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
           <%= image_tag("/assets/energy_cheacker_img.png") %>
@@ -97,7 +98,7 @@
       <span class="material-icons">
       devices_other
       </span>
-      <p>Weapon</p>
+      <p>Gadget</p>
     </div>
     <div class="itemlist">
       <ul class="main">
@@ -107,11 +108,11 @@
               <div class="list_item_type_box">
                 <% if item_list.list_item_type == "Sord" then %>
                 <div class="list_type_sord_box">
-                  <p class= list_item_type_name>type: <span>&#x2694;</span></p>
+                  <p class= list_item_type_name><span>&#x2694;</span></p>
                 </div>
                 <% elsif item_list.list_item_type == "Shield" then%>
                 <div class="list_type_shield_box">
-                  <p class= list_item_type_name>type: <span>&#x1f6e1;</span></p>
+                  <p class= list_item_type_name><span>&#x1f6e1;</span></p>
                 </div>
                 <% end %>
               </div>
