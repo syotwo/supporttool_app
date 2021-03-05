@@ -3,7 +3,7 @@
 
 header {
     background: $main-color;
-    height: 60px;
+    height: 62px;
     padding: 1px 0px;
     position: fixed;
     width: 100%;
@@ -90,7 +90,7 @@ nav {
                     position:relative; 
                     top: 0px; 
                     left: 10px;
-                    padding: 2px 0px 2px 5px;
+                    padding: 2px 0px 2px 12px;
                     border-radius: 8px 0px 0px 8px;
                 }
                 .plus_itemlist {
@@ -104,7 +104,7 @@ nav {
                     font-size: 15px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
-                    padding: 2px 14px 2px 2px;
+                    padding: 2px 19px 2px 2px;
                     line-height: 2.3em;
                     letter-spacing: 0em;
                     border-radius: 0px 8px 8px 0px;
@@ -127,7 +127,7 @@ nav {
                 font-weight: bold;
                 font-size: 17px;
                 background: $accent-color;
-                padding: 3px 17px;
+                padding: 3px 20px;
                 border-radius: 8px;
                 margin: auto 10px;
                 border: solid 2px $accent-color;
@@ -148,7 +148,7 @@ nav {
                 font-weight: bold;
                 font-size: 17px;
                 background: $main-color;
-                padding: 3px 17px;
+                padding: 3px 20px;
                 border-radius: 8px;
                 margin: auto 0px;
                 border: solid 2px $accent-color;
@@ -202,28 +202,34 @@ nav {
         margin: 0px 0px 0px 0px;
         li {
             position: relative;
-            right: 142px;
-            display: flex;
-            img {
-                display: block;
-                width: 20px;
-                height: 20px;
-                position: relative;
-                top: 15px;
-                left: 40px;
-            }
-            .logout {  
+            right: 1950px;
+            a.logout {
+                display: flex;  
                 box-shadow: 0 0 20px #114775;
                 text-decoration: none;
                 background: #fbfbfd;
                 border-radius: 8px;
-                padding: 10px 50px 10px 55px ;
-                color: $font-color;
-                font-size: 18px;
-                font-weight: 500;
+                padding: 20px 0px 20px 40px;
+                width: 200px;
                 &:hover {
                     background-color: $card-color;
                   }
+                  img {
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    position: relative;
+                    top: 6px;
+                    margin: 0px 10px 0px 0px;
+                }
+                p {
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    margin: 0;
+                    color: $font-color;
+                    font-size: 19px;
+                    font-weight: 500;
+                    letter-spacing: -0.04em;
+                }
 
             }   
         } 

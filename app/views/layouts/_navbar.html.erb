@@ -31,8 +31,10 @@
             <a href=""><span class="material-icons">account_circle</span></a>
             <ul>
               <li>
-                <%= link_to image_tag("/assets/logout.png"), logout_path, { method: :delete } %>
-                <%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%>
+                <%= link_to logout_path, { method: :delete, class: "logout" } do %>
+                  <%= image_tag asset_path("logout.png") %>
+                  <p>Logout</p>
+                <% end %>
               </li>
             </ul>
           </li>
