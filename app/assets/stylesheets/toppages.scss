@@ -111,65 +111,6 @@
                 position: relative; 
                 box-shadow: -4px -2px 8px 0px #dae2e4, 4px 2px 6px 0px #8e9bac;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                .list_item_type_box {
-                    .list_type_sord_box {
-                        display: flex;
-                        border-radius: 50%;
-                        background-color: $type-back-color;
-                        margin: 12px 0px 12px 11px;
-                        height: 51px;
-                        width: 51px;
-                        .list_item_type_name {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            color: $font-color;
-                            margin: 0;
-                            margin: 13px 11px;
-                            font-weight: 100;
-                            letter-spacing: 0.01em;
-                            span {
-                                font-size: 23px;
-                            }
-                        }
-                        img {
-                            display: block;
-                            padding: 2px;
-                            background-color: $sord-color;
-                            border-radius: 50%;
-                            width: 38px;
-                            height: 38px;
-                            margin: 5px 0px 0px 0px;
-                        }
-                    }
-                    .list_type_shield_box {
-                        display: flex;
-                        border-radius: 50%;
-                        background-color: $type-back-color;
-                        margin: 12px 0px 12px 11px;
-                        height: 51px;
-                        width: 51px;
-                        .list_item_type_name {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            color: $font-color;
-                            margin: 0;
-                            margin: 13px 11px;
-                            font-weight: 100;
-                            letter-spacing: 0.01em;
-                            span {
-                                font-size: 23px;
-                            }
-                        }
-                        img {
-                            display: block;
-                            background-color: $shield-color;
-                            padding: 2px;
-                            border-radius: 10%;
-                            width: 36px;
-                            height: 36px;
-                            margin: 5px 0px 0px 0px;
-                        }
-                    }
-                    
-                }
                 .itemlist_topimg {   
                     a {
                         display: block;
@@ -201,7 +142,7 @@
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 23px;
+                                font-size: 21px;
                                 font-weight: 600;
                                 display: block;    
                                 text-decoration: none;
@@ -211,6 +152,73 @@
                                 z-index: 1;
                             }
                         } 
+                        .list_item_type_box {
+                            .list_type_sord_box {
+                                display: flex;
+                                border-radius: 50%;
+                                margin: 9px 0px 11px;
+                                height: 51px;
+                                width: 51px;
+                                .type {
+                                    margin: 12px 0px;
+                                    color: $price-font-color;
+                                    font-size: 19px;
+                                }
+                                .list_item_type_name {
+                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    color: $font-color;
+                                    margin: 0;
+                                    margin: 13px 11px;
+                                    font-weight: 100;
+                                    letter-spacing: 0.01em;
+                                    span {
+                                        font-size: 23px;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    padding: 2px;
+                                    background-color: $sord-color;
+                                    border-radius: 50%;
+                                    width: 38px;
+                                    height: 38px;
+                                    margin: 5px 0px 0px 0px;
+                                }
+                            }
+                            .list_type_shield_box {
+                                display: flex;
+                                border-radius: 50%;
+                                margin: 9px 0px 11px;
+                                height: 51px;
+                                width: 51px;
+                                .type {
+                                    margin: 12px 0px;
+                                    color: $price-font-color;
+                                    font-size: 19px;
+                                }
+                                .list_item_type_name {
+                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    color: $font-color;
+                                    margin: 0;
+                                    margin: 13px 11px;
+                                    font-weight: 100;
+                                    letter-spacing: 0.01em;
+                                    span {
+                                        font-size: 23px;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    background-color: $shield-color;
+                                    padding: 2px;
+                                    border-radius: 10%;
+                                    width: 36px;
+                                    height: 36px;
+                                    margin: 5px 0px 0px 0px;
+                                }
+                            }
+                            
+                        }
                         .price {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             text-align: left;
@@ -218,7 +226,7 @@
                             color: $price-font-color;
                             font-weight: 700;
                             letter-spacing: -0.02em;
-                            font-size: 17px;
+                            font-size: 18px;
                             font-weight: 600;
                         }      
                         p {
@@ -247,6 +255,7 @@
         background-size: 500px;
         background-position: 540px 75px;
         background-color: #2447c4;
+        filter: brightness(95%);
         .logout_word {
             text-align: left;  
             h1 {
@@ -577,11 +586,10 @@
                         .price {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             text-align: left;
-                            font-size: 16px;
                             color: $price-font-color;
                             font-weight: 700;
                             letter-spacing: -0.02em;
-                            font-size: 17px;
+                            font-size: 19px;
                             font-weight: 600;
                         }      
                         p {
@@ -590,7 +598,7 @@
                             margin: 0px 0px 0px 0px;
                             color: $third-font-color;
                             letter-spacing: -0.02em;
-                            font-size: 16px;
+                            font-size: 17px;
                             font-weight: 400;
                         }  
                     }          
