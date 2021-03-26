@@ -1,6 +1,7 @@
 require 'rails_helper' 
 
 describe ItemListsController, type: :controller do
+
     describe 'GET #new' do
         it "renders the :new template" do
             get :new
