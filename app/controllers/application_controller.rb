@@ -20,5 +20,4 @@ class ApplicationController < ActionController::Base
 #以下は検索したものを表示する時に使う記述(一番シンプルで基本の形です)
     @item_lists = @search.result(distinct: true)
   end
-  # binding.pry
 end
