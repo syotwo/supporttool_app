@@ -1,6 +1,6 @@
 FactoryBot.define do
     
-    factory :user do 
+    factory :user, class: User do 
         name                        {"abe"} 
         password                    {"00000000"}
         password_confirmation       {"00000000"}
