@@ -40,12 +40,12 @@
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
                 <div class="list_item_type_box">
-                <% if item_list.list_item_type == "Sord" then %>
+                <% if item_list.list_item_type == "1" then %>
                 <div class="list_type_sord_box">
                   <p class= type>type</p>
                   <p class= list_item_type_name><span>&#x2694;</span></p>
                 </div>
-                <% elsif item_list.list_item_type == "Shield" then%>
+                <% elsif item_list.list_item_type == "2" then%>
                 <div class="list_type_shield_box">
                   <p class= type>type</p>
                   <p class= list_item_type_name><span>&#x1f6e1;</span></p>
@@ -104,11 +104,11 @@
           <li>
             <div class="itemlist_topimg">
               <div class="list_item_type_box">
-                <% if item_list.list_item_type == "Sord" then %>
+                <% if item_list.list_item_type == "1" then %>
                 <div class="list_type_sord_box">
                   <p class= list_item_type_name><span>&#x2694;</span></p>
                 </div>
-                <% elsif item_list.list_item_type == "Shield" then%>
+                <% elsif item_list.list_item_type == "2" then%>
                 <div class="list_type_shield_box">
                   <p class= list_item_type_name><span>&#x1f6e1;</span></p>
                 </div>
