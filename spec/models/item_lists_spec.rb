@@ -1,6 +1,6 @@
 require 'rails_helper' 
 
-describe ItemList do
+describe ItemList , type: :model do
     describe '#create' do
 
         context 'can save' do
@@ -13,7 +13,7 @@ describe ItemList do
             end
 
             it 'is valid with image' do
-                expect(build(:item_list, image:  nil)).to be_valid
+                expect(build(:item_list)).to be_valid
             end
 
             it 'is valid with name and image' do
