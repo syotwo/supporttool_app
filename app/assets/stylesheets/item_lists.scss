@@ -228,7 +228,7 @@ p {
         background: $card-color;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         border-radius: 4px;
-        .item_list_wrap {
+        .item_list_name_wrap {
             display: flex; 
             p.list_name {
                 font-size: 34px;
@@ -239,6 +239,7 @@ p {
                 width: 700px;
                 color: $text_font-color;
                 text-align: left;
+                border-bottom: solid #e4e4e6 1px;
             }
             .edit_item_list {
                 a {
@@ -253,6 +254,11 @@ p {
                 }     
             }      
         }
+        p.item {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 30px 0px 0px 0px;
+        }
         img {
             display: block;
             margin: 0px 0px 50px 0px;
@@ -260,6 +266,12 @@ p {
             height: 400px;
             object-fit: cover;
             border-radius: 4px;
+        }
+        p.how_to_use {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 30px 0px 0px 0px;
+
         }
         p.list_description {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -282,7 +294,7 @@ p {
             li.item_list_show_card {
                 list-style: none;
                 padding: 0px 0px 0px;
-                margin: 0px 0px 60px 0px;
+                margin: 0px 0px 0px 0px;
                 .item_list_card_wrap {
                     display: flex;
                     a.item_img {
