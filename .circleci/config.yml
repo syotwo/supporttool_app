@@ -9,7 +9,7 @@ jobs:
         MYSQL_USERNAME: 'root'
         MYSQL_PASSWORD: 'aaAA11223344'
         MYSQL_PORT: 3306
-    - image: circleci/mysql:8.0.19-ram
+    - image: circleci/mysql:8.0.19
       environment:
         MYSQL_DATABASE: supporttool_app_test
         MYSQL_ALLOW_EMPTY_PASSWORD: true
