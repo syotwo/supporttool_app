@@ -14,6 +14,9 @@ jobs:
         MYSQL_DATABASE: supporttool_app_test
         MYSQL_ALLOW_EMPTY_PASSWORD: true
         MYSQL_ROOT_HOST: '%'
+        volumes:
+            - mysql-data:/var/lib/mysql
+        command: --default-authentication-plugin=mysql_native_password
     working_directory: ~/supporttool-app
     steps:
     - checkout
