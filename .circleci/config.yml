@@ -10,11 +10,13 @@ jobs:
         MYSQL_PASSWORD: 'aaAA11223344'
         MYSQL_PORT: 3306
     - image: circleci/mysql:8.0.19
+      command: |
+        mysqld --default-authentication-plugin=mysql_native_password
       environment:
         MYSQL_DATABASE: supporttool_app_test
         MYSQL_ALLOW_EMPTY_PASSWORD: true
         MYSQL_ROOT_HOST: '%'
-        command: --default-authentication-plugin=mysql_native_password
+      
     working_directory: ~/supporttool-app
     steps:
     - checkout
