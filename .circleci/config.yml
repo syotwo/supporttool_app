@@ -2,19 +2,19 @@ version: 2.1
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.5.3-node
+    - image: circleci/ruby:2.7.1
       environment:
         RAILS_ENV: test
         MYSQL_HOST: 127.0.0.1
         MYSQL_USERNAME: 'root'
-        MYSQL_PASSWORD: ''
+        MYSQL_PASSWORD: 'aaAA11223344'
         MYSQL_PORT: 3306
-    - image: circleci/mysql:5.7-ram
+    - image: circleci/mysql:8.0.19-ram
       environment:
-        MYSQL_DATABASE: qiita_clone_test
+        MYSQL_DATABASE: supporttool_app_test
         MYSQL_ALLOW_EMPTY_PASSWORD: true
         MYSQL_ROOT_HOST: '%'
-    working_directory: ~/qiita_clone
+    working_directory: ~/supporttool-app
     steps:
     - checkout
     - restore_cache:
