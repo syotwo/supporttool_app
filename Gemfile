@@ -37,6 +37,7 @@ group :development, :test do
   gem 'faker', "~> 2.8"
   gem "pry-rails"
   gem 'capybara', '>= 2.15'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -47,6 +48,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-byebug'
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -56,6 +58,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'rspec_junit_formatter'
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
