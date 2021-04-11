@@ -1,6 +1,6 @@
 class ItemListsController < ApplicationController
-  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update, :destroy]
+  # before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
+  # before_action :correct_user, only: [:edit, :update, :destroy]
   
   def index  
   end
