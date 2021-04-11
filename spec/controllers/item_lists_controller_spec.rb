@@ -40,17 +40,17 @@ describe ItemListsController, type: :controller do
         end
     end
 
-    describe '#edit' do
-        it "assigns the requested item_list to @item_list" do
-            item_list = create(:item_list) 
-            get :edit, params: { id: item_list }
-            expect(assigns(:item_list)).to eq item_list
-        end
+    # describe '#edit' do
+    #     it "assigns the requested item_list to @item_list" do
+    #         item_list = create(:item_list) 
+    #         get :edit, params: { id: item_list }
+    #         expect(assigns(:item_list)).to eq item_list
+    #     end
 
-        it "renders the :edit template" do
-            item_list = create(:item_list) 
-            get :edit, params: { id: item_list } 
-            expect(response).to render_template :edit
-        end
-    end 
+    #     it "renders the :edit template" do
+    #         item_list = create(:item_list) 
+    #         get :edit, params: { id: item_list } 
+    #         expect(response).to render_template :edit
+    #     end
+    # end 
 end
