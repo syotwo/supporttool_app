@@ -32,7 +32,7 @@ nav {
                 top: 2px;
                 margin: 0px 0px 0px 0px;
                 background-color: $accent-color;
-                background: linear-gradient(to bottom, $accent-color, #c92c7d);
+                background: linear-gradient(to bottom, $accent-color);
                 border-radius: 50%;
                 // transform:skewX(-6deg); 
                 span {
@@ -51,8 +51,8 @@ nav {
                 font-family: 'Exo', sans-serif;
                 color: $navfont-color; 
                 line-height: 1.5em;
-                font-size: 29px; 
-                letter-spacing: -2px;
+                font-size: 27px; 
+                letter-spacing: -1.8px;
                 margin: auto 0px;
                 white-space: nowrap;
                 padding: 0px;

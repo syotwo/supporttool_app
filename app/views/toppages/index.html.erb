@@ -78,22 +78,10 @@
           </div>
         </div>
       </div>
-    </div>  
-
-    <div class="cheacker_card_box">
-      <div class= checker>
-        <h1 class= checker_word_top> 体調管理は &nbsp;Stress Tracker&nbsp; にお任せ</h1>
-        <p class= checker_word_middle></p>
-        <p class= checker_word_middle>簡単チェックで、ストレスレベルを可視化<br></p>
-        <p></p>
-        <p class= checker_word_bottom>＊ Stress Tracker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
-        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-          <%= image_tag("/assets/energy_cheacker_img.png") %>
-          <p>Stress Tracker</p>
-        <% end %>
+      <div class="logout_right_img">
+            <%= image_tag("/assets/top_image4.png") %>
       </div>
-    </div>
-
+    </div>  
     <div class="tool_box">
       <span class="material-icons">
       devices_other
@@ -138,6 +126,18 @@
         <% end %>
       </ul> 
     </div>
-    
+    <div class="cheacker_card_box">
+      <div class= checker>
+        <h1 class= checker_word_top> 体調管理は &nbsp;Stress Tracker&nbsp; にお任せ</h1>
+        <p class= checker_word_middle></p>
+        <p class= checker_word_middle>簡単チェックで、ストレスレベルを可視化<br></p>
+        <p></p>
+        <p class= checker_word_bottom>＊ Stress Tracker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
+        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+          <%= image_tag("/assets/energy_cheacker_img.png") %>
+          <p>Track Stress</p>
+        <% end %>
+      </div>
+    </div>
 <% end %>
 

@@ -239,19 +239,22 @@
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
-        padding: 55px 0px 0px 0px;
-        height: 500px;
-        background: url("/assets/top_image4.png") no-repeat center center;
+        padding: 0px 0px 0px 0px;
+        height: 420px;
+        background: url("/assets/top_back.jpg") no-repeat center center;
         background-size:cover;
-        background-size: 500px;
-        background-position: 540px 75px;
         background-color: #2447c4;
         filter: brightness(95%);
+        margin: 80px 80px 15px 80px;
+        display: flex;
+        border-radius: 20px;
         .logout_word {
-            text-align: left;  
+            text-align: left; 
+            position: relative;
+            top: -19px; 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 55px;
+                font-size: 50px;
                 margin: 0px 0px 0px 80px;
                 color: #fafbfc;
                 letter-spacing: 0em;
@@ -264,7 +267,7 @@
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 21px;
+                font-size: 18px;
                 text-decoration: none;
                 margin: 20px 0px 0px 80px;
                 color: #ffffff;
@@ -276,6 +279,9 @@
                     top: 20px;
                     left: 10px;
                 }
+            }
+            .logout_image_box {
+                
             }
             .box_login {
                 .test_login {
@@ -296,7 +302,7 @@
                             background: $accent-color;
                             width: 320px;
                             height: 26;
-                            font-size: 19px;
+                            font-size: 18px;
                             border: none;
                             font-weight: bold;
                             border-radius: 8px;
@@ -305,6 +311,14 @@
                         }
                     }
                 }        
+            }
+        }
+        .logout_right_img {
+            img {
+                width: 470px;
+                display: block;
+                padding: 50px 0px 0px 40px;
+                
             }
         }
     }  
@@ -317,7 +331,7 @@
             background:center / cover no-repeat url("/assets/cheacker_img.png");
             background-position: 0px -40px;
             height: 300px;
-            border-radius: 16px;
+            border-radius: 20px;
             filter: grayscale(30%);
             .checker_word_top {
                 padding: 1px;
@@ -435,7 +449,7 @@
     }
     .tool_box {
         display: flex;
-        margin: 40px 0px 0px 82px;
+        margin: 0px 0px 0px 82px;
         span {
             display: block;
             font-size: 29px;
