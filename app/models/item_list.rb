@@ -1,6 +1,6 @@
 class ItemList < ApplicationRecord
   belongs_to :user
-  
+
   validates :list_name, presence: true, length: { maximum: 50 }
   validates :list_item_type, presence: true, length: { maximum: 50 }
 
@@ -10,5 +10,4 @@ class ItemList < ApplicationRecord
 
   # has_many :favorites, dependent: :destroy
   # has_many :users, through: :favorites
-  
 end

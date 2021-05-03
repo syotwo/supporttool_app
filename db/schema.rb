@@ -10,61 +10,65 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_31_062923) do
-
-  create_table "emotions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.text "sheet"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_emotions_on_user_id"
+ActiveRecord::Schema.define(version: 20_210_131_062_923) do
+  create_table 'emotions', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci',
+                           force: :cascade do |t|
+    t.text 'sheet'
+    t.bigint 'user_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.index ['user_id'], name: 'index_emotions_on_user_id'
   end
 
-  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "item_list_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_list_id"], name: "index_favorites_on_item_list_id"
-    t.index ["user_id", "item_list_id"], name: "index_favorites_on_user_id_and_item_list_id", unique: true
-    t.index ["user_id"], name: "index_favorites_on_user_id"
+  create_table 'favorites', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci',
+                            force: :cascade do |t|
+    t.bigint 'user_id', null: false
+    t.bigint 'item_list_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.index ['item_list_id'], name: 'index_favorites_on_item_list_id'
+    t.index %w[user_id item_list_id], name: 'index_favorites_on_user_id_and_item_list_id', unique: true
+    t.index ['user_id'], name: 'index_favorites_on_user_id'
   end
 
-  create_table "item_lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "list_name"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "image"
-    t.text "list_description"
-    t.string "list_item_type"
-    t.index ["user_id"], name: "index_item_lists_on_user_id"
+  create_table 'item_lists', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci',
+                             force: :cascade do |t|
+    t.string 'list_name'
+    t.bigint 'user_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'image'
+    t.text 'list_description'
+    t.string 'list_item_type'
+    t.index ['user_id'], name: 'index_item_lists_on_user_id'
   end
 
-  create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "item_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "img"
-    t.bigint "item_list_id", null: false
-    t.bigint "user_id", null: false
-    t.text "item_link"
-    t.index ["item_list_id"], name: "index_items_on_item_list_id"
-    t.index ["user_id"], name: "index_items_on_user_id"
+  create_table 'items', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci',
+                        force: :cascade do |t|
+    t.string 'item_name'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'img'
+    t.bigint 'item_list_id', null: false
+    t.bigint 'user_id', null: false
+    t.text 'item_link'
+    t.index ['item_list_id'], name: 'index_items_on_item_list_id'
+    t.index ['user_id'], name: 'index_items_on_user_id'
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'users', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci',
+                        force: :cascade do |t|
+    t.string 'name'
+    t.string 'email'
+    t.string 'password_digest'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
-  add_foreign_key "emotions", "users"
-  add_foreign_key "favorites", "item_lists"
-  add_foreign_key "favorites", "users"
-  add_foreign_key "item_lists", "users"
-  add_foreign_key "items", "item_lists"
-  add_foreign_key "items", "users"
+  add_foreign_key 'emotions', 'users'
+  add_foreign_key 'favorites', 'item_lists'
+  add_foreign_key 'favorites', 'users'
+  add_foreign_key 'item_lists', 'users'
+  add_foreign_key 'items', 'item_lists'
+  add_foreign_key 'items', 'users'
 end

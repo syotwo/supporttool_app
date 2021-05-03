@@ -1,9 +1,8 @@
 class ItemListsController < ApplicationController
-  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update, :destroy]
-  
-  def index  
-  end
+  before_action :require_user_logged_in, only: %i[create edit update destroy]
+  before_action :correct_user, only: %i[edit update destroy]
+
+  def index; end
 
   def show
     @item_list = ItemList.find(params[:id])
@@ -26,7 +25,7 @@ class ItemListsController < ApplicationController
       flash[:success] = 'リストを投稿しました'
       redirect_to item_list_path(@item_list.id)
       # redirect_to @item_listが省略型
-      #リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
+      # リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
     else
       flash.now[:danger] = 'リストの投稿に失敗しました。'
       render :new
@@ -61,11 +60,8 @@ class ItemListsController < ApplicationController
 
   def correct_user
     @item_list = current_user.item_lists.find_by(id: params[:id])
-    unless @item_list
-      redirect_to root_url
-    end
+    redirect_to root_url unless @item_list
   end
 
   # binding.pry
 end
-

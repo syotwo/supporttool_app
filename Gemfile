@@ -30,25 +30,26 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 4.0.1'
-  gem "factory_bot_rails"
-  gem 'rails-controller-testing'
-  gem 'faker', "~> 2.8"
-  gem "pry-rails"
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '>= 2.15'
   gem 'dotenv-rails'
+  gem 'factory_bot_rails'
+  gem 'faker', '~> 2.8'
+  gem 'pry-rails'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'dotenv-rails'
+  gem 'pry-byebug'
+  gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'pry-byebug'
-  gem 'dotenv-rails'
 end
 
 group :test do
@@ -56,13 +57,13 @@ group :test do
   # gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
-  gem 'rspec_junit_formatter'
   gem 'dotenv-rails'
+  gem 'rspec_junit_formatter'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'carrierwave', '~> 2.0'
 
@@ -72,7 +73,7 @@ gem 'ransack'
 
 gem 'azure_cognitiveservices_textanalytics', '~>0.17.3'
 
-gem "chartkick"
+gem 'chartkick'
 
 gem 'groupdate'
 

@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def create
     email = params[:session][:email].downcase
@@ -27,18 +26,14 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(password)
       # ログイン成功　 session[:user_id] = @user.id によって、ブラウザには Cookie として、サーバには Session として、ログイン状態が維持されることになります。
       session[:user_id] = @user.id
-      return true
+      true
     else
       # ログイン失敗
-      return false
+      false
     end
   end
 
   def require_user_logged_in
-    unless logged_in?
-      redirect_to login_url
-    end
+    redirect_to login_url unless logged_in?
   end
-
 end
-
