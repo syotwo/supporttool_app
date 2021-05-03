@@ -234,6 +234,85 @@
             }
         }
     }
+    .cheacker_card_box {
+        padding: 0px 80px 0px;
+        margin: 0px 0px 80px 0px;
+        .checker {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: left;
+            padding: 20px 0px 40px;
+            background:center / cover no-repeat url("/assets/cheacker_img.png");
+            background-position: 0px -40px;
+            height: 300px;
+            border-radius: 20px;
+            filter: grayscale(30%);
+            .checker_word_top {
+                padding: 1px;
+                margin: 0px 80px 0px 53px ;
+                font-size: 38px;
+                color: $submit-font-color;
+                letter-spacing: -0.05em;
+                white-space: nowrap;
+                img {
+                    height: 35px;
+                    position: relative;
+                    top: 4px;
+                }
+            }
+            .checker_word_middle {
+                margin: 0px 80px 0px 53px;
+                font-size: 17px;
+                text-decoration: none;
+                color: #f6f5f7;
+                white-space: nowrap;
+                letter-spacing: -0.07em;
+            }
+            .checker_word_bottom {
+                margin: 15px 80px 20px 53px;
+                font-size: 17px;
+                text-decoration: none;
+                color: #f6f5f7;
+                white-space: nowrap;
+                letter-spacing: -0.15em;
+            }
+            a.checker_submit {
+                display: flex;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align-last: center;
+                text-decoration: none;
+                background: $submit-sub-color;
+                width: 150px;
+                font-weight: bold;
+                border-radius: 5px;
+                white-space: nowrap;
+                letter-spacing: -0.06em;
+                vertical-align: middle;
+                border: none;
+                border-radius: 8px;
+                padding: 2px 15px; 
+                margin: 0px 80px 0px 53px;
+                &:hover {
+                    filter: brightness(120%);
+                    transition: 0.2s;
+                } 
+                img {
+                    display: block;
+                    width: 23px;
+                    height: 23px;
+                    margin: 3px 0px 0px 3px;
+                    position: relative;
+                    left: 5px;
+                    top: 9px;
+                }
+                p {
+                    font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    font-size: 20px;
+                    margin: 11px 15px;
+                    color: $submit-font-color;
+                }          
+            }
+        }
+    }
 }   
 
 .toppage_logout {
@@ -255,7 +334,7 @@
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 50px;
-                margin: 0px 0px 0px 80px;
+                margin: 0px 0px 0px 53px;
                 color: #fafbfc;
                 letter-spacing: 0em;
                 white-space: nowrap;
@@ -269,7 +348,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 18px;
                 text-decoration: none;
-                margin: 20px 0px 0px 80px;
+                margin: 20px 0px 0px 53px;
                 color: #ffffff;
                 font-weight: 200;
                 letter-spacing: -0.1em;
@@ -294,7 +373,7 @@
                             width: 50px;
                             position: relative; 
                             top: 18px;
-                            left: 90px;  
+                            left: 70px;  
                         }
                         input {
                             font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -307,7 +386,7 @@
                             font-weight: bold;
                             border-radius: 8px;
                             padding: 16px 16px 15px 50px; 
-                            margin: 23px 0px 0px 26px;  
+                            margin: 23px 0px 0px -2px;  
                         }
                     }
                 }        
@@ -562,7 +641,7 @@
                             max-width: 100%;
                             object-fit: cover;
                             margin: 0px 0px 0px 0px;
-                            border-radius: 4px 4px 0px 0px;
+                            border-radius: 0px 0px 0px 0px;
                         }
                     }
                 }
