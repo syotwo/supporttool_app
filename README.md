@@ -1,5 +1,5 @@
 # Future Weapon
-- 作成中のポートフォリオです。個人の強度を持って健康を維持している今、ヘルスケアガジェット投稿サイトにゲーミフィケーションの要素を取り入れ、簡単に楽しく健康になる体験を作り出せたら人々の生活がより豊かになるという仮説のもとに作成しました。ストレスレベルの可視化もできます。
+- 作成中のポートフォリオです。個人の強度を持って健康を維持している今、ヘルスケアガジェット投稿サイトにゲーミフィケーションの要素を取り入れ、簡単に楽しく健康になる体験を作り出せたら人々の生活がより豊かになるという仮説のもとに作成しました。
 
 # URL
 - http://www.supporttool-app.xyz/
@@ -7,14 +7,17 @@
 <img width="1067" alt="スクリーンショット 2021-04-01 15 45 37" src="https://user-images.githubusercontent.com/44368100/113254533-ac4e6000-9301-11eb-8042-d44e0390df09.png">
 
 # 使用技術
-- Ruby 2.7.1, Rails 6.0.3.1
+- Ruby 2.7.1, 
+- Ruby on Rails 6.0.3.1
+- Mysql 8.0.19
 - Sass, jQuery
-- Text Analytics API | Microsoft Azure
-- Docker, Docker-compose
-- nginx, unicorn
+- Docker/Docker-compose
+- Nginx, unicorn
 - AWS (VPC, EC2, RDS for MySQL, Route53, ACM, ALB)
 - Circle CI
-- git, Github
+- Git, Github
+- RSpec
+- Text Analytics API | Microsoft Azure
 
 # 機能一覧
 - 認証機能
