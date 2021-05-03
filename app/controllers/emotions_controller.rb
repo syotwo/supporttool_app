@@ -72,11 +72,13 @@ class EmotionsController < ApplicationController
   end
 
   def confidence_value
-    if @sentiment_params = request.query_parameters && @confidencescores = @sentiment_params['confidenceScores']
-      @negative = @confidencescores['negative']
-      @neutral = @confidencescores['neutral']
-      @positive = @confidencescores['positive']
-    end
+    if @sentiment_params = request.query_parameters
+      if @confidencescores = @sentiment_params["confidenceScores"]
+      @negative = @confidencescores["negative"]
+      @neutral = @confidencescores["neutral"]
+      @positive = @confidencescores["positive"]
+      end
     # binding.pry
+    end
   end
 end

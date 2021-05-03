@@ -415,7 +415,7 @@
             filter: grayscale(30%);
             .checker_word_top {
                 padding: 1px;
-                margin: 0px 80px 0px 80px ;
+                margin: 0px 80px 0px 53px ;
                 font-size: 38px;
                 color: $submit-font-color;
                 letter-spacing: -0.05em;
@@ -427,7 +427,7 @@
                 }
             }
             .checker_word_middle {
-                margin: 0px 80px 0px 85px;
+                margin: 0px 80px 0px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: #f6f5f7;
@@ -435,7 +435,7 @@
                 letter-spacing: -0.07em;
             }
             .checker_word_bottom {
-                margin: 15px 80px 20px 85px;
+                margin: 15px 80px 20px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: #f6f5f7;
@@ -457,7 +457,7 @@
                 border: none;
                 border-radius: 8px;
                 padding: 2px 15px; 
-                margin: 0px 80px 0px 85px;
+                margin: 0px 80px 0px 53px;
                 &:hover {
                     filter: brightness(120%);
                     transition: 0.2s;
