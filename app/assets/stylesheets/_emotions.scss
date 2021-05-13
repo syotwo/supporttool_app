@@ -26,12 +26,13 @@
 }
 
 .emotion_new {
-    background: $submit-card-color;
+    
     width: 550px;
     margin: 70px auto;
     padding: 40px 70px 30px;
     border-radius: 5px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    box-shadow: 20px 20px 32px #b3c9e2, -8px -8px 10px #ffffff;
     h1 {
         font-size: 38px;
         text-align: center;
@@ -96,8 +97,10 @@
         font-weight: bold;
         font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
+        text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
         &:hover {
-            filter: brightness(130%);
+            filter: brightness(110%);
           }
     }
     p {

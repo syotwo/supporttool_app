@@ -2,8 +2,8 @@
 @import "_variables";
 
 header {
-    background: $main-color;
-    height: 62px;
+    background: #E5EDF5;
+    height: 68px;
     padding: 1px 0px;
     position: fixed;
     width: 100%;
@@ -17,6 +17,7 @@ nav {
     justify-content: space-between;
     height: 100%;
     padding: 0px 80px 0px 80px;
+    border-bottom: solid 1px #c8cfd6;
     a.nav_logo {
         display: block;
         display: flex;
@@ -27,20 +28,16 @@ nav {
         filter: brightness(110%);
         .nav_img_box {
             .nav_img {
-                position:relative; 
-                right: -2px;
-                top: 2px;
                 margin: 0px 0px 0px 0px;
                 background-color: $accent-color;
-                background: linear-gradient(to bottom, $accent-color);
+                background: $accent-color;
                 border-radius: 50%;
-                // transform:skewX(-6deg); 
+                box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
                 span {
                 display: block;
-                // transform:skewX(6deg); 
                 font-size: 32px;
-                padding: 6px 6px;
-                color: #d8d8da;
+                padding: 7px;
+                color: #dedee0;
                 }
             }
         }
@@ -48,11 +45,11 @@ nav {
         .nav_title {
             display: flex;
             .title {
-                font-family: 'Exo', sans-serif;
-                color: $navfont-color; 
+                font-family: 'Montserrat Alternates', sans-serif;
+                color: #2A2D2F; 
                 line-height: 1.5em;
                 font-size: 27px; 
-                letter-spacing: -1.8px;
+                letter-spacing: -2.3px;
                 margin: auto 0px;
                 white-space: nowrap;
                 padding: 0px;
@@ -71,12 +68,12 @@ nav {
         .plus_box {
             display: flex;
             &:hover {
-                filter: brightness(120%);
+                filter: brightness(110%);
                 transition: 0.1s;
               }
             li {
                 a.plus {
-                    background: $accent-color;
+                
                     text-decoration: none;
                     vertical-align: middle;
                     display: inline-block;
@@ -88,9 +85,8 @@ nav {
                     color: $submit-font-color;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     position:relative; 
-                    top: 0px; 
-                    left: 10px;
-                    padding: 2px 0px 2px 12px;
+                    top: 2px; 
+                    left: 56px;
                     border-radius: 40px 0px 0px 40px;
                 }
                 .plus_itemlist {
@@ -104,11 +100,13 @@ nav {
                     font-size: 15px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
-                    padding: 2px 19px 2px 2px;
+                    padding: 2px 21px 2px 47px;
                     line-height: 2.3em;
                     letter-spacing: 0em;
-                    border-radius: 0px 40px 40px 0px;
+                    border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+                    text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
             }
         }
@@ -123,19 +121,20 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $font-color;
+                color: $submit-font-color;
                 font-weight: bold;
                 font-size: 17px;
                 background: $accent-color;
-                padding: 3px 20px;
+                padding: 8px 25px 9px;
                 border-radius: 40px;
                 margin: auto 10px;
-                border: solid 2px $accent-color;
                 position: relative;
-                bottom: 1px;
+                bottom: 3px;
+                box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+                text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 filter: brightness(103%);
                 &:hover {
-                    filter: brightness(130%);
+                    filter: brightness(110%);
                     transition: 0.1s;
                   }
             }
@@ -144,19 +143,20 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $accent-color;
+                color: $submit-font-color;
                 font-weight: bold;
                 font-size: 17px;
-                background: $main-color;
-                padding: 3px 20px;
+                background: #c8dcf0;
+                padding: 8px 25px;
                 border-radius: 40px;
                 margin: auto 0px;
-                border: solid 2px $accent-color;
                 position: relative;
-                bottom: 1px;
-                filter: brightness(107%);
+                bottom: 3px;
+                box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+                text-shadow: 2px 2px 4px #8795A4, -2px -2px 4px #f4f5f7;
+                filter: brightness(103%);
                 &:hover {
-                    filter: brightness(130%);
+                    filter: brightness(105%);
                     transition: 0.1s;
                   }
             }

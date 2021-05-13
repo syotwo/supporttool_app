@@ -28,17 +28,6 @@
         <% @item_lists.each do |item_list| %>
           <li>
             <div class="itemlist_topimg">
-              <div class="list_item_type_box">
-                <% if item_list.list_item_type == "1" then %>
-                <div class="list_type_sord_box">
-                  <p class= list_item_type_name><span>&#x2694;</span></p>
-                </div>
-                <% elsif item_list.list_item_type == "2" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name><span>&#x1f6e1;</span></p>
-                </div>
-                <% end %>
-              </div>
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
               <% else %>
@@ -78,21 +67,20 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1 class= top><br>未来へ生き抜く<br>現代の<br><span class= top_word_bottom>「剣」と「盾」</span></h1>
-        <p class= middle>ガジェット共有コミュニティー<br>社会を変えるんじゃない<br>個人が抜本的に変わるんだ<br></p>
+        <h1 class= top>クリエイターの<br>健康を守る<br>セーフスペース<span class= top_word_bottom></span></h1>
+        <p class= middle>あなたの<br>ヘルスハックに関する知見を<br>待っている人がいます</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
               <%= image_tag("/assets/tool.png") %>
-              <%= f.submit "Search The Future Weapon"%>
+              <%= f.submit "Join Creater House"%>
             <% end %>
           </div>
         </div>
       </div>
       <div class="logout_right_img">
-            <%= image_tag("/assets/top_image4.png") %>
       </div>
     </div>  
     <div class="tool_box">
@@ -106,17 +94,6 @@
         <% @item_lists.each do |item_list| %>
           <li>
             <div class="itemlist_topimg">
-              <div class="list_item_type_box">
-                <% if item_list.list_item_type == "1" then %>
-                <div class="list_type_sord_box">
-                  <p class= list_item_type_name><span>&#x2694;</span></p>
-                </div>
-                <% elsif item_list.list_item_type == "2" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name><span>&#x1f6e1;</span></p>
-                </div>
-                <% end %>
-              </div>
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
               <% else %>
@@ -141,7 +118,7 @@
     </div>
     <div class="cheacker_card_box">
       <div class= checker>
-        <h1 class= checker_word_top>自分で<br>ストレスダメージを<br>管理する</h1>
+        <h1 class= checker_word_top>自分で<br>自分の<br>体調管理</h1>
         <p class= checker_word_middle></p>
         <p class= checker_word_middle>簡単チェックでストレスを可視化</p>
         <p></p>
