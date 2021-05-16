@@ -39,7 +39,7 @@
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
-                <p class= price>$ 000.0〜</p>
+                <p class= price></p>
                 <p>
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%m/%d/%Y ") %>
@@ -67,15 +67,15 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1 class= top>クリエイターの<br>健康を守る<br>セーフスペース<span class= top_word_bottom></span></h1>
-        <p class= middle>あなたの<br>ヘルスハックに関する知見を<br>待っている人がいます</p>
+        <h1 class= top>クリエイターの<br>体調をマネージメントする<br>安全基地<span class= top_word_bottom></span></h1>
+        <p class= middle>ヘルスハックに関する知見・共有サービス<br>You Are Safe Here<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
               <%= image_tag("/assets/tool.png") %>
-              <%= f.submit "Join Creater House"%>
+              <%= f.submit "How Are You Feeling"%>
             <% end %>
           </div>
         </div>
@@ -93,6 +93,17 @@
       <ul class="main">
         <% @item_lists.each do |item_list| %>
           <li>
+            <div class="list_item_type_box">
+              <% if item_list.list_item_type == "1" then %>
+              <div class="list_type_sord_box">
+                <p class= list_item_type_name>Condition<span>&#x1f600;</span></p>
+              </div>
+              <% elsif item_list.list_item_type == "2" then%>
+              <div class="list_type_shield_box">
+                <p class= list_item_type_name>Condition<span>&#x1f622;</span></p>
+              </div>
+              <% end %>
+            </div>
             <div class="itemlist_topimg">
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
@@ -105,7 +116,7 @@
                 <div class="list_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
                 </div>
-                <p class= price>$ 000.0〜</p>
+                <p class= price></p>
                 <p>
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%m/%d/%Y ") %>

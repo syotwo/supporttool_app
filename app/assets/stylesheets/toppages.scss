@@ -322,7 +322,7 @@
     .logout_image {
         padding: 0px 0px 0px 0px;
         height: 420px;
-        background: url("/assets/") no-repeat center center;
+        background: url("/assets/top_img.png") no-repeat center center;
         background-size:cover;
         filter: brightness(95%);
         margin: 80px 80px 15px 80px;
@@ -352,7 +352,7 @@
                 margin: 20px 0px 0px 53px;
                 color: #2d2f31;
                 font-weight: 200;
-                letter-spacing: -0.18em;
+                letter-spacing: -0.01em;
                 img {
                     height: 55px;
                     position: relative;
@@ -646,7 +646,6 @@
                             max-width: 100%;
                             object-fit: cover;
                             margin: 0px 0px 0px 0px;
-                            border-radius: 10px 10px 0px 0px;
                         }
                     }
                 }
