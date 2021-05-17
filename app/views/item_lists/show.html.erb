@@ -14,6 +14,8 @@
             <% if @item_list.image.url.present?%>
                     <%= link_to image_tag(@item_list.image.url) %>
             <% end %>
+            <p class= list_description><%= @item_list.list_description %></p>
+            <p class= "item_list_itmes">items</p>
             <ul>
                 <% @items.each do |item| %>
                     <li class=item_list_show_card>
@@ -32,8 +34,6 @@
                     </li>
                 <% end %>
             </ul> 
-            <p class= list_description><%= @item_list.list_description %></p>
-                
             <div class= "money_tipping">
                 <span class="material-icons">card_giftcard</span>
                 <p>作成者に感謝して支援する。</p>

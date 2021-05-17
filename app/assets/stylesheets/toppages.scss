@@ -116,7 +116,6 @@
                     .list_type_sord_box {
                         display: flex;
                         border-radius: 50%;
-                        background-color: $type-back-color;
                         margin: 12px 0px 12px 11px;
                         height: 51px;
                         width: 51px;
@@ -131,20 +130,15 @@
                                 font-size: 23px;
                             }
                         }
-                        img {
+                        span {
                             display: block;
-                            padding: 2px;
-                            background-color: $sord-color;
-                            border-radius: 50%;
-                            width: 38px;
-                            height: 38px;
+                            padding: 2px;              
                             margin: 5px 0px 0px 0px;
                         }
                     }
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        background-color: $type-back-color;
                         margin: 12px 0px 12px 11px;
                         height: 51px;
                         width: 51px;
@@ -159,13 +153,8 @@
                                 font-size: 23px;
                             }
                         }
-                        img {
-                            display: block;
-                            background-color: $shield-color;
+                        span {                            
                             padding: 2px;
-                            border-radius: 10%;
-                            width: 36px;
-                            height: 36px;
                             margin: 5px 0px 0px 0px;
                         }
                     }
@@ -186,7 +175,6 @@
                             max-width: 100%;
                             object-fit: cover;
                             margin: 0px 0px 0px 0px;
-                            border-radius: 10px 10px 0px 0px;
                         }
                     }
                 }
@@ -369,11 +357,12 @@
                         &:hover {
                             filter: brightness(110%);
                         } 
-                        img {
-                            width: 50px;
+                        span {
                             position: relative; 
-                            top: 18px;
-                            left: 90px;  
+                            top: 5px;
+                            left: 120px;  
+                            font-size: 26px;
+                            color: #f8fcf9;
                         }
                         input {
                             font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -386,7 +375,7 @@
                             font-weight: bold;
                             border-radius: 40px;
                             padding: 16px 16px 15px 50px; 
-                            margin: 23px 0px 0px -2px;  
+                            margin: 23px 0px 0px 25px;  
                             box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                             text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
                         }
@@ -450,7 +439,7 @@
                 text-align-last: center;
                 text-decoration: none;
                 background: $accent-color;
-                width: 200px;
+                width: 240px;
                 font-weight: bold;
                 border-radius: 5px;
                 white-space: nowrap;
@@ -458,25 +447,25 @@
                 vertical-align: middle;
                 border: none;
                 border-radius: 40px;
-                padding: 2px 45px; 
+                padding: 2px 60px; 
                 margin: 0px 80px 0px 53px;
                 box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
                 } 
-                img {
+                span {
                     display: block;
-                    width: 23px;
-                    height: 23px;
+                    font-size: 27px;
                     margin: 3px 0px 0px 3px;
                     position: relative;
                     left: 5px;
                     top: 9px;
+                    color: #f8fcf9;
                 }
                 p {
                     font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    font-size: 20px;
+                    font-size: 19px;
                     margin: 11px 15px;
                     color: $submit-font-color;
                     text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
@@ -575,8 +564,7 @@
                 .list_item_type_box {
                     .list_type_sord_box {
                         display: flex;
-                        border-radius: 50%;
-                        background-color: $type-back-color;
+                        border-radius: 50%;                    
                         margin: 12px 0px 12px 11px;
                         height: 51px;
                         width: 51px;
@@ -591,20 +579,14 @@
                                 font-size: 23px;
                             }
                         }
-                        img {
-                            display: block;
+                        span {
                             padding: 2px;
-                            background-color: $sord-color;
-                            border-radius: 50%;
-                            width: 38px;
-                            height: 38px;
                             margin: 5px 0px 0px 0px;
                         }
                     }
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        background-color: $type-back-color;
                         margin: 12px 0px 12px 11px;
                         height: 51px;
                         width: 51px;
@@ -619,13 +601,8 @@
                                 font-size: 23px;
                             }
                         }
-                        img {
-                            display: block;
-                            background-color: $shield-color;
+                        span {
                             padding: 2px;
-                            border-radius: 10%;
-                            width: 36px;
-                            height: 36px;
                             margin: 5px 0px 0px 0px;
                         }
                     }

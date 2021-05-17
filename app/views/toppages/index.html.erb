@@ -21,12 +21,25 @@
       <span class="material-icons">
       devices_other
       </span>
-      <p>Gadget</p>
+      <p>記事一覧</p>
     </div>
     <div class="itemlist">
       <ul class="main">
         <% @item_lists.each do |item_list| %>
           <li>
+            <div class="list_item_type_box">
+              <% if item_list.list_item_type == "1" then %>
+              <div class="list_type_sord_box">
+                <p class= list_item_type_name>Condition</p>
+                <span>&#x1f600;</span>
+              </div>
+              <% elsif item_list.list_item_type == "2" then%>
+              <div class="list_type_shield_box">
+                <p class= list_item_type_name>Condition</p>
+                <span>&#x1f622;</span>
+              </div>
+              <% end %>
+            </div>
             <div class="itemlist_topimg">
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
@@ -52,14 +65,14 @@
     </div> 
     <div class="cheacker_card_box">
       <div class= checker>
-        <h1 class= checker_word_top>自分の<br>ストレスダメージを<br>管理する</h1>
+        <h1 class= checker_word_top>今日の<br>コンディションを<br>チェックする</h1>
+        <p class= checker_word_middle>気分検知ツールで、体調の変化を記録</p>
         <p class= checker_word_middle></p>
-        <p class= checker_word_middle>簡単チェックでストレスを可視化</p>
         <p></p>
-        <p class= checker_word_bottom>＊ Stress Tracker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
+        <p class= checker_word_bottom>＊ Daily Checker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-          <%= image_tag("/assets/energy_cheacker_img.png") %>
-          <p>Stress Tracker</p>
+          <span class="material-icons">emoji_emotions</span>
+          <p>Daily Checker</p>
         <% end %>
       </div>
     </div>
@@ -67,15 +80,15 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_word>
-        <h1 class= top>クリエイターの<br>体調をマネージメントする<br>安全基地<span class= top_word_bottom></span></h1>
-        <p class= middle>ヘルスハックに関する知見・共有サービス<br>You Are Safe Here<br></p>
+        <h1 class= top>安全基地で<br>体調を<br>ケアする<span class= top_word_bottom></span></h1>
+        <p class= middle>あなたのヘルスハックに関する知見を<br>待っている人がいます<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
-              <%= image_tag("/assets/tool.png") %>
-              <%= f.submit "How Are You Feeling"%>
+              <span class="material-icons">thumb_up</span>
+              <%= f.submit "How are you feeling?"%>
             <% end %>
           </div>
         </div>
@@ -87,7 +100,7 @@
       <span class="material-icons">
       devices_other
       </span>
-      <p>Gadget</p>
+      <p>記事一覧</p>
     </div>
     <div class="itemlist">
       <ul class="main">
@@ -96,11 +109,13 @@
             <div class="list_item_type_box">
               <% if item_list.list_item_type == "1" then %>
               <div class="list_type_sord_box">
-                <p class= list_item_type_name>Condition<span>&#x1f600;</span></p>
+                <p class= list_item_type_name>Condition</p>
+                <span>&#x1f600;</span>
               </div>
               <% elsif item_list.list_item_type == "2" then%>
               <div class="list_type_shield_box">
-                <p class= list_item_type_name>Condition<span>&#x1f622;</span></p>
+                <p class= list_item_type_name>Condition</p>
+                <span>&#x1f622;</span>
               </div>
               <% end %>
             </div>
@@ -129,14 +144,14 @@
     </div>
     <div class="cheacker_card_box">
       <div class= checker>
-        <h1 class= checker_word_top>自分で<br>自分の<br>体調管理</h1>
+        <h1 class= checker_word_top>今日の<br>コンディションを<br>チェックする</h1>
+        <p class= checker_word_middle>気分検知ツールで、体調の変化を記録</p>
         <p class= checker_word_middle></p>
-        <p class= checker_word_middle>簡単チェックでストレスを可視化</p>
         <p></p>
-        <p class= checker_word_bottom>＊ Stress Tracker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
+        <p class= checker_word_bottom>＊ Daily Checker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-          <%= image_tag("/assets/energy_cheacker_img.png") %>
-          <p>Stress Tracker</p>
+          <span class="material-icons">emoji_emotions</span>
+          <p>Daily Checker</p>
         <% end %>
       </div>
     </div>
