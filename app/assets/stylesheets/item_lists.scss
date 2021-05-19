@@ -469,13 +469,11 @@ p {
                     height: 48px;
                     font-size: 25px;
                     font-weight: bold;
-                    background: $base-color;
+                    background: $gray-color;
                     border: none;
-                    color: $accent-color;
+                    color: $submit-font-color;
                     border-radius: 4px 0px 0px 4px;
-                    border-top: solid 2px $accent-color;
-                    border-left: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
+                  
                     line-height: 1.4em;
                 }
                 .addproductst_submit {
@@ -485,16 +483,14 @@ p {
                     font-size: 18px;
                     padding: 0px 17px 0px 2px;
                     margin:  0px 0px 0px 0px;
-                    background: $base-color;
+                    background: $gray-color;
                     letter-spacing: 0em;
                     border: none;
-                    color: $accent-color;
+                    color: $submit-font-color;
                     border-radius: 0px 4px 4px 0px;
                     position:relative; 
                     outline: none;
-                    border-top: solid 2px $accent-color;
-                    border-right: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
+
                     line-height: 2;
                 }
             }

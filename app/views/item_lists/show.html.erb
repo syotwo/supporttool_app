@@ -44,10 +44,10 @@
         <div class="addproducts">
             <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
                 <div class= "wrap"> 
-                    <%= form.text_field :item_name, placeholder: "Products_Name" %>
-                    <%= form.text_field :item_link, placeholder: "Products_url" %>
+                    <%= form.text_field :item_name, placeholder: "Item_Name" %>
+                    <%= form.text_field :item_link, placeholder: "Item_url" %>
                     
-                    <%= form.label :img, "Cover img", class: "addproducts_img_name_label" %>
+                    <%= form.label :img, "Img", class: "addproducts_img_name_label" %>
                     <%= form.file_field :img, class: "fileInput",style: "display:none;" %>
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
                     <div class= "submit">

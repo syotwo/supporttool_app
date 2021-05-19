@@ -83,7 +83,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             margin: 0px 0px 0px 8px;
             padding: 0px 0px 0px 0px;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 600;
             color: $font-color;
         }
@@ -124,16 +124,18 @@
                             color: $font-color;
                             margin: 0;
                             margin: 13px 11px;
-                            font-weight: 100;
+                            font-weight: 600;
                             letter-spacing: 0.01em;
+                            font-size: 18px;
                             span {
                                 font-size: 23px;
                             }
                         }
                         span {
                             display: block;
-                            padding: 2px;              
+                            padding: 2px;
                             margin: 5px 0px 0px 0px;
+                            font-size: 25px;
                         }
                     }
                     .list_type_shield_box {
@@ -147,15 +149,18 @@
                             color: $font-color;
                             margin: 0;
                             margin: 13px 11px;
-                            font-weight: 100;
+                            font-weight: 600;
                             letter-spacing: 0.01em;
+                            font-size: 18px;
                             span {
                                 font-size: 23px;
                             }
                         }
-                        span {                            
+                        span {
+                            display: block;
                             padding: 2px;
                             margin: 5px 0px 0px 0px;
+                            font-size: 25px;
                         }
                     }
                     
@@ -269,7 +274,7 @@
                 text-align-last: center;
                 text-decoration: none;
                 background: $accent-color;
-                width: 200px;
+                width: 240px;
                 font-weight: bold;
                 border-radius: 5px;
                 white-space: nowrap;
@@ -277,25 +282,25 @@
                 vertical-align: middle;
                 border: none;
                 border-radius: 40px;
-                padding: 2px 45px; 
+                padding: 2px 60px; 
                 margin: 0px 80px 0px 53px;
-                box-shadow: 10px 15px 9px #b3c9e2, -10px -10px 5px #f9f9fa;
+                box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                 &:hover {
-                    filter: brightness(108%);
+                    filter: brightness(110%);
                     transition: 0.2s;
                 } 
-                img {
+                span {
                     display: block;
-                    width: 23px;
-                    height: 23px;
+                    font-size: 27px;
                     margin: 3px 0px 0px 3px;
                     position: relative;
                     left: 5px;
                     top: 9px;
+                    color: #f8fcf9;
                 }
                 p {
                     font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    font-size: 20px;
+                    font-size: 19px;
                     margin: 11px 15px;
                     color: $submit-font-color;
                     text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
@@ -313,7 +318,7 @@
         background: url("/assets/top_img.png") no-repeat center center;
         background-size:cover;
         filter: brightness(95%);
-        margin: 80px 80px 15px 80px;
+        margin: 100px 80px 15px 80px;
         display: flex;
         border-radius: 20px;
         .logout_word {
@@ -322,12 +327,13 @@
             top: -19px; 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 50px;
+                font-size: 55px;
                 margin: 50px 0px 0px 50px;
                 color: #2d2f31;
                 letter-spacing: -0.15em;
                 white-space: nowrap;
                 line-height: 1.1em;
+                font-weight: 800;
                 .top_word_bottom {
                     position: relative;
                     right: 33px;
@@ -335,9 +341,9 @@
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 24px;
+                font-size: 23px;
                 text-decoration: none;
-                margin: 20px 0px 0px 53px;
+                margin: 7px 0px 0px 53px;
                 color: #2d2f31;
                 font-weight: 200;
                 letter-spacing: -0.01em;
@@ -369,12 +375,12 @@
                             color: $submit-font-color;
                             background: $accent-color;
                             width: 370px;
-                            height: 26;
-                            font-size: 18px;
+                            height: 20;
+                            font-size: 17px;
                             border: none;
                             font-weight: bold;
                             border-radius: 40px;
-                            padding: 16px 16px 15px 50px; 
+                            padding: 13px 16px 13px 50px; 
                             margin: 23px 0px 0px 25px;  
                             box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                             text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
@@ -532,7 +538,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             margin: 0px 0px 0px 8px;
             padding: 0px 0px 0px 0px;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 600;
             color: $font-color;
         }
@@ -555,11 +561,11 @@
             li {
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 18px; 
-                background-color: #EBF2FA;
+                background-color: $base-color;
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
-                box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+                box-shadow: 10px 10px 30px #d3e3f3, -10px -10px 30px #ffffff;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .list_item_type_box {
                     .list_type_sord_box {
@@ -573,15 +579,18 @@
                             color: $font-color;
                             margin: 0;
                             margin: 13px 11px;
-                            font-weight: 100;
+                            font-weight: 600;
                             letter-spacing: 0.01em;
+                            font-size: 18px;
                             span {
                                 font-size: 23px;
                             }
                         }
                         span {
+                            display: block;
                             padding: 2px;
                             margin: 5px 0px 0px 0px;
+                            font-size: 25px;
                         }
                     }
                     .list_type_shield_box {
@@ -590,20 +599,23 @@
                         margin: 12px 0px 12px 11px;
                         height: 51px;
                         width: 51px;
-                        .list_item_type_name {
+                        p.list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             color: $font-color;
                             margin: 0;
                             margin: 13px 11px;
-                            font-weight: 100;
+                            font-weight: 600;
                             letter-spacing: 0.01em;
+                            font-size: 18px;
                             span {
-                                font-size: 23px;
+                                font-size: 25px;
                             }
                         }
                         span {
+                            display: block;
                             padding: 2px;
                             margin: 5px 0px 0px 0px;
+                            font-size: 25px;
                         }
                     }
                     
