@@ -284,7 +284,6 @@
                 border-radius: 40px;
                 padding: 2px 60px; 
                 margin: 0px 80px 0px 53px;
-                box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
@@ -382,7 +381,6 @@
                             border-radius: 40px;
                             padding: 13px 16px 13px 50px; 
                             margin: 23px 0px 0px 25px;  
-                            box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                             text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
                         }
                     }
@@ -408,8 +406,8 @@
             background-position: 0px -40px;
             height: 300px;
             border-radius: 20px;
-            background-color: #EBF2FA;
-            box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+            background: #E5EDF5;
+            box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
             .checker_word_top {
                 padding: 1px;
                 margin: 0px 80px 0px 53px ;
@@ -455,7 +453,6 @@
                 border-radius: 40px;
                 padding: 2px 60px; 
                 margin: 0px 80px 0px 53px;
-                box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
@@ -565,7 +562,8 @@
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
-                box-shadow: 10px 10px 30px #d3e3f3, -10px -10px 30px #ffffff;
+                background: #E5EDF5;
+                box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .list_item_type_box {
                     .list_type_sord_box {

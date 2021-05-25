@@ -30,11 +30,13 @@ nav {
                 margin: 0px 0px 0px 0px;
                 border-radius: 50%;
                 background:  $accent-color;
+                background: #3dc954;
                 span {
                 display: block;
                 font-size: 17px;
                 padding: 14px;
                 color: $base-color;
+                
                 }
             }
         }
@@ -71,7 +73,6 @@ nav {
               }
             li {
                 a.plus {
-                
                     text-decoration: none;
                     vertical-align: middle;
                     display: inline-block;
@@ -87,6 +88,12 @@ nav {
                     left: 56px;
                     border-radius: 40px 0px 0px 40px;
                 }
+                span {
+                    position:relative; 
+                    top: 9px; 
+                    left: 55px;
+                    color: $submit-font-color;
+                }
                 .plus_itemlist {
                     background: $accent-color;
                     white-space: nowrap;
@@ -98,12 +105,12 @@ nav {
                     font-size: 15px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
-                    padding: 2px 21px 2px 47px;
+                    padding: 4px 21px 4px 55px;
                     line-height: 2.3em;
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    box-shadow: 5px 5px 10px #b3c9e2, -5px -5px 5px #f4f5f7;
+                    box-shadow:  5px 5px 11px #c3c9d0,-5px -5px 11px #ffffff;
                     text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
             }
@@ -123,10 +130,12 @@ nav {
                 font-size: 17px;
                 padding: 8px 25px 9px;
                 border-radius: 40px;
-                margin: auto 10px;
+                margin: auto 20px;
                 position: relative;
                 bottom: 3px;
                 color: $font-color; 
+                background: #E5EDF5;
+                box-shadow:  5px 5px 11px #c3c9d0,-5px -5px 11px #ffffff;
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(110%);
@@ -147,6 +156,9 @@ nav {
                 position: relative;
                 bottom: 3px;
                 color: $font-color; 
+                border-radius: 50px;
+                background: #E5EDF5;
+                box-shadow:  5px 5px 11px #c3c9d0,-5px -5px 11px #ffffff;
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(105%);
