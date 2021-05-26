@@ -12,7 +12,6 @@
   margin: 60px auto ;
   color: $font_color;
   padding: 35px 50px 35px 40px;
-  background-color: $submit-card-color;
   border-radius: 4px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 200;
@@ -27,9 +26,12 @@
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
-      padding: 18px 10px;
+      padding: 18px 0px 18px 22px;
       border-radius: 40px;
       border: none;
+      border-radius: 50px;
+      background: #eef2f7;
+      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_email {
@@ -39,7 +41,9 @@
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
-      padding: 18px 10px;
+      padding: 18px 0px 18px 22px;
+      background: #eef2f7;
+      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
 
@@ -50,7 +54,9 @@
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
-      padding: 18px 10px;
+      padding: 18px 0px 18px 22px;
+      background: #eef2f7;
+      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_password_confirmation {
@@ -60,7 +66,9 @@
       display: block; 
       width: 97%;
       margin: 7px 0px 19px;
-      padding: 18px 10px;
+      padding: 18px 0px 18px 22px;
+      background: #eef2f7;
+      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
 
@@ -74,10 +82,12 @@
     font-size: 16px;
     border: none;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-    box-shadow: 15px 15px 9px #D5DCEC, -6px -6px 3px #ffffff;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #41d75a, #37b54c);
+    box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
     text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
     &:hover {
-      filter: brightness(130%);
+      filter: brightness(110%);
     }
   }
 }

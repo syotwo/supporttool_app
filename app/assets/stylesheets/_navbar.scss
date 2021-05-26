@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 80px 0px 80px;
+    padding: 10px 80px 10px 80px;
     a.nav_logo {
         display: block;
         display: flex;
@@ -30,13 +30,11 @@ nav {
                 margin: 0px 0px 0px 0px;
                 border-radius: 50%;
                 background:  $accent-color;
-                background: #3dc954;
                 span {
                 display: block;
                 font-size: 17px;
                 padding: 14px;
                 color: $base-color;
-                
                 }
             }
         }
@@ -72,6 +70,7 @@ nav {
                 transition: 0.1s;
               }
             li {
+                margin: 0px 10px 0px 0px;
                 a.plus {
                     text-decoration: none;
                     vertical-align: middle;
@@ -91,10 +90,11 @@ nav {
                 span {
                     position:relative; 
                     top: 9px; 
-                    left: 55px;
+                    left: 65px;
                     color: $submit-font-color;
+                    text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
-                .plus_itemlist {
+                .plus_itemlist {    
                     background: $accent-color;
                     white-space: nowrap;
                     text-decoration: none;
@@ -110,7 +110,8 @@ nav {
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    box-shadow:  5px 5px 11px #c3c9d0,-5px -5px 11px #ffffff;
+                    background: linear-gradient(145deg, #41d75a, #37b54c);
+                    box-shadow:  4px 4px 8px #adb3bb,-4px -4px 3px #ffffff;
                     text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
             }
@@ -178,22 +179,25 @@ nav {
         color: white;
         padding: 0px 0px 0px 4px;
         position: relative;
-        bottom: 4px;
+        bottom: 0px;
         left: 5px;
         li {
             list-style: none;
+            a {
+                color: white;
+                span {
+                    font-size: 44px;
+                    color: $gray-font-color;
+                    margin: 0;
+                    padding: 0;
+                    border-radius: 20px;
+                    box-shadow:  4px 4px 8px #adb3bb,-4px -4px 3px #ffffff;
+                }
+            }
             &:hover {
                 filter: brightness(120%);
                 transition: 0.1s;
               }
-            a {
-                color: white;
-                span {
-                    font-size: 46px;
-                    color: $navfont_color;
-                }
-                
-            }
         }
     }  
     .menu ul {
