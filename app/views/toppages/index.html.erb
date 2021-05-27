@@ -8,10 +8,9 @@
       </span>
       <p class =login_username>Welcome Back, <%= current_user.name %>!</p>
     </div>
-    
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "What weapon do you need?" %>
+        <%= f.search_field :list_name_cont, placeholder: "How Are You Feeling?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>

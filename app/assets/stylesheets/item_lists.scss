@@ -17,7 +17,7 @@ p {
     padding: 103px 0px 0px 0px;
     form.item_list_search {
         display: flex;
-        margin: 37px 50px 41px 80px;
+        margin: 20px 50px 10px 80px;
         color: $subfont_color;
         height: 38px;
         input {
@@ -25,7 +25,7 @@ p {
             height: 48px;
             padding-left: 13px;
             border: none;
-            border-radius: 8px;
+            border-radius: 0px 40px 40px 0px;
             outline: none;
             background: $card-color;
             font-size: 16px;
@@ -33,7 +33,9 @@ p {
             line-height: 3em;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             position: relative;
-            left: 27px;
+            left: 37px;
+            background: #f6f7f8;
+        box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             &::placeholder{
                 color: $font_color;
             }
@@ -42,17 +44,18 @@ p {
             }
         }
         #search {
-            width: 38px;
             height: 36px;
             border: none;
-            padding: 5px 0px 43px 5px;
+            padding: 5px 0px 43px 20px;
             background: $card-color;
-            border-radius: 8px 0px 0px 8px;
+            border-radius: 40px 0px 0px 40px;
             position:relative;
             top: 0px;
             left: -349px;
             outline: none; 
             vertical-align: middle;
+            background: #f6f7f8;
+            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             span {
                 margin: 7px 0px 0px 0px;
             }
@@ -91,17 +94,36 @@ p {
                 background: #E5EDF5;
                 box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                .itemlist_topimg {   
+                    a {
+                        display: block;
+                        &:hover {
+                            filter: brightness(90%);
+                          
+                        } 
+                        img {  
+                            filter: contrast(150%);
+                            filter: saturate(150%);
+                            border-radius: 10px 10px 0px 0px;
+                            width: 300px;
+                            height: 200px;
+                            max-width: 100%;
+                            object-fit: cover;
+                            margin: 0px 0px 0px 0px;
+                        }
+                    }
+                }
                 .list_item_type_box {
                     .list_type_sord_box {
                         display: flex;
                         border-radius: 50%;                    
-                        margin: 12px 0px 12px 11px;
+                        margin: 12px 0px 12px 0px;
                         height: 51px;
                         .list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             color: $font-color;
                             margin: 0;
-                            margin: 13px 11px;
+                            margin: 13px 11px 0px;
                             font-weight: 600;
                             letter-spacing: 0.01em;
                             font-size: 18px;
@@ -119,13 +141,13 @@ p {
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        margin: 12px 0px 12px 11px;
+                        margin: 12px 0px 12px 0px;
                         height: 51px;
                         p.list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             color: $font-color;
                             margin: 0;
-                            margin: 13px 11px;
+                            margin: 13px 11px 0px;
                             font-weight: 600;
                             letter-spacing: 0.01em;
                             font-size: 18px;
@@ -141,24 +163,6 @@ p {
                         }
                     }
                     
-                }
-                .itemlist_topimg {   
-                    a {
-                        display: block;
-                        &:hover {
-                            filter: brightness(90%);
-                          
-                        } 
-                        img {  
-                            filter: contrast(150%);
-                            filter: saturate(150%);
-                            width: 300px;
-                            height: 200px;
-                            max-width: 100%;
-                            object-fit: cover;
-                            margin: 0px 0px 0px 0px;
-                        }
-                    }
                 }
                 .itemlist_word {   
                     margin: 0px 0px 0px 2px;
@@ -204,7 +208,7 @@ p {
                 }
             }
         }
-    }
+    }   
 }
 
 .item_list_show {
