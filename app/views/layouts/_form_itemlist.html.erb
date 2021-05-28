@@ -3,11 +3,17 @@
         <p>Condition</p>
         <div class="item_type_select_box">
             <span>&#x1f600;</span>
-            <%= f.label :list_item_type, 'smile', value: 1 %>
+            <%= f.label :list_item_type, 'Good', value: 1 %>
             <%= f.radio_button 'list_item_type', '1' %>
-            <span>&#x1f622;</span>
-            <%= f.label :list_item_type, 'sad', value: 2 %>
+            <span>&#x1f641;</span>
+            <%= f.label :list_item_type, 'Tired', value: 2 %>
             <%= f.radio_button 'list_item_type', "2" %>
+            <span>&#x1f623;</span>
+            <%= f.label :list_item_type, ' Stressed', value: 3 %>
+            <%= f.radio_button 'list_item_type', '3' %>
+            <span>&#x1f628;</span>
+            <%= f.label :list_item_type, 'Bad', value: 4 %>
+            <%= f.radio_button 'list_item_type', '4' %>
         </div>
     </div>
     <%= f.label :list_name, 'Situation' ,{class: 'item_list_label_name'} %>
