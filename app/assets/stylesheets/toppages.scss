@@ -139,7 +139,7 @@
                     .list_type_sord_box {
                         display: flex;
                         border-radius: 50%;                    
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         .list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -163,7 +163,7 @@
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         p.list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -191,14 +191,14 @@
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .box_text {   
-                        margin: 13px 9px 0px 9px;
+                        margin: -7px 9px 0px 11px;
                         .list_name {
                             a {
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 22px;
+                                font-size: 21px;
                                 font-weight: 600;
                                 display: block;    
                                 text-decoration: none;
@@ -319,13 +319,14 @@
         padding: 0px 0px 0px 0px;
         height: 420px;
         background: url("/assets/top_img.png") no-repeat center center;
-        background-size: 55%;
-        background-position: 100% 15%;
+        background-size: 50%;
+        background-position: 93% 40%;
         filter: brightness(95%);
         background-blend-mode: overlay;
         margin: 100px 80px 25px 80px;
         display: flex;
         border-radius: 20px;
+        box-shadow:  6px 6px 7px #aab0b8,-4px -4px 3px #ffffff;
         .logout_word {
             text-align: left; 
             // position: relative;
@@ -388,7 +389,8 @@
                             border-radius: 40px;
                             padding: 14px 14px 14px 50px; 
                             margin: 23px 0px 0px 25px;  
-                            text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae
+                            text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                            box-shadow:  6px 6px 7px #aab0b8,-5px -5px 2px #ffffff; 
                         }
                     }
                 }        
@@ -597,7 +599,7 @@
                     .list_type_sord_box {
                         display: flex;
                         border-radius: 50%;                    
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         .list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -621,7 +623,7 @@
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         p.list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -649,14 +651,14 @@
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .box_text {   
-                        margin: 13px 9px 0px 9px;
+                        margin: -7px 9px 0px 11px;
                         .list_name {
                             a {
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 22px;
+                                font-size: 21px;
                                 font-weight: 600;
                                 display: block;    
                                 text-decoration: none;
