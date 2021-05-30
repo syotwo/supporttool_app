@@ -2,18 +2,32 @@
     <div class="item_type_wrap">
         <p>Condition</p>
         <div class="item_type_select_box">
-            <span>&#x1f600;</span>
-            <%= f.label :list_item_type, 'Good', value: 1 %>
-            <%= f.radio_button 'list_item_type', '1' %>
-            <span>&#x1f641;</span>
-            <%= f.label :list_item_type, 'Tired', value: 2 %>
-            <%= f.radio_button 'list_item_type', "2" %>
-            <span>&#x1f623;</span>
-            <%= f.label :list_item_type, ' Stressed', value: 3 %>
-            <%= f.radio_button 'list_item_type', '3' %>
-            <span>&#x1f628;</span>
-            <%= f.label :list_item_type, 'Bad', value: 4 %>
-            <%= f.radio_button 'list_item_type', '4' %>
+            <div class="item_type_select_box_inner">
+                <%= f.radio_button 'list_item_type', '1' %>
+                <span>&#x1f600;</span>
+                <%= f.label :list_item_type, 'Very Good', value: 1 %>
+            </div>
+            <div class="item_type_select_box_inner">
+                <%= f.radio_button 'list_item_type', "2" %>
+                <span>&#x1f641;</span>
+                <%= f.label :list_item_type, 'Good', value: 2 %>
+            </div>
+            <div class="item_type_select_box_inner">
+                <%= f.radio_button 'list_item_type', '3' %>
+                <span>&#x1f610;</span>
+                <%= f.label :list_item_type, 'Fair', value: 3 %>
+            </div>
+            <div class="item_type_select_box_inner">    
+                <%= f.radio_button 'list_item_type', '4' %>
+                <span>&#x1f628;</span>
+                <%= f.label :list_item_type, 'Poor', value: 4 %>
+            </div>
+            <div class="item_type_select_box_inner">
+                <%= f.radio_button 'list_item_type', '5' %>
+                <span>&#x1f631;</span>
+                <%= f.label :list_item_type, 'Very Poor', value: 5 %>
+                
+            </div>
         </div>
     </div>
     <%= f.label :list_name, 'Situation' ,{class: 'item_list_label_name'} %>

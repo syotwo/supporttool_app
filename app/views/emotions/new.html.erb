@@ -4,10 +4,26 @@
     <div class="question_1">今日のコンディションをチェックします。</div>
     <div class="question_2">気分はどんな状態ですか？当てはまるものすべて選択してください</div>    
     <div class="emotion_select_box">
-      <label class= pleasure><input name="emotion[mood][]" type="checkbox" value="喜び" />&#x1f600;</label>
-      <label><input name="emotion[mood][]" type="checkbox" value="悲しい" />&#x1f641;</label>
-      <label><input name="emotion[mood][]" type="checkbox" value="怒り" />&#x1f623;</label>
-      <label><input name="emotion[mood][]" type="checkbox" value="驚き" />&#x1f628;</label>
+      <input name="emotion[mood][]" type="checkbox" value="喜び" />
+      <span>&#x1f600;</span>
+      <label for="" class= pleasure>Very Good</label>
+
+      <input name="emotion[mood][]" type="checkbox" value="悲しい" />
+      <span>&#x1f641;</span>
+      <label>Good</label>
+
+      <input name="emotion[mood][]" type="checkbox" value="怒り" />
+      <span>&#x1f610;</span>
+      <label>Average</label>
+
+      <input name="emotion[mood][]" type="checkbox" value="驚き" />
+      <span>&#x1f628;</span>
+      <label>Poor</label>
+
+      <input name="emotion[mood][]" type="checkbox" value="驚き" />
+      <span>&#x1f631;</span>
+      <label>Very Poor</label>
+
     </div>
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
