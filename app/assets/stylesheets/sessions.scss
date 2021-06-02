@@ -16,25 +16,23 @@
         font-size: 41px;
     }
     #session_email {
-        background: $card-font-color;
         border-radius: 40px;
         border: none;
         width: 95%;
         text-align: left;
         margin: 2px 0px 16px;
         padding: 18px 0px 18px 22px;
-        background: #f6f7f8;
+        background: $base-color;
         box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }
     #session_password {
-        background: $card-font-color;
         border-radius: 40px;
         border: none;
         width: 95%;
         text-align: left;
         padding: 18px 0px 18px 22px;
-        background: #f6f7f8;
+        background: $base-color;
         box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }

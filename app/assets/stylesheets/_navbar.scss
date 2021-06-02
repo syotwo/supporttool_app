@@ -28,13 +28,18 @@ nav {
         .nav_img_box {
             .nav_img {
                 margin: 0px 0px 0px 0px;
-                border-radius: 50%;
-                background: $accent-color;
+                border: solid 1px #31a34459;
+                border-radius: 50px;
+                border-radius: 50px;
+                background: #3AC251;
+                box-shadow: inset 5px 5px 8px #31a344,inset -5px -5px 8px #43e15e;
                 span {
                 display: block;
                 font-size: 17px;
                 padding: 14px;
-                color: #dbe1e9;
+                color: #dfdbd5;
+                border-radius: 50px;
+                border: solid 1px #f3f3f359;
                 }
             }
         }
@@ -160,7 +165,7 @@ nav {
                 bottom: 3px;
                 color: $font-color; 
                 border-radius: 50px;
-                background: #E5EDF5;
+                background: $base-color;
                 box-shadow:  5px 5px 6px #a3a9af,-4px -4px 5px #ffffff;
                 text-shadow: 2px 2px 4px #c3c9d0, -2px -2px 4px #ffffff;    
                 filter: brightness(103%);
