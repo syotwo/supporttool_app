@@ -543,9 +543,6 @@ p {
                     text-align: center;
                     font-size: 15px;
                     font-weight: 300;
-                    // border-radius: 20px;
-                    // background: linear-gradient(145deg, #bdbdbd, #9f9f9f);
-                    // box-shadow:  6px 6px 13px #959595,-3px -3px 5px #d3d3d3;
                 }
                 .chechbox {
                     text-align-last: left;
@@ -582,7 +579,8 @@ p {
             border-radius: 4px;
             border: none;
             outline: none;
-            background: #eef2f7;
+            background: $base-color;
+            filter: brightness(105%);
             box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         }  
@@ -594,7 +592,8 @@ p {
             border-radius: 6px;
             border: none;
             outline: none;
-            background: #eef2f7;
+            background: $base-color;
+            filter: brightness(105%);
             box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         } 
@@ -604,7 +603,7 @@ p {
             height: 48px;
             border-radius: 4px;
             margin: 0px 0px 0px 5px;
-            box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
+            box-shadow:  5px 5px 7px #afb4bb,-3px -3px 8px #ffffff;
             &:hover {
                 filter: brightness(85%);
               }
@@ -615,7 +614,6 @@ p {
                     width: 40px;
                     height: 40px;
                     padding: 4px 0px 4px 10px;
-                    
                     background-color: #DBDBDB;
                     border-radius: 4px 0px 0px 4px;
                 }
@@ -640,7 +638,7 @@ p {
                 padding: 13px 35px;
                 border: none;
                 color: $submit-font-color;
-                font-size: 15px;
+                font-size: 17px;
                 font-weight: bold;
                 margin: 0px 19px 0px 0px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
