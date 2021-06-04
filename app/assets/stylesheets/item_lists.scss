@@ -521,6 +521,7 @@ p {
         color: rgb(223, 221, 221);
         .item_type_wrap {
             width: 748px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             p {
                 text-align: left;
                 color: $font-color;
@@ -546,18 +547,6 @@ p {
                 }
                 .chechbox {
                     text-align-last: left;
-                }
-                .form_sord_img {
-                    width: 35px;
-                    background-color: $sord-color;
-                    border-radius: 50%;
-                    padding: 3px;
-                }
-                .form_shield_img {
-                    width: 35px;
-                    background-color: $shield-color;
-                    border-radius: 8px;
-                    padding: 3px;
                 }
                 span {
                     font-size: 26px;

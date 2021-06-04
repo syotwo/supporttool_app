@@ -2,29 +2,37 @@
   <h1>Daily Checker</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
     <div class="question_1">今日のコンディションをチェックします。</div>
-    <div class="question_2">気分はどんな状態ですか？当てはまるものすべて選択してください</div>    
-    <div class="emotion_select_box">
-      <input name="emotion[mood][]" type="checkbox" value="喜び" />
-      <span>&#x1f600;</span>
-      <label for="" class= pleasure>Very Good</label>
-
-      <input name="emotion[mood][]" type="checkbox" value="悲しい" />
-      <span>&#x1f641;</span>
-      <label>Good</label>
-
-      <input name="emotion[mood][]" type="checkbox" value="怒り" />
-      <span>&#x1f610;</span>
-      <label>Average</label>
-
-      <input name="emotion[mood][]" type="checkbox" value="驚き" />
-      <span>&#x1f628;</span>
-      <label>Poor</label>
-
-      <input name="emotion[mood][]" type="checkbox" value="驚き" />
-      <span>&#x1f631;</span>
-      <label>Very Poor</label>
-
-    </div>
+    <div class="question_2">気分はどんな状態ですか？当てはまるものすべて選択してください</div> 
+    <div class="emotion_type_wrap">
+      <p>Condition</p>  
+      <div class="emotion_select_box">
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Very Good" />
+          <span>&#x1f600;</span>
+          <label for="" class= pleasure>Very Good</label>
+        </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Good" />
+          <span>&#x1f641;</span>
+          <label>Good</label>
+        </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Average" />
+          <span>&#x1f610;</span>
+          <label>Average</label>
+        </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Poor" />
+          <span>&#x1f628;</span>
+          <label>Poor</label>
+        </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Very Poor" />
+          <span>&#x1f631;</span>
+          <label>Very Poor</label>
+        </div>
+      </div>
+    </div> 
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
   <p>＊Stress Trackerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
