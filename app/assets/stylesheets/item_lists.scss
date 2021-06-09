@@ -90,8 +90,7 @@ p {
                 background-color: $base-color;
                 text-align: center;
                 border-radius: 10px;
-                position: relative; 
-                background: #E5EDF5;
+                position: relative;     
                 box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .itemlist_topimg {   
@@ -582,8 +581,10 @@ p {
             width: 95%;
             padding: 12px 0px 150px 12px;
             margin: 6px 19px 16px 0px;
-            background-color: rgb(247, 245, 245);
+            font-size: 15px;
+            font-weight: 400;
             border-radius: 6px;
+            letter-spacing: 0.01em;
             border: none;
             outline: none;
             background: $base-color;

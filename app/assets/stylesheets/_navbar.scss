@@ -106,10 +106,10 @@ nav {
                     color: $font-color;
                     display: block;
                     font-weight: bold;
-                    font-size: 17px;
+                    font-size: 17.2px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
-                    padding: 5px 27px 6px 60px;
+                    padding: 4px 27px 7px 60px;
                     line-height: 2.3em;
                     letter-spacing: 0em;
                     border-radius: 40px;
@@ -257,12 +257,9 @@ nav {
     nav {
         padding: 0px 20px;
         justify-content: left;
-        #item_list_search {
-            margin: 10px 0px 10px 10px;
-            width: 100px;
-            #q_list_name_cont {
-                width: 100px; 
-            }
+        .menu_right {
+            text-align: right;
+            margin: 0px 0px 0px 50px;
         }
 
     }
