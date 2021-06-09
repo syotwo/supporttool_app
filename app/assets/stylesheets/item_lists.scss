@@ -84,13 +84,21 @@ p {
             -webkit-box-align: start;
             -ms-flex-align: start;
             align-items: flex-start;
+            &::after {
+                display: block;
+                content:"";
+                width: 300px;
+                }
             li {
+                width: 280px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 18px; 
                 background-color: $base-color;
                 text-align: center;
                 border-radius: 10px;
-                position: relative;     
+                position: relative; 
+                background: $base-color;
+                filter: brightness(103%);
                 box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .itemlist_topimg {   
@@ -101,10 +109,9 @@ p {
                           
                         } 
                         img {  
-                            filter: contrast(150%);
                             filter: saturate(150%);
                             border-radius: 10px 10px 0px 0px;
-                            width: 300px;
+                            width: 280px;
                             height: 200px;
                             max-width: 100%;
                             object-fit: cover;
@@ -116,7 +123,7 @@ p {
                     .list_type_sord_box {
                         display: flex;
                         border-radius: 50%;                    
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         .list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -140,14 +147,14 @@ p {
                     .list_type_shield_box {
                         display: flex;
                         border-radius: 50%;
-                        margin: 12px 0px 12px 0px;
+                        margin: 12px 0px 0px 0px;
                         height: 51px;
                         p.list_item_type_name {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             color: $font-color;
                             margin: 0;
                             margin: 13px 11px 0px;
-                            font-weight: 600;
+                            font-weight: 700;
                             letter-spacing: 0.01em;
                             font-size: 18px;
                             span {
@@ -168,15 +175,16 @@ p {
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .box_text {   
-                        margin: 13px 9px 0px 9px;
+                        margin: -7px 9px 0px 11px;
                         .list_name {
                             a {
+                                height: 50px;
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
                                 color: $font-color;
-                                font-size: 22px;
-                                font-weight: 600;
+                                font-size: 19px;
+                                font-weight: 700;
                                 display: block;    
                                 text-decoration: none;
                                 text-align: left;
@@ -184,24 +192,15 @@ p {
                                 letter-spacing: 0em;
                                 z-index: 1;
                             }
-                        } 
-                        .price {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            text-align: left;
-                            color: $price-font-color;
-                            font-weight: 700;
-                            letter-spacing: -0.02em;
-                            font-size: 19px;
-                            font-weight: 600;
-                        }      
+                        }       
                         p {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            text-align: right;
-                            margin: 0px 0px 0px 0px;
+                            text-align: left;
                             color: $third-font-color;
                             letter-spacing: -0.02em;
-                            font-size: 17px;
+                            font-size: 14px;
                             font-weight: 400;
+                            margin: 20px 0px 0px 0px;
                         }  
                     }          
                 }
