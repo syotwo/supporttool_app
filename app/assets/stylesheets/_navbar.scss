@@ -2,7 +2,7 @@
 @import "_variables";
 
 header {
-    padding: 7px 0px;
+    padding: 0px 0px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -16,6 +16,39 @@ nav {
     justify-content: space-between;
     height: 100%;
     padding: 0px 80px 0px 80px;
+    margin: 6px 0px 0px 0px;
+    .nav_title_box a {
+        display: flex;
+        text-decoration: none;
+        margin: 13px 0px; 
+        filter: brightness(104%);
+        .nav_img {
+            margin: 0px 0px 0px 0px;
+            border: solid 1px #31a34459;
+            border-radius: 50px;
+            background: #3AC251;
+            box-shadow: inset 5px 5px 8px #31a344,inset -5px -5px 8px #43e15e;
+            img {
+                display: block;
+                width: 43px;
+                border-radius: 50%;
+                padding: 0px;
+                border: solid 1px #f3f3f359;            
+            }
+        }
+        p {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            color: $font-color; 
+            line-height: 1.5em;
+            font-weight: 600;
+            font-size: 26.5px; 
+            letter-spacing: -1.3px;
+            margin: auto 0px;
+            white-space: nowrap;
+            padding: 0px 0px 0px 8px;
+        }
+        
+    }
     a.nav_logo {
         display: block;
         display: flex;
@@ -23,14 +56,13 @@ nav {
         text-decoration: none;
         vertical-align: middle;
         margin: auto 0px;
-        filter: brightness(110%);
+        filter: brightness(104%);
         .nav_img_box {
             .nav_img {
                 margin: 0px 0px 0px 0px;
                 border: solid 1px #31a34459;
                 border-radius: 50px;
                 background: #3AC251;
-                
                 box-shadow: inset 5px 5px 8px #31a344,inset -5px -5px 8px #43e15e;
                 span {
                 display: block;
@@ -41,15 +73,14 @@ nav {
                 }
                 img {
                     display: block;
-                    width: 39px;
+                    width: 45px;
                     border-radius: 50%;
-                    padding: 3px;
+                    padding: 0px;
                     border: solid 1px #f3f3f359;
                     
                 }
             }
         }
-        
         .nav_title {
             display: flex;
             .title {
@@ -57,14 +88,13 @@ nav {
                 color: $font-color; 
                 line-height: 1.5em;
                 font-weight: 600;
-                font-size: 27px; 
+                font-size: 26.5px; 
                 letter-spacing: -1.3px;
                 margin: auto 0px;
                 white-space: nowrap;
                 padding: 0px;
                 position:relative; 
-                right: -3px;
-                top: 0px;
+        
             }
         }  
     }
@@ -73,9 +103,10 @@ nav {
         display: flex;
         color: $navfont-color;
         padding: 0;
-        margin: 12px 0px;
+       
         .plus_box {
             display: flex;
+            
             &:hover {
                 filter: brightness(110%);
                 transition: 0.1s;
@@ -112,8 +143,8 @@ nav {
                     vertical-align: middle;
                     color: $font-color;
                     display: block;
-                    font-weight: bold;
-                    font-size: 17.2px;
+                    font-weight: 600;
+                    font-size: 18px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
                     padding: 4px 27px 7px 60px;
@@ -234,6 +265,7 @@ nav {
                 border-radius: 8px;
                 padding: 20px 0px 20px 40px;
                 width: 200px;
+                z-index: 30;
                 &:hover {
                     background-color: $card-color;
                   }

@@ -1,2 +1,98 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<%= render 'layouts/navbar' %>
+<div class= toppage_logout>
+    <div class= logout_image>
+      <div class =logout_word>
+        <h1 class= top>クリエイター同士で<br>体調を<br>マネジメント<br><span class= top_word_bottom></span></h1>
+        <p class= middle>ヘルスハックに関する知見を<br>待っているクリエイターがいます<br></p>
+        <div class="box_login">
+          <div class="test_login">
+            <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+              <%= f.hidden_field :email, value: "testuser@testuser.com" %>
+              <%= f.hidden_field :password, value: "testuser" %>
+              <span class="material-icons">thumb_up</span>
+              <%= f.submit "How are you feeling?"%>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="logout_right_img">
+      </div>
+    </div>  
+    <div class="tool_box">
+      <span class="material-icons">
+      description
+      </span>
+      <p>記事一覧</p>
+    </div>
+    <div class="itemlist">
+      <ul class="main">
+        <% @item_lists.each do |item_list| %>
+          <li>
+            <div class="itemlist_topimg">
+              <% if item_list.image? %>
+                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
+              <% else %>
+                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+              <% end %>
+            </div>
+            <div class="itemlist_word">
+              <div class="list_item_type_box">
+                <% if item_list.list_item_type == "1" then %>
+                <div class="list_type_sord_box">
+                  <p class= list_item_type_name>Condition :</p>
+                  <span>&#x1f606;</span>
+                </div>
+                <% elsif item_list.list_item_type == "2" then%>
+                <div class="list_type_shield_box">
+                  <p class= list_item_type_name>Condition :</p>
+                  <span>&#x1f600;</span>
+                </div>
+                <% elsif item_list.list_item_type == "3" then%>
+                <div class="list_type_shield_box">
+                  <p class= list_item_type_name>Condition :</p>
+                  <span>&#x1f610;</span>
+                </div>
+                <% elsif item_list.list_item_type == "4" then%>
+                <div class="list_type_shield_box">
+                  <p class= list_item_type_name>Condition :</p>
+                  <span>&#x1f605;</span>
+                </div>
+                <% elsif item_list.list_item_type == "5" then%>
+                <div class="list_type_shield_box">
+                  <p class= list_item_type_name>Condition :</p>
+                  <span>&#x1f631;</span>
+                </div>
+                <% end %>
+              </div>
+              <div class="box_text">
+                <div class="list_name">
+                  <%= link_to item_list.list_name , item_list_path(item_list) %>
+                </div>
+                <p class= price></p>
+                <p>
+                  <span><%= item_list.user.name %></span> が
+                  <%= item_list.created_at.strftime("%m/%d/%Y ") %>
+                </p>    
+              </div> 
+            </div>   
+          </li>
+        <% end %>
+      </ul> 
+    </div>
+    <div class="cheacker_card_box">
+      <div class= checker_word>
+        <h1 class= checker_word_top>今日の<br>コンディションを<br>チェックする</h1>
+        <p class= checker_word_middle>気分検知ツールで、体調の変化を記録</p>
+        <p class= checker_word_middle></p>
+        <p></p>
+        <p class= checker_word_bottom>＊ Daily Checker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
+        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+          <span class="material-icons">emoji_emotions</span>
+          <p>Daily Checker</p>
+        <% end %>
+      </div>
+      <div class="checker_top_img">
+        <%= image_tag("/assets/checker_top_smile.png") %>
+      </div>
+    </div>
+  </div>
