@@ -1,8 +1,15 @@
 <div class="emotion_new">
   <h1>Daily Checker</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
-    <div class="question_1">今日のコンディションをチェックします。</div>
-    <div class="question_2">気分はどんな状態ですか？当てはまるものすべて選択してください</div> 
+    <% if logged_in? %>
+      <div class="question_1">Hello,
+        <%= current_user.name %>!
+      </div>
+      <div class="question_2">How are you feeling? </div> 
+    <% else %>
+      <div class="question_2">How are you feeling? </div>
+    <% end %>
+    
     <div class="emotion_type_wrap">
       <p>Condition</p>  
       <div class="emotion_select_box">

@@ -47,10 +47,10 @@
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         .question_1 {
             color: $font_color;
-            font-size: 18px;
+            font-size: 20px;
         }
         .question_2 {
-            font-size: 18px;
+            font-size: 20px;
             color: $text_font_color;
             height: 33px;
             border-radius: 8px;
@@ -97,7 +97,7 @@
         text-align: right;
         margin: 25px 0px 10px 635px;
         padding: 17px 25px;
-        background: $submit-sub-color;
+        background: $accent-color;
         border: none;
         border-radius: 40px;
         color: $submit-font-color;

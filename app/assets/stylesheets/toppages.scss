@@ -29,7 +29,7 @@
     }
     form.item_list_search {
         display: flex;
-        margin: 20px 50px 10px 80px;
+        margin: 20px 50px 0px 80px;
         color: $subfont_color;
         height: 38px;
         input {
@@ -75,7 +75,7 @@
     }
     .tool_box {
         display: flex;
-        margin: 55px 0px 0px 82px;
+        margin: 65px 0px 0px 82px;
         span {
             display: block;
             font-size: 29px;
@@ -231,8 +231,9 @@
     }
     .cheacker_card_box {
         padding: 0px 0px 0px;
-        margin: 0px 85px 80px 85px;
+        margin: 0px 70px 80px 70px;
         border-radius: 20px;
+        background: $checker-color;
         box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
         display: flex;
         .checker_word {
@@ -329,26 +330,23 @@
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
-        padding: 0px 0px 0px 0px;
+        width: 854px;
         height: 420px;
-        background: url("/assets/top_img.png") no-repeat center center;
+        background: url("/assets/") no-repeat center center;
         background-size: 50%;
         background-position: 93% 40%;
         background-blend-mode: overlay;
-        margin: 100px 80px 25px 80px;
+        padding: 90px 70px 0px 70px;
+        margin: 0px auto;
         display: flex;
-        border-radius: 20px;
-        box-shadow:  6px 6px 12px #aab0b8,-6px -6px 12px #ffffff;
         .logout_word {
             text-align: left; 
-            // position: relative;
-            // top: -19px; 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 55px;
-                margin: 30px 0px 0px 50px;
+                font-size: 53px;
+                margin: 35px 0px 0px 0px;
                 color: #2d2f31;
-                letter-spacing: -0.17em;
+                letter-spacing: -0.19em;
                 white-space: nowrap;
                 line-height: 1.1em;
                 font-weight: 800;
@@ -359,9 +357,9 @@
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 23px;
+                font-size: 21px;
                 text-decoration: none;
-                margin: 7px 0px 0px 53px;
+                margin: 7px 0px 0px 0px;
                 color: #2d2f31;
                 font-weight: 200;
                 letter-spacing: -0.01em;
@@ -378,30 +376,32 @@
             .box_login {
                 .test_login {
                     form {
+                        position: relative;
+                        right: 30px;
                         &:hover {
                             filter: brightness(110%);
                         } 
                         span {
                             position: relative; 
                             top: 6px;
-                            left: 128px;  
+                            left: 95px;  
                             font-size: 26px;
                             color: $submit-font-color;
-                            text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                            // text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                         }
                         input {
                             font-family: 'Exo', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                             color: $submit-font-color;
                             background: $accent-color;
-                            width: 370px;
+                            width: 350px;
                             height: 20;
                             font-size: 17px;
                             border: none;
                             font-weight: bold;
                             border-radius: 40px;
-                            padding: 14px 14px 14px 50px; 
-                            margin: 23px 0px 0px 25px;  
-                            text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                            padding: 13px 4px 13px 50px; 
+                            margin: 23px 0px 0px 0px;  
+                            // text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                             box-shadow:  6px 6px 5px #aab0b8,-5px -5px 3px #ffffff; 
                         }
                     }
@@ -410,17 +410,18 @@
         }
         .logout_right_img {
             img {
-                width: 470px;
                 display: block;
-                padding: 50px 0px 0px 40px;
-                
+                width: 430px;
+                margin:40px 0px 0px 40px;
+                border-radius: 20px;
             }
         }
     }  
     .cheacker_card_box {
         padding: 0px 0px 0px;
-        margin: 0px 85px 80px 85px;
+        margin: 0px 70px 80px 70px;
         border-radius: 20px;
+        background: $checker-color;
         box-shadow:  6px 6px 12px #c3c9d0,-6px -6px 12px #ffffff;
         display: flex;
         .checker_word {
@@ -579,7 +580,7 @@
     .itemlist {
         padding: 0px 0px 0px 0px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 18px 78px 0px 83px;
+        margin: 18px 88px 0px 83px;
         display: flex;
         ul.main {
             padding: 0px 0px 20px 0px;
@@ -717,7 +718,7 @@
 }
     
 /* smartPhone */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 770px) {
     .toppage_login { 
         padding: 100px 0px;
         .face_box {
@@ -732,7 +733,10 @@
     }
     .toppage_logout {
         .logout_image {
-            padding: 50px 20px;
+            padding: 0;
+            margin: 115px auto;
+            display: block;
+            width: 400px;
             .logout_word {
                 h1 {
                     white-space: initial; 
@@ -750,9 +754,24 @@
                             }
                         }
                     }
-                }
-                
+                }     
             }
+            .logout_right_img {
+                img {
+                    width: 390px;
+                    display: block;
+                    padding: 0;
+                    margin: 65px 0px 0px 0px;
+                }
+            }
+        }
+        .tool_box {
+            width: 285px;
+            margin: 265px 80px 30px;
+        }
+        .itemlist {
+            width: 285px;
+            margin: 0px auto;
         }
         .logout_toppage {
             padding: 0px 20px;
