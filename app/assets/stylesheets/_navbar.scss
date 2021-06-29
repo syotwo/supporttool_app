@@ -40,7 +40,7 @@ nav {
             color: $font-color; 
             line-height: 1.5em;
             font-weight: 600;
-            font-size: 26.5px; 
+            font-size: 29px; 
             letter-spacing: -1.3px;
             margin: auto 0px;
             white-space: nowrap;
@@ -55,7 +55,7 @@ nav {
         text-decoration: none;
         vertical-align: middle;
         margin: auto 0px;
-        filter: brightness(104%);
+        // filter: brightness(100%);
         .nav_img_box {
             .nav_img {
                 margin: 0px 0px 0px 0px;
@@ -63,9 +63,8 @@ nav {
                 border-radius: 50px;
                 background: $accent-color;
                 border-radius: 95px;
-                background: #7AD140;
-                box-shadow: inset 5px 5px 10px #66b036,
-                            inset -5px -5px 10px #8ef24a;
+                border-radius: 50%;
+                box-shadow: inset 5px 5px 11px #379958,inset -5px -5px 11px #63ff9c;
                 span {
                 display: block;
                 font-size: 30px;
@@ -90,7 +89,7 @@ nav {
                 color: $font-color; 
                 line-height: 1.5em;
                 font-weight: 600;
-                font-size: 26.5px; 
+                font-size: 29px; 
                 letter-spacing: -1.3px;
                 margin: auto 0px;
                 white-space: nowrap;
@@ -144,12 +143,12 @@ nav {
                     vertical-align: middle;
                     color: $font-color;
                     display: block;
-                    font-weight: 600;
-                    font-size: 19px;
+                    font-weight: 800;
+                    font-size: 17px;
                     height: 35px;
                     margin: 0px 0px 0px 8px;
                     padding: 4px 27px 7px 60px;
-                    line-height: 2.2em;
+                    line-height: 2.4em;
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -169,18 +168,17 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                font-weight: bold;
+                font-weight: 800;
                 font-size: 17px;
                 padding: 8px 25px 9px;
                 border-radius: 40px;
                 margin: auto 20px;
                 position: relative;
                 bottom: 3px;
-                color: $font-color; 
-                background: $accent-color;
-                // sbackground: linear-gradient(145deg, #41d75a, #37b54c);
-                box-shadow:  4px 4px 8px #adb3bb,-4px -4px 3px #ffffff;
-                // text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                color: $submit-font-color; 
+                box-shadow:  5px 5px 5px #b4afa8,-4px -4px 3px #ffffff;
+                background: linear-gradient(145deg, #52e383, #45bf6e);
+                text-shadow:  2px 2px 4px #2a8347,-2px -2px 4px #b8f3ce;
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(110%);
@@ -192,18 +190,17 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $submit-font-color;
-                font-weight: bold;
+                color: $submit-font-color;  
+                font-weight: 800;
                 font-size: 17px;
                 padding: 8px 25px;
                 border-radius: 40px;
                 margin: auto 0px;
                 position: relative;
-                bottom: 3px;
-                color: $font-color; 
+                bottom: 3px; 
                 border-radius: 50px;
                 background: $base-color;
-                box-shadow:  5px 5px 6px #a3a9af,-4px -4px 5px #ffffff;
+                box-shadow:  5px 5px 6px #b4afa8,-4px -4px 3px #ffffff;
                 text-shadow: 2px 2px 4px #c3c9d0, -2px -2px 4px #ffffff;    
                 filter: brightness(103%);
                 &:hover {
