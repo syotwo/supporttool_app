@@ -205,7 +205,7 @@ p {
 }
 
 .item_list_show {
-    margin: 120px 0px 70px 60px;
+    margin: 150px 0px 70px 60px;
     display: flex; 
     .box {
         color: $font-color;
@@ -413,12 +413,13 @@ p {
                 text-align: left;
                 margin: auto 20px;
             }
-            span {
-                font-size: 45px;
+            .face-icon {
                 margin: auto 0px;
-                line-height: 0.7em;
+                span {
+                    font-size: 45px;
+                    line-height: 1em;
+                }
             }
-
         }
         .addproducts {
             .wrap {

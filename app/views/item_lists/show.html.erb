@@ -44,20 +44,30 @@
         <div class="box-right-condition">                       
             <% if @item_list.list_item_type == "1" then %>
                 <p>Condition :</p>
-                <span>&#x1f606;</span>
+                <div class="face-icon">
+                    <span>&#x1f606;</span>
+                </div>
             <% elsif @item_list.list_item_type == "2" then%>
                 <p>Condition :</p>
-                <span>&#x1f600;</span>
+                <div class="face-icon">
+                    <span>&#x1f600;</span>
+                </div>
             <% elsif @item_list.list_item_type == "3" then%>
                 <p>Condition :</p>
-                <span>&#x1f610;</span>
+                <div class="face-icon">
+                    <span>&#x1f610;</span>
+                </div>
             <% elsif @item_list.list_item_type == "4" then%>
-                <span>&#x1f605;</span>
+                <p>Condition :</p>
+                <div class="face-icon">
+                    <span>&#x1f605;</span>
+                </div>
             <% elsif @item_list.list_item_type == "5" then%>
                 <p>Condition :</p>
-                <span>&#x1f631;</span>
+                <div class="face-icon">
+                    <span>&#x1f631;</span>
+                </div>
             <% end %>
-            
         </div>     
         <% if current_user == @item_list.user %>
         <div class="addproducts">
@@ -65,7 +75,6 @@
                 <div class= "wrap"> 
                     <%= form.text_field :item_name, placeholder: "Item_Name" %>
                     <%= form.text_field :item_link, placeholder: "Item_url" %>
-                    
                     <%= form.label :img, "Img", class: "addproducts_img_name_label" %>
                     <%= form.file_field :img, class: "fileInput",style: "display:none;" %>
                     <%= form.hidden_field :item_list_id, value:@item_list.id %>
