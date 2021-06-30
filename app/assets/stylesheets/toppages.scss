@@ -339,10 +339,10 @@
             text-align: left; 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 53px;
+                font-size: 50px;
                 margin: 35px 0px 0px 0px;
                 color: #2d2f31;
-                letter-spacing: -0.19em;
+                letter-spacing: -0.14em;
                 white-space: nowrap;
                 line-height: 1.1em;
                 font-weight: 800;
@@ -353,7 +353,7 @@
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 21px;
+                font-size: 19px;
                 text-decoration: none;
                 margin: 7px 0px 0px 0px;
                 color: #2d2f31;
@@ -391,11 +391,12 @@
                             background: $accent-color;
                             width: 350px;
                             height: 20;
-                            font-size: 20px;
+                            font-size: 19px;
                             font-weight: 600;
                             border: none;
                             border-radius: 40px;
-                            padding: 16px 4px 16px 50px; 
+                            padding: 15px 4px 15px 50px; 
+                            letter-spacing: 0.01em;
                             margin: 23px 0px 0px 0px;  
                             box-shadow:  6px 6px 5px #b4afa8,-5px -5px 2px #ffffff;
                             text-shadow:  3px 3px 4px #2a8347,-2px -2px 4px #b8f3ce;

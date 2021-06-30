@@ -60,9 +60,7 @@ nav {
             .nav_img {
                 margin: 0px 0px 0px 0px;
                 border: solid 1px #6ab836;
-                border-radius: 50px;
                 background: $accent-color;
-                border-radius: 95px;
                 border-radius: 50%;
                 box-shadow: inset 5px 5px 11px #379958,inset -5px -5px 11px #63ff9c;
                 span {
@@ -74,7 +72,7 @@ nav {
                 }
                 img {
                     display: block;
-                    width: 45px;
+                    width: 40px;
                     border-radius: 50%;
                     padding: 0px;
                     border: solid 1px #f3f3f359;
@@ -170,7 +168,7 @@ nav {
                 vertical-align: middle;
                 font-weight: 700;
                 font-size: 17px;
-                padding: 8px 25px 9px;
+                padding: 7px 25px 8px;
                 border-radius: 40px;
                 margin: auto 20px;
                 position: relative;
@@ -193,7 +191,7 @@ nav {
                 color: $submit-font-color;  
                 font-weight: 700;
                 font-size: 17px;
-                padding: 8px 25px;
+                padding: 7px 25px;
                 border-radius: 40px;
                 margin: auto 0px;
                 position: relative;
