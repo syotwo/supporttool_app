@@ -2,12 +2,12 @@
   <h1>Daily Checker</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
     <% if logged_in? %>
-      <div class="question_1">Hello,
-        <%= current_user.name %>!
+      <div class="question_1">こんにちわ
+        <%= current_user.name %>さん
       </div>
-      <div class="question_2">How are you feeling? </div> 
+      <div class="question_2">今日の調子はどうですか？ </div> 
     <% else %>
-      <div class="question_2">How are you feeling? </div>
+      <div class="question_2">今日の調子はどうですか？ </div>
     <% end %>
     
     <div class="emotion_type_wrap">

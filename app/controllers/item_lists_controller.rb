@@ -2,7 +2,8 @@ class ItemListsController < ApplicationController
   before_action :require_user_logged_in, only: %i[create edit update destroy]
   before_action :correct_user, only: %i[edit update destroy]
 
-  def index; end
+  def index
+  end
 
   def show
     @item_list = ItemList.find(params[:id])

@@ -39,8 +39,27 @@
                 <p>作成者に感謝して支援する。</p>
             </div>
     </div>
-    
-    <% if current_user == @item_list.user %>
+
+    <div class="box-right">
+        <div class="box-right-condition">                       
+            <% if @item_list.list_item_type == "1" then %>
+                <p>Condition :</p>
+                <span>&#x1f606;</span>
+            <% elsif @item_list.list_item_type == "2" then%>
+                <p>Condition :</p>
+                <span>&#x1f600;</span>
+            <% elsif @item_list.list_item_type == "3" then%>
+                <p>Condition :</p>
+                <span>&#x1f610;</span>
+            <% elsif @item_list.list_item_type == "4" then%>
+                <span>&#x1f605;</span>
+            <% elsif @item_list.list_item_type == "5" then%>
+                <p>Condition :</p>
+                <span>&#x1f631;</span>
+            <% end %>
+            
+        </div>     
+        <% if current_user == @item_list.user %>
         <div class="addproducts">
             <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
                 <div class= "wrap"> 
@@ -57,8 +76,9 @@
                 </div> 
             <% end %>
         </div>
-    <% else %>
-    
-    <% end %>
+        <% else %>
+        
+        <% end %>
+    </div>
 </div>
 
