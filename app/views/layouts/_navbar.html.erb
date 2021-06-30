@@ -1,24 +1,23 @@
 <header>
   <nav>
     <% if logged_in? %>
-    <a class="nav_logo" href="/"> 
-      <div class="nav_img_box">
-        <div class= "nav_img">
-          <%= image_tag asset_path("title_icon_home.png") %>  
-        </div>
+      <div class="nav_title_box">
+        <%= link_to users_path do %>
+          <div class="nav_img">
+            <%= image_tag "title_icon_home.png" %>
+          </div>
+          <p>CreaterHome</p>
+        <% end %>
       </div>
-      <div class= "nav_title"><p class= "title">&nbsp;CreatorsHome&nbsp;</p></div>
-    </a>
-    </div>
-    <% else %>  
-    <a class="nav_logo" href="/"> 
-      <div class="nav_img_box">
-        <div class= "nav_img">
-          <%= image_tag asset_path("title_icon_home.png") %>  
-        </div>
+    <% else %>
+      <div class="nav_title_box">
+        <%= link_to root_path do %>
+          <div class="nav_img">
+            <%= image_tag "title_icon_home.png" %>
+          </div>
+          <p>CreaterHome</p>
+        <% end %>
       </div>
-      <div class= "nav_title"><p class= "title">&nbsp;CreatorsHome&nbsp;</p></div>
-    </a>
     <% end %>
     
     <ul class= menu_right>
