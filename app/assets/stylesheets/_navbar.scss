@@ -149,8 +149,10 @@ nav {
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    box-shadow:  4px 4px 8px #adb3bb,-4px -4px 3px #ffffff;
-                    text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                    box-shadow: 6px 6px 6px #a6ada6,
+                                -5px -5px 3px #ffffff;
+                    text-shadow: 2px 2px 4px #2d8f3d,
+                                 -2px -2px 4px #a0f7ae;
                 }
             }
         }
@@ -174,8 +176,8 @@ nav {
                 bottom: 3px;
                 color: $submit-font-color; 
                 background: $accent-color;
-                box-shadow: 6px 6px 5px #abacab,
-                            -5px -5px 2px #ffffff;
+                box-shadow: 6px 6px 6px #a6ada6,
+                            -5px -5px 3px #ffffff;
                 text-shadow: 2px 2px 4px #2a8347,
                              -2px -2px 4px #b8f3ce;
                 filter: brightness(103%);
@@ -199,8 +201,8 @@ nav {
                 bottom: 3px; 
                 border-radius: 50px;
                 background: $base-color;
-                box-shadow: 6px 6px 5px #abacab,
-                            -5px -5px 2px #ffffff;
+                box-shadow: 6px 6px 6px #aeb6ae,
+                            -5px -5px 3px #ffffff;
                 text-shadow: 2px 2px 4px #c3c9d0, 
                              -2px -2px 4px #ffffff;    
                 filter: brightness(103%);
@@ -234,7 +236,8 @@ nav {
                     margin: 0;
                     padding: 0;
                     border-radius: 20px;
-                    box-shadow:  4px 4px 8px #adb3bb,-4px -4px 3px #ffffff;
+                    box-shadow: 6px 6px 6px #a6ada6,
+                            -5px -5px 3px #ffffff;
                 }
             }
             &:hover {
