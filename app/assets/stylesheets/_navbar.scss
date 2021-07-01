@@ -55,7 +55,6 @@ nav {
         text-decoration: none;
         vertical-align: middle;
         margin: auto 0px;
-        // filter: brightness(100%);
         .nav_img_box {
             .nav_img {
                 margin: 0px 0px 0px 0px;
@@ -175,8 +174,8 @@ nav {
                 bottom: 3px;
                 color: $submit-font-color; 
                 background: $accent-color;
-                box-shadow: 6px 6px 4px #adafae,
-                            -5px -5px 3px #ffffff;
+                box-shadow: 6px 6px 5px #abacab,
+                            -5px -5px 2px #ffffff;
                 text-shadow: 2px 2px 4px #2a8347,
                              -2px -2px 4px #b8f3ce;
                 filter: brightness(103%);
@@ -200,9 +199,10 @@ nav {
                 bottom: 3px; 
                 border-radius: 50px;
                 background: $base-color;
-                box-shadow: 6px 6px 5px #adafae,
-                            -5px -5px 3px #ffffff;
-                text-shadow: 2px 2px 4px #c3c9d0, -2px -2px 4px #ffffff;    
+                box-shadow: 6px 6px 5px #abacab,
+                            -5px -5px 2px #ffffff;
+                text-shadow: 2px 2px 4px #c3c9d0, 
+                             -2px -2px 4px #ffffff;    
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(105%);
