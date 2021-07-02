@@ -25,14 +25,13 @@ nav {
             margin: 0px 0px 0px 0px;
             border-radius: 50px;
             background: $accent-color;
-            border: solid 1px #31a34459;
+            border: solid 2px #5bb9216e;
             box-shadow: inset 5px 5px 8px #31a344,inset -5px -5px 8px #43e15e;
             img {
                 display: block;
-                width: 40px;
+                width: 43px;
                 border-radius: 50%;
-                padding: 0px;
-                border: solid 1px #f3f3f359;            
+                padding: 0px;           
             }
         }
         p {
@@ -40,7 +39,7 @@ nav {
             color: $font-color; 
             line-height: 1.5em;
             font-weight: 600;
-            font-size: 29px; 
+            font-size: 28px; 
             letter-spacing: -1.3px;
             margin: auto 0px;
             white-space: nowrap;
@@ -86,7 +85,7 @@ nav {
                 color: $font-color; 
                 line-height: 1.5em;
                 font-weight: 600;
-                font-size: 28px; 
+                font-size: 27px; 
                 letter-spacing: -1.3px;
                 margin: auto 0px;
                 white-space: nowrap;
@@ -131,14 +130,14 @@ nav {
                     top: 12px; 
                     left: 72px;
                     color: $submit-font-color;
-                    text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                    // stext-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
                 .plus_itemlist {    
                     background: $accent-color;
                     white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
-                    color: $font-color;
+                    color: $submit-font-color;
                     display: block;
                     font-weight: 700;
                     font-size: 17px;
@@ -149,10 +148,11 @@ nav {
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    box-shadow: 6px 6px 6px #a6ada6,
-                                -5px -5px 3px #ffffff;
-                    text-shadow: 2px 2px 4px #2d8f3d,
-                                 -2px -2px 4px #a0f7ae;
+                    box-shadow: 0 0 4px 1px #f3f3f3,
+                            6px 6px 8px 4px #bbc2bb,
+                            -6px -6px 8px 4px #ffffff; 
+                    // text-shadow: 2px 2px 4px #2d8f3d,
+                    //              -2px -2px 4px #a0f7ae;
                 }
             }
         }
@@ -176,10 +176,9 @@ nav {
                 bottom: 3px;
                 color: $submit-font-color; 
                 background: $accent-color;
-                box-shadow: 6px 6px 6px #a6ada6,
-                            -5px -5px 3px #ffffff;
-                text-shadow: 2px 2px 4px #2a8347,
-                             -2px -2px 4px #b8f3ce;
+                box-shadow: 0 0 4px 1px #f3f3f3,
+                            6px 6px 8px 4px #bbc2bb,
+                            -6px -6px 8px 4px #ffffff; 
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(110%);
@@ -191,7 +190,7 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $submit-font-color;  
+                color: $font-color;  
                 font-weight: 700;
                 font-size: 17px;
                 padding: 7px 25px;
@@ -201,13 +200,14 @@ nav {
                 bottom: 3px; 
                 border-radius: 50px;
                 background: $base-color;
-                box-shadow: 6px 6px 6px #aeb6ae,
-                            -5px -5px 3px #ffffff;
-                text-shadow: 2px 2px 4px #c3c9d0, 
-                             -2px -2px 4px #ffffff;    
+                box-shadow: 0 0 1px 1px #f3f3f3,
+                            6px 6px 8px 4px #c1c7c1,
+                            -6px -6px 8px 4px #ffffff;
+                // text-shadow: 2px 2px 4px #c3c9d0, 
+                //              -2px -2px 4px #ffffff;    
                 filter: brightness(103%);
                 &:hover {
-                    filter: brightness(105%);
+                    filter: brightness(107%);
                     transition: 0.1s;
                   }
             }
@@ -231,8 +231,8 @@ nav {
             a {
                 color: white;
                 span {
-                    font-size: 42px;
-                    color: $gray-font-color;
+                    font-size: 45px;
+                    color: $font-color;
                     margin: 0;
                     padding: 0;
                     border-radius: 20px;
@@ -260,7 +260,7 @@ nav {
             right: 198px;
             a.logout {
                 display: flex;  
-                box-shadow: 0 0 20px #114775;
+                box-shadow: 0 0 20px #116921;
                 text-decoration: none;
                 background: #fbfbfd;
                 border-radius: 8px;

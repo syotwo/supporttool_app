@@ -112,7 +112,7 @@
                 width: 300px;
                 }
             li {
-                width: 280px;
+                width: 270px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 18px; 
                 text-align: center;
@@ -120,8 +120,11 @@
                 position: relative; 
                 background: $base-color;
                 filter: brightness(103%);
-                box-shadow: 5px 5px 6px #c5ccc5,
-                            -5px -5px 6px #ffffff;  
+                box-shadow: 8px 8px 10px #c5ccc5,
+                            -8px -8px 10px #ffffff;
+                box-shadow: 0 0 4px 4px #f3f3f3,
+                            7px 7px 7px #c5ccc5,
+                            -7px -7px 7px #ffffff;   
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_topimg {   
                     a {
@@ -156,7 +159,7 @@
                                 color: $font-color;
                                 margin: 0;
                                 margin: 13px 11px 0px;
-                                font-weight: 600;
+                                font-weight: 700;
                                 letter-spacing: 0.01em;
                                 font-size: 18px;
                                 span {
@@ -206,9 +209,10 @@
     }
     .cheacker_card_box {
         padding: 0px 0px 0px;
-        margin: 0px 40px 80px 5px;
+        margin: 0px 45px 80px 11px;
         border-radius: 20px;
-        box-shadow: 7px 7px 7px #c5ccc5,
+        box-shadow: 0 0 4px 4px #f3f3f3,
+                    7px 7px 7px #c5ccc5,
                     -7px -7px 7px #ffffff;  
         display: flex;
         .checker_word {
@@ -262,8 +266,8 @@
                 margin: 0px 80px 0px 53px;
                 box-shadow: 6px 6px 5px #a5b4a5,
                             -5px -5px 2px #ffffff;
-                text-shadow: 2px 2px 4px #2a8347,
-                             -2px -2px 4px #b8f3ce;    
+                // text-shadow: 2px 2px 4px #2a8347,
+                //              -2px -2px 4px #b8f3ce;    
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
@@ -319,7 +323,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 50px;
                 margin: 35px 0px 0px 0px;
-                color: #2d2f31;
+                color: $font-color;
                 letter-spacing: -0.14em;
                 white-space: nowrap;
                 line-height: 1.1em;
@@ -334,9 +338,10 @@
                 font-size: 19px;
                 text-decoration: none;
                 margin: 7px 0px 0px 0px;
-                color: #2d2f31;
+                color: $font-color;
                 font-weight: 200;
-                letter-spacing: -0.01em;
+                letter-spacing: -0.05em;
+                line-height: 1.7em;
                 img {
                     height: 55px;
                     position: relative;
@@ -358,10 +363,10 @@
                         span {
                             position: relative; 
                             top: 6px;
-                            left: 95px;  
+                            left: 115px;  
                             font-size: 26px;
                             color: $submit-font-color;
-                            text-shadow:  2px 2px 4px #2d8b4d,-2px -2px 4px #b8f3ce;
+                            // text-shadow:  2px 2px 4px #2d8b4d,-2px -2px 4px #b8f3ce;
                         }
                         input {
                             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -373,13 +378,12 @@
                             font-weight: 600;
                             border: none;
                             border-radius: 40px;
-                            padding: 15px 4px 15px 50px; 
-                            letter-spacing: 0.01em;
-                            margin: 23px 0px 0px 0px;  
-                            box-shadow: 6px 6px 5px #a5b4a5,
-                                        -5px -5px 2px #ffffff;
-                            text-shadow: 2px 2px 4px #2a8347,
-                                        -2px -2px 4px #b8f3ce; 
+                            padding: 15px 0px 15px 40px; 
+                            margin: 15px 0px 0px 0px;  
+                            // box-shadow: 6px 6px 5px #a5b4a5,
+                            //             -5px -5px 2px #ffffff;
+                            box-shadow: 6px 6px 8px 4px #bbc2bb,
+                                        -6px -6px 8px 4px #ffffff;
                         }
                     }
                 }        
@@ -396,10 +400,11 @@
     }  
     .cheacker_card_box {
         padding: 0px 0px 0px;
-        margin: 0px 40px 80px 40px;
+        margin: 0px 44px 80px 51px;
         border-radius: 20px;
-        box-shadow: 7px 7px 7px #c5ccc5,
-                    -7px -7px 7px #ffffff; 
+        box-shadow: 0 0 4px 4px #f3f3f3,
+                    7px 7px 7px #c5ccc5,
+                    -7px -7px 7px #ffffff;  
         display: flex;
         .checker_word {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -426,7 +431,7 @@
                 text-decoration: none;
                 color: $font-color;
                 white-space: nowrap;
-                letter-spacing: -0.07em;
+                letter-spacing: -0.05em;
             }
             .checker_word_bottom {
                 margin: 15px 80px 20px 53px;
@@ -434,7 +439,7 @@
                 text-decoration: none;
                 color: $font-color;
                 white-space: nowrap;
-                letter-spacing: -0.15em;
+                letter-spacing: -0.05em;
             }
             a.checker_submit {
                 display: flex;
@@ -450,10 +455,10 @@
                 border-radius: 40px;
                 padding: 5px 40px 5px 80px; 
                 margin: 0px 80px 0px 53px;
-                box-shadow: 6px 6px 5px #a5b4a5,
-                            -5px -5px 2px #ffffff;
-                text-shadow: 2px 2px 4px #2a8347,
-                             -2px -2px 4px #b8f3ce;  
+                box-shadow: 6px 6px 8px 4px #bbc2bb,
+                                        -6px -6px 8px 4px #ffffff;
+                // text-shadow: 2px 2px 4px #2a8347,
+                //              -2px -2px 4px #b8f3ce;  
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
@@ -538,7 +543,7 @@
     }
     .article_index_title_box {
         display: flex;
-        margin: 65px 0px 0px 40px;
+        margin: 0px 0px 30px 40px;
         span {
             display: block;
             font-size: 29px;
@@ -575,16 +580,20 @@
                 width: 300px;
                 }
             li {
-                width: 280px;
+                width: 270px;
                 margin: 0px 0px 45px 0px; 
-                padding: 0px 0px 18px; 
+                padding: 0px 0px 11px; 
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
                 background: $base-color;
-                filter: brightness(103%);
-                box-shadow: 5px 5px 6px #c5ccc5,
-                            -5px -5px 6px #ffffff;  
+                filter: brightness(107%);
+                // box-shadow: 6px 6px 10px #c0c9c0,
+                //             -8px -8px 10px #ffffff;
+                box-shadow: 0 0 4px 4px #f3f3f3,
+                            7px 7px 7px #c5ccc5,
+                            -7px -7px 7px #ffffff;  
+                             
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_topimg {   
                     a {
@@ -605,21 +614,21 @@
                     }
                 }
                 .article_word_box {
-                    margin: 0px 0px 0px 2px;
+                    margin: 0px 7px 0px 7px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .article_category {
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
-                            margin: 12px 0px 0px 0px;
+                            margin: 4px 0px 4px 0px;
                             height: 51px;
                             .condition {
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 color: $font-color;
                                 margin: 0;
                                 margin: 13px 11px 0px;
-                                font-weight: 600;
+                                font-weight: 700;
                                 letter-spacing: 0.01em;
                                 font-size: 18px;
                                 span {
@@ -629,13 +638,14 @@
                             span {
                                 display: block;
                                 padding: 2px;
-                                margin: 5px 0px 0px 0px;
+                                margin: 7px 0px 0px 0px;
                                 font-size: 25px;
                             }
                         }
                     }
                     .article_title {   
                         margin: -7px 9px 0px 11px;
+                        
                         .title_name {
                             a {
                                 height: 50px;
@@ -647,9 +657,9 @@
                                 font-weight: 700;
                                 display: block;    
                                 text-decoration: none;
-                                text-align: left;
+                                text-align: justify;
                                 text-overflow: ellipsis;
-                                letter-spacing: 0em;
+                                letter-spacing: -0.04em;
                                 z-index: 1;
                             }
                         }        
@@ -673,14 +683,17 @@
 @media screen and (max-width: 770px) {
     .toppage_login { 
         padding: 100px 0px;
+        margin: 20px 0px 0px 30px;
         .face_box {
-            margin: 0px 0px 15px 20px;
+            
         }
-        form.item_list_search {
-            margin: 0px 0px 30px 20px;
+        .article_index_title_box {
+            
+            margin: 70px 0px 30px;
         }
-        .tool_box {
-            margin: 0px 0px 0px 22px;
+        .article_index {
+            width: 285px;
+            margin: 0px auto;
         }
     }
     .toppage_logout {
@@ -690,12 +703,14 @@
             display: block;
             width: 400px;
             .logout_top_left_word {
-                h1 {
+                h1.top {
                     white-space: initial; 
                     margin: 0;
+                    color: $font-color;
                 }
                 p.middle {
                     margin: 0;
+                    color: $font-color;
 
                 }
                 .box_login {
@@ -717,11 +732,11 @@
                 }
             }
         }
-        .tool_box {
+        .article_index_title_box {
             width: 285px;
-            margin: 265px 80px 30px;
+            margin: 265px 30px 30px;
         }
-        .itemlist {
+        .article_index {
             width: 285px;
             margin: 0px auto;
         }

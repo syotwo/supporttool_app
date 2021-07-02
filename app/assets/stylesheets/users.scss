@@ -37,7 +37,8 @@
       border-radius: 50px;
       background: $base-color;
       filter: brightness(103%);
-      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+      box-shadow: inset 5px 5px 10px #c2cac3,
+                  inset -5px -5px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_email {
@@ -49,7 +50,8 @@
       padding: 18px 0px 18px 22px;
       background: $base-color;
       filter: brightness(103%);
-      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+      box-shadow: inset 5px 5px 10px #c2cac3,
+                  inset -5px -5px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
 
@@ -62,7 +64,8 @@
       padding: 18px 0px 18px 22px;
       background: $base-color;
       filter: brightness(103%);
-      box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+      box-shadow: inset 5px 5px 10px #c2cac3,
+                  inset -5px -5px 10px #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   }
     #user_password_confirmation {
@@ -92,101 +95,145 @@
     border-radius: 50px;
     box-shadow: 5px 5px 7px #afb4bb,
                 -5px -5px 4px #ffffff;
-    text-shadow: 2px 2px 4px #2d8f3d,
-                 -2px -2px 4px #a0f7ae;
+    // text-shadow: 2px 2px 4px #2d8f3d,
+    //              -2px -2px 4px #a0f7ae;
     &:hover {
       filter: brightness(110%);
     }
   }
 }
 
-.logout_image {
-  width: 854px;
-  height: 420px;
-  background: url("/assets/") no-repeat center center;
-  background-size: 50%;
-  background-position: 93% 40%;
-  background-blend-mode: overlay;
-  padding: 90px 40px 0px 40px;
-  margin: 0px auto;
+.article_index_title_box {
   display: flex;
-  .logout_top_left_word {
-      text-align: left; 
-      h1 {
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-          font-size: 50px;
-          margin: 35px 0px 0px 0px;
-          color: #2d2f31;
-          letter-spacing: -0.14em;
-          white-space: nowrap;
-          line-height: 1.1em;
-          font-weight: 800;
-          .top_word_bottom {
-              position: relative;
-              right: 33px;
+  margin: 65px 0px 0px 0px;
+  span {
+      display: block;
+      font-size: 29px;
+      color: $font-color;
+      margin: 1px 3px 0px 0px;
+  }
+  p {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+      margin: 0px 0px 0px 8px;
+      padding: 0px 0px 0px 0px;
+      font-size: 20px;
+      font-weight: 600;
+      color: $font-color;
+  }
+}
+.article_index {
+  padding: 0px 0px 0px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 18px 40px 0px 5px;
+  display: flex;
+  ul.article_index_wrap {
+      padding: 0px 0px 20px 0px;
+      margin: 0px auto;
+      list-style: none;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      &::after {
+          display: block;
+          content:"";
+          width: 300px;
           }
-      }
-      p.middle {
+      li {
+          width: 270px;
+          margin: 0px 0px 45px 0px; 
+          padding: 0px 0px 18px; 
+          text-align: center;
+          border-radius: 10px;
+          position: relative; 
+          background: $base-color;
+          filter: brightness(103%);
+          box-shadow: 8px 8px 10px #c5ccc5,
+                      -8px -8px 10px #ffffff;
+          box-shadow: 0 0 4px 4px #f3f3f3,
+                      7px 7px 7px #c5ccc5,
+                      -7px -7px 7px #ffffff;   
           font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-          font-size: 19px;
-          text-decoration: none;
-          margin: 7px 0px 0px 0px;
-          color: #2d2f31;
-          font-weight: 200;
-          letter-spacing: -0.01em;
-          img {
-              height: 55px;
-              position: relative;
-              top: 20px;
-              left: 10px;
-          }
-      }
-      .logout_image_box {
-          
-      }
-      .box_login {
-          .test_login {
-              form {
-                  position: relative;
-                  right: 30px;
+          .article_topimg {   
+              a {
+                  display: block;
                   &:hover {
-                      filter: brightness(110%);
+                      filter: brightness(90%);
+                    
                   } 
-                  span {
-                      position: relative; 
-                      top: 6px;
-                      left: 95px;  
-                      font-size: 26px;
-                      color: $submit-font-color;
-                      text-shadow:  2px 2px 4px #2d8b4d,-2px -2px 4px #b8f3ce;
-                  }
-                  input {
-                      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                      color: $submit-font-color;
-                      background: $accent-color;
-                      width: 350px;
-                      height: 20;
-                      font-size: 19px;
-                      font-weight: 600;
-                      border: none;
-                      border-radius: 40px;
-                      padding: 15px 4px 15px 50px; 
-                      letter-spacing: 0.01em;
-                      margin: 23px 0px 0px 0px;  
-                      box-shadow:  6px 6px 5px #b4afa8,-5px -5px 2px #ffffff;
-                      text-shadow:  3px 3px 4px #2a8347,-2px -2px 4px #b8f3ce;
-                      
+                  img {  
+                      filter: saturate(150%);
+                      border-radius: 10px 10px 0px 0px;
+                      width: 280px;
+                      height: 200px;
+                      max-width: 100%;
+                      object-fit: cover;
+                      margin: 0px 0px 0px 0px;
                   }
               }
-          }        
-      }
-  }
-  .logout_top_right_img {
-      img {
-          display: block;
-          width: 430px;
-          margin:40px 0px 0px 40px;
-          border-radius: 20px;
+          }
+          .article_word_box {
+              margin: 0px 0px 0px 2px;
+              min-height: 70px;
+              font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+              .article_category {
+                  .face_type_box {
+                      display: flex;
+                      border-radius: 50%;                    
+                      margin: 12px 0px 0px 0px;
+                      height: 51px;
+                      .condition {
+                          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                          color: $font-color;
+                          margin: 0;
+                          margin: 13px 11px 0px;
+                          font-weight: 700;
+                          letter-spacing: 0.01em;
+                          font-size: 18px;
+                          span {
+                              font-size: 23px;
+                          }
+                      }
+                      span {
+                          display: block;
+                          padding: 2px;
+                          margin: 5px 0px 0px 0px;
+                          font-size: 25px;
+                      }
+                  }
+              }
+              .article_title {   
+                  margin: -7px 9px 0px 11px;
+                  .title_name {
+                      a {
+                          height: 50px;
+                          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                          margin: 0px 0px 10px 0px;
+                          max-width: 270px;
+                          color: $font-color;
+                          font-size: 19px;
+                          font-weight: 700;
+                          display: block;    
+                          text-decoration: none;
+                          text-align: left;
+                          text-overflow: ellipsis;
+                          letter-spacing: 0em;
+                          z-index: 1;
+                      }
+                  }        
+              }
+              p.user_name {
+                  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                  text-align: left;
+                  color: $third-font-color;
+                  letter-spacing: -0.02em;
+                  font-size: 14px;
+                  font-weight: 400;
+                  margin: 20px 0px 0px 11px;
+              }
+          }
       }
   }
 }

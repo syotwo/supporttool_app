@@ -19,62 +19,61 @@
         <%= image_tag("/assets/top_img.png") %>
       </div>
     </div>  
-    <div class="tool_box">
+    <div class="article_index_title_box">
       <span class="material-icons">
       description
       </span>
       <p>記事一覧</p>
     </div>
-    <div class="itemlist">
-      <ul class="main">
+    <div class="article_index">
+      <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
           <li>
-            <div class="itemlist_topimg">
+            <div class="article_topimg">
               <% if item_list.image? %>
                 <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
               <% else %>
                 <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
               <% end %>
             </div>
-            <div class="itemlist_word">
-              <div class="list_item_type_box">
+            <div class="article_word_box">
+              <div class="article_category">
                 <% if item_list.list_item_type == "1" then %>
-                <div class="list_type_sord_box">
-                  <p class= list_item_type_name>Condition :</p>
+                <div class="face_type_box">
+                  <p class="condition">Condition :</p>
                   <span>&#x1f606;</span>
                 </div>
                 <% elsif item_list.list_item_type == "2" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name>Condition :</p>
+                <div class="face_type_box">
+                  <p class="condition">Condition :</p>
                   <span>&#x1f600;</span>
                 </div>
                 <% elsif item_list.list_item_type == "3" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name>Condition :</p>
+                <div class="face_type_box">
+                  <p class="condition">Condition :</p>
                   <span>&#x1f610;</span>
                 </div>
                 <% elsif item_list.list_item_type == "4" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name>Condition :</p>
+                <div class="face_type_box">
+                  <p class="condition">Condition :</p>
                   <span>&#x1f605;</span>
                 </div>
                 <% elsif item_list.list_item_type == "5" then%>
-                <div class="list_type_shield_box">
-                  <p class= list_item_type_name>Condition :</p>
+                <div class="face_type_box">
+                  <p class="condition">Condition :</p>
                   <span>&#x1f631;</span>
                 </div>
                 <% end %>
               </div>
-              <div class="box_text">
-                <div class="list_name">
+              <div class="article_title">
+                <div class="title_name">
                   <%= link_to item_list.list_name , item_list_path(item_list) %>
-                </div>
-                <p class= price></p>
-                <p>
+                </div>    
+              </div> 
+              <p class="user_name">
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%m/%d/%Y ") %>
-                </p>    
-              </div> 
+                </p>
             </div>   
           </li>
         <% end %>
@@ -86,7 +85,7 @@
         <p class= checker_word_middle>気分検知ツールで、体調の変化を記録</p>
         <p class= checker_word_middle></p>
         <p></p>
-        <p class= checker_word_bottom>＊ Daily Checker&nbsp;のユーザーデータは解析のみに利用し、当社で保持することはありません。</p>
+        <p class= checker_word_bottom>＊ユーザーデータを外部利用することはありません。</p>
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
           <span class="material-icons">emoji_emotions</span>
           <p>Daily Checker</p>

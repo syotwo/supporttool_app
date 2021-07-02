@@ -25,7 +25,8 @@
         margin: 2px 0px 16px;
         padding: 18px 0px 18px 22px;
         background: $base-color;
-        box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+        box-shadow: inset 5px 5px 10px #c2cac3,
+                    inset -5px -5px 10px #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }
     #session_password {
@@ -34,25 +35,29 @@
         width: 95%;
         text-align: left;
         padding: 18px 0px 18px 22px;
-        background: $base-color;
-        box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+        background: #E7F1E8;
+        box-shadow: inset 5px 5px 10px #c2cac3,
+                        inset -5px -5px 10px #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }
     .login_submit{
         text-align: right;
-        margin: 16px 0px 0px 237px;
+        margin: 30px 0px 0px 237px;
         padding: 16px 25px;
         background: $accent-color;
         border: #edebf1;
         border-radius: 40px;
-        color: $submit-font-color;
+        color: $font-color;
         font-weight: bold;
         font-size: 16px;
         border-radius: 50px;
-        box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
-        text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+        background: $base-color;
+        box-shadow: 0 0 1px 1px #f3f3f3,
+                            6px 6px 8px 4px #c1c7c1,
+                            -6px -6px 8px 4px #ffffff;
+        // text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
         &:hover {
-            filter: brightness(130%);
+            filter: brightness(104%);
           }
     }
 }

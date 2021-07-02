@@ -64,12 +64,12 @@ p {
         font-weight: 600;
         color: $font-color;
     }
-    .itemlist {
+    .article_index {
         padding: 0px 0px 0px 0px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 18px 40px 0px 40px;
+        margin: 18px 40px 0px 45px;
         display: flex;
-        ul.main {
+        ul.article_index_wrap {
             padding: 0px 0px 20px 0px;
             margin: 0px auto;
             list-style: none;
@@ -85,7 +85,7 @@ p {
                 width: 300px;
                 }
             li {
-                width: 280px;
+                width: 270px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 18px; 
                 text-align: center;
@@ -93,10 +93,13 @@ p {
                 position: relative; 
                 background: $base-color;
                 filter: brightness(103%);
-                box-shadow: 5px 5px 6px #c5ccc5,
-                            -5px -5px 6px #ffffff;  
+                box-shadow: 8px 8px 10px #c5ccc5,
+                            -8px -8px 10px #ffffff;
+                box-shadow: 0 0 4px 4px #f3f3f3,
+                            7px 7px 7px #c5ccc5,
+                            -7px -7px 7px #ffffff;   
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                .itemlist_topimg {   
+                .article_topimg {   
                     a {
                         display: block;
                         &:hover {
@@ -114,64 +117,39 @@ p {
                         }
                     }
                 }
-                .list_item_type_box {
-                    .list_type_sord_box {
-                        display: flex;
-                        border-radius: 50%;                    
-                        margin: 12px 0px 0px 0px;
-                        height: 51px;
-                        .list_item_type_name {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            color: $font-color;
-                            margin: 0;
-                            margin: 13px 11px 0px;
-                            font-weight: 600;
-                            letter-spacing: 0.01em;
-                            font-size: 18px;
-                            span {
-                                font-size: 23px;
-                            }
-                        }
-                        span {
-                            display: block;
-                            padding: 2px;
-                            margin: 5px 0px 0px 0px;
-                            font-size: 25px;
-                        }
-                    }
-                    .list_type_shield_box {
-                        display: flex;
-                        border-radius: 50%;
-                        margin: 12px 0px 0px 0px;
-                        height: 51px;
-                        p.list_item_type_name {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            color: $font-color;
-                            margin: 0;
-                            margin: 13px 11px 0px;
-                            font-weight: 700;
-                            letter-spacing: 0.01em;
-                            font-size: 18px;
-                            span {
-                                font-size: 25px;
-                            }
-                        }
-                        span {
-                            display: block;
-                            padding: 2px;
-                            margin: 5px 0px 0px 0px;
-                            font-size: 25px;
-                        }
-                    }
-                    
-                }
-                .itemlist_word {   
+                .article_word_box {
                     margin: 0px 0px 0px 2px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    .box_text {   
+                    .article_category {
+                        .face_type_box {
+                            display: flex;
+                            border-radius: 50%;                    
+                            margin: 12px 0px 0px 0px;
+                            height: 51px;
+                            .condition {
+                                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                color: $font-color;
+                                margin: 0;
+                                margin: 13px 11px 0px;
+                                font-weight: 700;
+                                letter-spacing: 0.01em;
+                                font-size: 18px;
+                                span {
+                                    font-size: 23px;
+                                }
+                            }
+                            span {
+                                display: block;
+                                padding: 2px;
+                                margin: 5px 0px 0px 0px;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .article_title {   
                         margin: -7px 9px 0px 11px;
-                        .list_name {
+                        .title_name {
                             a {
                                 height: 50px;
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -187,17 +165,17 @@ p {
                                 letter-spacing: 0em;
                                 z-index: 1;
                             }
-                        }       
-                        p {
-                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                            text-align: left;
-                            color: $third-font-color;
-                            letter-spacing: -0.02em;
-                            font-size: 14px;
-                            font-weight: 400;
-                            margin: 20px 0px 0px 0px;
-                        }  
-                    }          
+                        }        
+                    }
+                    p.user_name {
+                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                        text-align: left;
+                        color: $third-font-color;
+                        letter-spacing: -0.02em;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 20px 0px 0px 11px;
+                    }
                 }
             }
         }
@@ -269,7 +247,7 @@ p {
             text-align: left;
             font-weight: 100;
             letter-spacing: 0.01em;
-            line-height: 1.9em
+            line-height: 2.1em
         }
         ul {
             flex-wrap: wrap;
@@ -557,7 +535,7 @@ p {
                 background: $gray-color;
                 padding: 10px 145px;
                 margin: 0px 0px 3px 0px;
-                border-radius: 4px;
+                border-radius: 14px;
                 color: $third-font-color;
                 display: flex;
                 text-align: center;
@@ -595,7 +573,10 @@ p {
             outline: none;
             background: $base-color;
             filter: brightness(105%);
-            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+            border-radius: 14px;
+            background: #E7F1E8;
+            box-shadow: inset 5px 5px 10px #c2cac3,
+                        inset -5px -5px 10px #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         }  
         #item_list_list_description { 
@@ -610,7 +591,10 @@ p {
             outline: none;
             background: $base-color;
             filter: brightness(105%);
-            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+            border-radius: 14px;
+            background: #E7F1E8;
+            box-shadow: inset 5px 5px 10px #c2cac3,
+                        inset -5px -5px 10px #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         } 
         .wrap {
@@ -661,7 +645,7 @@ p {
                 border-radius: 40px;
                 background: linear-gradient(145deg, #41d75a, #37b54c);
                 box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
-                text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
+                // text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 &:hover {
                     filter: brightness(125%);
                   }
