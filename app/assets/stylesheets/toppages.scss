@@ -75,7 +75,7 @@
     }
     .article_index_title_box {
         display: flex;
-        margin: 65px 0px 0px 0px;
+        margin: 65px 0px 30px 0px;
         span {
             display: block;
             font-size: 29px;
@@ -134,7 +134,7 @@
                           
                         } 
                         img {  
-                            filter: saturate(150%);
+                            filter: saturate(120%);
                             border-radius: 10px 10px 0px 0px;
                             width: 280px;
                             height: 200px;
@@ -235,7 +235,7 @@
                 }
             }
             .checker_word_middle {
-                margin: 0px 80px 0px 53px;
+                margin: 0px 80px 8px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: $font-color;
@@ -243,7 +243,7 @@
                 letter-spacing: -0.07em;
             }
             .checker_word_bottom {
-                margin: 15px 80px 20px 53px;
+                margin: 0px 80px 20px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: $font-color;
@@ -264,8 +264,8 @@
                 border-radius: 40px;
                 padding: 5px 40px 5px 80px; 
                 margin: 0px 80px 0px 53px;
-                box-shadow: 6px 6px 5px #a5b4a5,
-                            -5px -5px 2px #ffffff;
+                box-shadow: 6px 6px 8px 4px #bbc2bb,
+                            -6px -6px 8px 4px #ffffff;
                 // text-shadow: 2px 2px 4px #2a8347,
                 //              -2px -2px 4px #b8f3ce;    
                 &:hover {
@@ -426,7 +426,7 @@
                 }
             }
             .checker_word_middle {
-                margin: 0px 80px 0px 53px;
+                margin: 0px 80px 8px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: $font-color;
@@ -434,7 +434,7 @@
                 letter-spacing: -0.05em;
             }
             .checker_word_bottom {
-                margin: 15px 80px 20px 53px;
+                margin: 0px 80px 20px 53px;
                 font-size: 17px;
                 text-decoration: none;
                 color: $font-color;
@@ -456,7 +456,7 @@
                 padding: 5px 40px 5px 80px; 
                 margin: 0px 80px 0px 53px;
                 box-shadow: 6px 6px 8px 4px #bbc2bb,
-                                        -6px -6px 8px 4px #ffffff;
+                            -6px -6px 8px 4px #ffffff;
                 // text-shadow: 2px 2px 4px #2a8347,
                 //              -2px -2px 4px #b8f3ce;  
                 &:hover {
@@ -603,7 +603,7 @@
                           
                         } 
                         img {  
-                            filter: saturate(150%);
+                            filter: saturate(120%);
                             border-radius: 10px 10px 0px 0px;
                             width: 280px;
                             height: 200px;

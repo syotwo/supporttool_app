@@ -35,9 +35,9 @@
         width: 95%;
         text-align: left;
         padding: 18px 0px 18px 22px;
-        background: #E7F1E8;
+        background: $base-color;
         box-shadow: inset 5px 5px 10px #c2cac3,
-                        inset -5px -5px 10px #ffffff;
+                    inset -5px -5px 10px #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     }
     .login_submit{

@@ -23,12 +23,12 @@ class ItemListsController < ApplicationController
     # binding.pry
 
     if @item_list.save
-      flash[:success] = 'リストを投稿しました'
+      flash[:success] = '投稿しました。'
       redirect_to item_list_path(@item_list.id)
       # redirect_to @item_listが省略型
       # リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
     else
-      flash.now[:danger] = 'リストの投稿に失敗しました。'
+      flash.now[:danger] = '投稿に失敗しました。'
       render :new
     end
   end
@@ -48,7 +48,7 @@ class ItemListsController < ApplicationController
 
   def destroy
     @item_list.destroy
-    flash[:success] = 'Support-Kitを削除しました'
+    flash[:success] = '投稿を削除しました。'
     redirect_to root_path
   end
 

@@ -9,8 +9,8 @@
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
-              <span class="material-icons">thumb_up</span>
-              <%= f.submit "How are you feeling?"%>
+              <span class="material-icons">description</span>
+              <%= f.submit "Share for creater"%>
             <% end %>
           </div>
         </div>
@@ -83,8 +83,6 @@
       <div class= checker_word>
         <h1 class= checker_word_top>今日の<br>コンディションを<br>チェックする</h1>
         <p class= checker_word_middle>気分検知ツールで、体調の変化を記録</p>
-        <p class= checker_word_middle></p>
-        <p></p>
         <p class= checker_word_bottom>＊ユーザーデータを外部利用することはありません。</p>
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
           <span class="material-icons">emoji_emotions</span>
