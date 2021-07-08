@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   before_action :require_user_logged_in, only: [:show]
+  
+  def index
+    @item_lists = ItemList.all.order(created_at: :desc)
+  end
 
   def show
     @user = User.find(params[:id])

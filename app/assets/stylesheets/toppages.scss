@@ -94,7 +94,7 @@
     .article_index {
         padding: 0px 0px 0px 0px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 18px 40px 0px 5px;
+        margin: 18px 40px 0px 4px;
         display: flex;
         ul.article_index_wrap {
             padding: 0px 0px 20px 0px;
@@ -112,19 +112,15 @@
                 width: 300px;
                 }
             li {
-                width: 270px;
+                width: 266px;
                 margin: 0px 0px 45px 0px; 
-                padding: 0px 0px 18px; 
+                padding: 0px 0px 11px; 
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
                 background: $base-color;
-                filter: brightness(103%);
-                box-shadow: 8px 8px 10px #c5ccc5,
-                            -8px -8px 10px #ffffff;
-                box-shadow: 0 0 4px 4px #f3f3f3,
-                            7px 7px 7px #c5ccc5,
-                            -7px -7px 7px #ffffff;   
+                box-shadow:  5px 5px 10px #dbe5dc,
+                            -5px -5px 10px #f3fdf4;                
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_topimg {   
                     a {
@@ -135,30 +131,31 @@
                         } 
                         img {  
                             filter: saturate(120%);
-                            border-radius: 10px 10px 0px 0px;
-                            width: 280px;
+                            border-radius: 7px;
+                            width: 240px;
                             height: 200px;
                             max-width: 100%;
                             object-fit: cover;
-                            margin: 0px 0px 0px 0px;
+                            margin: 13px 0px 0px 0px;
                         }
                     }
                 }
                 .article_word_box {
-                    margin: 0px 0px 0px 2px;
+                    margin: 0px 7px 0px 7px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .article_category {
+                        height: 40px;
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
-                            margin: 12px 0px 0px 0px;
+                            margin: 4px 0px 4px 0px;
                             height: 51px;
                             .condition {
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 color: $font-color;
                                 margin: 0;
-                                margin: 13px 11px 0px;
+                                margin: 10px 11px 0px;
                                 font-weight: 700;
                                 letter-spacing: 0.01em;
                                 font-size: 18px;
@@ -175,10 +172,10 @@
                         }
                     }
                     .article_title {   
-                        margin: -7px 9px 0px 11px;
+                        margin: 0px 9px 0px 11px;
                         .title_name {
                             a {
-                                height: 50px;
+                                height: 42px;
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
@@ -187,9 +184,9 @@
                                 font-weight: 700;
                                 display: block;    
                                 text-decoration: none;
-                                text-align: left;
+                                text-align: justify;
                                 text-overflow: ellipsis;
-                                letter-spacing: 0em;
+                                letter-spacing: -0.04em;
                                 z-index: 1;
                             }
                         }        
@@ -201,7 +198,7 @@
                         letter-spacing: -0.02em;
                         font-size: 14px;
                         font-weight: 400;
-                        margin: 20px 0px 0px 11px;
+                        margin: 20px 0px 0px 12px;
                     }
                 }
             }
@@ -211,9 +208,8 @@
         padding: 0px 0px 0px;
         margin: 0px 45px 80px 11px;
         border-radius: 20px;
-        box-shadow: 0 0 4px 4px #f3f3f3,
-                    7px 7px 7px #c5ccc5,
-                    -7px -7px 7px #ffffff;  
+        box-shadow: 5px 5px 10px #dbe5dc,
+                    -5px -5px 10px #f3fdf4;  
         display: flex;
         .checker_word {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -265,9 +261,7 @@
                 padding: 5px 40px 5px 80px; 
                 margin: 0px 80px 0px 53px;
                 box-shadow: 6px 6px 8px 4px #bbc2bb,
-                            -6px -6px 8px 4px #ffffff;
-                // text-shadow: 2px 2px 4px #2a8347,
-                //              -2px -2px 4px #b8f3ce;    
+                            -6px -6px 8px 4px #ffffff;  
                 &:hover {
                     filter: brightness(110%);
                     transition: 0.2s;
@@ -308,7 +302,7 @@
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
-        width: 854px;
+        width: 870px;
         height: 420px;
         background: url("/assets/") no-repeat center center;
         background-size: 50%;
@@ -321,8 +315,8 @@
             text-align: left; 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 50px;
-                margin: 35px 0px 0px 0px;
+                font-size: 49px;
+                margin: 37px 0px 0px 0px;
                 color: $font-color;
                 letter-spacing: -0.14em;
                 white-space: nowrap;
@@ -335,9 +329,9 @@
             }
             p.middle {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                font-size: 19px;
+                font-size: 18px;
                 text-decoration: none;
-                margin: 7px 0px 0px 0px;
+                margin: 8px 0px 0px 0px;
                 color: $font-color;
                 font-weight: 200;
                 letter-spacing: -0.05em;
@@ -402,9 +396,8 @@
         padding: 0px 0px 0px;
         margin: 0px 44px 80px 51px;
         border-radius: 20px;
-        box-shadow: 0 0 4px 4px #f3f3f3,
-                    7px 7px 7px #c5ccc5,
-                    -7px -7px 7px #ffffff;  
+        box-shadow: 5px 5px 10px #dbe5dc,
+                    -5px -5px 10px #f3fdf4;  
         display: flex;
         .checker_word {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -541,9 +534,21 @@
             }
         }
     }
+    .article_category_index {
+        display: flex;
+        width: 870px;
+        margin: 0px auto;
+        p {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px 30px 0px 0px;
+        }
+    }
     .article_index_title_box {
         display: flex;
-        margin: 0px 0px 30px 40px;
+        width: 870px;
+        margin: 20px auto;
         span {
             display: block;
             font-size: 29px;
@@ -552,18 +557,20 @@
         }
         p {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            margin: 0px 0px 0px 8px;
+            margin: 0px 0px 0px 0px;
             padding: 0px 0px 0px 0px;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 31px;
+            font-weight: 700;
             color: $font-color;
+            text-align-last: left;
         }
     }
     .article_index {
-        padding: 0px 0px 0px 0px;
+        padding: 0px 40px 0px 40px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 18px 40px 0px 45px;
+        margin: 0px auto;
         display: flex;
+        width: 870px;
         ul.article_index_wrap {
             padding: 0px 0px 20px 0px;
             margin: 0px auto;
@@ -580,20 +587,15 @@
                 width: 300px;
                 }
             li {
-                width: 270px;
+                width: 266px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 11px; 
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
                 background: $base-color;
-                filter: brightness(107%);
-                // box-shadow: 6px 6px 10px #c0c9c0,
-                //             -8px -8px 10px #ffffff;
-                box-shadow: 0 0 4px 4px #f3f3f3,
-                            7px 7px 7px #c5ccc5,
-                            -7px -7px 7px #ffffff;  
-                             
+                box-shadow:  5px 5px 10px #dbe5dc,
+                            -5px -5px 10px #f3fdf4;                
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_topimg {   
                     a {
@@ -604,12 +606,12 @@
                         } 
                         img {  
                             filter: saturate(120%);
-                            border-radius: 10px 10px 0px 0px;
-                            width: 280px;
+                            border-radius: 7px;
+                            width: 240px;
                             height: 200px;
                             max-width: 100%;
                             object-fit: cover;
-                            margin: 0px 0px 0px 0px;
+                            margin: 13px 0px 0px 0px;
                         }
                     }
                 }
@@ -618,6 +620,7 @@
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .article_category {
+                        height: 40px;
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
@@ -627,7 +630,7 @@
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 color: $font-color;
                                 margin: 0;
-                                margin: 13px 11px 0px;
+                                margin: 10px 11px 0px;
                                 font-weight: 700;
                                 letter-spacing: 0.01em;
                                 font-size: 18px;
@@ -638,17 +641,16 @@
                             span {
                                 display: block;
                                 padding: 2px;
-                                margin: 7px 0px 0px 0px;
+                                margin: 5px 0px 0px 0px;
                                 font-size: 25px;
                             }
                         }
                     }
                     .article_title {   
-                        margin: -7px 9px 0px 11px;
-                        
+                        margin: 0px 9px 0px 11px;
                         .title_name {
                             a {
-                                height: 50px;
+                                height: 42px;
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 margin: 0px 0px 10px 0px;
                                 max-width: 270px;
@@ -671,7 +673,7 @@
                         letter-spacing: -0.02em;
                         font-size: 14px;
                         font-weight: 400;
-                        margin: 20px 0px 0px 11px;
+                        margin: 20px 0px 0px 12px;
                     }
                 }
             }

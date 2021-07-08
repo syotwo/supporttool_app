@@ -1,6 +1,5 @@
 class ToppagesController < ApplicationController
   def index
-    @item_lists = ItemList.all
-    @mytools = ItemList.where(user_id: session[:user_id]).recent
+    @item_lists = ItemList.all.order(created_at: :desc)
   end
 end
