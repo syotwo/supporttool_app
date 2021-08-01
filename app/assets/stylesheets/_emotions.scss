@@ -6,7 +6,8 @@
         padding: 30px 120px 50px 60px;
         width: 600px;
         border-radius: 8px;
-        box-shadow: 20px 20px 32px #b3c9e2, -8px -8px 10px #ffffff;
+        box-shadow: 5px 5px 11px #d9d3c3,
+                    -5px -5px 11px #fffde9;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         h1 {
             position: relative;
@@ -105,8 +106,6 @@
         font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
-        // text-shadow: 2px 2px 4px #2d8f3d,
-        //              -2px -2px 4px #a0f7ae;
         &:hover {
             filter: brightness(110%);
           }

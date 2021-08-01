@@ -1,8 +1,8 @@
 <div class="emotion_index">
     <div class="emotion_chartbox">
-        <h1>Your Condition</h1>
+        <h1>Weekly Condition</h1>
         <div class= chart>
-            <%= bar_chart @confidencescores, colors: ["#e04459", "#e04459", "#e04459"] %>
+            <%= pie_chart @confidencescores %>
         </div>
     </div>
 </div>

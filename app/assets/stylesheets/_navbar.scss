@@ -15,25 +15,22 @@ nav {
     justify-content: space-between;
     height: 100%;
     padding: 0px 40px 0px 40px;
-    margin: 6px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     .nav_title_box a {
         display: flex;
         text-decoration: none;
-        margin: 15px 0px; 
+        margin: 12px 0px; 
         filter: brightness(104%);
+        position: relative;
+        right: 12px;
         .nav_img {
             margin: 0px 0px 0px 0px;
-            border-radius: 50px;
-            background: $accent-color;
-            border: solid 1px #14796375;
-            border-radius: 50%;
-            box-shadow: inset 5px 5px 6px #23826e,
-                        inset -5px -5px 6px #3de0bd;
+            // border: solid 1px #6c7d3e69;
             img {
                 display: block;
-                width: 43px;
-                border-radius: 50%;
-                padding: 0px;           
+                width: 47px;    
+                padding: 0px;  
+                margin: 0px 0px 0px 0px;         
             }
         }
         p {
@@ -45,9 +42,10 @@ nav {
             letter-spacing: -1.3px;
             margin: auto 0px;
             white-space: nowrap;
-            padding: 0px 0px 0px 8px;
-        }
-        
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            right: 6px;
+        } 
     }
     a.nav_logo {
         display: block;
@@ -61,19 +59,16 @@ nav {
                 margin: 0px 0px 0px 0px;
                 border: solid 1px #6ab836;
                 background: $accent-color;
-                border-radius: 50%;
                 box-shadow: inset 5px 5px 11px #379958,inset -5px -5px 11px #63ff9c;
                 span {
                 display: block;
                 font-size: 30px;
                 color: #ddd9d4;
-                border-radius: 50%;
                 border: solid 1px #f3f3f359;
                 }
                 img {
                     display: block;
                     width: 40px;
-                    border-radius: 50%;
                     padding: 0px;
                     border: solid 1px #f3f3f359;
                     
