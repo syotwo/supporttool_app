@@ -90,8 +90,8 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_top_left_word>
-        <h1 class= top>クリエイターのための<br>ヘルスケア共有<br>コミュニティー<span class= top_word_bottom></span></h1>
-        <p class= middle>思考をクリアにして、ワクワク働く<br></p>
+        <h1 class= top>クリエイターのための<br>ストレス・ケア<br>共有コミュニティー<span class= top_word_bottom></span></h1>
+        <p class= middle>creaters homeは簡単にストレス・ケアを実践することができるコミュニティーです<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -110,7 +110,7 @@
     <p class="current_user">ゲストさん , こんにちは.</p>
     <div class="checker_wrap">
       <div class="condition_category_title">
-        <p>体調をチェックする</p>
+        <p>体調をチェックしてみる</p>
       </div>
       <div class="checker_submit">
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
