@@ -66,7 +66,7 @@
               <p class="user_name">
                   <span><%= item_list.user.name %></span> が
                   <%= item_list.created_at.strftime("%m/%d/%Y ") %>
-                </p>
+              </p>
             </div>   
           </li>
         <% end %>
@@ -110,7 +110,7 @@
     <p class="current_user">ゲストさん , こんにちは.</p>
     <div class="checker_wrap">
       <div class="condition_category_title">
-        <p>体調をチェックしてみる</p>
+        <p>気分をチェックしてみる</p>
       </div>
       <div class="checker_submit">
         <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
@@ -135,27 +135,27 @@
               <div class="article_category">
                 <% if item_list.list_item_type == "1" then %>
                 <div class="face_type_box">
-                  <p class="condition">Condition :</p>
+                  <p class="condition">Mood :</p>
                   <span>&#x1f606;</span>
                 </div>
                 <% elsif item_list.list_item_type == "2" then%>
                 <div class="face_type_box">
-                  <p class="condition">Condition :</p>
+                  <p class="condition">Mood :</p>
                   <span>&#x1f600;</span>
                 </div>
                 <% elsif item_list.list_item_type == "3" then%>
                 <div class="face_type_box">
-                  <p class="condition">Condition :</p>
+                  <p class="condition">Mood :</p>
                   <span>&#x1f610;</span>
                 </div>
                 <% elsif item_list.list_item_type == "4" then%>
                 <div class="face_type_box">
-                  <p class="condition">Condition :</p>
+                  <p class="condition">Mood :</p>
                   <span>&#x1f605;</span>
                 </div>
                 <% elsif item_list.list_item_type == "5" then%>
                 <div class="face_type_box">
-                  <p class="condition">Condition :</p>
+                  <p class="condition">Mood :</p>
                   <span>&#x1f631;</span>
                 </div>
                 <% end %>

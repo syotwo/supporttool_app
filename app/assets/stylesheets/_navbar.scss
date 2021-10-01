@@ -28,14 +28,13 @@ nav {
             // border: solid 1px #6c7d3e69;
             img {
                 display: block;
-                width: 47px;    
+                width: 46px;    
                 padding: 0px;  
                 margin: 0px 0px 0px 0px;         
             }
         }
         p {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            color: $navfont-color; 
             line-height: 1.5em;
             font-weight: 600;
             font-size: 26px; 
@@ -44,7 +43,11 @@ nav {
             white-space: nowrap;
             padding: 0px 0px 0px 0px;
             position: relative;
-            right: 6px;
+            right: 4px;
+            color: $navfont-color;//非対応のブラウザでの文字色を設定
+            background: $accent-color;//背景色にグラデーションを指定
+            -webkit-background-clip: text;//テキストでくり抜く
+            -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
         } 
     }
     a.nav_logo {
