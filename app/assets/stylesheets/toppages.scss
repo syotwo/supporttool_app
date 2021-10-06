@@ -614,29 +614,28 @@
             li {
                 width: 478px;
                 margin: 0px 0px 45px 0px; 
-                padding: 0px 0px 11px; 
+                padding: 0px 0px 0px; 
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
                 background: #f8f7f5;
-                box-shadow: 5px 5px 11px #d9d3c3,
-                            -5px -5px 11px #fffde9;              
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 filter: brightness(103%);
                 .article_word_box {
                     display: flex;
-                    margin: 0px 7px 0px 7px;
+                    margin: 0px 0px 0px 0px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .article_category {
-                        height: 40px;
+                        height: 100px;
                         width: 100px;
+                        background-color: red;
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
                             margin: 4px 0px 4px 0px;
                             height: 51px;
-                            .condition {
+                            .condition {   
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 color: $font-color;
                                 margin: 0;
