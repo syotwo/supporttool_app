@@ -317,10 +317,11 @@
 
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    background: url("/assets/top_back_img.png") no-repeat 600px 0px;
+    background-size: 55%;
     .logout_image {
         width: 870px;
         height: 420px;
-        background: url("/assets/") no-repeat center center;
         background-size: 50%;
         background-position: 93% 40%;
         background-blend-mode: overlay;
@@ -618,7 +619,6 @@
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
-                background: #f8f7f5;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 filter: brightness(103%);
                 .article_word_box {
@@ -626,15 +626,15 @@
                     margin: 0px 0px 0px 0px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    .article_category {
-                        height: 100px;
-                        width: 100px;
-                        background-color: red;
+                    .article_face_type_category {
+                        height: 70px;
+                        width: 25px;
+                        padding: 20px 50px 10px 30px;
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
-                            margin: 4px 0px 4px 0px;
-                            height: 51px;
+                            margin: 0px;
+                            width: 100px;
                             .condition {   
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                                 color: $font-color;
@@ -644,20 +644,18 @@
                                 letter-spacing: 0.01em;
                                 font-size: 17px;
                                 span {
-                                    font-size: 23px;
+                                    font-size: 32px;
                                 }
                             }
                             span {
                                 display: block;
-                                padding: 2px;
-                                margin: 5px 0px 0px 0px;
-                                font-size: 25px;
+                                font-size: 42px;
                             }
                         }
                     }
                     .article_title {   
                         margin: 0px 9px 0px 8px;
-                        width: 50px;
+                        width: 200px;
                         .title_name {
                             a {
                                 height: 42px;
@@ -698,6 +696,14 @@
                                 font-size: 13px;
                                 font-weight: 400;
                                 margin: 0px 0px 0px 0px;
+                            }
+                            .user_job_name {
+                                background: $accent-color;
+                                border-radius: 10px;
+                                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                font-size: 13px;
+                                padding: 2px 12px 2px 12px;
+                                color: #fafcfb;
                             }
                             .user_create_time {
                                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;

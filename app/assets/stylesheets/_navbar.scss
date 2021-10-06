@@ -6,7 +6,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 10000;
-    background: $base-color;
+    background-size: contain;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
@@ -16,6 +16,7 @@ nav {
     height: 100%;
     padding: 0px 40px 0px 40px;
     margin: 0px 0px 0px 0px;
+    
     .nav_title_box a {
         display: flex;
         text-decoration: none;

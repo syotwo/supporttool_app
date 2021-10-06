@@ -125,7 +125,7 @@
         <% @item_lists.each do |item_list| %>
           <li>
             <div class="article_word_box">
-              <div class="article_category">
+              <div class="article_face_type_category">
                 <% if item_list.list_item_type == "1" then %>
                 <div class="face_type_box">
                   <span>&#x1f606;</span>
@@ -159,6 +159,7 @@
                 </div>
                 <div class="user_box">
                     <div class="user_name"><span><%= item_list.user.name %></span></div>
+                    <div class="user_job_name">web designer</div>
                     <div class="user_create_time"><%= item_list.created_at.strftime("%m/%d/%Y ") %>
                     </div>
                 </div>
