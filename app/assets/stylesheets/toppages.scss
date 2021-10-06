@@ -612,7 +612,7 @@
                 width: 300px;
                 }
             li {
-                width: 266px;
+                width: 478px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 11px; 
                 text-align: center;
@@ -623,31 +623,14 @@
                             -5px -5px 11px #fffde9;              
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 filter: brightness(103%);
-                .article_topimg {   
-                    a {
-                        display: block;
-                        width: 267px;
-                        &:hover {
-                            filter: brightness(90%);
-                          
-                        } 
-                        img {  
-                            filter: saturate(120%);
-                            border-radius: 7px 7px 0px 0px;
-                            width: 264px;
-                            height: 142px;
-                            max-width: 100%;
-                            object-fit: cover;
-                            margin: 0px 0px 0px 0px;
-                        }
-                    }
-                }
                 .article_word_box {
+                    display: flex;
                     margin: 0px 7px 0px 7px;
                     min-height: 70px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     .article_category {
                         height: 40px;
+                        width: 100px;
                         .face_type_box {
                             display: flex;
                             border-radius: 50%;                    
@@ -675,6 +658,7 @@
                     }
                     .article_title {   
                         margin: 0px 9px 0px 8px;
+                        width: 50px;
                         .title_name {
                             a {
                                 height: 42px;
