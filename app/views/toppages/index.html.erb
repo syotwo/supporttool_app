@@ -90,7 +90,7 @@
   <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_top_left_word>
-        <h1 class= top>ストレス解消を<br>気軽に、実践<span class= top_word_bottom></span></h1>
+        <h1 class= top>クリエイターのストレスを<br>気軽に、解消<span class= top_word_bottom></span></h1>
         <p class= middle>creaters homeは簡単にストレス解消法をシェア・実践することができるクリエイター・コミュニティーです<br></p>
         <div class="box_login">
           <div class="test_login">
@@ -125,43 +125,47 @@
         <% @item_lists.each do |item_list| %>
           <li>
             <div class="article_word_box">
-              <div class="article_face_type_category">
-                <% if item_list.list_item_type == "1" then %>
-                <div class="face_type_box">
-                  <span>&#x1f606;</span>
+              <div class="article_word_box_left">
+                <div class="article_face_type_category">
+                  <% if item_list.list_item_type == "1" then %>
+                  <div class="face_type_box">
+                    <span>&#x1f606;</span>
+                  </div>
+                  <% elsif item_list.list_item_type == "2" then%>
+                  <div class="face_type_box">
+                    <span>&#x1f600;</span>
+                  </div>
+                  <% elsif item_list.list_item_type == "3" then%>
+                  <div class="face_type_box">
+                    <span>&#x1f610;</span>
+                  </div>
+                  <% elsif item_list.list_item_type == "4" then%>
+                  <div class="face_type_box">
+                    <span>&#x1f605;</span>
+                  </div>
+                  <% elsif item_list.list_item_type == "5" then%>
+                  <div class="face_type_box">
+                    <span>&#x1f631;</span>
+                  </div>
+                  <% end %>
                 </div>
-                <% elsif item_list.list_item_type == "2" then%>
-                <div class="face_type_box">
-                  <span>&#x1f600;</span>
-                </div>
-                <% elsif item_list.list_item_type == "3" then%>
-                <div class="face_type_box">
-                  <span>&#x1f610;</span>
-                </div>
-                <% elsif item_list.list_item_type == "4" then%>
-                <div class="face_type_box">
-                  <span>&#x1f605;</span>
-                </div>
-                <% elsif item_list.list_item_type == "5" then%>
-                <div class="face_type_box">
-                  <span>&#x1f631;</span>
-                </div>
-                <% end %>
               </div>
-              <div class="article_title">
-                <div class="title_name">
-                  <%= link_to item_list.list_name , item_list_path(item_list) %>
-                </div>    
-              </div> 
-              <div class="artcle_user_info">
-                <div class="user_info_face_img">
-                  <a href=""><span class="material-icons">account_circle</span></a>
-                </div>
-                <div class="user_box">
-                    <div class="user_name"><span><%= item_list.user.name %></span></div>
-                    <div class="user_job_name">web designer</div>
-                    <div class="user_create_time"><%= item_list.created_at.strftime("%m/%d/%Y ") %>
-                    </div>
+              <div class="article_word_box_right">
+                <div class="article_title">
+                  <div class="title_name">
+                    <%= link_to item_list.list_name , item_list_path(item_list) %>
+                  </div>    
+                </div> 
+                <div class="artcle_user_info">
+                  <div class="user_info_face_img">
+                    <a href=""><span class="material-icons">account_circle</span></a>
+                  </div>
+                  <div class="user_box">
+                      <div class="user_name"><span><%= item_list.user.name %></span></div>
+                      <div class="user_job_name">web designer</div>
+                      <div class="user_create_time"><%= item_list.created_at.strftime("%m/%d/%Y ") %>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>   
