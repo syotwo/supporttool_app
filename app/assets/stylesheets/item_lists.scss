@@ -92,12 +92,7 @@ p {
                 border-radius: 10px;
                 position: relative; 
                 background: $base-color;
-                filter: brightness(103%);
-                box-shadow: 8px 8px 10px #c5ccc5,
-                            -8px -8px 10px #ffffff;
-                box-shadow: 0 0 4px 4px #f3f3f3,
-                            7px 7px 7px #c5ccc5,
-                            -7px -7px 7px #ffffff;   
+                filter: brightness(103%);   
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_topimg {   
                     a {
