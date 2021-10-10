@@ -108,17 +108,18 @@
         <%= image_tag("/assets/top_img.png") %>
       </div>
     </div>  
-    
-    <div class="checker_wrap">
-      <p class="current_user">ゲストさん , こんにちは.</p>
-      <div class="condition_category_title">
-        <p>気分をチェックしてみる</p>
-      </div>
-      <div class="checker_submit">
-        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-            <span class="material-icons">emoji_emotions</span>
-            <p>Daily Checker</p>
-          <% end %>
+    <div class="checker_container">
+      <div class="checker_container_wrap">
+        <p class="current_user">ゲストさん , こんにちは.</p>
+        <div class="condition_category_title">
+          <p>気分をチェックしてみる</p>
+        </div>
+        <div class="checker_submit">
+          <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+              <span class="material-icons">emoji_emotions</span>
+              <p>Daily Checker</p>
+            <% end %>
+        </div>
       </div>
     </div>
     <p class="article_index_category_name">Mood</p>
