@@ -555,32 +555,28 @@
     .checker_container {
         background-color: #fffdf7;
         padding: 60px 0px 20px;
-        margin: 0px 0px 30px 0px;
-        
+        margin: 30px auto;
         .checker_container_wrap {
             display: flex;
             background: #d6dfbb;
-            margin: 35px 98px 40px;
+            margin: 0px 140px 40px;
             padding: 0px 0px 1px;
-
             border-radius: 20px;
             .checker_container_wrap_left {
-                font-size: 25px;
-                font-weight: 800;
-                letter-spacing: -0.03em;
-                p.current_user {
-                    margin: 0px 0px 0px 0px;
-                    font-size: 25px;
+                .condition_category_title {
+                    font-size: 30px;
                     font-weight: 800;
                     letter-spacing: -0.03em;
-                    width: 470px;
-                    margin: 50px 50px 10px;
-                }
-                .condition_category_title {
-                 
-                    p {
-                        margin: 0px 0px 0px 50px;
-                        padding: 0px 0px 0px 0px;
+                    margin: 50px 0px 0px 50px;
+                    padding: 0px 0px 0px 0px;
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    p.top {
+                        margin: 0px;  
+                    }
+                    p.bottom {
+                        margin: 10px 0px;
+                        font-size: 18px;
+                        font-weight: 300;
                     }
                 }
                 .checker_submit {

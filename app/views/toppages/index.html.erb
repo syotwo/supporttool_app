@@ -89,7 +89,7 @@
     <div class= logout_image>
       <div class =logout_top_left_word>
         <h1 class= top>クリエイターが<br>感じるストレスに<br>対処する<span class= top_word_bottom></span></h1>
-        <p class= middle>creaters homeは簡単にストレス解消法をシェア・実践することができるヘルスケア・コミュニティーです<br></p>
+        <p class= middle>creaters homeはストレス解消法を簡単にシェアすることができるヘルスケア・実践コミュニティーです<br></p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -108,9 +108,9 @@
     <div class="checker_container">
       <div class="checker_container_wrap">
         <div class="checker_container_wrap_left">
-          <p class="current_user">ゲストさん , こんにちは.</p>
           <div class="condition_category_title">
-            <p>今日の、気分をチェックしてみる</p>
+            <p class="top">今日の、気分をチェックしてみる</p>
+            <p class="bottom">気分検知ツールで、体調の変化を記録</p>
           </div>
           <div class="checker_submit">
             <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
