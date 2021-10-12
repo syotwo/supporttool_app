@@ -19,6 +19,25 @@
         <%= image_tag("/assets/top_img2.JPG") %>
       </div>
     </div>  
+    <div class="checker_container">
+      <div class="checker_container_wrap">
+        <div class="checker_container_wrap_left">
+          <div class="condition_category_title">
+            <p class="top">今日の、気分をチェックしてみる</p>
+            <p class="bottom">気分検知ツールで、体調の変化を記録</p>
+          </div>
+          <div class="checker_submit">
+            <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+                <span class="material-icons">emoji_emotions</span>
+                <p>Daily Checker</p>
+              <% end %>
+          </div>
+        </div>
+        <div class="checker_container_wrap_right">
+          <%= image_tag("/assets/checker_smile.png") %>
+        </div>
+      </div>
+    </div>
     <p class="article_index_category_name">Mood</p>
     <div class="article_index">
       <ul class="article_index_wrap">
