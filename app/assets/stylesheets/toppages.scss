@@ -821,6 +821,7 @@
             margin: 115px auto;
             display: block;
             width: 400px;
+            height: 600px;
             .logout_top_left_word {
                 h1.top {
                     white-space: initial; 
@@ -851,17 +852,20 @@
                 }
             }
         }
-        .article_index_title_box {
-            width: 285px;
-            margin: 265px 30px 30px;
+        p.article_index_category_name {
+            margin: 0px 0px 40px 30px;
+            padding: 35px 0px 0px 0px;
         }
         .article_index {
             width: 285px;
-            margin: 0px auto;
+            margin: 0px 30px;
+            padding: 0px 0px 0px 0px;
+        }
+        .checker_container_wrap {
+            margin: 0px 0px;
         }
         .cheacker_card_box {
             margin: 0px 30px 0px 30px;
-
         }
         .logout_toppage {
             padding: 0px 20px;
@@ -871,7 +875,6 @@
 }
 
 @media screen and (max-width: 960px)  {
-    .toppage_login {
-      
+    .toppage_login {   
     }
 }
