@@ -357,7 +357,7 @@
         background-size: 50%;
         background-position: 93% 40%;
         background-blend-mode: overlay;
-        padding: 90px 40px 0px 40px;
+        padding: 40px 40px 0px 40px;
         margin: 0px auto;
         display: flex;
         .logout_top_left_word {
@@ -801,18 +801,26 @@
 /* smartPhone */
 @media screen and (max-width: 770px) {
     .toppage_login { 
-        padding: 100px 0px;
-        margin: 20px 0px 0px 30px;
+        padding: 20px 0px;
+        margin: 20px 0px 0px 0px;
         .face_box {
-            
+            margin: 0px 0px 0px 30px;
+        }
+        form.item_list_search {
+            margin: 20px 0px 0px 30px;
         }
         .article_index_title_box {
             
             margin: 70px 0px 30px;
         }
+        p.article_index_category_name {
+            margin: 0px 0px 40px 30px;
+            padding: 35px 0px 0px 0px;
+        }
         .article_index {
             width: 285px;
-            margin: 0px auto;
+            margin: 0px 30px;
+            padding: 0px 0px 0px 0px;
         }
     }
     .toppage_logout {
@@ -861,8 +869,10 @@
             margin: 0px 30px;
             padding: 0px 0px 0px 0px;
         }
-        .checker_container_wrap {
-            margin: 0px 0px;
+        .checker_container {
+            .checker_container_wrap {
+                margin: 0px 30px 40px;
+            }
         }
         .cheacker_card_box {
             margin: 0px 30px 0px 30px;
