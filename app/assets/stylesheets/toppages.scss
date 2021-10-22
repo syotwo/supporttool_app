@@ -236,8 +236,8 @@
 
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-    background: url("/assets/top_back_img.png") no-repeat 600px 0px;
-    background-size: 55%;
+    background: url("/assets/blob_green.svg") no-repeat -50px 0px;
+    background-size: 22%;
     .logout_image {
         width: 870px;
         height: 420px;
@@ -248,7 +248,12 @@
         margin: 0px auto;
         display: flex;
         .logout_top_left_word {
-            text-align: left; 
+            text-align: left;
+            p.test_user {
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                font-size: 24px;
+                margin: 0;
+            } 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 49px;
@@ -272,6 +277,7 @@
                 font-weight: 200;
                 letter-spacing: -0.05em;
                 line-height: 1.7em;
+                color: $subfont-color;
                 img {
                     height: 55px;
                     position: relative;
