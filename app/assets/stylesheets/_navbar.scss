@@ -24,7 +24,6 @@ nav {
         right: 12px;
         .nav_img {
             margin: 0px 0px 0px 0px;
-            // border: solid 1px #6c7d3e69;
             img {
                 display: block;
                 width: 46px;    
@@ -61,7 +60,6 @@ nav {
                 margin: 0px 0px 0px 0px;
                 border: solid 1px #6ab836;
                 background: $accent-color;
-                box-shadow: inset 5px 5px 11px #379958,inset -5px -5px 11px #63ff9c;
                 span {
                 display: block;
                 font-size: 30px;
@@ -130,7 +128,6 @@ nav {
                     left: 64px;
                     color: $submit-font-color;
                     font-size: 20px;
-                    // stext-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 }
                 .plus_itemlist {    
                     background: $accent-color;
@@ -148,9 +145,6 @@ nav {
                     letter-spacing: 0em;
                     border-radius: 40px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    box-shadow: 0 0 4px 1px #f3f3f3,
-                            6px 6px 8px 4px #bbc2bb,
-                            -6px -6px 8px 4px #ffffff; 
                 }
             }
         }
@@ -174,9 +168,6 @@ nav {
                 bottom: -2px;
                 color: $submit-font-color; 
                 background: $accent-color;
-                box-shadow: 0 0 4px 1px #f3f3f3,
-                            6px 6px 8px 4px #bbc2bb,
-                            -6px -6px 8px 4px #ffffff; 
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(110%);
@@ -197,12 +188,7 @@ nav {
                 position: relative;
                 bottom: -3px; 
                 border-radius: 50px;
-                background: $base-color;
-                box-shadow: 0 0 1px 1px #f3f3f3,
-                            6px 6px 8px 4px #c1c7c1,
-                            -6px -6px 8px 4px #ffffff;
-                // text-shadow: 2px 2px 4px #c3c9d0, 
-                //              -2px -2px 4px #ffffff;    
+                background: $base-color;  
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(107%);
@@ -234,8 +220,6 @@ nav {
                     margin: 0;
                     padding: 0;
                     border-radius: 20px;
-                    box-shadow: 6px 6px 6px #a6ada6,
-                            -5px -5px 3px #ffffff;
                 }
             }
             &:hover {
@@ -258,7 +242,6 @@ nav {
             right: 198px;
             a.logout {
                 display: flex;  
-                box-shadow: 0 0 20px #116921;
                 text-decoration: none;
                 background: #fbfbfd;
                 border-radius: 8px;
