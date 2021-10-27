@@ -47,7 +47,7 @@
             position: relative;
             left: 37px;
             background: #f6f7f8;
-        box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             &::placeholder{
                 color: $font_color;
             }
@@ -81,6 +81,7 @@
         margin: 70px auto 0px;
         display: flex;
         width: 860px;
+        color: $main-font-color;
     }
     .article_index {
         padding: 0px 40px 0px 40px;
@@ -236,14 +237,13 @@
 
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-    // background: url("/assets/blob_green.svg") no-repeat -50px 0px;
     background-size: 22%;
     .logout_image {
         width: 870px;
         height: 420px;
-        background-size: 50%;
-        background-position: 93% 40%;
-        background-blend-mode: overlay;
+        // background-size: 50%;
+        // background-position: 93% 40%;
+        // background-blend-mode: overlay;
         padding: 40px 40px 0px 40px;
         margin: 0px auto;
         display: flex;
@@ -258,7 +258,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 49px;
                 margin: 37px 0px 0px 0px;
-                color: $font-color;
+                color: $main-font-color;
                 letter-spacing: -0.2em;
                 white-space: nowrap;
                 line-height: 1.1em;
@@ -446,7 +446,7 @@
         }
     }
     .checker_container {
-        background-color: #fffdf7;
+        background:linear-gradient(to right,#18b38e, #1ba081);
         padding: 60px 0px 20px;
         margin: 30px auto;
         .checker_container_wrap {
@@ -538,6 +538,7 @@
         margin: 0px auto;
         display: flex;
         width: 860px;
+        color: $main-font-color;
     }
     .article_index {
         padding: 0px 40px 0px 40px;
