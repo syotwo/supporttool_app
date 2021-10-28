@@ -78,8 +78,8 @@
     <div class="logout_image">
       <div class ="logout_top_left_word">
       <p class="test_user">testuserさん,こんにちは.</p>
-      <h1 class="top">ストレスフリーな<br>デジタルクリエイター<br>ライフを<span class= top_word_bottom></span></h1>
-        <p class="middle"jio>creaters homeはストレス解消法を簡単にシェアすることができる、セルフケアのコミュニティーです<br>みんなの知識、経験をシェアしよう</p>
+      <h1 class="top">ストレスフリーな<br>デジタル・クリエイター<br>ライフを<span class= top_word_bottom></span></h1>
+        <p class="middle"jio>デジタル・クリエイター同士でストレス解消法を簡単にシェア！みんなの知識、経験をシェアしよう</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -92,14 +92,16 @@
         </div>
       </div>
       <div class="logout_top_right_img">
-        <%= image_tag("/assets/top_icatch.jpg") %>
+        <%= image_tag("/assets/top_icatch.png") %>
       </div>
     </div>  
+    <div class="how_to_use"></div>
     <div class="checker_container">
+      <p>ストレス解消法を見つける前に⬇︎</p>
       <div class="checker_container_wrap">
         <div class="checker_container_wrap_left">
           <div class="condition_category_title">
-            <p class="top">今日の、気分をチェックしてみる</p>
+            <p class="top"><br>気分をチェック</p>
             <p class="bottom">気分検知ツールで、体調の変化を記録</p>
           </div>
           <div class="checker_submit">
