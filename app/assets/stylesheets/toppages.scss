@@ -235,7 +235,7 @@
 .toppage_logout {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     .logout_image {
-        height: 420px;
+        height: 380px;
         padding: 55px 85px 40px 85px;
         margin: 0px auto;
         display: flex;
@@ -325,8 +325,8 @@
         }
     }  
     .how_to_use {
-        height: 600px;
-        background-color: #fff;
+        height: 900px;
+        background: #efe6ec url("/assets/wave.svg") no-repeat 0px 0px;
     }
     .cheacker_card_box {
         display: flex;
@@ -439,7 +439,7 @@
         }
     }
     .checker_container {
-        background-color: #1fad6b;
+        // background-color: #1fad6b;
         padding: 60px 0px 20px;
         margin: 0px auto;
         .checker_container_wrap {
