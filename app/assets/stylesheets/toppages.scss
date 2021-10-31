@@ -286,15 +286,13 @@
             .box_login {
                 .test_login {
                     form {
-                        position: relative;
-                        right: 30px;
                         &:hover {
                             filter: brightness(110%);
                         } 
                         span {
                             position: relative; 
-                            top: 6px;
-                            left: 115px;  
+                            top: 57px;
+                            left: 90px;
                             font-size: 26px;
                             color: $submit-font-color;
                         }
@@ -439,25 +437,29 @@
         }
     }
     .checker_container {
-        // background-color: #1fad6b;
         padding: 60px 0px 20px;
         margin: 0px auto;
+        p {
+            margin: 0px 0px 40px 85px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-size: 20px;
+        }
         .checker_container_wrap {
             display: flex;
-            background: #d6dfbb;
-            margin: 0px 140px 40px;
+            background: #d0d8b8;
+            margin: 0px 82px 40px;
             padding: 0px 0px 1px;
             border-radius: 20px;
             .checker_container_wrap_left {
-                .condition_category_title {
-                    font-size: 30px;
+                .condition_category_title {  
                     font-weight: 800;
                     letter-spacing: -0.03em;
-                    margin: 50px 0px 0px 50px;
+                    margin: 30px 0px 0px 50px;
                     padding: 0px 0px 0px 0px;
                     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     p.top {
                         margin: 0px;  
+                        font-size: 30px;
                     }
                     p.bottom {
                         margin: 10px 0px;
@@ -728,9 +730,18 @@
                 .box_login {
                     .test_login {
                         form {
+                            
+                            span {
+                                position: relative; 
+                                top: -57px;
+                                left: 0px;
+                                font-size: 20px;
+                                color: $submit-font-color;
+                            }
                             input {
                                 margin: 0px 0px 0px 0px;
                             }
+                            
                         }
                     }
                 }     
