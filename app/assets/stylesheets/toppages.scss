@@ -239,6 +239,7 @@
         padding: 55px 85px 40px 85px;
         margin: 0px auto;
         display: flex;
+        background: linear-gradient(to top,#f7faf8, #d0f7df);
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
         .logout_top_left_word {
@@ -316,12 +317,19 @@
         .logout_top_right_img {
             img {
                 display: block;
-                width: 500px;
+                width: 450px;
                 margin:0px 0px 0px 40px;
                 border-radius: 25px;
+                position: relative;
+                bottom: 80px;
             }
         }
     }  
+    .wave_line {
+        img {
+            display: block;
+        }
+    }
     .how_to_use {
         height: 900px;
         background: #efe6ec url("/assets/wave.svg") no-repeat 0px 0px;
