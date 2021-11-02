@@ -733,15 +733,13 @@
                 p.middle {
                     margin: 0;
                     color: $font-color;
-
                 }
                 .box_login {
                     .test_login {
                         form {
-                            
                             span {
                                 position: relative; 
-                                top: -57px;
+                                top: 57px;
                                 left: 0px;
                                 font-size: 20px;
                                 color: $submit-font-color;
@@ -749,7 +747,6 @@
                             input {
                                 margin: 0px 0px 0px 0px;
                             }
-                            
                         }
                     }
                 }     
