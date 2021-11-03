@@ -15,7 +15,7 @@ nav {
     height: 100%;
     padding: 0px 40px 0px 40px;
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(to top,#d0f7df, #d0f7df);
+    background: linear-gradient(to top,#bee0ec, rgb(190, 219, 229));
     .nav_title_box a {
         display: flex;
         text-decoration: none;
@@ -27,72 +27,34 @@ nav {
             margin: 0px 0px 0px 0px;
             img {
                 display: block;
-                width: 60px;    
+                width: 40px;    
                 padding: 0px;  
-                margin: 0px 0px 0px 0px;         
+                margin: 0px 0px 0px 0px;  
+                // background: linear-gradient(to top,#033353, #033353);
+                border-radius: 50%;
+                position: relative;
+                top: 5px;
             }
         }
         p {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             line-height: 1.5em;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 26px; 
             letter-spacing: -1.3px;
             margin: auto 0px;
             white-space: nowrap;
             padding: 0px 0px 0px 0px;
             position: relative;
-            right: 0px;
-            color: $main-font-color;//非対応のブラウザでの文字色を設定
+            right: -6px;
+            top: 3px;
+            color: $gray-font-color;//非対応のブラウザでの文字色を設定
             // background: $accent-color;//背景色にグラデーションを指定
             // -webkit-background-clip: text;//テキストでくり抜く
             // -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
         } 
     }
-    a.nav_logo {
-        display: block;
-        display: flex;
-        font-size: 20px;
-        text-decoration: none;
-        vertical-align: middle;
-        margin: auto 0px;
-        .nav_img_box {
-            .nav_img {
-                margin: 0px 0px 0px 0px;
-                border: solid 1px #6ab836;
-                background: $accent-color;
-                span {
-                display: block;
-                font-size: 30px;
-                color: #ddd9d4;
-                border: solid 1px #f3f3f359;
-                }
-                img {
-                    display: block;
-                    width: 40px;
-                    padding: 0px;
-                    border: solid 1px #f3f3f359;
-                    
-                }
-            }
-        }
-        .nav_title {
-            display: flex;
-            .title {
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                color: $font-color; 
-                line-height: 1.5em;
-                font-weight: 600;
-                font-size: 27px; 
-                letter-spacing: -1.3px;
-                margin: auto 0px;
-                white-space: nowrap;
-                padding: 0px;
-                position:relative; 
-        
-            }
-        }  
-    }
+    
     ul.menu_right {
         list-style-type: none;
         display: flex;
@@ -187,7 +149,7 @@ nav {
                 margin: auto 0px;
                 position: relative;
                 bottom: -2px; 
-                border: #49BF88 solid 3px;
+                border: $accent-color solid 3px;
                 border-radius: 50px;
                 background: $base-color;  
                 filter: brightness(103%);

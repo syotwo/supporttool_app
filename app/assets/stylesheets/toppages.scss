@@ -239,7 +239,7 @@
         padding: 55px 85px 40px 85px;
         margin: 0px auto;
         display: flex;
-        background: linear-gradient(to top,#f7faf8, #d0f7df);
+        background: linear-gradient(to top,#e4eaec, #bee0ec);
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
         .logout_top_left_word {
@@ -248,12 +248,13 @@
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 24px;
                 margin: 0;
+                color: $font-color;
             } 
             h1 {
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 font-size: 49px;
                 margin: 30px 0px 0px 0px;
-                color: $main-font-color;
+                color: $gray-font-color;
                 letter-spacing: -0.2em;
                 white-space: nowrap;
                 line-height: 1.1em;
@@ -332,7 +333,7 @@
     }
     .how_to_use {
         height: 900px;
-        background: #efe6ec url("/assets/wave.svg") no-repeat 0px 0px;
+        background: #42A9AE;
     }
     .cheacker_card_box {
         display: flex;
@@ -454,7 +455,7 @@
         }
         .checker_container_wrap {
             display: flex;
-            background: #d0d8b8;
+            background: #f5f7f8;
             margin: 0px 82px 40px;
             padding: 0px 0px 1px;
             border-radius: 20px;
