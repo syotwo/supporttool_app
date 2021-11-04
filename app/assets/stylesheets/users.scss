@@ -134,21 +134,22 @@
             width: 300px;
             }
         li {
-            width: 478px;
+            width: 266px;
             margin: 0px 0px 45px 0px; 
             padding: 0px 0px 0px; 
             text-align: center;
             border-radius: 10px;
             position: relative; 
+            background-color: #fff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             filter: brightness(103%);
             .article_word_box {
-                display: flex;
                 margin: 0px 0px 0px 0px;
                 min-height: 70px;
+                width: 250px;
+                border-radius: 12px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .article_word_box_left {
-                    background-color: #fff;
                     border-radius: 13px;
                     .article_face_type_category {
                         height: 65px;

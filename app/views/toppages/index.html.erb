@@ -124,6 +124,13 @@
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
           <li>
+            <div class="article_topimg">
+              <% if item_list.image? %>
+                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
+              <% else %>
+                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+              <% end %>
+            </div>
             <div class="article_word_box">
               <div class="article_word_box_left">
                 <div class="article_face_type_category">
