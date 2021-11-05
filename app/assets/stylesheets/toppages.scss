@@ -5,7 +5,7 @@
 
 .toppage_login {
     padding: 105px 0px 100px 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     .face_box {
         display: flex;
         height: 27px;
@@ -16,7 +16,7 @@
             color: $font-color;
         }
         .login_username {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             margin: 2px 0px 20px 4px;
             padding: 0px 0px 0px 0px;
             color: $font-color;
@@ -43,7 +43,7 @@
             font-size: 16px;
             letter-spacing: -0.01em;
             line-height: 3em;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             position: relative;
             left: 37px;
             background: #f6f7f8;
@@ -75,14 +75,14 @@
         font-size: 35px;
         font-weight: 600;
         padding: 0px 40px 30px 45px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         margin: 70px auto 0px;
         display: flex;
         width: 860px;
     }
     .article_index {
         padding: 0px 40px 0px 40px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         margin: 0px auto;
         display: flex;
         width: 860px;
@@ -108,12 +108,12 @@
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
                 filter: brightness(103%);
                 .article_word_box {
                     margin: 0px 0px 0px 0px;
                     min-height: 70px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
                     .article_word_box_left {
                         background-color: #fff;
                         border-radius: 13px;
@@ -127,7 +127,7 @@
                                 margin: 0px;
                                 width: 100px;
                                 .condition {   
-                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
                                     color: $font-color;
                                     margin: 0;
                                     margin: 10px 11px 0px 8px;
@@ -154,7 +154,7 @@
                             .title_name {
                                 a {
                                     height: 32px;
-                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
                                     margin: 0px 0px 10px 0px;
                                     max-width: 270px;
                                     color: $font-color;
@@ -187,7 +187,7 @@
                                     display: flex;
                                     .user_name {
                                         display: flex;
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         text-align: left;
                                         color: $third-font-color;
                                         letter-spacing: 0.02em;
@@ -198,7 +198,7 @@
                                     .user_job_name {
                                         background: $accent-color;
                                         border-radius: 10px;
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         font-size: 11px;
                                         padding: 2px 7px 2px 7px;
                                         color: #fafcfb;
@@ -208,7 +208,7 @@
                                 }
                                 .user_box_top_time {
                                     .user_create_time {
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         text-align: left;
                                         color: $third-font-color;
                                         letter-spacing: 0.01em;
@@ -232,13 +232,13 @@
 }   
 
 .toppage_logout {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     .logout_image {
         height: 380px;
         padding: 45px 85px 40px 85px;
         margin: 0px auto;
         display: flex;
-        background: linear-gradient(to top,#e4eaec, #bee0ec);
+        background: linear-gradient(to top,#f0f2f3, #bee0ec);
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
         .logout_top_left_word {
@@ -335,6 +335,7 @@
     .how_to_use {
         height: 900px;
         background: #42A9AE;
+        
     }
     .cheacker_card_box {
         display: flex;
@@ -342,7 +343,7 @@
         margin: 0px 44px 80px 51px;
         border-radius: 20px;
         .checker_word {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             text-align: left;
             padding: 20px 0px 40px;
             background-size: 250px 250px;
@@ -354,6 +355,7 @@
                 color: $font-color;
                 letter-spacing: -0.05em;
                 white-space: nowrap;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
                 img {
                     height: 35px;
                     position: relative;
@@ -377,6 +379,7 @@
                 letter-spacing: -0.05em;
             }
             a.checker_submit {
+                font-family: 'M PLUS Rounded 1c', sans-serif;
                 display: flex;
                 text-align-last: center;
                 text-decoration: none;
@@ -404,7 +407,7 @@
                     color: $submit-font-color;
                 }
                 p {
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
                     font-weight: 700;
                     font-size: 20px;
                     margin: 11px 15px;
@@ -437,7 +440,7 @@
             margin: 1px 3px 0px 0px;
         }
         p {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
             margin: 0px 0px 0px 0px;
             padding: 0px 0px 0px 0px;
             font-size: 31px;
@@ -456,7 +459,7 @@
         }
         .checker_container_wrap {
             display: flex;
-            background: #f5f7f8;
+            background: #f9fbfc;
             margin: 0px 82px 40px;
             padding: 0px 0px 1px;
             border-radius: 20px;
@@ -466,12 +469,13 @@
                     letter-spacing: -0.03em;
                     margin: 30px 0px 0px 50px;
                     padding: 0px 0px 0px 0px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                     p.top {
                         margin: 0px;  
                         font-size: 30px;
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
                     }
                     p.bottom {
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
                         margin: 10px 0px;
                         font-size: 18px;
                         font-weight: 300;
@@ -479,6 +483,7 @@
                 }
                 .checker_submit {
                     a.checker_submit {
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
                         display: flex;
                         text-align-last: center;
                         text-decoration: none;
@@ -502,11 +507,11 @@
                             margin: 3px 0px 0px 3px;
                             position: relative;
                             left: 7px;
-                            top: 6px;
+                            top: 9px;
                             color: $submit-font-color;
                         }
                         p {
-                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-family: 'M PLUS Rounded 1c', sans-serif;
                             font-weight: 700;
                             font-size: 18px;
                             margin: 11px 15px;
@@ -537,14 +542,14 @@
         font-size: 35px;
         font-weight: 600;
         padding: 90px 40px 30px 40px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         margin: 0px auto;
         display: flex;
         width: 860px;
     }
     .article_index {
         padding: 0px 40px 0px 40px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         margin: 0px auto;
         display: flex;
         width: 860px;
@@ -570,7 +575,7 @@
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
                 filter: brightness(103%);
                 .article_topimg {   
                     a {
@@ -594,7 +599,7 @@
                 .article_word_box {
                     margin: 0px 7px 0px 7px;
                     min-height: 70px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
                     .article_word_box_left {
                         border-radius: 13px;
                         .article_face_type_category {
@@ -607,7 +612,7 @@
                                 margin: 0px;
                                 width: 100px;
                                 .condition {   
-                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
                                     color: $font-color;
                                     margin: 0;
                                     margin: 10px 11px 0px 8px;
@@ -634,7 +639,7 @@
                             .title_name {
                                 a {
                                     height: 32px;
-                                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
                                     margin: 0px 0px 10px 0px;
                                     max-width: 270px;
                                     color: $font-color;
@@ -667,7 +672,7 @@
                                     display: flex;
                                     .user_name {
                                         display: flex;
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         text-align: left;
                                         color: $third-font-color;
                                         letter-spacing: 0.02em;
@@ -678,7 +683,7 @@
                                     .user_job_name {
                                         background: $accent-color;
                                         border-radius: 10px;
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         font-size: 11px;
                                         padding: 2px 7px 2px 7px;
                                         color: #fafcfb;
@@ -688,7 +693,7 @@
                                 }
                                 .user_box_top_time {
                                     .user_create_time {
-                                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                                        font-family: 'M PLUS Rounded 1c', sans-serif;
                                         text-align: left;
                                         color: $third-font-color;
                                         letter-spacing: 0.01em;

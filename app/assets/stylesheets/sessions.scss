@@ -12,6 +12,7 @@
     h1 {
         color: $font-color;
         font-size: 41px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     #session_email {
         border-radius: 40px;
@@ -21,7 +22,7 @@
         margin: 2px 0px 16px;
         padding: 18px 0px 18px 22px;
         filter: brightness(108%);
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     #session_password {
         border-radius: 40px;
@@ -31,20 +32,20 @@
         padding: 18px 0px 18px 22px;
         background: $base-color;
         filter: brightness(108%);
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     .login_submit{
         text-align: right;
         margin: 30px 0px 0px 237px;
-        padding: 16px 25px;
+        padding: 14px 25px;
         background: $accent-color;
-        border: #edebf1;
         border-radius: 40px;
         color: $font-color;
         font-weight: bold;
         font-size: 16px;
         border-radius: 50px;
         background: $base-color;
+        border: $accent-color solid 3px;
         &:hover {
             filter: brightness(104%);
           }
