@@ -234,11 +234,11 @@
 .toppage_logout {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     .logout_image {
-        height: 380px;
+        height: 480px;
         padding: 45px 85px 40px 85px;
         margin: 0px auto;
         display: flex;
-        background: linear-gradient(to top,#f9fbfc, #c6eaf7);
+        background: linear-gradient(to top,rgb(250, 251, 252), #c6e1f7);
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
         .logout_top_left_word {
@@ -250,7 +250,7 @@
                 color: $font-color;
             } 
             h1 {
-                font-family: 'M PLUS Rounded 1c', sans-serif;
+                font-family: 'Noto Sans JP', sans-serif;
                 font-size: 49px;
                 margin: 30px 0px 20px 0px;
                 color: $gray-font-color;
@@ -334,7 +334,7 @@
     }
     .how_to_use {
         height: 900px;
-        background: #42A9AE;
+        background: #C6E1F7;
         
     }
     .cheacker_card_box {
@@ -459,7 +459,7 @@
         }
         .checker_container_wrap {
             display: flex;
-            background: #f9fbfc;
+            background: #feffff;
             margin: 0px 82px 40px;
             padding: 0px 0px 1px;
             border-radius: 20px;
