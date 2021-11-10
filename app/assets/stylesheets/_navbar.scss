@@ -15,7 +15,7 @@ nav {
     height: 100%;
     padding: 0px 40px 0px 40px;
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(to top,#c6e1f7, #c6e1f7);
+    background: linear-gradient(to top,#D0E6F8, #D0E6F8);
     .nav_title_box a {
         display: flex;
         text-decoration: none;
@@ -27,7 +27,7 @@ nav {
             margin: 0px 0px 0px 0px;
             img {
                 display: block;
-                width: 50px;    
+                width: 40px;    
                 padding: 0px;  
                 margin: 0px 0px 0px 0px;  
                 // background: linear-gradient(to top,#033353, #033353);
@@ -37,16 +37,16 @@ nav {
             }
         }
         p {
-            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             line-height: 1.5em;
-            font-weight: 800;
-            font-size: 25px; 
-            letter-spacing: -1.3px;
+            font-weight: 500;
+            font-size: 23px; 
+            letter-spacing: -1px;
             margin: auto 0px;
             white-space: nowrap;
             padding: 0px 0px 0px 0px;
             position: relative;
-            right: 0px;
+            right: -7px;
             top: -1px;
             color: $gray-font-color;//非対応のブラウザでの文字色を設定
             // background: $accent-color;//背景色にグラデーションを指定
