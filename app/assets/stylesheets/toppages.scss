@@ -9,7 +9,7 @@
     .face_box {
         display: flex;
         height: 27px;
-        margin: 0px 0px 16px 40px;
+        margin: 0px 0px 16px 35px;
         span {
             font-size: 28px;
             margin: 5px 5px 0px 0px;
@@ -29,7 +29,7 @@
     }
     form.item_list_search {
         display: flex;
-        margin: 20px 50px 0px 40px;
+        margin: 20px 50px 0px 35px;
         color: $subfont_color;
         height: 38px;
         input {
@@ -333,7 +333,7 @@
             display: block;
         }
     }
-    .how_to_use {
+    .how_to_use_wrap {
         height: 900px;
         background: #C6E1F7;
         
@@ -450,7 +450,7 @@
             text-align-last: left;
         }
     }
-    .checker_container {
+    .checker_wrap {
         padding: 60px 0px 20px;
         margin: 0px auto;
         p {
@@ -542,7 +542,7 @@
     .article_index_category_name {
         font-size: 35px;
         font-weight: 600;
-        padding: 90px 40px 30px 40px;
+        padding: 90px 40px 30px 63px;
         font-family: 'M PLUS Rounded 1c', sans-serif;
         margin: 0px auto;
         display: flex;
@@ -570,7 +570,7 @@
                 width: 300px;
                 }
             li {
-                width: 246px;
+                width: 270px;
                 margin: 0px 0px 45px 0px; 
                 padding: 0px 0px 20px; 
                 text-align: center;
@@ -641,8 +641,8 @@
                                 a {
                                     height: 32px;
                                     font-family: 'M PLUS Rounded 1c', sans-serif;
-                                    margin: 0px 0px 10px 0px;
-                                    max-width: 270px;
+                                    margin: 10px 0px 10px 0px;
+                                    max-width: 200px;
                                     color: $font-color;
                                     line-height: 1.5em;
                                     font-size: 18.5px;
@@ -658,7 +658,7 @@
                         }
                         .artcle_user_info {
                             display: flex;
-                            margin: 17px 0px 0px 0px;
+                            margin: 25px 0px 0px 0px;
                             height: 37px;
                             .user_info_face_img {
                                 margin: 0px 0px 0px 5px;

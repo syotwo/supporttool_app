@@ -1,3 +1,9 @@
+<!-- 命名規則 
+wrap　一番外の枠
+container wrapperの中にあるコンテンツ郡
+ラッパー(wrapper)の中にコンテナ(container)が入っているイメージ
+-->
+
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage_login>
@@ -5,7 +11,8 @@
       <span class="material-icons">
       emoji_emotions
       </span>
-      <p class =login_username>Welcome Back, <%= current_user.name %>!</p>
+      <p class =login_username>こんにちわ, <%= current_user.name %>さん!</p>
+      <p>何に困っていますか？</p>
     </div>
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
@@ -22,29 +29,6 @@
           <li>
             <div class="article_word_box">
               <div class="article_word_box_left">
-                <div class="article_face_type_category">
-                  <% if item_list.list_item_type == "1" then %>
-                  <div class="face_type_box">
-                    <span>&#x1f606;</span>
-                  </div>
-                  <% elsif item_list.list_item_type == "2" then%>
-                  <div class="face_type_box">
-                    <span>&#x1f600;</span>
-                  </div>
-                  <% elsif item_list.list_item_type == "3" then%>
-                  <div class="face_type_box">
-                    <span>&#x1f610;</span>
-                  </div>
-                  <% elsif item_list.list_item_type == "4" then%>
-                  <div class="face_type_box">
-                    <span>&#x1f605;</span>
-                  </div>
-                  <% elsif item_list.list_item_type == "5" then%>
-                  <div class="face_type_box">
-                    <span>&#x1f631;</span>
-                  </div>
-                  <% end %>
-                </div>
               </div>
               <div class="article_word_box_right">
                 <div class="article_title">
@@ -98,8 +82,11 @@
     <div class="wave_line">
         <%= image_tag("/assets/wave.svg") %>
       </div>
-    <div class="how_to_use"></div>
-    <div class="checker_container">
+    <div class="how_to_use_wrap">
+
+    
+    </div>
+    <div class="checker_wrap">
       <p>ストレス解消法を見つける前に⬇︎</p>
       <div class="checker_container_wrap">
         <div class="checker_container_wrap_left">
@@ -131,10 +118,8 @@
                 <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
               <% end %>
             </div>
-            <p>Stress 100 ➡　70</p>
             <div class="article_word_box">
               <div class="article_word_box_left">
-                
               </div>
               <div class="article_word_box_right">
                 <div class="article_title">
