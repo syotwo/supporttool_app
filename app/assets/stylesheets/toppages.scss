@@ -331,11 +331,31 @@
     .wave_line {
         img {
             display: block;
+            position: relative;
+            top: 15px;
         }
     }
     .how_to_use_wrap {
-        height: 900px;
+        height: 480px;
         background: #C6E1F7;
+        .container {
+            .how_to_use{
+                padding: 0px 70px 0px;
+                display: flex;
+                justify-content: space-between;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                .item {
+                    width: 250px;
+                    height: 350px;
+                    margin: 10px;
+                    background-color: #fff;
+
+                }
+            }
+
+        }
         
     }
     .cheacker_card_box {
@@ -458,13 +478,13 @@
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             font-size: 20px;
         }
-        .checker_container_wrap {
+        .checker_container {
             display: flex;
             background: #feffff;
             margin: 0px 82px 40px;
             padding: 0px 0px 1px;
             border-radius: 20px;
-            .checker_container_wrap_left {
+            .checker_container_left {
                 .condition_category_title {  
                     font-weight: 800;
                     letter-spacing: -0.03em;
@@ -527,7 +547,7 @@
         
         
     }
-    .checker_container_wrap_right {
+    .checker_container_right {
         img {
             display: block;
             width: 280px;

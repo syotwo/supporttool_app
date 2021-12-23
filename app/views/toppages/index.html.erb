@@ -1,6 +1,7 @@
 <!-- 命名規則 
-wrap　一番外の枠
-container wrapperの中にあるコンテンツ郡
+wrap　一番外ページを積み上げるボックス
+container コンテンツを囲むボックス
+例：buttu
 ラッパー(wrapper)の中にコンテナ(container)が入っているイメージ
 -->
 
@@ -83,13 +84,21 @@ container wrapperの中にあるコンテンツ郡
         <%= image_tag("/assets/wave.svg") %>
       </div>
     <div class="how_to_use_wrap">
+      <div class="container">
+        <div class="how_to_use">
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+        </div>
+      　
+      </div>
 
     
     </div>
     <div class="checker_wrap">
       <p>ストレス解消法を見つける前に⬇︎</p>
-      <div class="checker_container_wrap">
-        <div class="checker_container_wrap_left">
+      <div class="checker_container">
+        <div class="checker_container_left">
           <div class="condition_category_title">
             <p class="top"><br>気分をチェック</p>
             <p class="bottom">気分検知ツールで、体調の変化を記録</p>
@@ -101,7 +110,7 @@ container wrapperの中にあるコンテンツ郡
               <% end %>
           </div>
         </div>
-        <div class="checker_container_wrap_right">
+        <div class="checker_container_right">
           <%= image_tag("/assets/checker_smile.png") %>
         </div>
       </div>
