@@ -6,7 +6,7 @@
           <div class="nav_img">
             <%= image_tag "nav_icon.png" %>
           </div>
-          <p>DIGI CARE</p>
+          <p>TANO CARE EASY</p>
         <% end %>
       </div>
     <% else %>
@@ -15,7 +15,7 @@
           <div class="nav_img">
             <%= image_tag "nav_icon.png" %>
           </div>
-          <p>DIGI CARE</p>
+          <p>TANO CARE EASY</p>
         <% end %>
       </div>
     <% end %>
@@ -24,12 +24,13 @@
       <% if logged_in? %>
         <div class="plus_box">
           <li><%= link_to '', new_item_list_path , { class: 'plus' }%><span class="material-icons">edit</span></li>
-          <li><%= link_to 'Add new', new_item_list_path , { class: 'plus_itemlist' }%></li>
+          <li><%= link_to '試したケアを投稿', new_item_list_path , { class: 'plus_itemlist' }%></li>
         </div>
         <ul class="menu">
           <li>
             <a href=""><span class="material-icons">account_circle</span></a>
             <ul>
+              <li><%= link_to 'プロフィール', user_path(current_user) , { class: 'profile' }%></li>
               <li>
                 <%= link_to logout_path, { method: :delete, class: "logout" } do %>
                   <%= image_tag asset_path("logout.png") %>

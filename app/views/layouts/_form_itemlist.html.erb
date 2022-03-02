@@ -1,6 +1,8 @@
 <%= form_with(model: @item_list, local: true) do |f| %>
     <div class="item_type_wrap">
-        <p>Condition</p>
+    <%= f.label :list_name, 'やってみたこと' ,{class: 'item_list_label_name'} %>
+    <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
+    <p>どんな気分ですか？？</p>
         <div class="item_type_select_box">
             <div class="item_type_select_box_inner">
                 <%= f.radio_button 'list_item_type', '1' %>
@@ -29,13 +31,11 @@
             </div>
         </div>
     </div>
-    <%= f.label :list_name, 'Situation' ,{class: 'item_list_label_name'} %>
-    <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
-    <%= f.label :list_description , 'How to use' ,{class: 'item_list_label_name'} %>
+    <%= f.label :list_description , '感想、説明などを書いてみよう' ,{class: 'item_list_label_name'} %>
     <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
     <div class="wrap">  
         <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
-        <%= f.label :image, "cover img", class: "img_name" %>
+        <%= f.label :image, "イメージ画像", class: "img_name" %>
         <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
     </div>
     <div class= submit><%= f.submit 'Post',{class: 'item_list_submit' } %></div>   

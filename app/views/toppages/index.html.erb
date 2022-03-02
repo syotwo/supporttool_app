@@ -62,7 +62,7 @@ container コンテンツを囲むボックス
     <div class="logout_image">
       <div class ="logout_top_left_word">
       <p class="test_user">testuserさん,こんにちは.</p>
-      <h1 class="top">デジタルクリエイターの<br>ストレスフリーな日々を<br>サポート<span class= top_word_bottom></span></h1>
+      <h1 class="top">クリエイターのための<br>セルフケア情報<br>まとめサービス<span class= top_word_bottom></span></h1>
         <p class="middle"jio>DIGI CAREは、セルフケアを気軽に記録・シェア<br>デジタルクリエイターの日常を元気に！するため<br>のコミュニティーです。</p>
         <div class="box_login">
           <div class="test_login">
@@ -103,27 +103,8 @@ container コンテンツを囲むボックス
 
     
     </div>
-    <div class="checker_wrap">
-      <p>ストレス解消法を見つける前に⬇︎</p>
-      <div class="checker_container">
-        <div class="checker_container_left">
-          <div class="condition_category_title">
-            <p class="top"><br>気分をチェック</p>
-            <p class="bottom">気分検知ツールで、体調の変化を記録</p>
-          </div>
-          <div class="checker_submit">
-            <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-                <span class="material-icons">emoji_emotions</span>
-                <p>Daily Checker</p>
-              <% end %>
-          </div>
-        </div>
-        <div class="checker_container_right">
-          <%= image_tag("/assets/checker_smile.png") %>
-        </div>
-      </div>
-    </div>
-    <p class="article_index_category_name">Mood</p>
+    
+    <p class="article_index_category_name">みんなのケア一覧</p>
     <div class="article_index">
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>

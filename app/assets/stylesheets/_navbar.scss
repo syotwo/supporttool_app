@@ -202,12 +202,28 @@ nav {
         margin: 0px 0px 0px 0px;
         li {
             position: relative;
+            z-index:10000;
             right: 198px;
+            a.profile {
+                display: flex;  
+                text-decoration: none;
+                background: #F6F7F8;
+                border-radius: 8px 8px 0px 0px;
+                padding: 20px 0px 20px 40px;
+                width: 200px;
+                z-index: 30;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                margin: 0;
+                color: $font-color;
+                font-size: 19px;
+                font-weight: 700;
+                letter-spacing: -0.04em;
+            }
             a.logout {
                 display: flex;  
                 text-decoration: none;
-                background: #fbfbfd;
-                border-radius: 8px;
+                background: #F6F7F8;
+                border-radius: 0px 0px 8px 8px;
                 padding: 20px 0px 20px 40px;
                 width: 200px;
                 z-index: 30;
