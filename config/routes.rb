@@ -12,7 +12,14 @@ Rails.application.routes.draw do
   resources :items
   resources :item_lists do
     resources :items, only: %i[index create]
+    resources :favorites, only: [:create, :destroy]
   end
-  resources :favorites, only: %i[create destroy]
+
+  # resources :favorites, only: %i[create destroy]
+  resources :favorites do
+    # resources :items, only: %i[index create]
+  end
+
+
   resources :emotions
 end

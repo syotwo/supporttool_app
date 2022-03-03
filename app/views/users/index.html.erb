@@ -2,8 +2,8 @@
 <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_top_left_word>
-        <h1 class= top>デジタルクリエイターの<br>ストレスフリーな日々を<br>サポート<br><span class= top_word_bottom></span></h1>
-        <p class= middle>DIGI CAREは、セルフケアを気軽に記録・シェア<br>デジタルクリエイターの日常を元気に！するため<br>のコミュニティーです。<br></p>
+        <h1 class= top>デクリエイターのための<br>セルフケア情報<br>まとめサービス<br><span class= top_word_bottom></span></h1>
+        <p class= middle>DIGI CAREは、セルフケアを気軽に記録・シェア<br>デジタルクリエイターの日常を元気に！するため<br>のコミュニティーです。<br>みんなでセルフケアをシェア、毎日少しずつ気分がよくなる</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -19,26 +19,8 @@
         <%= image_tag("/assets/top_icatch.png") %>
       </div>
     </div>  
-    <div class="checker_container">
-      <div class="checker_container_wrap">
-        <div class="checker_container_wrap_left">
-          <div class="condition_category_title">
-            <p class="top">今日の、気分をチェックしてみる</p>
-            <p class="bottom">気分検知ツールで、体調の変化を記録</p>
-          </div>
-          <div class="checker_submit">
-            <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
-                <span class="material-icons">emoji_emotions</span>
-                <p>Daily Checker</p>
-              <% end %>
-          </div>
-        </div>
-        <div class="checker_container_wrap_right">
-          <%= image_tag("/assets/checker_smile.png") %>
-        </div>
-      </div>
-    </div>
-    <p class="article_index_category_name">Mood</p>
+    
+    <p class="article_index_category_name">みんなのケア一覧</p>
     <div class="article_index">
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
