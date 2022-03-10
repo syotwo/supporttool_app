@@ -21,46 +21,27 @@
               <% end %>
             </div>
             <div class="article_word_box">
-              <div class="article_category">
-                <% if item_list.list_item_type == "1" then %>
-                <div class="face_type_box">
-                  <p class="condition">Condition :</p>
-                  <span>&#x1f606;</span>
-                </div>
-                <% elsif item_list.list_item_type == "2" then%>
-                <div class="face_type_box">
-                  <p class="condition">Condition :</p>
-                  <span>&#x1f600;</span>
-                </div>
-                <% elsif item_list.list_item_type == "3" then%>
-                <div class="face_type_box">
-                  <p class="condition">Condition :</p>
-                  <span>&#x1f610;</span>
-                </div>
-                <% elsif item_list.list_item_type == "4" then%>
-                <div class="face_type_box">
-                  <p class="condition">Condition :</p>
-                  <span>&#x1f605;</span>
-                </div>
-                <% elsif item_list.list_item_type == "5" then%>
-                <div class="face_type_box">
-                  <p class="condition">Condition :</p>
-                  <span>&#x1f631;</span>
-                </div>
-                <% end %>
+              <div class="article_word_box_left">
               </div>
-              <div class="article_title">
-                <div class="title_name">
-                  <%= link_to item_list.list_name , item_list_path(item_list) %>
-                </div>    
-              </div> 
-              <p class="user_name">
-                  <span><%= item_list.user.name %></span> が
-                  <%= item_list.created_at.strftime("%m/%d/%Y ") %>
-                </p>
+              <div class="article_word_box_right">
+                <div class="article_title">
+                  <div class="title_name">
+                    <%= link_to item_list.list_name , item_list_path(item_list) %>
+                  </div>    
+                </div> 
+                <div class="artcle_user_info">
+                  <div class="user_box">
+                    <div class="user_box_top_name">
+                        <div class="user_name"><span><%= item_list.user.name %></span></div>
+                        <div class="user_job_name">WEB DESIGNER</div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
             </div>   
           </li>
         <% end %>
       </ul> 
     </div>
+  </div>
 </div>

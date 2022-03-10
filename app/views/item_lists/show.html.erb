@@ -2,7 +2,7 @@
 <div class= "item_list_show">
     <div class= "box">
             <div class= "item_list_name_wrap">
-                <p class= list_name><%= @item_list.list_name %></p>
+                
                 <% if current_user == @item_list.user %>
                     <div class= "edit_item_list">
                         <%= link_to edit_item_list_path(@item_list) , { class: 'checker_submit' } do %>
@@ -14,6 +14,7 @@
             <% if @item_list.image.url.present?%>
                     <%= link_to image_tag(@item_list.image.url) %>
             <% end %>
+            <p class= list_name><%= @item_list.list_name %></p>
             <p class= list_description><%= @item_list.list_description %></p>
             <p class= "item_list_itmes">items</p>
             <ul>
@@ -88,5 +89,30 @@
         
         <% end %>
     </div>
+
+    <div class="recommend">あなたにオススメ</div>
+    
+    <footer>
+        <% if logged_in? %>
+                    <% if current_user.already_favorited?(@item_list) %>
+                            <%= link_to 'お気に入りを外す',  item_list_favorite_path(@item_list), method: :delete %>
+                    <% else %>
+                            <%= link_to 'お気に入り',  item_list_favorites_path(@item_list), method: :post %>
+                    <% end %>
+        <% else %>
+        <% end %>
+        <% if logged_in? %>
+                    <% if current_user.already_liked?(@item_list) %>
+                            <%= link_to 'いいねを外す',  item_list_like_path(@item_list), method: :delete %>
+                    <% else %>
+                            <%= link_to 'いいね',  item_list_likes_path(@item_list), method: :post %>
+                    <% end %>
+                    <% @item_list.likes.count %>
+        <% else %>
+        <% end %>
+    </footer>
 </div>
+
+
+
 

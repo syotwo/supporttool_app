@@ -102,20 +102,39 @@
                 width: 300px;
                 }
             li {
-                width: 478px;
+                width: 270px;
                 margin: 0px 0px 45px 0px; 
-                padding: 0px 0px 0px; 
+                padding: 0px 0px 20px; 
                 text-align: center;
                 border-radius: 10px;
                 position: relative; 
                 font-family: 'M PLUS Rounded 1c', sans-serif;
                 filter: brightness(103%);
+                box-shadow: 2px 2px 7px 0px rgba(146, 145, 145, 0.4);
+                .article_topimg {   
+                    a {
+                        display: block;
+                        
+                        &:hover {
+                            filter: brightness(90%);
+                          
+                        } 
+                        img {  
+                            filter: saturate(120%);
+                            border-radius: 7px 7px 0px 0px;
+                            
+                            height: 230px;
+                            max-width: 100%;
+                            object-fit: cover;
+                            margin: 0px 0px 0px 0px;
+                        }
+                    }
+                }
                 .article_word_box {
-                    margin: 0px 0px 0px 0px;
+                    margin: 0px 7px 0px 7px;
                     min-height: 70px;
                     font-family: 'M PLUS Rounded 1c', sans-serif;
                     .article_word_box_left {
-                        background-color: #fff;
                         border-radius: 13px;
                         .article_face_type_category {
                             height: 65px;
@@ -155,8 +174,8 @@
                                 a {
                                     height: 32px;
                                     font-family: 'M PLUS Rounded 1c', sans-serif;
-                                    margin: 0px 0px 10px 0px;
-                                    max-width: 270px;
+                                    margin: 10px 0px 10px 0px;
+                                    max-width: 200px;
                                     color: $font-color;
                                     line-height: 1.5em;
                                     font-size: 18.5px;
@@ -172,7 +191,7 @@
                         }
                         .artcle_user_info {
                             display: flex;
-                            margin: 17px 0px 0px 0px;
+                            margin: 25px 0px 0px 0px;
                             height: 37px;
                             .user_info_face_img {
                                 margin: 0px 0px 0px 5px;
@@ -602,6 +621,7 @@
                 position: relative; 
                 font-family: 'M PLUS Rounded 1c', sans-serif;
                 filter: brightness(103%);
+                box-shadow: 2px 2px 7px 0px rgba(146, 145, 145, 0.4);
                 .article_topimg {   
                     a {
                         display: block;
@@ -613,7 +633,7 @@
                         img {  
                             filter: saturate(120%);
                             border-radius: 7px 7px 0px 0px;
-                            width: 246px;
+                            
                             height: 230px;
                             max-width: 100%;
                             object-fit: cover;
@@ -833,7 +853,32 @@
     }
 }
 
+/* デザインC(PC) */
 @media screen and (max-width: 960px)  {
+    /* PC用レイアウト 960px以上の範囲に収めるデザインはこの中に記述 */
     .toppage_login {   
+        
     }
+}
+
+/* デザインB（タブレット） */
+@media screen and (max-width: 600px) {
+    /* タブレット用レイアウト 600px以内の範囲に収めるデザインはこの中に記述 */
+    .toppage_login {  
+        .article_index {
+            width: 600px;
+            margin: 10px;
+            li {   
+            }
+        }    
+    }
+    .toppage_logout {
+        .article_index {
+            width: 600px;
+            margin: 10px;
+            li {   
+            }
+        }   
+    }
+    
 }

@@ -8,6 +8,9 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @item_lists = current_user.item_lists.all
+
+    favorites = Favorite.where(user_id: current_user.id).order(created_at: :desc).pluck(:item_list_id)
+    @likes = ItemList.find(favorites)
   end
 
   def new

@@ -7,18 +7,21 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
 
   get 'signup', to: 'users#new'
-  resources :users, only: %i[index show new create]
 
   resources :items
+
   resources :item_lists do
     resources :items, only: %i[index create]
-    resources :favorites, only: [:create, :destroy]
+    resources :favorites, only: %i[create destroy]
+    resources :likes, only: %i[create destroy]
   end
 
+  resources :users, only: %i[index show new create]
+
   # resources :favorites, only: %i[create destroy]
-  resources :favorites do
-    # resources :items, only: %i[index create]
-  end
+  # resources :favorites do
+  #   # resources :items, only: %i[index create]
+  # end
 
 
   resources :emotions

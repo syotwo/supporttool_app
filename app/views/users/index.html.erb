@@ -2,8 +2,8 @@
 <div class= toppage_logout>
     <div class= logout_image>
       <div class =logout_top_left_word>
-        <h1 class= top>デクリエイターのための<br>セルフケア情報<br>まとめサービス<br><span class= top_word_bottom></span></h1>
-        <p class= middle>DIGI CAREは、セルフケアを気軽に記録・シェア<br>デジタルクリエイターの日常を元気に！するため<br>のコミュニティーです。<br>みんなでセルフケアをシェア、毎日少しずつ気分がよくなる</p>
+        <h1 class="top">隙間時間で<br>目の疲れをとろう<br><span class= top_word_bottom></span></h1>
+        <p class="middle"jio>DIGI CAREは、クリエイターがセルフケアを気軽に記録・シェア<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -25,6 +25,13 @@
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
           <li>
+            <div class="article_topimg">
+              <% if item_list.image? %>
+                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
+              <% else %>
+                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+              <% end %>
+            </div>
             <div class="article_word_box">
               <div class="article_word_box_left">
               </div>
@@ -35,18 +42,11 @@
                   </div>    
                 </div> 
                 <div class="artcle_user_info">
-                  <div class="user_info_face_img">
-                    <a href=""><span class="material-icons">account_circle</span></a>
-                  </div>
                   <div class="user_box">
                     <div class="user_box_top_name">
                         <div class="user_name"><span><%= item_list.user.name %></span></div>
                         <div class="user_job_name">WEB DESIGNER</div>
-                    </div>
-                    <div class="user_box_top_time">
-                      <div class="user_create_time"><%= item_list.created_at.strftime("%m/%d/%Y ") %>
-                      </div>
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div>
