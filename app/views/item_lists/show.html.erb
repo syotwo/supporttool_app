@@ -95,17 +95,25 @@
     <footer>
         <% if logged_in? %>
                     <% if current_user.already_favorited?(@item_list) %>
-                            <%= link_to 'お気に入りを外す',  item_list_favorite_path(@item_list), method: :delete %>
+                            <%= link_to item_list_favorite_path(@item_list), method: :delete do %>
+                                <i class="fas fa-bookmark"></i>
+                            <% end %>
                     <% else %>
-                            <%= link_to 'お気に入り',  item_list_favorites_path(@item_list), method: :post %>
+                            <%= link_to item_list_favorites_path(@item_list), method: :post do %>
+                                <i class="far fa-bookmark"></i>
+                            <% end %>
                     <% end %>
         <% else %>
         <% end %>
         <% if logged_in? %>
                     <% if current_user.already_liked?(@item_list) %>
-                            <%= link_to 'いいねを外す',  item_list_like_path(@item_list), method: :delete %>
+                            <%= link_to item_list_like_path(@item_list), method: :delete do %>
+                                <i class="fas fa-heart"></i>
+                            <% end %>
                     <% else %>
-                            <%= link_to 'いいね',  item_list_likes_path(@item_list), method: :post %>
+                            <%= link_to item_list_likes_path(@item_list), method: :post do %>
+                                <i class="far fa-heart"></i>
+                            <% end %>
                     <% end %>
                     <% @item_list.likes.count %>
         <% else %>

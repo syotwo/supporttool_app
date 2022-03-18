@@ -347,6 +347,25 @@
             }
         }
     }  
+    .user_qa_health {
+        background-color: #379FF3;
+        padding: 50px 20px;
+        h1 {
+            text-align: center;
+            padding: 20px 0px;
+            margin: 0;
+        }
+        .user_qa_wrap {
+            p {
+                background-color: #f3d6d7;
+                padding: 20px;
+                margin: 30px 50px;
+                border-radius: 4px;
+            }
+
+        }
+       
+    }
     .wave_line {
         img {
             display: block;
@@ -792,7 +811,7 @@
             margin: 115px auto;
             display: block;
             width: 400px;
-            height: 600px;
+            height: 300px;
             .logout_top_left_word {
                 h1.top {
                     white-space: initial; 
@@ -822,10 +841,13 @@
             }
             .logout_top_right_img {
                 img {
-                    width: 390px;
                     display: block;
-                    padding: 0;
-                    margin: 65px 0px 0px 0px;
+                    width: 550px;
+                    margin:0px 0px 0px 40px;
+                    border-radius: 25px;
+                    position: relative;
+                    bottom: 50px;
+                    right: 120px;
                 }
             }
         }
@@ -834,9 +856,10 @@
             padding: 35px 0px 0px 0px;
         }
         .article_index {
-            width: 285px;
-            margin: 0px 30px;
-            padding: 0px 0px 0px 0px;
+            width: 600px;
+            margin: 10px;
+            li {   
+            }
         }
         .checker_container {
             .checker_container_wrap {
@@ -853,14 +876,6 @@
     }
 }
 
-/* デザインC(PC) */
-@media screen and (max-width: 960px)  {
-    /* PC用レイアウト 960px以上の範囲に収めるデザインはこの中に記述 */
-    .toppage_login {   
-        
-    }
-}
-
 /* デザインB（タブレット） */
 @media screen and (max-width: 600px) {
     /* タブレット用レイアウト 600px以内の範囲に収めるデザインはこの中に記述 */
@@ -873,12 +888,12 @@
         }    
     }
     .toppage_logout {
-        .article_index {
-            width: 600px;
-            margin: 10px;
-            li {   
-            }
-        }   
+        .logout_image {
+            
+
+        }
+        
+           
     }
     
 }

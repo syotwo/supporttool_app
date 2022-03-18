@@ -12,7 +12,8 @@ container コンテンツを囲むボックス
       emoji_emotions
       </span>
       <p class =login_username>こんにちわ, <%= current_user.name %>さん!</p>
-      <p>何に困っていますか？</p>
+      <p>お悩みはなんですか？</p>
+
     </div>
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
@@ -22,8 +23,8 @@ container コンテンツを囲むボックス
         </button>
       <% end %>
     <% end %>
-    <p class="article_index_category_name">Mood</p>
-    
+
+    <p class="article_index_category_name">あなたにオススメ</p>
     <div class="article_index">
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
@@ -63,33 +64,45 @@ container コンテンツを囲むボックス
   <div class="toppage_logout">
     <div class="logout_image">
       <div class ="logout_top_left_word">
-      <p class="test_user">testuserさん,こんにちは.</p>
       <h1 class="top">隙間時間で<br>目の疲れをとろう<br><span class= top_word_bottom></span></h1>
-        <p class="middle"jio>DIGI CAREは、クリエイターがセルフケアを気軽に記録・シェア<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
+        <p class="middle"jio>アイケアーは、クリエイターがセルフケアをキロク・シェアすることができます。<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
               <span class="material-icons">description</span>
-              <%= f.submit "Share for creater"%>
+              <%= f.submit "疲れを解消する"%>
             <% end %>
           </div>
         </div>
       </div>
       <div class="logout_top_right_img">
-        <%= image_tag("/assets/top_icatch.png") %>
+        <!-- <%= image_tag("/assets/top_icatch.png") %> -->
       </div>
-    </div>  
-    <div class="wave_line">
+    </div>
+
+    <div class="user_qa_health">
+      <h1>お悩みはなんですか？</h1>
+      <div class="user_qa_wrap">
+        <p>目が疲れてます</p>
+        <p>脳が疲労してます</p>
+        <p>腰が疲れてます</p>
+        <p>焦りが消えないです</p>
+        <p>スキマ時間で気分転換したいんです</p>
+      </div>
+    </div>
+
+    <!--　<div class="wave_line">
         <%= image_tag("/assets/wave.svg") %>
       </div>
-    <div class="how_to_use_wrap">
+
+     <div class="how_to_use_wrap">
       <div class="container">
         <h1>DIDI CAREの使い方</h1>
         <div class="how_to_use"> 
           <div class="item">
-            <p>セルフケアを記録</p>
+            <p>セルフケアをキロク</p>
             <p>セルフケアをメモしておくことで、ストレスを感じた時にすぐに対処することができます。</p>
           </div>
           <div class="item">
@@ -102,7 +115,7 @@ container コンテンツを囲むボックス
           </div>
         </div>
       </div>
-    </div>
+    </div>　-->
     
     <p class="article_index_category_name">みんなのケア一覧</p>
     <div class="article_index">
