@@ -33,6 +33,15 @@
     </div>
     <%= f.label :list_description , '感想、説明などを書いてみよう' ,{class: 'item_list_label_name'} %>
     <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
+
+    <%= f.label :category, 'カテゴリ' %>
+    <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
+      <%= category.label do %>
+        <%= category.check_box %>
+        <%= category.text %>
+      <% end %>
+    <% end %>
+    
     <div class="wrap">  
         <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
         <%= f.label :image, "イメージ画像", class: "img_name" %>
