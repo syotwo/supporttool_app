@@ -7,24 +7,16 @@ container コンテンツを囲むボックス
 <%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage_login>
-    <div class="face_box">
-      <span class="material-icons">
-      emoji_emotions
-      </span>
-      <p class =login_username>こんにちわ, <%= current_user.name %>さん!</p>
-      <p>お悩みはなんですか？</p>
-
-    </div>
     <% if logged_in? %>
       <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "How Are You Feeling?" %>
+        <%= f.search_field :list_name_cont, placeholder: "お悩みはなんですか?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>
       <% end %>
     <% end %>
 
-    <p class="article_index_category_name">あなたにオススメ</p>
+    <p class="article_index_category_name">人気のセルフケア</p>
     <div class="article_index">
       <ul class="article_index_wrap">
         <% @item_lists.each do |item_list| %>
@@ -65,13 +57,12 @@ container コンテンツを囲むボックス
     <div class="logout_image">
       <div class ="logout_top_left_word">
       <h1 class="top">隙間時間で<br>目の疲れをとろう<br><span class= top_word_bottom></span></h1>
-        <p class="middle"jio>アイケアーは、クリエイターがセルフケアをキロク・シェアすることができます。<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
+        <p class="middle"jio>クリエイター同士でセルフケアをキロク・シェア<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
-              <span class="material-icons">description</span>
               <%= f.submit "疲れを解消する"%>
             <% end %>
           </div>
@@ -153,5 +144,7 @@ container コンテンツを囲むボックス
       </ul> 
     </div>
   </div>
+  <%= render 'layouts/footer' %>
+  
 <% end %>
 

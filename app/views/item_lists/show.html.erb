@@ -15,6 +15,12 @@
                     <%= link_to image_tag(@item_list.image.url) %>
             <% end %>
             <p class= list_name><%= @item_list.list_name %></p>
+            <p>カテゴリ</p>
+            <div class="ctegory_name">
+                <% @item_list.categories.each do |category| %>
+                    <%= category.name %>
+                <% end %>
+            </div>
             <p class= list_description><%= @item_list.list_description %></p>
             <p class= "item_list_itmes">items</p>
             <ul>

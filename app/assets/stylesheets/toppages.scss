@@ -62,7 +62,8 @@
             border-radius: 40px 0px 0px 40px;
             position:relative;
             top: 0px;
-            left: -349px;
+            left: -307
+            px;
             outline: none; 
             vertical-align: middle;
             background: #f6f7f8;
@@ -328,7 +329,7 @@
                             font-weight: 600;
                             border: none;
                             border-radius: 40px;
-                            padding: 15px 0px 15px 40px; 
+                            padding: 15px 0px 15px 15px; 
                             margin: 15px 0px 0px 0px;
                         }
                     }
@@ -781,7 +782,7 @@
 }
     
 /* smartPhone */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .toppage_login { 
         padding: 20px 0px;
         margin: 20px 0px 0px 0px;
@@ -808,17 +809,18 @@
     .toppage_logout {
         .logout_image {
             padding: 0;
-            margin: 115px auto;
+            margin: 30px 30px;
             display: block;
-            width: 400px;
-            height: 300px;
+            height: 320px;
             .logout_top_left_word {
                 h1.top {
+                    font-size: 45px;
                     white-space: initial; 
                     margin: 0;
-                    color: $font-color;
+                    color: #359AEC;
                 }
                 p.middle {
+                    font-size: 15px;
                     margin: 0;
                     color: $font-color;
                 }
@@ -833,7 +835,8 @@
                                 color: $submit-font-color;
                             }
                             input {
-                                margin: 0px 0px 0px 0px;
+                                width: 320px;
+                                margin: 0px 30px;
                             }
                         }
                     }
@@ -856,7 +859,7 @@
             padding: 35px 0px 0px 0px;
         }
         .article_index {
-            width: 600px;
+            width: 200px;
             margin: 10px;
             li {   
             }
@@ -874,26 +877,4 @@
         }
         
     }
-}
-
-/* デザインB（タブレット） */
-@media screen and (max-width: 600px) {
-    /* タブレット用レイアウト 600px以内の範囲に収めるデザインはこの中に記述 */
-    .toppage_login {  
-        .article_index {
-            width: 600px;
-            margin: 10px;
-            li {   
-            }
-        }    
-    }
-    .toppage_logout {
-        .logout_image {
-            
-
-        }
-        
-           
-    }
-    
 }

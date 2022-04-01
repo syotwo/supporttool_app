@@ -253,7 +253,7 @@ nav {
 }
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     nav {
         display: flex;
         justify-content: space-between;
@@ -261,6 +261,46 @@ nav {
         padding: 0px 30px 0px 30px;
         margin: 6px 0px 0px 0px;
         height: 79px;
+        .nav_title_box {
+            .nav_img {
+                img{
+                }
+            }
+
+
+        }
+        ul.menu_right{
+            margin: 15px 0px 0px 0px;
+            .plus_box {
+                order: 2;
+
+            }
+            .menu {
+                order: 1;
+            }
+            a.signup {
+                padding: 0px 15px 0px 15px;
+                font-size: 11px;
+            }
+            a.login {
+                padding: 0px 15px 0px 15px;
+                font-size: 11px;
+                margin: 0px;
+                height: 26px;
+                line-height: 2.3;
+            }
+            .plus_box {
+                li {
+                    a.plus_itemlist {
+                        font-size: 13px;
+                        padding: 0px 10px;
+                    }
+                }
+
+            }
+
+
+        }
         li {
             span {
                 display: block;
