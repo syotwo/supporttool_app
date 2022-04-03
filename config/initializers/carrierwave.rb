@@ -13,5 +13,5 @@ CarrierWave.configure do |config|
     }
     
     config.fog_directory = 'supporttool-app2022'
-    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/upporttool-app2022 
+    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/upporttool-app2022
 end
