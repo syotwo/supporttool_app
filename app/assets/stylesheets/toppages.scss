@@ -614,7 +614,7 @@
     .article_index {
         padding: 0px 40px 0px 40px;
         font-family: 'M PLUS Rounded 1c', sans-serif;
-        margin: 0px auto;
+        margin: 0px auto 100px;
         display: flex;
         width: 860px;
         ul.article_index_wrap {
@@ -859,10 +859,17 @@
             padding: 35px 0px 0px 0px;
         }
         .article_index {
-            width: 200px;
-            margin: 10px;
-            li {   
+            width: 100%;
+            padding: 0;
+            ul.article_index_wrap {
+                width: 100%;
+                justify-content: center;
+                li {   
+
+                }
+
             }
+           
         }
         .checker_container {
             .checker_container_wrap {
