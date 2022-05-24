@@ -174,11 +174,35 @@
 @media screen and (max-width: 600px) {
     /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
     .item_list_new {
+        width: 100%;
+        padding: 0;
+        margin: 30px 10px 0px 10px;
+        .wrap_formhead {
+            p {
+                margin: 10px auto 20px;
+            }
+        }
         form {
             .item_type_wrap {
+                width: 100%; 
                 input#item_list_list_name {
-                    width: 200px;
+                    width: 90%;
+                    margin: 0;
                 }
+                .item_type_select_box{
+                    padding: 0;
+                    width: 95%;
+                    .item_type_select_box_inner{
+                        margin: 5px;
+                    }
+                }
+                
+            }
+            textarea#item_list_list_description {
+                width: 90%;
+                margin: 0px 0px 10px 0px;
+                padding: 10px 0px 100px 30px;
+                text-align-last: left;
             }
         }
     }

@@ -350,3 +350,196 @@
         color: $main-white-font-color;
     }
 }
+
+/* smartPhone */
+@media screen and (max-width: 600px) {
+    .toppage_login { 
+        padding: 20px 0px;
+        margin: 20px 0px 0px 0px;
+        .face_box {
+            margin: 0px 0px 0px 30px;
+        }
+        form.item_list_search {
+            margin: 20px 0px 0px 30px;
+        }
+        .article_index_title_box {
+            
+            margin: 70px 0px 30px;
+        }
+        p.article_index_category_name {
+            margin: 0px 0px 40px 30px;
+            padding: 35px 0px 0px 0px;
+        }
+        .article_index {
+            width: 100%;
+            padding: 0;
+            ul.article_index_wrap {
+                width: 100%;
+                justify-content: center;
+                li {  
+                    width: 150px;
+                    padding: 0;
+                    .article_topimg {
+                        a.img {
+                        }
+                    }
+                    .article_word_box {
+                        width: 100%;
+                        box-sizing:border-box;
+                        .article_word_box_right {
+                            margin: 0;
+                            box-sizing:border-box;
+                            .article_title {
+                                width: 100%;
+                                margin: 0;
+                                .title_name {
+                                    margin: 0px 13px 0px 0px;
+                                    a { 
+                                        font-size: 13px;
+                                        margin: 0;
+                                        height: 40px;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 3;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                    
+                                        /*IE対策*/
+                                        line-height: 1.5em;
+                                        max-height: 4.5em;
+                                    }
+                                }
+                            }
+                            .artcle_user_info{
+                                margin: 0;
+                            }
+
+                        }
+                        
+                    }
+                }
+                li:nth-child(odd) {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+        }
+    }
+    .toppage_logout {
+        .logout_image {
+            padding: 0;
+            margin: 30px 30px;
+            display: block;
+            height: 320px;
+            .logout_top_left_word {
+                h1.top {
+                    font-size: 30px;
+                    white-space: initial; 
+                    margin: 0px 0px 15px 0px;
+                    color: $main-dark-font-color;
+                }
+                p.middle {
+                    font-size: 15px;
+                    margin: 0px 0px 15px 0px;
+                    color: $main-dark-subfont-color;
+                }
+                .box_login {
+                    .test_login {
+                        form {
+                            span {
+                                position: relative; 
+                                top: 57px;
+                                left: 0px;
+                                font-size: 20px;
+                                color: $main-white-font-color;
+                            }
+                            input {
+                                width: 320px;
+                                margin: 0px 30px;
+                            }
+                        }
+                    }
+                }     
+            }
+            .logout_top_right_img {
+                img {
+                    display: block;
+                    width: 550px;
+                    margin:0px 0px 0px 40px;
+                    border-radius: 25px;
+                    position: relative;
+                    bottom: 50px;
+                    right: 120px;
+                }
+            }
+        }
+        p.article_index_category_name {
+            margin: 0px 0px 40px 30px;
+            padding: 35px 0px 0px 0px;
+        }
+        .article_index {
+            width: 100%;
+            padding: 0;
+            ul.article_index_wrap {
+                width: 100%;
+                justify-content: center;
+                li {  
+                    width: 150px;
+                    padding: 0;
+                    .article_topimg {
+                        a.img {
+                        }
+                    }
+                    .article_word_box {
+                        width: 100%;
+                        box-sizing:border-box;
+                        .article_word_box_right {
+                            margin: 0;
+                            box-sizing:border-box;
+                            .article_title {
+                                width: 100%;
+                                margin: 0;
+                                .title_name {
+                                    margin: 0px 13px 0px 0px;
+                                    a { 
+                                        font-size: 13px;
+                                        margin: 0;
+                                        height: 40px;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 3;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                    
+                                        /*IE対策*/
+                                        line-height: 1.5em;
+                                        max-height: 4.5em;
+                                    }
+                                }
+                            }
+                            .artcle_user_info{
+                                margin: 0;
+                            }
+
+                        }
+                        
+                    }
+                }
+                li:nth-child(odd) {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+        }
+        .checker_container {
+            .checker_container_wrap {
+                margin: 0px 30px 40px;
+            }
+        }
+        .cheacker_card_box {
+            margin: 0px 30px 0px 30px;
+        }
+        .logout_toppage {
+            padding: 0px 20px;
+        }
+        
+    }
+}

@@ -56,14 +56,14 @@ container コンテンツを囲むボックス
   <div class="toppage_logout">
     <div class="logout_image">
       <div class ="logout_top_left_word">
-      <h1 class="top">隙間時間で<br>目の疲れをとろう<br><span class= top_word_bottom></span></h1>
-        <p class="middle"jio>クリエイター同士でセルフケアをキロク・シェア<br>毎日少しずつ気分がよくなるコミュニティーです。</p>
+      <h1 class="top">クリエイター専用<br>ステレス軽減<br>メモノート<br><span class= top_word_bottom></span></h1>
+        <p class="middle"jio>サクサク書けて、落ち着く<br>ストレスフリーな自分になる</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
               <%= f.hidden_field :email, value: "testuser@testuser.com" %>
               <%= f.hidden_field :password, value: "testuser" %>
-              <%= f.submit "疲れを解消する"%>
+              <%= f.submit "ストレスフリーになる"%>
             <% end %>
           </div>
         </div>
@@ -73,14 +73,30 @@ container コンテンツを囲むボックス
       </div>
     </div>
 
-    <div class="user_qa_health">
-      <h1>お悩みはなんですか？</h1>
-      <div class="user_qa_wrap">
-        <p>目が疲れてます</p>
-        <p>脳が疲労してます</p>
-        <p>腰が疲れてます</p>
-        <p>焦りが消えないです</p>
-        <p>スキマ時間で気分転換したいんです</p>
+    <div class="lp">
+      <div class="user_qa_health">
+        <h1>こんなことはありませんか？</h1>
+        <div class="user_qa_wrap">
+          <p>知らぬ間にストレスを抱えがち</p>
+          <p>最近なんだか心が乱れがち</p>
+          <p>作業に集中できない</p>
+        </div>
+      </div>
+      <div class="user_benefit">
+        <h1>得られるメリット</h1>
+        <div class="user_qa_wrap">
+          <p>毎日使うことで、メンタルが少しずつ確実に強化されていく。</p>
+          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
+          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
+        </div>
+      </div>
+      <div class="user_explain_coping">
+        <h1>ストレスコーピングとは</h1>
+        <div class="user_qa_wrap">
+          <p>ストレスコーピング とは、、、</p>
+          <p>ストレスコーピング とは、、、</p>
+          <p>ストレスコーピング とは、、、</p>
+        </div>
       </div>
     </div>
 
@@ -107,42 +123,6 @@ container コンテンツを囲むボックス
         </div>
       </div>
     </div>　-->
-    
-    <p class="article_index_category_name">みんなのケア一覧</p>
-    <div class="article_index">
-      <ul class="article_index_wrap">
-        <% @item_lists.each do |item_list| %>
-          <li>
-            <div class="article_topimg">
-              <% if item_list.image? %>
-                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
-              <% else %>
-                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-              <% end %>
-            </div>
-            <div class="article_word_box">
-              <div class="article_word_box_left">
-              </div>
-              <div class="article_word_box_right">
-                <div class="article_title">
-                  <div class="title_name">
-                    <%= link_to item_list.list_name , item_list_path(item_list) %>
-                  </div>    
-                </div> 
-                <div class="artcle_user_info">
-                  <div class="user_box">
-                    <div class="user_box_top_name">
-                        <div class="user_name"><span><%= item_list.user.name %></span></div>
-                        <div class="user_job_name">WEB DESIGNER</div>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-            </div>   
-          </li>
-        <% end %>
-      </ul> 
-    </div>
   </div>
 <% end %>
 

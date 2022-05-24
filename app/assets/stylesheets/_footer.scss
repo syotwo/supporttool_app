@@ -2,7 +2,15 @@
 
 body {
     footer {
-        background: $accent-color;
+        background: $main-color;
+        position: relative; 
+        padding: 10px 0px 0px;
+        margin: 50px 0px 0px;
+        height: 150px;
+        P {
+            color: $main-white-font-color;
+        }
+        
     }
 }
 
@@ -19,6 +27,7 @@ body {
         footer {
             text-align: center;
             width: 100%;
+            height: 150px;
         }
     }
 }

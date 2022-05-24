@@ -4,18 +4,18 @@
       <div class="nav_title_box">
         <%= link_to users_path do %>
           <div class="nav_img">
-            <%= image_tag "nav_icon.png" %>
+            <%= image_tag "mycare_logo.png" %>
           </div>
-          <p>アイケアー</p>
+          <p>My Care.</p>
         <% end %>
       </div>
     <% else %>
       <div class="nav_title_box">
         <%= link_to root_path do %>
           <div class="nav_img">
-            <%= image_tag "nav_icon.png" %>
+            <%= image_tag "mycare_logo.png" %>
           </div>
-          <p>アイケアー</p>
+          <p>My Care.</p>
         <% end %>
       </div>
     <% end %>
@@ -42,8 +42,8 @@
         </ul>
 
       <% else %>
-        <li><%= link_to 'Sign Up', signup_path , { class: 'signup' }%></li>
-        <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
+        <li><%= link_to '登録', signup_path , { class: 'signup' }%></li>
+        <li><%= link_to 'ログイン', login_path , { class: 'login' }%></li>
       <% end %>
     </ul>
   </nav>

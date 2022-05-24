@@ -115,7 +115,6 @@
                 .article_topimg {   
                     a {
                         display: block;
-                        
                         &:hover {
                             filter: brightness(90%);
                           
@@ -123,7 +122,6 @@
                         img {  
                             filter: saturate(120%);
                             border-radius: 7px 7px 0px 0px;
-                            
                             height: 230px;
                             max-width: 100%;
                             object-fit: cover;
@@ -273,7 +271,7 @@
                 font-family: 'Noto Sans JP', sans-serif;
                 font-size: 49px;
                 margin: 30px 0px 20px 0px;
-                color: $gray-font-color;
+                color: $main-dark-font-color;
                 letter-spacing: -0.15em;
                 white-space: nowrap;
                 line-height: 1.5em;
@@ -348,58 +346,40 @@
             }
         }
     }  
-    .user_qa_health {
-        background-color: #379FF3;
-        padding: 50px 20px;
-        h1 {
-            text-align: center;
-            padding: 20px 0px;
-            margin: 0;
-        }
-        .user_qa_wrap {
-            p {
-                background-color: #f3d6d7;
-                padding: 20px;
-                margin: 30px 50px;
-                border-radius: 4px;
-            }
-
-        }
-       
-    }
-    .wave_line {
-        img {
-            display: block;
-            position: relative;
-            top: 22px;
-        }
-    }
-    .how_to_use_wrap {
-        height: 480px;
-        background: #C6E1F7;
-        .container {
+    .lp {
+        .user_benefit, .user_qa_health, .user_explain_coping {
+            background-color: $main-color;
+            padding: 50px 20px;
             h1 {
                 text-align: center;
-                color: #1582DB;
+                padding: 20px 0px;
+                margin: 0;
+                color: $main-white-font-color;
             }
-            .how_to_use{
-                padding: 0px 70px 0px;
+            .user_qa_wrap {
                 display: flex;
-                justify-content: space-between;
-                -webkit-box-align: start;
-                -ms-flex-align: start;
-                align-items: flex-start;
-                .item {
-                    width: 250px;
-                    margin: 10px;
-                    p {
-                        color: #1582DB;
-                    }
+                p {
+                    flex: 1;
+                    padding: 20px;
+                    margin: 30px 5px;
+                    border-radius: 4px;
+                    color: $main-white-font-color;
                 }
             }
-
         }
-        
+        .user_benefit {
+            background-color: $base_color;
+            h1 {
+                color: $main-dark-font-color;
+            }
+            .user_qa_wrap {
+                p {
+
+                    color: $main-dark-subfont-color;
+
+                }
+            }
+        }
     }
     .cheacker_card_box {
         display: flex;
@@ -809,34 +789,35 @@
     .toppage_logout {
         .logout_image {
             padding: 0;
-            margin: 30px 30px;
+            margin: 30px 10px;
             display: block;
             height: 320px;
             .logout_top_left_word {
                 h1.top {
-                    font-size: 45px;
+                    font-size: 30px;
                     white-space: initial; 
-                    margin: 0;
-                    color: #359AEC;
+                    margin: 0px 0px 15px 0px;
+                    color: $main-dark-font-color;
                 }
                 p.middle {
                     font-size: 15px;
-                    margin: 0;
+                    margin: 0px 0px 15px 0px;
                     color: $font-color;
                 }
                 .box_login {
                     .test_login {
+                        
                         form {
                             span {
                                 position: relative; 
-                                top: 57px;
                                 left: 0px;
                                 font-size: 20px;
                                 color: $submit-font-color;
                             }
                             input {
-                                width: 320px;
+                                width: 300px;
                                 margin: 0px 30px;
+                                
                             }
                         }
                     }
@@ -864,12 +845,52 @@
             ul.article_index_wrap {
                 width: 100%;
                 justify-content: center;
-                li {   
+                li {  
+                    width: 150px;
+                    padding: 0;
+                    .article_topimg {
+                        a.img {
+                        }
+                    }
+                    .article_word_box {
+                        width: 100%;
+                        box-sizing:border-box;
+                        .article_word_box_right {
+                            margin: 0;
+                            box-sizing:border-box;
+                            .article_title {
+                                width: 100%;
+                                margin: 0;
+                                .title_name {
+                                    margin: 0px 13px 0px 0px;
+                                    a { 
+                                        font-size: 13px;
+                                        margin: 0;
+                                        height: 40px;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 3;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                    
+                                        /*IE対策*/
+                                        line-height: 1.5em;
+                                        max-height: 4.5em;
+                                    }
+                                }
+                            }
+                            .artcle_user_info{
+                                margin: 0;
+                            }
 
+                        }
+                        
+                    }
                 }
-
+                li:nth-child(odd) {
+                    margin: 0px 10px 0px 0px;
+                }
             }
-           
         }
         .checker_container {
             .checker_container_wrap {

@@ -15,7 +15,7 @@ nav {
     height: 100%;
     padding: 0px 40px 0px 40px;
     margin: 0px 0px 0px 0px;
-    background: $base-color;
+    background: $main-color;
     .nav_title_box a {
         display: flex;
         text-decoration: none;
@@ -29,9 +29,9 @@ nav {
                 display: block;
                 width: 40px;    
                 padding: 0px;  
-                margin: 0px 0px 0px 0px;  
+                margin: 5px 3px 0px 0px;  
                 // background: linear-gradient(to top,#033353, #033353);
-                border-radius: 50%;
+
                 position: relative;
                 top: 0px;
             }
@@ -40,15 +40,14 @@ nav {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             line-height: 1.5em;
             font-weight: 500;
-            font-size: 23px; 
-            letter-spacing: -1px;
+            font-size: 30px; 
+            letter-spacing: 1.1px;
             margin: auto 0px;
             white-space: nowrap;
             padding: 0px 0px 0px 0px;
             position: relative;
             right: -7px;
-            top: -1px;
-            color: $gray-font-color;//非対応のブラウザでの文字色を設定
+            color: $main-white-font-color;//非対応のブラウザでの文字色を設定
             // background: $accent-color;//背景色にグラデーションを指定
             // -webkit-background-clip: text;//テキストでくり抜く
             // -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
@@ -127,10 +126,8 @@ nav {
                 padding: 4px 25px 5px;
                 border-radius: 40px;
                 margin: auto 20px;
-                position: relative;
-                bottom: -2px;
-                color: $submit-font-color; 
-                background: $accent-color;
+                color: $font-color; 
+                background: $base-color;
                 filter: brightness(103%);
                 &:hover {
                     filter: brightness(110%);
@@ -145,11 +142,8 @@ nav {
                 color: $font-color;  
                 font-weight: 800;
                 font-size: 15px;
-                padding: 2px 25px;
+                padding: 4px 25px;
                 margin: auto 0px;
-                position: relative;
-                bottom: -2px; 
-                border: $accent-color solid 3px;
                 border-radius: 50px;
                 background: $base-color;  
                 filter: brightness(103%);
@@ -256,21 +250,33 @@ nav {
 @media screen and (max-width: 600px) {
     nav {
         display: flex;
-        justify-content: space-between;
-        height: 100%;
-        padding: 0px 30px 0px 30px;
-        margin: 6px 0px 0px 0px;
-        height: 79px;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
         .nav_title_box {
-            .nav_img {
-                img{
+            a {
+                margin: 21px auto;  
+                .nav_img {
+                    img{
+                        width: 35px;
+                        height: 35px;
+                        margin: 0;
+                        margin: 0px 0px 0px 20px;
+                    }
+                }
+                p {
+                    font-size: 25px;
+                    color: $main-white-font-color;
+                    letter-spacing: 0.02em;
+                    line-height: 1.13;
                 }
             }
-
-
         }
         ul.menu_right{
-            margin: 15px 0px 0px 0px;
+            margin: 21px 0px ;
             .plus_box {
                 order: 2;
 
@@ -281,13 +287,13 @@ nav {
             a.signup {
                 padding: 0px 15px 0px 15px;
                 font-size: 11px;
+                height: 35px;
             }
             a.login {
                 padding: 0px 15px 0px 15px;
                 font-size: 11px;
                 margin: 0px;
-                height: 26px;
-                line-height: 2.3;
+                height: 35px;
             }
             .plus_box {
                 li {
@@ -298,8 +304,6 @@ nav {
                 }
 
             }
-
-
         }
         li {
             span {
@@ -308,7 +312,6 @@ nav {
                 position: relative;
                 bottom: 130;
             }
-
         }
     }
 }
