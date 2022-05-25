@@ -6,9 +6,11 @@
 .loginform {    
     width: 330px;
     height: 220px; 
-    margin: 115px auto ;
+    margin: 50px auto;
     padding: 25px 60px 140px;
     border-radius: 25px;
+    background-color: #f0efef;
+    border: none;            
     h1 {
         color: $font-color;
         font-size: 41px;
@@ -17,7 +19,7 @@
     #session_email {
         border-radius: 40px;
         border: none;
-        width: 95%;
+        width: 92%;
         text-align: left;
         margin: 2px 0px 16px;
         padding: 18px 0px 18px 22px;
@@ -27,7 +29,8 @@
     #session_password {
         border-radius: 40px;
         border: none;
-        width: 95%;
+        width: 92%;
+        margin: 0px 0px 20px 0px;
         text-align: left;
         padding: 18px 0px 18px 22px;
         background: $base-color;
@@ -35,8 +38,7 @@
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     .login_submit{
-        text-align: right;
-        margin: 30px 0px 0px 237px;
+        display: block;
         padding: 14px 25px;
         background: $accent-color;
         border-radius: 40px;
@@ -44,10 +46,38 @@
         font-weight: bold;
         font-size: 16px;
         border-radius: 50px;
-        background: $base-color;
-        border: $accent-color solid 3px;
+        background: $accent-color;
+        margin-left: auto;
+        border: none;
+        text-align: center;
         &:hover {
             filter: brightness(104%);
           }
     }
+}
+
+/* smartPhone */
+@media screen and (max-width: 600px)  {
+    .loginform{
+        width: 90%;
+        padding: 0;
+        margin: 100px auto 150px;
+        padding: 10px 20px 370px;
+        box-sizing: border-box;
+
+        form {
+            
+            #session_email {
+            }
+            input.login_submit {
+                display: block;
+                border: none;
+                
+                margin-left: auto;
+                text-align: center;
+            }
+        }
+    }
+
+
 }
