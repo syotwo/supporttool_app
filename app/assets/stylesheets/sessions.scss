@@ -8,7 +8,7 @@
     height: 220px; 
     margin: 50px auto;
     padding: 25px 60px 140px;
-    border-radius: 25px;
+    border-radius: 8px;
     background-color: #f0efef;
     border: none;            
     h1 {
@@ -17,7 +17,7 @@
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     #session_email {
-        border-radius: 40px;
+        border-radius: 8px;
         border: none;
         width: 92%;
         text-align: left;
@@ -27,7 +27,7 @@
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
     #session_password {
-        border-radius: 40px;
+        border-radius: 8px;
         border: none;
         width: 92%;
         margin: 0px 0px 20px 0px;
@@ -42,7 +42,7 @@
         padding: 14px 25px;
         background: $accent-color;
         border-radius: 40px;
-        color: $font-color;
+        color: $main-white-font-color;
         font-weight: bold;
         font-size: 16px;
         border-radius: 50px;
@@ -64,15 +64,12 @@
         margin: 100px auto 150px;
         padding: 10px 20px 370px;
         box-sizing: border-box;
-
         form {
-            
             #session_email {
             }
             input.login_submit {
                 display: block;
-                border: none;
-                
+                border: none;        
                 margin-left: auto;
                 text-align: center;
             }
