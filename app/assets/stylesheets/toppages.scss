@@ -305,18 +305,16 @@
             .box_login {
                 .test_login {
                     form {
-                        position: relative;
-                        right: 31px;
                         &:hover {
                             filter: brightness(110%);
                         } 
-                        span {
-                            position: relative; 
-                            top: 6px;
-                            left: 120px;
-                            font-size: 26px;
-                            color: $submit-font-color;
-                        }
+                        // span {
+                        //     position: relative; 
+                        //     top: 6px;
+                        //     left: 120px;
+                        //     font-size: 26px;
+                        //     color: $submit-font-color;
+                        // }
                         input {
                             font-family: 'M PLUS Rounded 1c', sans-serif;
                             color: $submit-font-color;
@@ -806,18 +804,17 @@
                 }
                 .box_login {
                     .test_login {
-                        
                         form {
-                            span {
-                                position: relative; 
-                                left: 0px;
-                                font-size: 20px;
-                                color: $submit-font-color;
-                            }
+                            // span {
+                            //     position: relative; 
+                            //     left: 0px;
+                            //     font-size: 20px;
+                            //     color: $submit-font-color;
+                            // }
                             input {
+                                display: block;
                                 width: 300px;
-                                margin: 0px 30px;
-                                
+                                margin: 0px;
                             }
                         }
                     }
