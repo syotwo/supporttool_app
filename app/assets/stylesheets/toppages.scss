@@ -308,13 +308,6 @@
                         &:hover {
                             filter: brightness(110%);
                         } 
-                        // span {
-                        //     position: relative; 
-                        //     top: 6px;
-                        //     left: 120px;
-                        //     font-size: 26px;
-                        //     color: $submit-font-color;
-                        // }
                         input {
                             font-family: 'M PLUS Rounded 1c', sans-serif;
                             color: $submit-font-color;
@@ -326,7 +319,7 @@
                             border: none;
                             border-radius: 40px;
                             padding: 15px 0px 15px 15px; 
-                            margin: 15px 0px 0px 0px;
+                            margin: 15px 0px;
                         }
                     }
                 }        
