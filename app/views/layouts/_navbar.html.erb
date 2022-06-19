@@ -22,9 +22,6 @@
     
     <ul class= menu_right>
       <% if logged_in? %>
-        <div class="plus_box">
-          <li><%= link_to 'やってみたケアをキロク', new_item_list_path , { class: 'plus_itemlist' }%></li>
-        </div>
         <ul class="menu">
           <li>
             <a href=""><span class="material-icons">account_circle</span></a>
@@ -40,7 +37,6 @@
           </li>
           <%= javascript_pack_tag 'navbar' %>
         </ul>
-
       <% else %>
         <li><%= link_to 'ログイン', login_path , { class: 'login' }%></li>
         <li><%= link_to '登録', signup_path , { class: 'signup' }%></li>

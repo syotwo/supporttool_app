@@ -1,4 +1,19 @@
 <% if logged_in? %>
-    <div class="under_navbar">
+    <div class="under_navbar_box">
+        <%= link_to root_path do %>
+          <div class="under_nav_home">
+            <span class="material-symbols-outlined">home</span>
+          </div>
+        <% end %>
+        <%= link_to new_item_list_path, { class: 'profile' } do %>
+            <div class="under_nav_home_add">
+                <span class="material-symbols-outlined">add_circle</span>
+            </div>
+        <% end %>
+        <%= link_to user_path(current_user), { class: 'profile' } do %>
+            <div class="under_nav_profile">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+        <% end %>
     </div>
 <% end %>
