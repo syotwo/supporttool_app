@@ -1,6 +1,6 @@
 class FavoritesController < ApplicationController
   before_action :require_user_logged_in
-
+  
   def create
     @favorite = current_user.favorites.create(item_list_id: params[:item_list_id])
     redirect_back(fallback_location: root_path)

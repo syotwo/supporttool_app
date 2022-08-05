@@ -2,13 +2,17 @@
 
 body {
     footer {
-        background: $main-color;
+        display: flex;
+        justify-content: space-between;
         position: relative; 
-        padding: 10px 0px 0px;
-        margin: 50px 0px 0px;
+        padding: 270px 0px 150px;
+        margin: 0px auto 0px;
         height: 150px;
+        width: 750px;
+        text-align: center;   
         P {
-            color: $main-white-font-color;
+            color: $main-dark-font-color;
+            margin: 0px 0px;
         }
         
     }
@@ -25,9 +29,13 @@ body {
     /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
     body {
         footer {
+            display: block;
             text-align: center;
             width: 100%;
             margin: 0;
+            p {
+                margin: 15px 10px;
+            }
         }
     }
 }

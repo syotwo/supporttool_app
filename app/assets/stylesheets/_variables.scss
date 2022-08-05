@@ -1,11 +1,12 @@
   
-$base-color: #FCFDFC;
+$base-color: linear-gradient(to bottom, #DAE2FC, #FCFAFA);
 $main-color: #414851;
 $accent-color: linear-gradient(to right, #16A2D5, #1EC68C);
+$sub-accent-color: #16A2D5;
 
 $submit-color:#242525;
 $submit-sub-color:#61c514;
-$card-color: #FFFFFF;
+$card-color: #f5faff;
 $submit-card-color: #f6f8fa;
 $checker-color:#e0f0d5;
 $complementary-color:#f1824a;
@@ -13,13 +14,13 @@ $gray-color:#b1b1b1;
 $type-back-color:#dfe5eb;
 
 $main-white-font-color: #f3f7f0;
-$main-dark-font-color: #2e4669;
-$main-dark-subfont-color: #5076b1;
+$main-dark-font-color: #172336;
+$main-dark-sub-font-color: #5076b1;
 
 $navfont-color: #5ea584;
 $main-font-color: #5ea584;
 $font-color: #474745;
-$subfont-color: #696967;
+$subfont-color: #2D4669;
 $third-font-color: #8b8b8a;
 $submit-font-color: #f3f7f0;
 $gray-font-color: #1582db;

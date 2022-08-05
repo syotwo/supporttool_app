@@ -1,35 +1,92 @@
 <%= form_with(model: @item_list, local: true) do |f| %>
     <div class="item_type_wrap">
-    <%= f.label :list_name, 'やってみたこと' ,{class: 'item_list_label_name'} %>
-    <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
-    　<p>どんな気分ですか？？</p>
+        <div class="add_number">
+            <div class="number1">①</div>⋯⋯⋯
+            <div class="number1">②</div>⋯⋯⋯
+            <div class="number1">③</div>
+        </div>
+        <!--
+        <%= f.label :list_name, '感じたストレスは？＊＊＊SQL追加！！＊＊＊' ,{class: 'item_list_label_name'} %>
+        <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
+        -->
+        <div id= 'Form1'>
+            <%= f.label :list_name, 'やってみたこと' ,{class: 'item_list_label_name'} %>
+            <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
+        </div>
+        <div class="btn-_box">
+            <button type="button" id="Next1">Next</button>
+        </div>
+        
+         <div id= 'Form2'>
+            <div class="item_type_wrap">
+            <p>どんな気分ですか？？</p>
+            <div class="item_type_select_box">
+                <div class="item_type_select_box_inner">
+                    <%= f.radio_button 'list_item_type', '1' %>
+                    <span>&#x1f606;</span>
+                    <%= f.label :list_item_type, 'とても良い', value: 1 %>
+                </div>
+                <div class="item_type_select_box_inner">
+                    <%= f.radio_button 'list_item_type', "2" %>
+                    <span>&#x1f600;</span>
+                    <%= f.label :list_item_type, '良い', value: 2 %>
+                </div>
+                <div class="item_type_select_box_inner">
+                    <%= f.radio_button 'list_item_type', '3' %>
+                    <span>&#x1f610;</span>
+                    <%= f.label :list_item_type, '悪い', value: 3 %>
+                </div>
+                <div class="item_type_select_box_inner">    
+                    <%= f.radio_button 'list_item_type', '4' %>
+                    <span>&#x1f605;</span>
+                    <%= f.label :list_item_type, '悪い', value: 4 %>
+                </div>
+                <div class="item_type_select_box_inner">
+                    <%= f.radio_button 'list_item_type', '5' %>
+                    <span>&#x1f631;</span>
+                    <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-_box">
+            <button type="button">Back</button>
+            <div class= submit><%= f.submit '投稿',{class: 'item_list_submit' } %></div>   
+        </div>
+        
+        <%= javascript_pack_tag 'form_itemlist' %>
+           
+        </div>
+        <!-- 
+        <p>どんな気分ですか？？</p>
         <div class="item_type_select_box">
             <div class="item_type_select_box_inner">
                 <%= f.radio_button 'list_item_type', '1' %>
                 <span>&#x1f606;</span>
-                <%= f.label :list_item_type, 'Very Good', value: 1 %>
+                <%= f.label :list_item_type, 'とても良い', value: 1 %>
             </div>
             <div class="item_type_select_box_inner">
                 <%= f.radio_button 'list_item_type', "2" %>
                 <span>&#x1f600;</span>
-                <%= f.label :list_item_type, 'Good', value: 2 %>
+                <%= f.label :list_item_type, '良い', value: 2 %>
             </div>
             <div class="item_type_select_box_inner">
                 <%= f.radio_button 'list_item_type', '3' %>
                 <span>&#x1f610;</span>
-                <%= f.label :list_item_type, 'Fair', value: 3 %>
+                <%= f.label :list_item_type, '悪い', value: 3 %>
             </div>
             <div class="item_type_select_box_inner">    
                 <%= f.radio_button 'list_item_type', '4' %>
                 <span>&#x1f605;</span>
-                <%= f.label :list_item_type, 'Poor', value: 4 %>
+                <%= f.label :list_item_type, '悪い', value: 4 %>
             </div>
             <div class="item_type_select_box_inner">
                 <%= f.radio_button 'list_item_type', '5' %>
                 <span>&#x1f631;</span>
-                <%= f.label :list_item_type, 'Very Poor', value: 5 %>    
+                <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
             </div>
         </div>
+        
     </div>
  
     
@@ -51,5 +108,12 @@
         <%= f.label :image, "イメージ画像", class: "img_name" %>
         <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
     </div>
-    <div class= submit><%= f.submit '投稿',{class: 'item_list_submit' } %></div>   
+    -->
+    
+
+    
 <% end %>
+
+
+
+

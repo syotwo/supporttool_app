@@ -1,0 +1,167 @@
+@import "_variables";
+
+.article_index {
+    padding: 0px 40px 0px 40px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0px auto;
+    display: flex;
+    width: 860px;
+    ul.article_index_wrap {
+        padding: 0px 0px 20px 0px;
+        margin: 0px auto;
+        list-style: none;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        &::after {
+            display: block;
+            content:"";
+            width: 300px;
+            }
+        li {
+            background: $card-color;
+            width: 270px;
+            margin: 0px 0px 45px 0px; 
+            padding: 0px 0px 20px; 
+            text-align: center;
+            border-radius: 10px;
+            position: relative; 
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            filter: brightness(103%);
+            box-shadow: 2px 2px 7px 0px rgba(146, 145, 145, 0.4);
+            .article_topimg {   
+                a {
+                    display: block;
+                    &:hover {
+                        filter: brightness(90%);
+                    } 
+                    img {   
+                        border-radius: 7px 7px 0px 0px;
+                        height: 230px;
+                        max-width: 100%;
+                        object-fit: cover;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+            }
+            .article_word_box {
+                margin: 0px 7px 0px 7px;
+                min-height: 70px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                .article_word_box_left {
+                    border-radius: 13px;
+                    .article_face_type_category {
+                        height: 65px;
+                        width: 25px;
+                        padding: 20px 50px 10px 30px;
+                        .face_type_box {
+                            display: flex;
+                            border-radius: 50%;                    
+                            margin: 0px;
+                            width: 100px;
+                            .condition {   
+                                font-family: 'M PLUS Rounded 1c', sans-serif;
+                                color: $font-color;
+                                margin: 0;
+                                margin: 10px 11px 0px 8px;
+                                font-weight: 700;
+                                letter-spacing: 0.01em;
+                                font-size: 17px;
+                                span {
+                                    font-size: 32px;
+                                }
+                            }
+                            span {
+                                display: block;
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+                .article_word_box_right {
+                    margin: 0px 0px 0px 7px;
+                    .article_title {   
+                        margin: 0px 9px 0px 8px;
+                        width: 280px;
+                        height: 40px;
+                        .title_name {
+                            a {
+                                height: 32px;
+                                font-family: 'M PLUS Rounded 1c', sans-serif;
+                                margin: 10px 0px 10px 0px;
+                                max-width: 200px;
+                                color: $font-color;
+                                line-height: 1.5em;
+                                font-size: 18.5px;
+                                font-weight: 700;
+                                display: block;    
+                                text-decoration: none;
+                                text-align: justify;
+                                text-overflow: ellipsis;
+                                letter-spacing: -0.04em;
+                                z-index: 1;
+                            }
+                        }        
+                    }
+                    .artcle_user_info {
+                        display: flex;
+                        margin: 25px 0px 0px 0px;
+                        height: 37px;
+                        .user_info_face_img {
+                            margin: 0px 0px 0px 5px;
+                            span {
+                                font-size: 41px;
+                                color: $gray-color;
+                            }
+                        }
+                        .user_box {
+                            margin: 2px 0px 0px 5px;
+                            .user_box_top_name {
+                                display: flex;
+                                .user_name {
+                                    display: flex;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                                    text-align: left;
+                                    color: $third-font-color;
+                                    letter-spacing: 0.02em;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin: 0px 3px 0px 0px;
+                                }
+                                .user_job_name {
+                                    background: $accent-color;
+                                    border-radius: 10px;
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                                    font-size: 11px;
+                                    padding: 2px 7px 2px 7px;
+                                    color: #fafcfb;
+                                    margin: 2px 0px 0px 0px;
+                                }
+
+                            }
+                            .user_box_top_time {
+                                .user_create_time {
+                                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                                    text-align: left;
+                                    color: $third-font-color;
+                                    letter-spacing: 0.01em;
+                                    font-size: 11px;
+                                    font-weight: 400;
+                                    margin: 3px 0px 0px 0px;
+                                    span {
+                                        font-size: 14px;
+                                        margin: 0px 0px 0px 0px;
+                                    }
+                                }
+                            }                                
+                        }  
+                    }
+                }
+                
+            }
+        }
+    }
+}

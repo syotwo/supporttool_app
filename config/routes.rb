@@ -18,7 +18,11 @@ Rails.application.routes.draw do
     resources :likes, only: %i[create destroy]
   end
 
-  resources :users, only: %i[index show new create]
+  resources :users, only: %i[index show new create] do
+    member do
+      get :favorites
+    end
+  end
 
   # resources :favorites, only: %i[create destroy]
   # resources :favorites do

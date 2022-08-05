@@ -4,60 +4,35 @@ container コンテンツを囲むボックス
 ラッパー(wrapper)の中にコンテナ(container)が入っているイメージ
 -->
 
-<%= render 'layouts/navbar' %>
 <% if logged_in? %>
   <div class= toppage_login>
     <% if logged_in? %>
+      <!--
       <%= search_form_for @search do |f| %>
         <%= f.search_field :list_name_cont, placeholder: "お悩みはなんですか?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>
       <% end %>
+      -->
     <% end %>
-
-    <p class="article_index_category_name">人気のセルフケア</p>
-    <div class="article_index">
-      <ul class="article_index_wrap">
-        <% @item_lists.each do |item_list| %>
-          <li>
-            <div class="article_topimg">
-              <% if item_list.image? %>
-                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
-              <% else %>
-                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-              <% end %>
-            </div>
-            <div class="article_word_box">
-              <div class="article_word_box_left">
-              </div>
-              <div class="article_word_box_right">
-                <div class="article_title">
-                  <div class="title_name">
-                    <%= link_to item_list.list_name , item_list_path(item_list) %>
-                  </div>    
-                </div> 
-                <div class="artcle_user_info">
-                  <div class="user_box">
-                    <div class="user_box_top_name">
-                        <div class="user_name"><span><%= item_list.user.name %></span></div>
-                        <div class="user_job_name">WEB DESIGNER</div>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-            </div>   
-          </li>
+    <div class="top_select_category">
+      <div class="category_name">
+        <% @categories.each do |category| %>
+          <%= link_to category.name, root_path(category_id: category.id) %>
         <% end %>
-      </ul> 
+      </div>
     </div>
+    <%= render 'layouts/article_index' %>
   </div>
+  
 <% else %>
   <div class="toppage_logout">
     <div class="logout_image">
+      <p class="top_first_advertise">&#x1f5a5;webクリエイター&#x1f58c;webデザイナー&#x2328;エンジニア&#x1f3b9;音楽クリエイター&#x1f646;デジタル疲れの方に</p>
       <div class ="logout_top_left_word">
-      <h1 class="top">クリエイター専用<br>ステレス軽減<br>メモノート<br><span class= top_word_bottom></span></h1>
-        <p class="middle"jio>サクサク書けて、落ち着く<br>ストレスフリーな自分になる</p>
+      <h1 class="top">Mind Freee<span class= top_word_bottom></span></h1>
+        <p class="middle">デジタル環境に身を置く人の<br>心と体をケア<br>デジタル疲れ・ケア習慣化</p>
         <div class="box_login">
           <div class="test_login">
             <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -73,29 +48,73 @@ container コンテンツを囲むボックス
       </div>
     </div>
 
-    <div class="lp">
+    <figure class="PageAccentWave"> 
+      <svg class="top_first_wave_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,256L120,240C240,224,480,192,720,197.3C960,203,1200,245,1320,266.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    </figure>
+
+    <div class="lp">   
       <div class="user_qa_health">
         <h1>こんなことはありませんか？</h1>
         <div class="user_qa_wrap">
-          <p>知らぬ間にストレスを抱えがち</p>
-          <p>最近なんだか心が乱れがち</p>
-          <p>作業に集中できない</p>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+            <p>長時間パソコン作業で動かない腰が痛い</p>
+          </div>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+            <p>スマホ、パソコンによる眼精疲労</p>
+          </div>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+            <p>デスクワーク、リモートワークの疲労が</p>
+          </div>
         </div>
       </div>
       <div class="user_benefit">
         <h1>得られるメリット</h1>
+        <div class="user_benefit_wrap">
+          <div class="user_benefit_img"></div>
+          <p>コーピングリストから自分にあったストレス対処方をすぐに試せる<br>*ストレスコーピングとは、ストレスに対応する技術のことを言います</p>
+          <div class="user_benefit_img"></div>
+          <p>デジタル環境に身をおく人に特化したストレスフリーになるコーピングリスト</p>
+          <div class="user_benefit_img"></div>
+          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
+        </div>
+      </div>
+      <div class="user_qa_health">
+        <h1>ストレスフリーを実践してみる</h1>
         <div class="user_qa_wrap">
-          <p>毎日使うことで、メンタルが少しずつ確実に強化されていく。</p>
-          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
-          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+          </div>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+          </div>
+          <div class="user_qa_box">
+            <div class="qa_img"></div>
+          </div>
         </div>
       </div>
       <div class="user_explain_coping">
         <h1>ストレスコーピングとは</h1>
-        <div class="user_qa_wrap">
+        <div class="user_explain_coping_wrap">
+          <div class="user_explain_coping_img"></div>
           <p>ストレスコーピング とは、、、</p>
+          <div class="user_explain_coping_img"></div>
           <p>ストレスコーピング とは、、、</p>
+          <div class="user_explain_coping_img"></div>
           <p>ストレスコーピング とは、、、</p>
+        </div>
+      </div>
+      <div class="user_action">
+        <h1>さあCleanUp mindでストレスフリーなデジタルライフを送りましょう　ユーザーアクション</h1>
+        <div class="user_action_wrap">
+          <div class="user_action_img"></div>
+          <p>ストレスフリーなデジタルライフを送りましょう</p>
+          <div class="user_action_img"></div>
+          <p>ストレスフリーなデジタルライフを送りましょう</p>
+          <div class="user_action_img"></div>
+          <p>ストレスフリーなデジタルライフを送りましょう</p>
         </div>
       </div>
     </div>

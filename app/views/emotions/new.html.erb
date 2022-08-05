@@ -1,5 +1,5 @@
 <div class="emotion_new">
-  <h1>Daily Checker</h1>
+  <h1>感情の記録</h1>
   <%= form_with(model: @emotion, local: true) do |form| %>
     <% if logged_in? %>
       <div class="question_1">こんにちわ
@@ -42,8 +42,12 @@
     </div> 
     <%= form.submit 'check' ,{class: 'submit' } %>
   <% end %>
-  <p>＊Stress Trackerのユーザーデータは解析のみに利用し、これを当社で保持することはありません。</p>
+  <p>＊Stress Trackerのユーザーデータは解析のみに利用し、これを外部利用することはありません。</p>
   <div>
     <%= @sentiment %>
   </div>
+</div>
+
+<div class="emotion_change">
+  <h1>感情の変化</h1>
 </div>

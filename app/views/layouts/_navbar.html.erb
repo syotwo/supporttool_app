@@ -2,20 +2,20 @@
   <nav>
     <% if logged_in? %>
       <div class="nav_title_box">
-        <%= link_to users_path do %>
+        <%= link_to root_path do %>
           <div class="nav_img">
-            <%= image_tag "mycare_logo.png" %>
+            <%= image_tag "nav_logo.png" %>
           </div>
-          <p>CLEAN UP MIND</p>
+          <p>Mind Freee. <span>いまから出来る.気づくデジタル疲れ解消</span></p>
         <% end %>
       </div>
     <% else %>
       <div class="nav_title_box">
         <%= link_to root_path do %>
           <div class="nav_img">
-            <%= image_tag "mycare_logo.png" %>
+            <%= image_tag "nav_logo.png" %>
           </div>
-          <p>CLEAN UP MIND</p>
+          <p>Mind Freee. <span>いまから出来る.気づくデジタル疲れ解消</span></p>
         <% end %>
       </div>
     <% end %>

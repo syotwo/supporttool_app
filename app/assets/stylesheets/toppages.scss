@@ -4,7 +4,6 @@
 @import "_variables";
 
 .toppage_login {
-    padding: 105px 0px 100px 0px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     .face_box {
         display: flex;
@@ -72,6 +71,26 @@
             }
         }
     }
+    .top_select_category {
+        .category_name {
+            font-size: 19px;
+            margin: 50px 40px 45px;
+            a {
+                color: $main-dark-font-color;
+                text-decoration: none;
+                margin: 0px 0px;
+                padding: 12px 30px; 
+                &:hover {  
+                    border-bottom: 2px solid $main-dark-sub-font-color;
+                }  
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }  
+        }
+    }
+   
+    
     .article_index_category_name {
         font-size: 35px;
         font-weight: 600;
@@ -81,184 +100,24 @@
         display: flex;
         width: 860px;
     }
-    .article_index {
-        padding: 0px 40px 0px 40px;
-        font-family: 'M PLUS Rounded 1c', sans-serif;
-        margin: 0px auto;
-        display: flex;
-        width: 860px;
-        ul.article_index_wrap {
-            padding: 0px 0px 20px 0px;
-            margin: 0px auto;
-            list-style: none;
-            display: flex;
-            flex-wrap:wrap;
-            justify-content: space-between;
-            -webkit-box-align: start;
-            -ms-flex-align: start;
-            align-items: flex-start;
-            &::after {
-                display: block;
-                content:"";
-                width: 300px;
-                }
-            li {
-                width: 270px;
-                margin: 0px 0px 45px 0px; 
-                padding: 0px 0px 20px; 
-                text-align: center;
-                border-radius: 10px;
-                position: relative; 
-                font-family: 'M PLUS Rounded 1c', sans-serif;
-                filter: brightness(103%);
-                box-shadow: 2px 2px 7px 0px rgba(146, 145, 145, 0.4);
-                .article_topimg {   
-                    a {
-                        display: block;
-                        &:hover {
-                            filter: brightness(90%);
-                          
-                        } 
-                        img {  
-                            filter: saturate(120%);
-                            border-radius: 7px 7px 0px 0px;
-                            height: 230px;
-                            max-width: 100%;
-                            object-fit: cover;
-                            margin: 0px 0px 0px 0px;
-                        }
-                    }
-                }
-                .article_word_box {
-                    margin: 0px 7px 0px 7px;
-                    min-height: 70px;
-                    font-family: 'M PLUS Rounded 1c', sans-serif;
-                    .article_word_box_left {
-                        border-radius: 13px;
-                        .article_face_type_category {
-                            height: 65px;
-                            width: 25px;
-                            padding: 20px 50px 10px 30px;
-                            .face_type_box {
-                                display: flex;
-                                border-radius: 50%;                    
-                                margin: 0px;
-                                width: 100px;
-                                .condition {   
-                                    font-family: 'M PLUS Rounded 1c', sans-serif;
-                                    color: $font-color;
-                                    margin: 0;
-                                    margin: 10px 11px 0px 8px;
-                                    font-weight: 700;
-                                    letter-spacing: 0.01em;
-                                    font-size: 17px;
-                                    span {
-                                        font-size: 32px;
-                                    }
-                                }
-                                span {
-                                    display: block;
-                                    font-size: 42px;
-                                }
-                            }
-                        }
-                    }
-                    .article_word_box_right {
-                        margin: 0px 0px 0px 7px;
-                        .article_title {   
-                            margin: 0px 9px 0px 8px;
-                            width: 280px;
-                            height: 40px;
-                            .title_name {
-                                a {
-                                    height: 32px;
-                                    font-family: 'M PLUS Rounded 1c', sans-serif;
-                                    margin: 10px 0px 10px 0px;
-                                    max-width: 200px;
-                                    color: $font-color;
-                                    line-height: 1.5em;
-                                    font-size: 18.5px;
-                                    font-weight: 700;
-                                    display: block;    
-                                    text-decoration: none;
-                                    text-align: justify;
-                                    text-overflow: ellipsis;
-                                    letter-spacing: -0.04em;
-                                    z-index: 1;
-                                }
-                            }        
-                        }
-                        .artcle_user_info {
-                            display: flex;
-                            margin: 25px 0px 0px 0px;
-                            height: 37px;
-                            .user_info_face_img {
-                                margin: 0px 0px 0px 5px;
-                                span {
-                                    font-size: 41px;
-                                    color: $gray-color;
-                                }
-                            }
-                            .user_box {
-                                margin: 2px 0px 0px 5px;
-                                .user_box_top_name {
-                                    display: flex;
-                                    .user_name {
-                                        display: flex;
-                                        font-family: 'M PLUS Rounded 1c', sans-serif;
-                                        text-align: left;
-                                        color: $third-font-color;
-                                        letter-spacing: 0.02em;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin: 0px 3px 0px 0px;
-                                    }
-                                    .user_job_name {
-                                        background: $accent-color;
-                                        border-radius: 10px;
-                                        font-family: 'M PLUS Rounded 1c', sans-serif;
-                                        font-size: 11px;
-                                        padding: 2px 7px 2px 7px;
-                                        color: #fafcfb;
-                                        margin: 2px 0px 0px 0px;
-                                    }
-
-                                }
-                                .user_box_top_time {
-                                    .user_create_time {
-                                        font-family: 'M PLUS Rounded 1c', sans-serif;
-                                        text-align: left;
-                                        color: $third-font-color;
-                                        letter-spacing: 0.01em;
-                                        font-size: 11px;
-                                        font-weight: 400;
-                                        margin: 3px 0px 0px 0px;
-                                        span {
-                                            font-size: 14px;
-                                            margin: 0px 0px 0px 0px;
-                                        }
-                                    }
-                                }                                
-                            }  
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
+    
 }   
 
 .toppage_logout {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     .logout_image {
-        height: 480px;
-        padding: 45px 85px 40px 85px;
-        margin: 0px auto;
-        display: flex;
+        height: 500px;
+        padding: 0px 0px 40px 0px;
+        margin: 0px 0px;
         background: $base-color;
+        position: relative;
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
+        .top_first_advertise {
+            background-color: rgb(48, 209, 250);
+            text-align: center;
+            margin: 0;
+        }
         .logout_top_left_word {
             text-align: left;
             p.test_user {
@@ -269,10 +128,11 @@
             } 
             h1 {
                 font-family: 'Noto Sans JP', sans-serif;
-                font-size: 49px;
-                margin: 30px 0px 20px 0px;
+                font-size: 50px;
+                margin: 70px 0px 22px;
+                text-align: center;
                 color: $main-dark-font-color;
-                letter-spacing: -0.15em;
+                letter-spacing: 0.001em;
                 white-space: nowrap;
                 line-height: 1.5em;
                 font-weight: 900;
@@ -285,9 +145,10 @@
             }
             p.middle {
                 font-family: 'M PLUS Rounded 1c', sans-serif;
-                font-size: 18px;
+                font-size: 17px;
                 text-decoration: none;
-                margin: 8px 0px 0px 0px;
+                margin: 8px 0px;
+                text-align: center;
                 color: $font-color;
                 font-weight: 200;
                 letter-spacing: -0.05em;
@@ -305,6 +166,7 @@
             .box_login {
                 .test_login {
                     form {
+                        text-align: center;
                         &:hover {
                             filter: brightness(110%);
                         } 
@@ -312,13 +174,13 @@
                             font-family: 'M PLUS Rounded 1c', sans-serif;
                             color: $submit-font-color;
                             background: $accent-color;
-                            width: 350px;
+                            width: 300px;
                             height: 20;
-                            font-size: 19px;
+                            font-size: 17px;
                             font-weight: 600;
                             border: none;
                             border-radius: 40px;
-                            padding: 15px 0px 15px 15px; 
+                            padding: 12px 0px 15px 12px; 
                             margin: 15px 0px;
                         }
                     }
@@ -336,11 +198,24 @@
                 right: 120px;
             }
         }
+        
     }  
+    .PageAccentWave {
+        position: relative;
+        margin: 0;
+        .top_first_wave_svg {
+            fill: #414851;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    
     .lp {
-        .user_benefit, .user_qa_health, .user_explain_coping {
-            background-color: $main-color;
-            padding: 50px 20px;
+        .user_benefit, .user_qa_health, .user_explain_coping, .user_explain_coping, .user_action{
+            background: $main-color;
+            padding: 50px 75px;
             h1 {
                 text-align: center;
                 padding: 20px 0px;
@@ -349,25 +224,79 @@
             }
             .user_qa_wrap {
                 display: flex;
+                justify-content: center;
+                .user_qa_box {
+                    width: 220px;
+                    margin: 0px 10px;
+                    .qa_img {
+                        height: 180px;
+                        background-color: #fff;
+                        border-radius: 20px;
+                    }
+                    p {
+                        text-align: center;
+                        flex: 1;
+                        padding: 20px;
+                        margin: 0px 5px;
+                        border-radius: 4px;
+                        color: $main-white-font-color;
+                        font-weight: 500;
+                    }
+                }
+                
+            }
+        }
+        .user_benefit {
+            background: $base_color;
+            margin: 0px 0px;
+            h1 {
+                color: $main-dark-font-color;
+            }
+            .user_benefit_wrap {
+                display: block;
+                .user_benefit_img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: #fff; 
+                }
                 p {
-                    flex: 1;
-                    padding: 20px;
-                    margin: 30px 5px;
-                    border-radius: 4px;
+                    text-align: center;
+                    color: $main-dark-font-color;
+                }
+            }
+        }
+        .user_explain_coping {
+            margin: 0px 0px;
+            background: $main-color;
+            .user_explain_coping_wrap{
+                .user_explain_coping_img {
+                    height: 180px;
+                        background-color: #fff;
+                        border-radius: 20px;
+                }
+                p {
                     color: $main-white-font-color;
                 }
             }
         }
-        .user_benefit {
-            background-color: $base_color;
+        .user_action {
+            background: $base_color;
+            margin: 0px 0px;
             h1 {
                 color: $main-dark-font-color;
             }
-            .user_qa_wrap {
+            .user_action_wrap {
+                display: block;
+                .user_action_img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: #fff; 
+                }
                 p {
-
-                    color: $main-dark-subfont-color;
-
+                    text-align: center;
+                    color: $main-dark-font-color;
                 }
             }
         }
@@ -744,8 +673,7 @@
                                 }                                
                             }  
                         }
-                    }
-                    
+                    }  
                 }
             }
         }
@@ -773,27 +701,32 @@
         }
         .article_index {
             width: 285px;
-            margin: 0px 30px;
+            margin: 0px 0px;
             padding: 0px 0px 0px 0px;
         }
     }
     .toppage_logout {
         .logout_image {
+            height: 540px;
             padding: 0;
-            margin: 30px 10px;
+            margin: 0px 0px;
             display: block;
-            height: 320px;
+            .top_first_advertise {
+                text-align: center;
+            }
             .logout_top_left_word {
+                margin: 75px 0px;
                 h1.top {
-                    font-size: 30px;
+                    width: 160px;
+                    font-size: 38px;
                     white-space: initial; 
-                    margin: 0px 0px 15px 0px;
+                    margin: 0px auto;
                     color: $main-dark-font-color;
                 }
                 p.middle {
                     font-size: 15px;
-                    margin: 0px 0px 15px 0px;
-                    color: $font-color;
+                    margin: 15px 0px;
+                    color: $main-dark-sub-font-color;
                 }
                 .box_login {
                     .test_login {
@@ -807,7 +740,7 @@
                             input {
                                 display: block;
                                 width: 300px;
-                                margin: 0px;
+                                margin: 0px auto;
                             }
                         }
                     }

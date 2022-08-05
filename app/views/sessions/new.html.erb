@@ -1,4 +1,3 @@
-<%= render 'layouts/navbar' %>
 <div class=loginform>
   <h1>Login</h1>
   <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
@@ -8,6 +7,6 @@
     <div>
       <%= f.password_field :password, placeholder: "password" %>
     </div>
-    <%= f.submit 'Log in' ,{class: 'login_submit' } %>
+    <%= f.submit 'ログイン' ,{class: 'login_submit' } %>
   <% end %>
 </div>
