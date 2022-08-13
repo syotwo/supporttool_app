@@ -1,24 +1,86 @@
-<%= form_with(model: @item_list, local: true) do |f| %>
-    <div class="item_type_wrap">
-        <div class="add_number">
-            <div class="number1">①</div>⋯⋯⋯
-            <div class="number1">②</div>⋯⋯⋯
-            <div class="number1">③</div>
-        </div>
-        <!--
-        <%= f.label :list_name, '感じたストレスは？＊＊＊SQL追加！！＊＊＊' ,{class: 'item_list_label_name'} %>
-        <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
-        -->
-        <div id= 'Form1'>
-            <%= f.label :list_name, 'やってみたこと' ,{class: 'item_list_label_name'} %>
-            <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
-        </div>
-        <div class="btn-_box">
-            <button type="button" id="Next1">Next</button>
-        </div>
+
+<div class="form_container">
+    <%= form_with(model: @item_list, local: true) do |f| %>
+        <div class="item_type_wrap">
+            <div class="step_row">
+                <div class="step_col1">1</div>
+                <div class="step_col2">2</div>
+                <div class="step_col3">3</div>
+            </div>
         
-         <div id= 'Form2'>
-            <div class="item_type_wrap">
+            <div id= 'Form1'>
+                <%= f.label :list_name, '感じたストレスは？＊＊＊SQL追加！！＊＊＊' ,{class: 'item_list_label_name'} %>
+                <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
+
+                <div class="btn-_box">
+                    <button type="button" id="Next1">Next</button>
+                </div>
+            </div>
+            
+            <div id= 'Form2'>
+                <%= f.label :list_name, 'やってみたこと' ,{class: 'item_list_label_name'} %>
+                <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
+
+                <div class="form_categories">
+                <%= f.label :category, 'カテゴリ' %>
+                <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
+                    <%= category.label do %>
+                        <%= category.check_box %>
+                        <%= category.text %>
+                    <% end %>
+                <% end %>
+
+                <div class="btn_box">
+                    <button type="button" id="Back1">Back</button>
+                    <button type="button" id="Next2">Next</button>   
+                </div>
+            </div>
+
+            <div id= 'Form3'>
+                <div class="item_type_wrap">
+                <p>どんな気分ですか？？</p>
+                <div class="item_type_select_box">
+                    <div class="item_type_select_box_inner">
+                        <%= f.radio_button 'list_item_type', '1' %>
+                        <span>&#x1f606;</span>
+                        <%= f.label :list_item_type, 'とても良い', value: 1 %>
+                    </div>
+                    <div class="item_type_select_box_inner">
+                        <%= f.radio_button 'list_item_type', "2" %>
+                        <span>&#x1f600;</span>
+                        <%= f.label :list_item_type, '良い', value: 2 %>
+                    </div>
+                    <div class="item_type_select_box_inner">
+                        <%= f.radio_button 'list_item_type', '3' %>
+                        <span>&#x1f610;</span>
+                        <%= f.label :list_item_type, '悪い', value: 3 %>
+                    </div>
+                    <div class="item_type_select_box_inner">    
+                        <%= f.radio_button 'list_item_type', '4' %>
+                        <span>&#x1f605;</span>
+                        <%= f.label :list_item_type, '悪い', value: 4 %>
+                    </div>
+                    <div class="item_type_select_box_inner">
+                        <%= f.radio_button 'list_item_type', '5' %>
+                        <span>&#x1f631;</span>
+                        <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
+                    </div>
+                </div> 
+                <button type="button" id="Back2">Back</button>
+                <button type="button" id="Next3">Next</button> 
+            </div>
+            <div id= 'Form4'>
+                <%= f.label :list_description , '感想、説明などを書いてみよう' ,{class: 'item_list_label_name'} %>
+                <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
+                <button type="button" id="Back3">Back</button>
+                <div class= submit><%= f.submit '投稿',{class: 'item_list_submit' } %></div>      
+            </div>
+        </div>
+
+            <%= javascript_pack_tag 'form_itemlist' %>
+            
+            
+            <!-- 
             <p>どんな気分ですか？？</p>
             <div class="item_type_select_box">
                 <div class="item_type_select_box_inner">
@@ -47,72 +109,26 @@
                     <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
                 </div>
             </div>
+            
         </div>
-
-        <div class="btn-_box">
-            <button type="button">Back</button>
-            <div class= submit><%= f.submit '投稿',{class: 'item_list_submit' } %></div>   
-        </div>
+    
         
-        <%= javascript_pack_tag 'form_itemlist' %>
-           
-        </div>
-        <!-- 
-        <p>どんな気分ですか？？</p>
-        <div class="item_type_select_box">
-            <div class="item_type_select_box_inner">
-                <%= f.radio_button 'list_item_type', '1' %>
-                <span>&#x1f606;</span>
-                <%= f.label :list_item_type, 'とても良い', value: 1 %>
-            </div>
-            <div class="item_type_select_box_inner">
-                <%= f.radio_button 'list_item_type', "2" %>
-                <span>&#x1f600;</span>
-                <%= f.label :list_item_type, '良い', value: 2 %>
-            </div>
-            <div class="item_type_select_box_inner">
-                <%= f.radio_button 'list_item_type', '3' %>
-                <span>&#x1f610;</span>
-                <%= f.label :list_item_type, '悪い', value: 3 %>
-            </div>
-            <div class="item_type_select_box_inner">    
-                <%= f.radio_button 'list_item_type', '4' %>
-                <span>&#x1f605;</span>
-                <%= f.label :list_item_type, '悪い', value: 4 %>
-            </div>
-            <div class="item_type_select_box_inner">
-                <%= f.radio_button 'list_item_type', '5' %>
-                <span>&#x1f631;</span>
-                <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
-            </div>
-        </div>
         
-    </div>
- 
-    
-    <%= f.label :list_description , '感想、説明などを書いてみよう' ,{class: 'item_list_label_name'} %>
-    <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
-    
-    <div class="form_categories">
-        <%= f.label :category, 'カテゴリ' %>
-        <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
-        <%= category.label do %>
-            <%= category.check_box %>
-            <%= category.text %>
-        <% end %>
-        <% end %>
-    </div>
+        
+        
 
-    <div class="wrap">  
-        <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
-        <%= f.label :image, "イメージ画像", class: "img_name" %>
-        <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
-    </div>
-    -->
-    
+        <div class="wrap">  
+            <p class= img_label><%= f.label :image, image_tag("default_mini.png"), class: "addproducts_img_label" %></p>
+            <%= f.label :image, "イメージ画像", class: "img_name" %>
+            <%= f.file_field :image, class: "fileInput",style: "display:none;" %>   
+        </div>
+        -->
+        
+        
+    <% end %>
+</div>
 
-    
-<% end %>
+
 
 
 
