@@ -12,8 +12,8 @@
                 <%= f.label :list_name, '感じたストレスは？＊＊＊SQL追加！！＊＊＊' ,{class: 'item_list_label_name'} %>
                 <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
 
-                <div class="btn-_box">
-                    <button type="button" id="Next1">Next</button>
+                <div class="btn_box">
+                    <button type="button" id="Next1"><span class="material-symbols-outlined">arrow_right_alt</span></button>
                 </div>
             </div>
             
@@ -22,17 +22,18 @@
                 <%= f.text_field :list_name, placeholder: "Strong Mind ,Creative Booster ,Reset Body ,Deep Sleep" %>
 
                 <div class="form_categories">
-                <%= f.label :category, 'カテゴリ' %>
-                <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
-                    <%= category.label do %>
-                        <%= category.check_box %>
-                        <%= category.text %>
+                    <%= f.label :category, 'カテゴリ' %>
+                    <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
+                        <%= category.label do %>
+                            <%= category.check_box %>
+                            <%= category.text %>
+                        <% end %>
                     <% end %>
-                <% end %>
+                </div>
 
                 <div class="btn_box">
-                    <button type="button" id="Back1">Back</button>
-                    <button type="button" id="Next2">Next</button>   
+                    <button type="button" id="Back1"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <button type="button" id="Next2"><span class="material-symbols-outlined">arrow_right_alt</span></button>   
                 </div>
             </div>
 
@@ -66,14 +67,20 @@
                         <%= f.label :list_item_type, 'とても悪い', value: 5 %>    
                     </div>
                 </div> 
-                <button type="button" id="Back2">Back</button>
-                <button type="button" id="Next3">Next</button> 
+                <div class="btn_box">
+                    <button type="button" id="Back2"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <button type="button" id="Next3"><span class="material-symbols-outlined">arrow_right_alt</span></button> 
+                </div>
             </div>
             <div id= 'Form4'>
                 <%= f.label :list_description , '感想、説明などを書いてみよう' ,{class: 'item_list_label_name'} %>
                 <%= f.text_area :list_description , placeholder: "sleep before 30 minitute" %>
-                <button type="button" id="Back3">Back</button>
-                <div class= submit><%= f.submit '投稿',{class: 'item_list_submit' } %></div>      
+                <div class="btn_box">
+                    <button type="button" id="Back3"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <%= button_tag type: :submit, class: "item_list_submit" do %>
+                        <span class="material-symbols-outlined">done</span>
+                    <% end %>    
+                </div>  
             </div>
         </div>
 
