@@ -20,4 +20,8 @@
     height: 100%;
     margin: 0px;
     background: $base-color;
+    p, a, label ,input {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        transform:rotateZ(0.03deg);
+    }
 }

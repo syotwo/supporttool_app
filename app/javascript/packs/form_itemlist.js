@@ -35,7 +35,7 @@ $(function() {
     });
     $('.step_col1').css( 
       "background-image", 
-      "linear-gradient(to right, #5076b1, #5076b1)" 
+      "linear-gradient(to right, #15A2D5, #15A2D5)" 
     );
     $(".step_col1").css("color",step_before_color);
   });
@@ -69,7 +69,7 @@ $(function() {
     });
     $('.step_col2').css( 
       "background-image", 
-      "linear-gradient(to right, #5076b1, #5076b1)"  
+      "linear-gradient(to right, #15A2D5, #15A2D5)"  
     );
     $(".step_col2").css("color",step_before_color);
   });
@@ -103,7 +103,7 @@ $(function() {
     });
     $('.step_col3').css( 
       "background-image", 
-      "linear-gradient(to right, #5076b1, #5076b1)"  
+      "linear-gradient(to right, #15A2D5, #15A2D5)"  
     );
     $(".step_col3").css("color",step_before_color);
   });

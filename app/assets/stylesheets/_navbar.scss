@@ -13,12 +13,14 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px 0px 10px;
     margin: 0px 0px 0px 0px;
+    ul.menu_left {
+        display: flex;  
     .nav_title_box a {
         display: flex;
         text-decoration: none;
-        margin: 15px 0px; 
+        margin: 5px 0px; 
         filter: brightness(104%);
         position: relative;
         right: 1px;
@@ -36,9 +38,10 @@ nav {
             }
         }
         p {
-            font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            transform:rotateZ(0.03deg);
             line-height: 1.5em;
-            font-weight: 500;
+            font-weight: bold;
             font-size: 25px; 
             letter-spacing: 0.5px;
             margin: auto 0px;
@@ -55,6 +58,23 @@ nav {
             }
         } 
     }
+    .nav_book {      
+        text-decoration: none;
+        margin: 7px 40px; 
+        li {
+            list-style: none;
+            a {
+                span {
+                    font-size: 35px;
+                    color: $main-dark-font-color;//非対応のブラウザでの文字色を設定
+                }
+                
+            }
+        }
+    }
+    
+        
+    }
     
     ul.menu_right {
         list-style-type: none;
@@ -63,37 +83,33 @@ nav {
         padding: 0;
         .plus_box {
             display: flex;
-            
             &:hover {
                 filter: brightness(110%);
                 transition: 0.1s;
               }
             li {
                 margin: 0px 10px 0px 0px;
-                a.plus {
-                    text-decoration: none;
-                    vertical-align: middle;
-                    display: inline-block;
-                    text-align: center;
-                    width: 35px;
-                    height: 35px;
-                    font-weight: 300;
-                    font-size: 25px;
-                    color: $submit-font-color;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    position:relative; 
-                    top: 2px; 
-                    left: 56px;
-                    border-radius: 40px 0px 0px 40px;
-                }
-                span {
-                    position:relative; 
-                    top: 10px; 
-                    left: 64px;
-                    color: $submit-font-color;
-                    font-size: 20px;
-                }
+                // a.plus {
+                //     font-family: 'M PLUS Rounded 1c', sans-serif;
+                //     transform:rotateZ(0.03deg);
+                //     text-decoration: none;
+                //     vertical-align: middle;
+                //     display: inline-block;
+                //     text-align: center;
+                //     width: 35px;
+                //     height: 35px;
+                //     font-weight: 300;
+                //     font-size: 25px;
+                //     color: $submit-font-color;
+                //     position:relative; 
+                //     top: 2px; 
+                //     left: 56px;
+                //     border-radius: 40px 0px 0px 40px;
+                // }
+               
                 .plus_itemlist {    
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                    transform:rotateZ(0.03deg);
                     background: $accent-color;
                     white-space: nowrap;
                     text-decoration: none;
@@ -104,11 +120,20 @@ nav {
                     font-size: 16px;
                     height: 35px;
                     margin: 3px 0px 0px 8px;
-                    padding: 0px 20px 3px 50px;
-                    line-height: 2.4em;
+                    padding: 0px 20px 3px 30px;
+                    // line-height: 2.4em;
                     letter-spacing: 0em;
                     border-radius: 40px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    span.material-symbols-outlined {
+                        position: relative;
+                        top: 6px;
+                    }
+                    span.plus_box_title {
+                        margin: 0px;
+                        line-height: 0.3;
+
+                    }
+                    
                 }
             }
         }
@@ -172,7 +197,7 @@ nav {
         li {
             list-style: none;
             a {
-                color: $main-color;
+                color: $main-dark-color;
                 span {
                     font-size: 41px;
                     margin: 0;
@@ -251,33 +276,43 @@ nav {
 @media screen and (max-width: 600px) {
     nav {
         display: flex;
-        flex-wrap: wrap;
+        
         padding: 0px;
         margin: 0px 20px 0px 10px;
         max-width: 100%;
         height: auto;
-        .nav_title_box {
-            a {
-                margin: 21px auto;  
-                .nav_img {
-                    img{
-                        width: 35px;
-                        height: 35px;
-                        margin: 0;
-                        margin: 0px 0px 0px 20px;
+
+        ul.menu_left {
+            padding: 0;
+            .nav_title_box {
+                a {
+                    margin: 10px auto;  
+                    .nav_img {
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            margin: 0;
+                            margin: 0px 0px 0px 20px;
+                        }
                     }
-                }
-                p {
-                    font-size: 25px;
-                    letter-spacing: -0.02em;
-                    line-height: 1.13;
-                    span {
-                        
-                        font-size: 16px;
+                    p {
+                        font-size: 25px;
+                        letter-spacing: -0.02em;
+                        line-height: 1.13;
+                        span {
+                            
+                            font-size: 16px;
+                        }
                     }
                 }
             }
+            .nav_book {
+                display: none;
+            }
+
         }
+        
+        
         ul.menu_right{
             margin: 21px 0px ;
             .plus_box {
@@ -298,6 +333,7 @@ nav {
                 height: 35px;
             }
             .plus_box {
+                display: none;
                 li {
                     a.plus_itemlist {
                         font-size: 13px;

@@ -1,10 +1,12 @@
   
-$base-color: linear-gradient(to bottom, #DAE2FC, #FCFAFA);
-$main-color: #414851;
+// 配色
+$base-color: linear-gradient(to bottom, #dde4fa, #f8f9fc);
+$main-color: #fcfdfd;
 $accent-color: linear-gradient(to right, #16A2D5, #1EC68C);
 $sub-accent-color: #16A2D5;
 
-$submit-color:#242525;
+
+$submit-color:#4F76B1;
 $submit-sub-color:#61c514;
 $card-color: #f5faff;
 $submit-card-color: #f6f8fa;
@@ -13,17 +15,25 @@ $complementary-color:#f1824a;
 $gray-color:#b1b1b1;
 $type-back-color:#dfe5eb;
 
+// 背景色
+$main-white-color: #fcfcfc;
+$main-dark-color: #4F76B1;
+
+// メイン文字色
 $main-white-font-color: #f3f7f0;
 $main-dark-font-color: #172336;
-$main-dark-sub-font-color: #5076b1;
+$main-dark-sub-font-color: #767A86;
+$main-dark-sub-font-color: #3c6199;
 
+
+// その他、文字色
 $navfont-color: #5ea584;
 $main-font-color: #5ea584;
 $font-color: #474745;
 $subfont-color: #2D4669;
 $third-font-color: #8b8b8a;
 $submit-font-color: #f3f7f0;
-$gray-font-color: #1582db;
+$gray-font-color: #767a86;
 $card-font-color: #eff1f3;
 $text-font-color: #1d1f1d;
 $price-font-color: #53535e;
@@ -31,5 +41,15 @@ $item-list-form-condition-font-color: rgb(247, 245, 245);
 
 $list-category-underline-color:#a09ebe;
 $hover-color:#e9e9ec;
+
+
+
+// チェックインフォーム色
+$mood_select_hover-color:#a8cddb;
+
+// グラフ
+$weekly_condition_charts: #f1824a;
+
+
 
 

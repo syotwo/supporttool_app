@@ -14,14 +14,14 @@ class EmotionsController < ApplicationController
 
   def create
     emotion_api
-    # @emotion = current_user.emotions.new(emotion_params)
+    @emotion = current_user.emotions.new(emotion_params)
     redirect_to emotions_path(@sentiment)
-    # if @emotion.save
-    #   flash[:success] = 'sheetを投稿しました'
+    if @emotion.save
+      flash[:success] = 'チェックインが完了しました'
 
-    # else
-    #   flash.now[:danger] = 'sheetの投稿に失敗しました。'
-    # end
+    else
+      flash.now[:danger] = 'チェックインに失敗しました。'
+    end
   end
 
   def destroy; end
@@ -29,7 +29,7 @@ class EmotionsController < ApplicationController
   private
 
   def emotion_params
-    params.require(:emotion).permit({ mood: [] })
+    params.require(:emotion).permit(:mood)
   end
 
   def emotion_api

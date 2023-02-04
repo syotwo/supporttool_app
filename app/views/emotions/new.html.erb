@@ -1,53 +1,112 @@
 <div class="emotion_new">
-  <h1>感情の記録</h1>
+　<h1><%= Time.now.strftime("%m/%d(#{%w(日 月 火 水 木 金 土)[Time.now.wday]})") %>のモーニングチェック</h1>
+
   <%= form_with(model: @emotion, local: true) do |form| %>
     <% if logged_in? %>
-      <div class="question_1">こんにちわ
-        <%= current_user.name %>さん
-      </div>
-      <div class="question_2">今の気分はいかがですか？ </div> 
+      <p class="emotion_first_qa">おはようございます。<%= current_user.name %>さん<br>今朝の気分はいかがですか？</p>
     <% else %>
-      <div class="question_2">今の気分はいかがですか？ </div>
     <% end %>
-    
-    <div class="emotion_type_wrap">
-      <p>Condition</p>  
+
+　<%#　メモ
+  データベース設計において重要なのは、いかにして不整合を起こさないようにするかです。**
+  カラムは****ある瞬間の状態（ステータス）を表す名前とする****
+  *ある任意のタイミングの情報を管理するというDBの特性から考えたら当然では有ります*
+
+  朝チェック　テーブルconditionカラム名（以下５段階）プロパティmorning_mood
+  夜チェック　テーブルconditionカラム名（以下５段階）プロパティnight_mood　%>
+  
+    <% if current_user.emotions.where('created_at like?', Date.today) %>
+    有
+    <% else %>
+    ないです   
+    <% end %>
+
+    <div class="emotion_type_wrap"> 
+      <p class="name_select_morning_emotion">朝の気分・体調</p>
       <div class="emotion_select_box">
-        <div class="emotion_select_box_inner_type">
-          <input name="emotion[mood][]" type="checkbox" value="Very Good" />
-          <span>&#x1f606;</span>
-          <label for="" class= pleasure>Very Good</label>
-        </div>
-        <div class="emotion_select_box_inner_type">
-          <input name="emotion[mood][]" type="checkbox" value="Good" />
-          <span>&#x1f600;</span>
-          <label>Good</label>
-        </div>
-        <div class="emotion_select_box_inner_type">
-          <input name="emotion[mood][]" type="checkbox" value="Average" />
+        <%= form.radio_button :mood, "very_poor" %>
+        <label for="emotion_mood_very_poor">
+          <span>&#x1f631;</span>
+          <div class="mood_point">〜 20</div>
+        </label>
+        <%= form.radio_button :mood, "poor" %>
+        <label for="emotion_mood_poor">
+          <span>&#x1f605;</span>
+          <div class="mood_point">20 〜 40</div>
+        </label>
+        <%= form.radio_button :mood, "average" %>
+        <label for="emotion_mood_average">
           <span>&#x1f610;</span>
-          <label>Average</label>
+          <div class="mood_point">40 〜 60</div>
+        </label>
+        <%= form.radio_button :mood, "good" %>
+        <label for="emotion_mood_good">
+          <span>&#x1f600;</span>
+          <div class="mood_point">60 〜 80</div>
+        </label>
+        <%= form.radio_button :mood, "excellent" %>
+        <label for="emotion_mood_excellent">
+          <span>&#x1f606;</span>
+          <div class="mood_point">80 〜 100</div>
+        </label>
+
+        
+        <%# <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Very Poor" />
+          <span>&#x1f631;</span>
+          <label></label>
         </div>
         <div class="emotion_select_box_inner_type">
           <input name="emotion[mood][]" type="checkbox" value="Poor" />
           <span>&#x1f605;</span>
-          <label>Poor</label>
+          <label></label>
         </div>
         <div class="emotion_select_box_inner_type">
-          <input name="emotion[mood][]" type="checkbox" value="Very Poor" />
-          <span>&#x1f631;</span>
-          <label>Very Poor</label>
+          <input name="emotion[mood][]" type="checkbox" value="Average" />
+          <span>&#x1f610;</span>
+          <label></label>
         </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Good" />
+          <span>&#x1f600;</span>
+          <label></label>
+        </div>
+        <div class="emotion_select_box_inner_type">
+          <input name="emotion[mood][]" type="checkbox" value="Excellent" />
+          <span>&#x1f606;</span>
+          <label for="" class= pleasure></label>
+        </div>    %>
       </div>
     </div> 
-    <%= form.submit 'check' ,{class: 'submit' } %>
+    
+
+    <!--カラム追加する-->
+
+    <div class="rest_type_wrap">
+      <div class="name_box_select_night_smartphone">スマホ利用後の休憩 +-</div>
+      <div class="cheack_box_rest">
+        <%= form.radio_button :mood, "a" %>
+        <label for="">多い</label>
+        <%= form.radio_button :mood, "a" %>
+        <label for="">少ない</label>
+      </div>
+    </div>
+
+    <div class="before_sleep_type_wrap">
+      <div class="name_box_select_night_smartphone">寝る１時間前のスマホ +-</div>
+      <div class="cheack_box_before_sleep">
+        <%= form.radio_button :mood, "a" %>
+        <label for="">あり</label>
+        <%= form.radio_button :mood, "a" %>
+        <label for="">なし</label>
+      </div>
+    </div>
+    
+    <%= form.submit '完了する' ,{class: 'submit' } %>
+
   <% end %>
-  <p>＊Stress Trackerのユーザーデータは解析のみに利用し、これを外部利用することはありません。</p>
+  <%# <p>＊Stress Trackerのユーザーデータは解析のみに利用し、これを外部利用することはありません。</p> %>
   <div>
     <%= @sentiment %>
   </div>
-</div>
-
-<div class="emotion_change">
-  <h1>感情の変化</h1>
 </div>

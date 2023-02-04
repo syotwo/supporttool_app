@@ -1,7 +1,6 @@
 <div class= "item_list_show">
     <div class= "box">
             <div class= "item_list_name_wrap">
-                
                 <% if current_user == @item_list.user %>
                     <div class= "edit_item_list">
                         <%= link_to edit_item_list_path(@item_list) , { class: 'checker_submit' } do %>
@@ -45,6 +44,8 @@
             </div>
     </div>
 
+
+    <!-- 
     <div class="box-right">
         <div class="box-right-condition">                       
             <% if @item_list.list_item_type == "1" then %>
@@ -75,7 +76,7 @@
             <% end %>
         </div>
 
-        <!-- 
+       
         <% if current_user == @item_list.user %>
             <div class="addproducts">
                 <%= form_with(model: @item, url: item_list_items_path(@item_list), local: true) do |form| %>
@@ -94,14 +95,14 @@
             </div>
         <% else %>
         <% end %>
-        -->
-
     </div>
-    
-    <div class="recommend">あなたにオススメ</div>
+    -->
 
     <div class="user_favorite_item">
         <% if logged_in? %>
+            <% if current_user == @item_list.user %>
+
+            <% else %>
                     <% if current_user.already_favorited?(@item_list) %>
                             <%= link_to item_list_favorite_path(@item_list), method: :delete do %>
                                 <i class="fas fa-bookmark"></i>
@@ -111,6 +112,7 @@
                                 <i class="far fa-bookmark"></i>
                             <% end %>
                     <% end %>
+            <% end %>
         <% else %>
         <% end %>
          <!-- 
@@ -128,7 +130,6 @@
         <% else %>
         <% end %>
          -->
-
     </div>
 </div>
 

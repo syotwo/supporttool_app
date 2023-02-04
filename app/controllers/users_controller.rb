@@ -41,6 +41,7 @@ class UsersController < ApplicationController
     # redirect_to root_path unless current_user.id 
     favorites = Favorite.where(user_id: current_user.id).order(created_at: :desc).pluck(:item_list_id)
     @favorite_list = ItemList.find(favorites)  
+    @item_lists = current_user.item_lists.all
   end
 
   private

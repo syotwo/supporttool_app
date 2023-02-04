@@ -14,22 +14,25 @@
         color: $font-color;
         font-size: 27px;
         width: 250px;
-        margin: 0 auto;
+        margin: 0px auto;
     }
     .wrap_formhead {
-        display: flex;
         p {
             font-size: 23px;
             font-weight: bold;
             color: $font-color;
-            margin: 0px 0px 0px 170px;
+            margin: 0px auto;
             padding: 0px 0px 26px 0px;
             text-align: center;
-            height: 10px;
+            
         }
         .wrap_formhead_username {
             margin: 0px 0px 0px 5px;
         }
+    }
+    p {
+        color: $gray-font-color;
+        text-align: left;
     }
     .form_container {
         width: 800px;
@@ -42,12 +45,14 @@
                 width: 748px;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
                 .step_row {
+                    margin: 0 auto;
                     .step_col1, .step_col2, .step_col3 {
                         background-color: #fff;
                         width: 45px;
                         height: 45px;
                         border-radius: 50%;
-                        margin-right: 30px;
+                        margin: 0 auto;
+                        line-height: 150%;
                     }
                 }
                 p {
@@ -57,7 +62,7 @@
                     margin: 5px 0px 3px 0px;
                 }
                 .item_type_select_box {
-                    background: $gray-color;
+                    background: $main-white_color;
                     padding: 10px 105px;
                     margin: 0px 0px 3px 0px;
                     border-radius: 14px;
@@ -120,6 +125,25 @@
                     }
                 }
             }
+            .item_list_label_stressor {
+                display: block;
+                font-size: 14px;
+                text-align: left;
+                margin-left: 3px;
+                color: $font-color;   
+            }
+            #item_list_list_stressor { 
+                width: 95%;
+                padding: 17px 0px 17px 12px;
+                margin: 6px 19px 4px 0px;
+                background: $main-white-color;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                filter: brightness(108%);
+                border-radius: 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            } 
             .item_list_label_name {
                 display: block;
                 font-size: 14px;
@@ -131,16 +155,11 @@
                 width: 95%;
                 padding: 17px 0px 17px 12px;
                 margin: 6px 19px 4px 0px;
-                background-color: rgb(247, 245, 245);
                 border-radius: 4px;
                 border: none;
                 outline: none;
-                background: $base-color;
-                filter: brightness(108%);
                 border-radius: 14px;
-                background: $base-color;
-                box-shadow: inset 5px 5px 13px #cbc6b7, 
-                            inset -5px -5px 13px #fffff7;
+                background: $main-white-color;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             }  
             #item_list_list_description { 
@@ -153,12 +172,8 @@
                 letter-spacing: 0.01em;
                 border: none;
                 outline: none;
-                background: $base-color;
-                filter: brightness(108%);
+                background: $main-white-color;
                 border-radius: 14px;
-                background: $base-color;
-                box-shadow: inset 5px 5px 13px #cbc6b7, 
-                            inset -5px -5px 13px #fffff7;
                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             } 
             .form_categories {
@@ -234,7 +249,7 @@
 @media screen and (max-width: 600px) {
     /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
     .item_list_new {
-        width: 100%;
+        
         padding: 0;
         margin: 30px 10px 0px 10px;
         .wrap_formhead {

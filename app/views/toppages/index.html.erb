@@ -17,23 +17,196 @@ container コンテンツを囲むボックス
         </button>
       <% end %>
       -->
-    <% end %>
-    <div class="top_select_category">
-      <div class="category_name">
-        <% @categories.each do |category| %>
-          <%= link_to category.name, root_path(category_id: category.id) %>
+      <p>毎日の体調キロク</p>
+      <div class="cheackin">
+        <p class="confirm_the_date">
+        <%= Time.now.strftime("%m/%d(#{%w(日 月 火 水 木 金 土)[Time.now.wday]})") %>
+        </p>
+        
+        <!--
+        <p class="confirm_the_week">
+          <%= Time.now.strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.wday]})") %>
+            <% if pp current_user.emotions.where('created_at like?', Date.today) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%= Time.now.since(1.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(1.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Date.yesterday) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%# <%= image_tag("/assets/cheacked_date_dogg_icon.png") %> 
+          <%= Time.now.since(2.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(2.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Time.now.since(2.days)) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%= Time.now.since(3.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(3.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Time.now.since(3.days)) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%= Time.now.since(4.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(4.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Time.now.since(4.days)) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%= Time.now.since(5.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(5.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Time.now.since(5.days)) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+          <%= Time.now.since(6.days).strftime("%d(#{%w(日 月 火 水 木 金 土)[Time.now.since(6.days).wday]})") %>
+            <% if current_user.emotions.where('created_at like?', Time.now.since(6.days)) %>
+            ●
+            <% else %>
+            ✖︎   
+            <% end %>
+        </p>
+        -->
+       
+        <p>今日のキロク</p>
+        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+            <span class="material-symbols-outlined">light_mode</span>
+            <p>モーニングチェック</p>
+        <% end %>
+        <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+            <span class="material-symbols-outlined">nightlight</span>
+            <p>ナイトチェック</p>
         <% end %>
       </div>
-    </div>
-    <%= render 'layouts/article_index' %>
+      <p class="title_selfcare_routine">最近取り入れたルーティーン</p>
+      <p class="sample_title">■ とにかく早く、20時に寝る</p>
+      <p class="sample_title">■ 無理に無理を重ねない</p>
+      <p class="sample_title">■ 趣味が合う人とあう</p>
+
+      <div class="box_user_weekly_condition_visual">
+        <p>今週の体調変化</p>
+
+        <div class="condition_visual">
+          <canvas id="weekly_condition_charts"></canvas>
+          <script>
+
+            var hiduke = new Date(); 
+            var day = hiduke.getDate();
+            var month = hiduke.getMonth();
+
+            var ctx = document.getElementById('weekly_condition_charts').getContext("2d");
+            const gradientBg =  ctx.createLinearGradient(0, 0, 0, 400);
+
+            gradientBg.addColorStop(0, '#33a4b8');
+            gradientBg.addColorStop(0.5, '#56ABBA');
+            gradientBg.addColorStop(1, '#eff7f9');
+
+            var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: [day + ' (月)', day+1 + ' (火)', day+2 + ' (水)', day+1 + ' (木)', day+3 + ' (金)', day+4 + ' (土)', day+5 + ' (日)'],
+                datasets: [{
+
+                  label: 'night',
+                  backgroundColor: gradientBg,
+              
+                  // 変数
+                  data: [3, 18, 6, 10, 12, 7, 12],
+                
+                }]
+              },
+              options: {
+                 
+                  elements: {
+                      point:{
+                      radius: 0
+                      }
+                  },        
+              }
+              
+            });
+          </script>
+          
+          <canvas id="myChart"></canvas>
+          <%# <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> %>
+          <script>
+          var ctx = document.getElementById('myChart').getContext("2d");
+          // const gradientBg =  ctx.createLinearGradient(0, 0, 0, 400);
+
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: [day + ' (月)', day+1 + ' (火)', day+2 + ' (水)', day+1 + ' (木)', day+3 + ' (金)', day+4 + ' (土)', day+5 + ' (日)'],
+                datasets: [{
+
+                  label: 'mornig',
+                  backgroundColor: 'orange',
+              
+               
+                  
+                  // 変数
+                  data: [1, 8, 9, 1, 10, 4, 17],
+                
+                }]
+              },
+              options: {
+                  elements: {
+                      point:{
+                      radius: 0
+                      }
+                  }
+              }
+          });
+          </script>
+        </div>
+      </div>
+
+      
+      
+      <div class="qa_wrap_use_smartphone">
+        <div class="qa_title_use_smartphone">デジタル疲労を計測</div>
+        
+        <div class="user_work_use_smartphone_box">
+          <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+              <p>デジタル依存チェック 5分(IAT)</p>
+          <% end %>
+          <%= link_to new_emotion_path , { class: 'checker_submit' } do %>
+              <p>スマホとのいい距離感を作る1週間ワーク</p>
+          <% end %>
+        </div>
+      </div>
+
+      <!--
+      リリース後に追加候補
+      <div class="my_relax_list">
+        <p>あなたのお悩みはなんですか？</p>
+      </div>
+      
+      
+      
+      <div class="top_select_category">
+        <p class="heading_selfcare_card">セルフケア・カード</p>
+        <div class="category_name">
+          <% @categories.each do |category| %>
+            <%= link_to category.name, root_path(category_id: category.id) %>
+          <% end %>
+        </div>
+      </div>
+      <%= render 'layouts/article_index' %>
+    <% end %>
+    -->
+    
   </div>
   
 <% else %>
   <div class="toppage_logout">
     <div class="logout_image">
-      <p class="top_first_advertise">&#x1f5a5;webクリエイター&#x1f58c;webデザイナー&#x2328;エンジニア&#x1f3b9;音楽クリエイター&#x1f646;デジタル疲れの方に</p>
+      <p class="top_first_advertise">&#x1f5a5;デジタル疲れの方、頭痛・ストレートネック&#x1f58c;webデザイナー&#x2328;エンジニア&#x1f3b9;音楽クリエイター&#x1f646;</p>
       <div class ="logout_top_left_word">
-      <h1 class="top">Mind Freee<span class= top_word_bottom></span></h1>
+      <h1 class="top">Fully <span style="font-weight:100; font-size:48px; color:#334461;">β版</span></h1>
         <p class="middle">デジタル環境に身を置く人の<br>心と体をケア<br>デジタル疲れ・ケア習慣化</p>
         <div class="box_login">
           <div class="test_login">
@@ -50,50 +223,50 @@ container コンテンツを囲むボックス
       </div>
     </div>
 
-    <figure class="PageAccentWave"> 
-      <svg class="top_first_wave_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,256L120,240C240,224,480,192,720,197.3C960,203,1200,245,1320,266.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-    </figure>
 
-    <div class="lp">   
+    <div class="lp">  
+      <figure class="PageAccentWave"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fcfdfd" fill-opacity="1" d="M0,224L80,240C160,256,320,288,480,272C640,256,800,192,960,181.3C1120,171,1280,213,1360,234.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      </figure>  
       <div class="user_qa_health">
         <h1>こんなことはありませんか？</h1>
         <div class="user_qa_wrap">
           <div class="user_qa_box">
             <div class="qa_img"></div>
-            <p>長時間パソコン作業で動かない、腰が痛い</p>
+            <p>画面を見る時間が長くて、なぜかわからないけど疲労が取れない</p>
           </div>
           <div class="user_qa_box">
             <div class="qa_img"></div>
-            <p>スマホ、パソコンで作業する時間が長い、、、</p>
+            <p>フリーランスだけど、体調の維持がうまくいかない</p>
           </div>
           <div class="user_qa_box">
             <div class="qa_img"></div>
-            <p>頭痛、眼精疲労が、、、</p>
+            <p>体調キロクツールを使ってみたけど続かないし、いまいち効果がよくわからない、、</p>
           </div>
         </div>
       </div>
       <div class="user_benefit">
         <h1>得られるメリット</h1>
         <div class="user_benefit_wrap">
+        <div class="user_benefit_img"></div>
+          <p>体調のキロクを楽しく、使いやすく<br>クリエイターの悩みに特化</p>
           <div class="user_benefit_img"></div>
-          <p>コーピングリストから自分にあったストレス対処方をすぐに試せる<br>*ストレスコーピングとは、ストレスに対応する技術のことを言います</p>
+          <p>気軽に不調に気付ける<br>*ストレスコーピングとは、ストレスに対応する技術のことを言います</p>
           <div class="user_benefit_img"></div>
-          <p>デジタル環境に身をおく人に特化したストレスフリーになるコーピングリスト</p>
-          <div class="user_benefit_img"></div>
-          <p>書くことで自分を癒す効果があります。シンプルにサクサク書ける</p>
+          <p>国際規格のテストを簡単にチェック</p>
         </div>
       </div>
-      <div class="user_qa_health">
+      <div class="user_qa_stressfree">
         <h1>ストレスフリーを実践してみる</h1>
-        <div class="user_qa_wrap">
-          <div class="user_qa_box">
-            <div class="qa_img"></div>
+        <div class="user_qa_stressfree_wrap">
+          <div class="user_qa_stressfree_box">
+            <div class="user_qa_stressfree_img"></div>
           </div>
-          <div class="user_qa_box">
-            <div class="qa_img"></div>
+          <div class="user_qa_stressfree_box">
+            <div class="user_qa_stressfree_img"></div>
           </div>
-          <div class="user_qa_box">
-            <div class="qa_img"></div>
+          <div class="user_qa_stressfree_box">
+            <div class="user_qa_stressfree_img"></div>
           </div>
         </div>
       </div>
@@ -120,30 +293,6 @@ container コンテンツを囲むボックス
         </div>
       </div>
     </div>
-
-    <!--　<div class="wave_line">
-        <%= image_tag("/assets/wave.svg") %>
-      </div>
-
-     <div class="how_to_use_wrap">
-      <div class="container">
-        <h1>DIDI CAREの使い方</h1>
-        <div class="how_to_use"> 
-          <div class="item">
-            <p>セルフケアをキロク</p>
-            <p>セルフケアをメモしておくことで、ストレスを感じた時にすぐに対処することができます。</p>
-          </div>
-          <div class="item">
-            <p>他のクリエイターのセルフケアを試せる</p>
-            <p>デジタルクリエイター特有の悩みに分類</p>
-          </div>
-          <div class="item">
-            <p>ストレス・チェッカーで気分を確認</p>
-            <p>チェックリストで簡単確認</p>
-          </div>
-        </div>
-      </div>
-    </div>　-->
   </div>
 <% end %>
 

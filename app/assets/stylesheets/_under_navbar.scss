@@ -19,11 +19,17 @@ nav {
             padding: 0px;
             list-style: none;
             text-align: center;
-            
-            .under_nav_home_add {
+            .under_nav_add {
                 width: 80px;
                 span {
-                    width: 70px;
+                    color: white;
+                    background: $accent-color;
+                    font-size: 50px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    position: relative;
+                    bottom: 55px;
+                    font-weight: bold;
                 }  
             }
             a {

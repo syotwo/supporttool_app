@@ -5,93 +5,194 @@
 
 .toppage_login {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    .face_box {
-        display: flex;
-        height: 27px;
-        margin: 0px 0px 16px 35px;
-        span {
-            font-size: 28px;
-            margin: 5px 5px 0px 0px;
-            color: $font-color;
-        }
-        .login_username {
+    padding: 0;
+    .cheackin {
+        margin: 10px 45px 150px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        height: 320px;
+        background-color: $main-white-color;
+        border-radius: 14px;
+        padding: 30px 35px 35px;
+        p {
             font-family: 'M PLUS Rounded 1c', sans-serif;
-            margin: 2px 0px 20px 4px;
-            padding: 0px 0px 0px 0px;
-            color: $font-color;
-            font-size: 27px;
-            font-weight: 700;
-        }
-    }
-    p {
-        color: $subfont-color;
-    }
-    form.item_list_search {
-        display: flex;
-        margin: 20px 50px 0px 35px;
-        color: $subfont_color;
-        height: 38px;
-        input {
-            width: 350px;
-            height: 48px;
-            padding-left: 13px;
-            border: none;
-            border-radius: 0px 40px 40px 0px;
-            outline: none;
-            background: $card-color;
-            font-size: 16px;
-            letter-spacing: -0.01em;
-            line-height: 3em;
-            font-family: 'M PLUS Rounded 1c', sans-serif;
-            position: relative;
-            left: 37px;
-            background: #f6f7f8;
-            &::placeholder{
-                color: $font_color;
-            }
-            &:focus {
-                background: $card_color;
-            }
-        }
-        #search {
-            height: 36px;
-            border: none;
-            padding: 5px 0px 43px 20px;
-            background: $card-color;
-            border-radius: 40px 0px 0px 40px;
-            position:relative;
-            top: 0px;
-            left: -307
-            px;
-            outline: none; 
-            vertical-align: middle;
-            background: #f6f7f8;
+            font-size: 20px;
             span {
-                margin: 7px 0px 0px 0px;
+                position: relative;
+                top: 5px;
             }
         }
+        p.confirm_the_date {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: bold;
+            margin: 0px 0px 20px;
+            font-size: 30px; 
+        }
+        p.confirm_the_week {
+            font-size: 14px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: 700;
+            margin: 20px 0px 50px;
+            
+        }
+        a.checker_submit {
+            text-decoration: none;
+            display: flex;
+            background: $main-dark-color;
+            text-align: center;
+            width: 175px;
+            height: 50px;
+            line-height: 1.15em;
+            border-radius: 40px;
+            padding: 4px 22px;
+            margin: 20px 0px;
+            span { 
+                height: 20px;
+                margin: 13px 7px 0px 0px;  
+                color: $main-white-font-color; 
+            }    
+            p { 
+                font-size: 16px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                font-weight: 700;
+                color: $main-white-font-color; 
+            }
+        }
+        img {
+            width: 20px;
+            margin: 0;
+        }
+    }
+    p.title_selfcare_routine {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 20px;
+        margin: 0px 0px 0px 50px;
+    }
+    p.sample_title {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 18px;
+        margin: 0px 0px 0px 50px;
+        
     }
     .top_select_category {
-        .category_name {
-            font-size: 19px;
-            margin: 50px 40px 45px;
-            a {
-                color: $main-dark-font-color;
-                text-decoration: none;
-                margin: 0px 0px;
-                padding: 12px 30px; 
-                &:hover {  
-                    border-bottom: 2px solid $main-dark-sub-font-color;
-                }  
-                &:first-child {
-                    margin-left: 0px;
-                }
-            }  
+        background-color: #fff;
+    }
+    // .my_relax_list {
+    //     font-size: 24px;
+    //     margin: 0px 0px 0px 50px;
+    // }
+    // .face_box {
+    //     display: flex;
+    //     height: 27px;
+    //     margin: 0px 0px 16px 35px;
+    //     span {
+    //         font-size: 28px;
+    //         margin: 5px 5px 0px 0px;
+    //         color: $font-color;
+    //     }
+    //     .login_username {
+    //         font-family: 'M PLUS Rounded 1c', sans-serif;
+    //         margin: 2px 0px 20px 4px;
+    //         padding: 0px 0px 0px 0px;
+    //         color: $font-color;
+    //         font-size: 27px;
+    //         font-weight: 700;
+    //     }
+    // }
+    // p {
+    //     color: $subfont-color;
+    // }
+    // form.item_list_search {
+    //     display: flex;
+    //     margin: 20px 50px 0px 35px;
+    //     color: $subfont_color;
+    //     height: 38px;
+    //     input {
+    //         width: 350px;
+    //         height: 48px;
+    //         padding-left: 13px;
+    //         border: none;
+    //         border-radius: 0px 40px 40px 0px;
+    //         outline: none;
+    //         background: $card-color;
+    //         font-size: 16px;
+    //         letter-spacing: -0.01em;
+    //         line-height: 3em;
+    //         font-family: 'M PLUS Rounded 1c', sans-serif;
+    //         position: relative;
+    //         left: 37px;
+    //         background: #f6f7f8;
+    //         &::placeholder{
+    //             color: $font_color;
+    //         }
+    //         &:focus {
+    //             background: $card_color;
+    //         }
+    //     }
+    //     #search {
+    //         height: 36px;
+    //         border: none;
+    //         padding: 5px 0px 43px 20px;
+    //         background: $card-color;
+    //         border-radius: 40px 0px 0px 40px;
+    //         position:relative;
+    //         top: 0px;
+    //         left: -307px;
+    //         outline: none; 
+    //         vertical-align: middle;
+    //         background: #f6f7f8;
+    //         span {
+    //             margin: 7px 0px 0px 0px;
+    //         }
+    //     }
+    // }
+    .box_user_weekly_condition_visual {
+        p {
+            margin: 50px 50px 20px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 20px;
+        }
+        .condition_visual {
+            background: #ffffff;
+            margin: 20px 50px 150px;
+            border-radius: 14px;
+            width: 220px;
         }
     }
-   
+    .qa_wrap_use_smartphone {
+        background: $main-color;
+        padding: 50px 0px;
+        height: 400px;
+        width: 100%;
+        margin: 0px 0px 150px;
+        .qa_title_use_smartphone {
+            margin: 10px 0px 0px 50px;
+            color: $main-white-font-color;
+        }
+        .user_work_use_smartphone_box {
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+            p {
+                color: $main-white-font-color;
+                margin: 20px 50px 200px;
+                background-color: #4F76B1;
+                border-radius: 12px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                font-size: 17px;
+                width: 160px;
+                height: 200px;
+                padding: 20px 22px;
+            }
+        }
+    }
     
+    .article_index {
+        background: $main-color;
+        margin: 0;
+    }
     .article_index_category_name {
+        background: $main-color;
         font-size: 35px;
         font-weight: 600;
         padding: 0px 40px 30px 45px;
@@ -103,18 +204,19 @@
     
 }   
 
+
 .toppage_logout {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     .logout_image {
-        height: 500px;
-        padding: 0px 0px 40px 0px;
+        height: 400px;
+        padding: 0px;
         margin: 0px 0px;
-        background: $base-color;
+      
         position: relative;
         // background:linear-gradient(to top,#d4e2d8, #c5e0cc);
         // background: url("/assets/blob_green.svg")  -50px 0px;
         .top_first_advertise {
-            background-color: rgb(48, 209, 250);
+            background-color: #96c3ec;
             text-align: center;
             margin: 0;
         }
@@ -127,8 +229,9 @@
                 color: $font-color;
             } 
             h1 {
-                font-family: 'Noto Sans JP', sans-serif;
-                font-size: 50px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                font-size: 55px;
                 margin: 70px 0px 22px;
                 text-align: center;
                 color: $main-dark-font-color;
@@ -145,6 +248,7 @@
             }
             p.middle {
                 font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
                 font-size: 17px;
                 text-decoration: none;
                 margin: 8px 0px;
@@ -153,7 +257,7 @@
                 font-weight: 200;
                 letter-spacing: -0.05em;
                 line-height: 1.7em;
-                color: $subfont-color;
+                color: $main-dark-sub-font-color;
                 img {
                     height: 55px;
                     position: relative;
@@ -167,11 +271,14 @@
                 .test_login {
                     form {
                         text-align: center;
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        transform:rotateZ(0.03deg);
                         &:hover {
                             filter: brightness(110%);
                         } 
                         input {
                             font-family: 'M PLUS Rounded 1c', sans-serif;
+                            transform:rotateZ(0.03deg);
                             color: $submit-font-color;
                             background: $accent-color;
                             width: 300px;
@@ -213,14 +320,19 @@
     }
     
     .lp {
-        .user_benefit, .user_qa_health, .user_explain_coping, .user_explain_coping, .user_action{
-            background: $main-color;
-            padding: 50px 75px;
+        overflow: hidden;
+        .PageAccentWave {
+            position: relative;
+            top: 10px;
+        }
+        .user_benefit, .user_qa_stressfree, .user_qa_health, .user_explain_coping, .user_explain_coping, .user_action{
+            padding: 100px 75px;
+            box-sizing: border-box;
             h1 {
                 text-align: center;
-                padding: 20px 0px;
+                padding: 50px 0px 80px;
                 margin: 0;
-                color: $main-white-font-color;
+                color: $main-dark-font-color;
             }
             .user_qa_wrap {
                 display: flex;
@@ -239,15 +351,24 @@
                         padding: 20px;
                         margin: 0px 5px;
                         border-radius: 4px;
-                        color: $main-white-font-color;
+                        color: $main-dark-font-color;
                         font-weight: 500;
                     }
                 }
                 
             }
         }
+        .user_qa_health  {
+            background: $main-color;
+            // border-top-left-radius: 48%;
+            // border-top-right-radius: 48%;
+            // margin-left: -100px;
+            // margin-right: -100px;
+            // padding-left: 100px;
+            // padding-right: 100px;
+            // overflow: hidden;
+        }
         .user_benefit {
-            background: $base_color;
             margin: 0px 0px;
             h1 {
                 color: $main-dark-font-color;
@@ -266,9 +387,35 @@
                 }
             }
         }
+        .user_qa_stressfree {
+            background: $main-color;
+            border-top-left-radius: 48%;
+            border-top-right-radius: 48%;
+            margin-left: -100px;
+            margin-right: -100px;
+            padding-left: 100px;
+            padding-right: 100px;
+            overflow: hidden;
+            .user_qa_stressfree_wrap {
+                display: flex;
+                justify-content: center;
+                .user_qa_stressfree_box {
+                    width: 220px;
+                    height: 180px;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    margin: 20px;
+    
+                }
+
+            }
+           
+            
+        }
         .user_explain_coping {
             margin: 0px 0px;
             background: $main-color;
+            padding-top: 0px;
             .user_explain_coping_wrap{
                 .user_explain_coping_img {
                     height: 180px;
@@ -276,7 +423,7 @@
                         border-radius: 20px;
                 }
                 p {
-                    color: $main-white-font-color;
+                    color: $main-dark-font-color;
                 }
             }
         }
@@ -511,6 +658,10 @@
         display: flex;
         width: 860px;
     }
+    // .article_index_category_name:focus  {
+    //     background: $sub-accent-color;/* マウス選択時の背景色を指定する */
+    //     color: #ffffff; /* マウス選択時のフォント色を指定する */
+    //     }
     .article_index {
         padding: 0px 40px 0px 40px;
         font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -704,15 +855,25 @@
             margin: 0px 0px;
             padding: 0px 0px 0px 0px;
         }
+        .cheackin {
+            margin: 0 30px;
+            p.confirm_the_date {
+                margin: 0;
+            }
+        }
     }
     .toppage_logout {
         .logout_image {
-            height: 540px;
+            height: 500px;
             padding: 0;
             margin: 0px 0px;
             display: block;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            transform:rotateZ(0.03deg);
             .top_first_advertise {
                 text-align: center;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
             }
             .logout_top_left_word {
                 margin: 75px 0px;
@@ -828,5 +989,13 @@
             padding: 0px 20px;
         }
         
+    }
+}
+
+
+/* デザイン(PC) */
+@media screen and (min-width: 600px)  {
+    nav ul.bottom_menu {
+        display: none;
     }
 }

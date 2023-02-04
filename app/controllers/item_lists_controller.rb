@@ -23,12 +23,12 @@ class ItemListsController < ApplicationController
     # binding.pry
 
     if @item_list.save
-      flash[:success] = '投稿しました。'
+      flash[:success] = 'メモを作成しました。'
       redirect_to item_list_path(@item_list.id)
       # redirect_to @item_listが省略型
       # リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
     else
-      flash.now[:danger] = '投稿に失敗しました。'
+      flash.now[:danger] = 'メモの作成に失敗しました。'
       render :new
     end
   end
@@ -48,7 +48,7 @@ class ItemListsController < ApplicationController
 
   def destroy
     @item_list.destroy
-    flash[:success] = '投稿を削除しました。'
+    flash[:success] = 'メモを削除しました。'
     redirect_to root_path
   end
 
@@ -56,7 +56,7 @@ class ItemListsController < ApplicationController
 
   # Strong Parameter
   def item_list_params
-    params.require(:item_list).permit(:list_name, :image, :list_description, :list_item_type, category_ids: [])
+    params.require(:item_list).permit(:list_name, :list_stressor, :image, :list_description, :list_item_type, category_ids: [])
   end
 
   def correct_user

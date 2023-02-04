@@ -1,32 +1,48 @@
 <header>
   <nav>
-    <% if logged_in? %>
-      <div class="nav_title_box">
-        <%= link_to root_path do %>
-          <div class="nav_img">
-            <%= image_tag "nav_logo.png" %>
-          </div>
-          <p>Mind Freee. <span>いまから出来る.気づくデジタル疲れ解消</span></p>
-        <% end %>
-      </div>
-    <% else %>
-      <div class="nav_title_box">
-        <%= link_to root_path do %>
-          <div class="nav_img">
-            <%= image_tag "nav_logo.png" %>
-          </div>
-          <p>Mind Freee. <span>いまから出来る.気づくデジタル疲れ解消</span></p>
-        <% end %>
-      </div>
-    <% end %>
+    <ul class= menu_left>
+      <% if logged_in? %>
+        <div class="nav_title_box">
+          <%= link_to root_path do %>
+            <div class="nav_img">
+              <%= image_tag "nav_logo.png" %>
+            </div>
+            <p>Fully<span style="font-weight:500; font-size:24px; color:#334461;"> β版</span></p>
+          <% end %>
+        </div>
+        <div class="nav_book">
+          <li>
+              <%= link_to user_path(current_user) do %>
+                <span class="material-symbols-outlined">person</span>
+              <% end %>
+          </li>
+        </div>
+      <% else %>
+        <div class="nav_title_box">
+          <%= link_to root_path do %>
+            <div class="nav_img">
+              <%= image_tag "nav_logo.png" %>
+            </div>
+            <p>Fully<span style="font-weight:500; font-size:24px; color:#334461;"> β版</span><span style="font-weight:500; font-size:20px; color:#334461;"> &emsp;いまから出来る.気づくデジタル疲れ解消</span></p>
+          <% end %>
+        </div>
+      <% end %>
+    </ul>
+
     
     <ul class= menu_right>
       <% if logged_in? %>
+        <div class="plus_box">
+          <li><%= link_to new_item_list_path , { class: 'plus_itemlist' } do %>
+            <span class="material-symbols-outlined">draw</span>
+            <span class="plus_box_title">感情をキロク</span>
+          <% end %></li>
+        </div>
         <ul class="menu">
           <li>
             <a href=""><span class="material-icons">account_circle</span></a>
             <ul>
-              <li><%= link_to 'プロフィール', user_path(current_user) , { class: 'profile' }%></li>
+              <li><%= link_to 'プロフィール', user_path(current_user) , { class: 'profile' }%></li> 
               <li>
                 <%= link_to logout_path, { method: :delete, class: "logout" } do %>
                   <%= image_tag asset_path("logout.png") %>
