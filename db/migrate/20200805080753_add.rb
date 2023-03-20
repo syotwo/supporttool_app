@@ -1,3 +1,3 @@
-class Add < ActiveRecord::Migration[6.0]
+class Add < ActiveRecord::Migration[6.1]
   def change; end
 end

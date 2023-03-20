@@ -1,3 +1,3 @@
-class RemoveUserToItems < ActiveRecord::Migration[6.0]
+class RemoveUserToItems < ActiveRecord::Migration[6.1]
   def change; end
 end

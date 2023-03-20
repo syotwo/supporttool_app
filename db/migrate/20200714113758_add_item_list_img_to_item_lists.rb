@@ -1,4 +1,4 @@
-class AddItemListImgToItemLists < ActiveRecord::Migration[6.0]
+class AddItemListImgToItemLists < ActiveRecord::Migration[6.1]
   def change
     add_column :item_lists, :image, :string
   end

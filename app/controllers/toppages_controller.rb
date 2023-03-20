@@ -11,7 +11,7 @@ class ToppagesController < ApplicationController
       @item_lists = @category.item_lists.order(created_at: :desc)
     else
       # 投稿すべてを取得
-      @category = Category.find(5)
+      # @category = Category.find(5)
       @item_lists = ItemList.all.order(created_at: :desc)
     end
     

@@ -1,4 +1,4 @@
-class CreateEmotions < ActiveRecord::Migration[6.0]
+class CreateEmotions < ActiveRecord::Migration[6.1]
   def change
     create_table :emotions do |t|
       t.text :sheet
