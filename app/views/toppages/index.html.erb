@@ -9,14 +9,7 @@ container コンテンツを囲むボックス
 <% if logged_in? %>
   <div class= toppage_login>
     <% if logged_in? %>
-      <!--
-      <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "お悩みはなんですか?" %>
-        <button type="submit" id="search">
-          <span class="material-icons">search</span>
-        </button>
-      <% end %>
-      -->
+      
       <p>毎日の体調キロク</p>
       <div class="cheackin">
         <p class="confirm_the_date">
@@ -81,10 +74,12 @@ container コンテンツを囲むボックス
             <p>ナイトチェック</p>
         <% end %>
       </div>
+      <!--
       <p class="title_selfcare_routine">最近取り入れたルーティーン</p>
       <p class="sample_title">■ とにかく早く、20時に寝る</p>
       <p class="sample_title">■ 無理に無理を重ねない</p>
-      <p class="sample_title">■ 趣味が合う人とあう</p>
+      <p class="sample_title">■ 趣味が合う人とあう</p> 
+      -->
 
       <div class="box_user_weekly_condition_visual">
         <p>今週の体調変化</p>
