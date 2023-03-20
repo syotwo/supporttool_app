@@ -2,18 +2,18 @@
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
       <h1>Signup</h1>
-      <div>
+      <div class= user_write_box>
         <%= f.text_field :name, placeholder: "What's your name?"  %>
       </div>
-      <div>
+      <div class= user_write_box>
         <%= f.email_field :email, placeholder: "Enter your email"  %>
       </div>
-      <div>
+      <div class= user_write_box>
         <%= f.password_field :password, placeholder: "Enter your password"  %>
       </div>
-      <div>
+      <div class= user_write_box>
         <%= f.password_field :password_confirmation, placeholder: "Password_confirmation"  %>
       </div>
-      <%= f.submit 'Sign up',{class: 'signup_submit' } %>
+      <%= f.submit '登録',{class: 'signup_submit' } %>
     <% end %>  
 </div>

@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_31_062923) do
+ActiveRecord::Schema.define(version: 2022_10_26_073627) do
+
+  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+  end
 
   create_table "emotions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "sheet"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "mood"
     t.index ["user_id"], name: "index_emotions_on_user_id"
   end
 
@@ -30,6 +35,13 @@ ActiveRecord::Schema.define(version: 2021_01_31_062923) do
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
+  create_table "item_list_category_relations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "item_list_id"
+    t.integer "category_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "item_lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "list_name"
     t.bigint "user_id", null: false
@@ -38,6 +50,7 @@ ActiveRecord::Schema.define(version: 2021_01_31_062923) do
     t.string "image"
     t.text "list_description"
     t.string "list_item_type"
+    t.string "list_stressor"
     t.index ["user_id"], name: "index_item_lists_on_user_id"
   end
 
@@ -51,6 +64,13 @@ ActiveRecord::Schema.define(version: 2021_01_31_062923) do
     t.text "item_link"
     t.index ["item_list_id"], name: "index_items_on_item_list_id"
     t.index ["user_id"], name: "index_items_on_user_id"
+  end
+
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "item_list_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|

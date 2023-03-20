@@ -19,7 +19,9 @@
  body {
     height: 100%;
     margin: 0px;
-    background: -moz-radial-gradient($base-color, $base-color);
-    background: -webkit-radial-gradient($base-color, $base-color);
-    background: radial-gradient($base-color, $base-color);
+    background: $base-color;
+    p, a, label ,input {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        transform:rotateZ(0.03deg);
+    }
 }

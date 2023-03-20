@@ -2,30 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "_variables";
+@import "_form_itemlist";
+
 
 p {
     color: $font-color;
     font-family: 'sans-serif';
 }     
-// .alert {
-//     position: relative;
-//     top: 0px;
-// }  
 
 .item_list_index {
     padding: 103px 0px 0px 0px;
     form.item_list_search {
         display: flex;
-        margin: 0px 50px 27px 80px;
+        margin: 20px 40px 10px 40px;
         color: $subfont_color;
         height: 38px;
         input {
-            color: $navfont-color;
-            width: 250px;
+            width: 350px;
             height: 48px;
             padding-left: 13px;
             border: none;
-            border-radius: 4px 4px 4px 4px;
+            border-radius: 0px 40px 40px 0px;
             outline: none;
             background: $card-color;
             font-size: 16px;
@@ -33,179 +30,121 @@ p {
             line-height: 3em;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
             position: relative;
-            left: 27px;
+            left: 37px;
+            background: #f6f7f8;
+        box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             &::placeholder{
-                color: $subfont_color;
+                color: $font_color;
             }
             &:focus {
-                color: $subfont-color;
                 background: $card_color;
             }
         }
         #search {
-            width: 38px;
             height: 36px;
             border: none;
-            padding: 5px 0px 43px 5px;
+            padding: 5px 0px 43px 20px;
             background: $card-color;
-            color: #DEDEDE;
-            border-radius: 4px 0px 0px 4px;
+            border-radius: 40px 0px 0px 40px;
             position:relative;
             top: 0px;
-            left: -249px;
+            left: -349px;
             outline: none; 
             vertical-align: middle;
+            background: #f6f7f8;
+            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             span {
                 margin: 7px 0px 0px 0px;
             }
         }
     }
     p {
-        margin: 30px 0px 0px 85px;
-    }
-    .itemlist {
-        padding: 0px 80px 0px 85px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 18px 0px 0px 0px;
-        display: flex;
-        ul.main {
-            padding: 0px 0px 20px 0px;
-            margin: 0px 0px;
-            border-radius: 4px;
-            width: 600px;
-            list-style: none;
-            li {
-                display: flex;
-                background: $card-color;
-                height: auto;
-                margin: 0px 0px 10px 0px; 
-                padding: 20px 15px 18px; 
-                text-align: center;
-                border-radius: 20px;
-                border-bottom: 1px solid $base-color;
-                position: relative;
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                .itemlist_topimg {   
-                    a {
-                        display: block;
-                        img {  
-                            z-index: 1;
-                            margin: 0px 10px 0px 7px;
-                            width: 220px;
-                            border-radius: 8px;
-                            filter: brightness(0.9);
-                            &:hover {
-                                filter: brightness(95%);
-                                transition: 0.2s;
-                              }
-                        }
-                    }
-                }
-                .itemlist_word {   
-                    margin: 0px 0px 0px 2px; 
-                    .box_text {   
-                        margin: 0px 0px 0px 8px;
-                        .list_name {
-                            a {
-                                margin: 0px 0px 7px 0px;
-                                width: 100%;
-                                color: $font-color;
-                                font-size: 21px;
-                                font-weight: bold;
-                                display: block;    
-                                text-decoration: none;
-                                text-align: left;
-                                text-overflow: ellipsis;
-                                letter-spacing: 0.01em;
-                                z-index: 1;
-                            }
-                        }
-                        .list_description {
-                            a {
-                                margin: 10px 0px 7px 0px;
-                                width: 100%;
-                                color: $font-color;
-                                font-size: 14px;
-                                display: block;    
-                                text-decoration: none;
-                                text-align: left;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                letter-spacing: 0.01em;
-                                font-weight: 200;
-                                z-index: 1;
-                                max-height: 60px;
-                            }
-                        }
-                        p {
-                            text-align: left;
-                            font-size: 12px;
-                            margin: 0px 0px 0px 0px;
-                            color: $subfont-color;
-                            font-weight: 200;
-                        } 
-                    }          
-                }
-            }
-        }
-    }
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        margin: 65px 0px 0px 40px;
+        padding: 0px 0px 0px 0px;
+        font-size: 25px;
+        font-weight: 600;
+        color: $font-color;
+    }   
 }
 
 .item_list_show {
-    margin: 120px 0px 80px 80px; 
+    margin: 150px 40px 70px 40px;
+    display: flex; 
     .box {
         color: $font-color;
-        width: 650px;
+        width: 520px;
         height: 120%;
         margin: 110px 0px　0px 0px;
-        padding: 15px 35px 30px;
+        padding: 15px 40px 30px;
         background: $card-color;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border-radius: 4px;
-        .item_list_wrap {
+        border-radius: 15px;
+        .item_list_name_wrap {
             display: flex; 
-            p.list_name {
-                font-size: 34px;
-                font-weight: bold;
-                text-align: center;
-                margin: 0px auto 0px;
-                padding: 10px 0px 25px 0px;
-                width: 700px;
-                color: $text_font-color;
-                text-align: left;
-            }
+            
             .edit_item_list {
                 a {
                     display: block;    
                     span {
-                        font-size: 37px;
+                        font-size: 34px;
                         color: $gray-color;
-                        margin: 16px 20px 0px 0px;
+                        margin: 26px 7px 0px 0px;
                         width: 23px;
                         height: 23px;
                     }
                 }     
             }      
         }
+        p.item {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 30px 0px 0px 0px;
+        }
         img {
             display: block;
             margin: 0px 0px 50px 0px;
-            width: 640px;
+            width: 520px;
             height: 400px;
             object-fit: cover;
             border-radius: 4px;
         }
+        p.list_name {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto;
+            padding: 10px 0px 25px 0px;
+            color: $text_font-color;
+            text-align: left;
+        }
+        .ctegory_name {
+            #text {
+                border: 1px solid #F3770B;
+                background-color: #000000;
+                margin: 10px;
+            }
+
+        }
+        p.how_to_use {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 30px 0px 0px 0px;
+
+        }
         p.list_description {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             white-space: pre-wrap;
-            margin: 5px 0px;
+            margin: 40px 0px;
             padding: 0px 3px 20px;
             font-size: 16px;
             color: $text-font-color;
             text-align: left;
             font-weight: 100;
-            letter-spacing: -0.01em;
-            line-height: 2.0em
+            letter-spacing: 0.01em;
+            line-height: 2.1em;
+            background-color: $accent-color;
+
         }
         ul {
             flex-wrap: wrap;
@@ -216,7 +155,7 @@ p {
             li.item_list_show_card {
                 list-style: none;
                 padding: 0px 0px 0px;
-                margin: 0px 0px 60px 0px;
+                margin: 0px 0px 0px 0px;
                 .item_list_card_wrap {
                     display: flex;
                     a.item_img {
@@ -224,54 +163,14 @@ p {
                         margin: 10px 0px 0px 0px;
                         img {
                             border-radius: 5px;
-                            width: 200px;
-                            height: 200px;
+                            width: 180px;
+                            height: 180px;
                             &:hover {
                                 filter: brightness(80%);
                             }
                         }
                     }
-                    .item_name_box {
-                        margin: 0px 0px 0px 20px;
-                        a.item_name {
-                            display: block;
-                            color: $font-color;
-                            text-decoration: none;
-                            text-align: left;
-                            margin: 5px 0px 7px 0px;
-                            text-align: justify;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            letter-spacing: 0em;
-                            z-index: 1;  
-                            font-size: 24px;
-                            font-weight: 700;   
-                            line-height: 1.7em; 
-                        }
-                        .item_link_box {
-                            background-color: #70c714;
-                            padding: 2px 30px;
-                            display: flex;
-                            border-radius: 4px;
-                            margin: 15px 0px 50px 0px;
-                            width: 140px;
-                            a {
-                                &::before {
-                                    content: "$000 From Amazon ";
-                                }
-                                letter-spacing: 0.02em;
-                                color: #f6f8f5;
-                                display: block;
-                                padding: 10px 0px 10px 2px;
-                                font-size: 14px;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                font-weight: 500;
-                            }
-                            
-                        }
-                    }
-                    
+
                 }
                 
                 .markedit_item {
@@ -288,11 +187,19 @@ p {
                 }
             }    
         }
-        .money_tipping {
+        p.item_list_itmes {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            font-weight: 500;
+            padding: 0px 0px 13px 0px;
+            border-bottom: solid 2px;
+            letter-spacing: 0.02em;
+        }
+        .sns_icon {
             display: flex;
             span {
-                color: $text-font-color;
-                font-size: 22px;
+                color: $gray-color;
+                font-size: 33px;
                 margin: 1px 0px 0px 0px;  
             }
             p {
@@ -318,125 +225,152 @@ p {
             }           
         }
     }
-    .addproducts {
-        .wrap {
-
+    .box-right {
+        display: flex;
+        width: 280px;
+        height: 95px;
+        background: $card-color;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        margin: 0px 0px 0px 30px;
+        .box-right-condition {
             display: flex;
-            width: 740px;
-            margin: 10px 0px 0px -5px;
-            padding: 5px 0px;
-            .productname{
+            p {
+                font-size: 22x;
+                font-weight: bold;
+                text-align: center;
+                color: $text_font-color;
+                text-align: left;
+                margin: auto 20px;
             }
-            #item_item_link {
-                padding: 9px 7px;   
+            .face-icon {
                 margin: auto 0px;
-                padding: 0px 0px 0px 13px;
-                border: none;
-                outline: none;
-                width: 200px; 
-                height: 48px;
-                border-radius: 4px;
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            }
-            #item_item_name {
-                padding: 9px 7px;   
-                margin: auto 5px;
-                padding: 0px 0px 0px 13px;
-                border: none;
-                outline: none;
-                width: 200px; 
-                height: 48px;
-                border-radius: 4px;
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            }
-            .addproducts_img_label {
-                height: 48px;
-                margin: auto 0px auto 5px;
-                img {
-                width: 40px;
-                height: 40px;
-                border-radius: 4px 0px 0px 4px;
-                }
-            }
-            .addproducts_img_name_label {
-                background-color: #DBDBDB;
-                line-height: 47px;
-                color: #757575;
-                white-space: nowrap;
-                height: 48px;
-                margin: auto 5px;
-                padding: 0px 12px 0px 10px;
-                border-radius: 4px 4px 4px 4px;
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-            }
-            .submit{
-                width: 200px;
-                display: flex;
-                &:hover {
-                        filter: brightness(110%);
-                      }
-                .submit_plus {
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    text-align: right;
-                    margin: 0px 0px 0px 0px;
-                    padding: 0px 0px 0px 12px;
-                    height: 48px;
-                    font-size: 25px;
-                    font-weight: bold;
-                    background: $base-color;
-                    border: none;
-                    color: $accent-color;
-                    border-radius: 4px 0px 0px 4px;
-                    border-top: solid 2px $accent-color;
-                    border-left: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
-                    line-height: 1.4em;
-                }
-                .addproductst_submit {
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    text-align: left;
-                    height: 48px;
-                    font-size: 18px;
-                    padding: 0px 17px 0px 2px;
-                    margin:  0px 0px 0px 0px;
-                    background: $base-color;
-                    letter-spacing: 0em;
-                    border: none;
-                    color: $accent-color;
-                    border-radius: 0px 4px 4px 0px;
-                    position:relative; 
-                    outline: none;
-                    border-top: solid 2px $accent-color;
-                    border-right: solid 2px $accent-color;
-                    border-bottom: solid 2px $accent-color;
-                    line-height: 2;
+                span {
+                    font-size: 45px;
+                    line-height: 1em;
                 }
             }
         }
+        // .addproducts {
+        //     .wrap {
+        //         display: flex;
+        //         width: 0px;
+        //         margin: 140px 0px 0px -180px;
+        //         padding: 5px 0px;
+        //         .productname{
+        //         }
+        //         #item_item_link {
+        //             padding: 9px 7px;   
+        //             margin: auto 0px;
+        //             padding: 0px 0px 0px 13px;
+        //             border: none;
+        //             outline: none;
+        //             width: 200px; 
+        //             height: 48px;
+        //             border-radius: 4px;
+        //             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        //         }
+        //         #item_item_name {
+        //             padding: 9px 7px;   
+        //             margin: auto 5px;
+        //             padding: 0px 0px 0px 13px;
+        //             border: none;
+        //             outline: none;
+        //             width: 200px; 
+        //             height: 48px;
+        //             border-radius: 4px;
+        //             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        //         }
+        //         .addproducts_img_label {
+        //             height: 48px;
+        //             margin: auto 0px auto 5px;
+        //             img {
+        //             width: 40px;
+        //             height: 40px;
+        //             border-radius: 4px 0px 0px 4px;
+        //             }
+        //         }
+        //         .addproducts_img_name_label {
+        //             background-color: #DBDBDB;
+        //             line-height: 47px;
+        //             color: #757575;
+        //             white-space: nowrap;
+        //             height: 48px;
+        //             margin: auto 5px;
+        //             padding: 0px 12px 0px 10px;
+        //             border-radius: 4px 4px 4px 4px;
+        //             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        //         }
+        //         .submit{
+        //             width: 200px;
+        //             display: flex;
+        //             &:hover {
+        //                     filter: brightness(110%);
+        //                   }
+        //             .submit_plus {
+        //                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        //                 text-align: right;
+        //                 margin: 0px 0px 0px 0px;
+        //                 padding: 0px 0px 0px 12px;
+        //                 height: 48px;
+        //                 font-size: 25px;
+        //                 font-weight: bold;
+        //                 background: $gray-color;
+        //                 border: none;
+        //                 color: $submit-font-color;
+        //                 border-radius: 4px 0px 0px 4px;
+                      
+        //                 line-height: 1.4em;
+        //             }
+        //             .addproductst_submit {
+        //                 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+        //                 text-align: left;
+        //                 height: 48px;
+        //                 font-size: 18px;
+        //                 padding: 0px 17px 0px 2px;
+        //                 margin:  0px 0px 0px 0px;
+        //                 background: $gray-color;
+        //                 letter-spacing: 0em;
+        //                 border: none;
+        //                 color: $submit-font-color;
+        //                 border-radius: 0px 4px 4px 0px;
+        //                 position:relative; 
+        //                 outline: none;
+        //                 line-height: 2;
+        //             }
+        //         }
+        //     }
+        // }
+        
     }
+    .user_add_item {
+        
+    }
+    
 }
+
+
 
 .item_list_edit {
     color: $font-color;
-    background-color: $submit-card-color;
     height: 100%;
-    margin: 110px auto;
-    padding: 38px 50px;
-    width: 590px;
+    margin: 30px auto;
+    padding: 15px 50px;
+    width: 770px;
     border-radius: 4px;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
     .wrap_formhead {
         width: 575px;
         display: flex;
-        justify-content: space-between;
+        margin: 0px 0px 0px 300px;
         p {
-            width: 100%;
-            font-size: 33px;
+            font-size: 23px;
             font-weight: bold;
-            color: $card-font-color;
-            margin: 0px 0px 0px 0px;
-            padding: 0px 0px 26px 0px;
+            color: $font-color;
+            margin: 3px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
             text-align: center;
+            
         }
         .item_list_delate { 
             filter: brightness(70%);
@@ -448,67 +382,102 @@ p {
                     width: 34px; 
                     height: 34px;
                     padding: 4px;  
-                    margin: 0px -7px 1px 0px;
+                    margin: 0px 0px 0px 270px;
                     border-radius: 4px;
                     border: none;
                 }   
             }
         }
     }
-    p {
-        text-align: left;
-        font-size: 25px;
-        font-weight: bold;
-        color: #f8f4f2;
-        margin: 0;
-        padding: 0px 0px 26px 0px;
-    }
     form {
         text-align: center;
         margin: 0px auto;
         color: rgb(223, 221, 221);
+        .item_type_wrap {
+            width: 748px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+            p {
+                text-align: left;
+                color: $font-color;
+                font-size: 14px;
+                margin: 5px 0px 3px 0px;
+            }
+            .item_type_select_box {
+                background: $gray-color;
+                padding: 10px 145px;
+                margin: 0px 0px 3px 0px;
+                border-radius: 4px;
+                color: $third-font-color;
+                display: flex;
+                text-align: center;
+                .item_type_select_box_inner {
+                    width: 40px;
+                    padding: 17px 10px;
+                    margin: 0px 15px 0px 15px;
+                    color: $item-list-form-condition-font-color;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+                .chechbox {
+                    text-align-last: left;
+                }
+                span {
+                    font-size: 26px;
+                }
+            }
+        }
         .item_list_label_name {
             display: block;
             font-size: 14px;
-            font-weight: 100;
             text-align: left;
-            margin-left: 1px;
-            color: $font-color;
+            margin-left: 3px;
+            color: $font-color;   
         }
-
         #item_list_list_name { 
             width: 95%;
-            padding: 12px 0px 12px 12px;
-            margin: 6px 19px 26px 0px;
+            padding: 17px 0px 17px 12px;
+            margin: 6px 19px 4px 0px;
             background-color: rgb(247, 245, 245);
+            border-radius: 4px;
             border: none;
             outline: none;
+            background: $base-color;
+            filter: brightness(105%);
+            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         }  
         #item_list_list_description { 
             width: 95%;
-            padding: 12px 0px 12px 12px;
-            margin: 6px 19px 26px 0px;
+            padding: 12px 0px 150px 12px;
+            margin: 6px 19px 16px 0px;
             background-color: rgb(247, 245, 245);
+            border-radius: 6px;
             border: none;
+            outline: none;
+            background: $base-color;
+            filter: brightness(105%);
+            box-shadow: inset 4px 4px 10px #c3c9d0,inset -4px -4px 10px #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-        }  
-
-        .item_list_label_image {
-            display: block;
-            font-size: 14px;
-            text-align: left;
-            margin-left: 1px;
-        }
-        
+        } 
         .wrap {
             display: flex;
+            width: 150px;
+            height: 48px;
+            border-radius: 4px;
+            margin: 0px 0px 0px 5px;
+            box-shadow:  5px 5px 7px #afb4bb,-3px -3px 8px #ffffff;
             &:hover {
-                filter: brightness(90%);
+                filter: brightness(85%);
               }
             .img_label {
+                margin: 0;
                 img {
-                    width: 48px;
-                    height: 48px;
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    padding: 4px 0px 4px 10px;
+                    background-color: #DBDBDB;
                     border-radius: 4px 0px 0px 4px;
                 }
             }
@@ -518,6 +487,7 @@ p {
                 color: #757575;
                 white-space: nowrap;
                 height: 22px;
+                margin: 0;
                 font-size: 18px;
                 padding: 0px 12px 26px 8px;
                 border-radius: 0px 4px 4px 0px;
@@ -525,21 +495,20 @@ p {
                 font-weight: 400;
             }
         }
-        .chechbox {
-            text-align-last: left;
-
-        }
         .submit{
             text-align-last: right;
             .item_list_submit {
-                padding: 13px 25px;
-                background: $accent-color;
-                color: $submit-font-color;
+                padding: 13px 35px;
                 border: none;
+                color: $submit-font-color;
                 font-size: 17px;
-                border-radius: 4px;
+                font-weight: bold;
                 margin: 0px 19px 0px 0px;
-                
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                border-radius: 40px;
+                background: linear-gradient(145deg, #41d75a, #37b54c);
+                box-shadow:  5px 5px 7px #afb4bb,-5px -5px 4px #ffffff;
+                text-shadow: 2px 2px 4px #2d8f3d, -2px -2px 4px #a0f7ae;
                 &:hover {
                     filter: brightness(125%);
                   }
@@ -548,19 +517,36 @@ p {
     }
 }
 
-@media screen and (max-width: 640px) {
-    .item_list_show {
-        padding: 20px 0px;
-        .box {
-            width: 250px;
-            .item_list_wrap {
-                width: 250px;
-            }
-            ul {
-                justify-content: center;
-                width: 250px;
-                margin: 0;
-            }
-        }
-    }
+
+
+// @media screen and (max-width: 770px) {
+
+//     .item_list_index {
+//         .itemlist {
+//             width: 285px;
+//             margin: 0px auto;
+//         }
+//     }
+//     .item_list_show {
+//         padding: 20px 0px;
+//         .box {
+//             .item_list_wrap {
+//             }
+//             ul {
+//                 justify-content: center; 
+//                 margin: 0;
+//             }
+//         }
+//     }
+// }
+
+/* デザインC(PC) */
+@media screen and (max-width: 960px)  {
+    /* PC用レイアウト 960px以上の以内に収めるデザインはこの中に記述 */
 }
+
+/* デザインB（タブレット） */
+@media screen and (max-width: 600px) {
+    /* タブレット用レイアウト 600px以内の範囲に収めるデザインはこの中に記述 */
+}
+

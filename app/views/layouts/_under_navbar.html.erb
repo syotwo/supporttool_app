@@ -1,0 +1,53 @@
+<% if logged_in? %>
+<nav>
+    <ul class="bottom_menu">
+        <li>
+            <%= link_to root_path do %>
+                <div class="under_nav_home">
+                    <span class="material-symbols-outlined">light</span>
+          
+                </div>
+            <% end %>
+        </li>
+        <li>
+            <%= link_to emotions_path do %>
+                <div class="under_nav_schedule">
+                    <span class="material-symbols-outlined">schedule</span>
+                </div>
+            <% end %>
+        </li>
+        <li>
+            <%= link_to new_item_list_path do %>
+                <div class="under_nav_add">
+                    <span class="material-symbols-outlined">add</span>
+                </div>
+            <% end %>
+        </li>
+        <li>
+            <%= link_to emotions_path do %>
+                <div class="under_nav_home_bookmark">
+                    <span class="material-symbols-outlined">calendar_today</span>
+               
+                </div>
+            <% end %>
+        </li>
+        <!-- 
+        <li>
+            <%= link_to user_path(current_user) do %>
+                <div class="under_nav_profile">
+                    <span class="material-symbols-outlined">person</span>
+             
+                </div>
+            <% end %>
+        </li>
+        コメント -->
+        <li>
+            <%= link_to user_path(current_user) do %>
+                <div class="under_nav_book">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+            <% end %>
+        </li>
+    </ul>
+</nav>
+<% end %>

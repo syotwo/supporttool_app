@@ -1,2 +1,10 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div class= toppage_login>
+    <% if logged_in? %>
+    <% end %>
+    <div class="top_select_categoryy">
+      <% @categories.each do |category| %>
+          <%= link_to category.name, root_path(category_id: category.id) %>
+      <% end %>
+    </div>
+    <%= render 'layouts/article_index' %>
+  </div>

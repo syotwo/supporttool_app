@@ -1,0 +1,71 @@
+<div class="user_favorites">
+  <p>マイ・気分転換リスト</p>
+
+  <% if @favorite_list.present? %>
+    <div class="article_index">
+        <ul class="article_index_wrap">
+          <% @item_lists.each do |item_list| %>
+            <li>
+              <div class="article_topimg">
+                <% if item_list.image? %>
+                  <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
+                <% else %>
+                  <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+                <% end %>
+              </div>
+              <div class="article_word_box">
+                <div class="article_word_box_left">
+                </div>
+                <div class="article_word_box_right">
+                  <div class="article_title">
+                    <div class="title_name">
+                      <%= link_to item_list.list_name , item_list_path(item_list) %>
+                    </div>    
+                  </div> 
+                  <div class="artcle_user_info">
+                    <div class="user_box">
+                      <div class="user_box_top_name">
+                          <div class="user_name"><span><%= item_list.user.name %></span></div>
+                          <div class="user_job_name">WEB DESIGNER</div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </li>
+          <% end %>
+          <% @favorite_list.each do |item_list| %>
+            <li>
+              <div class="article_topimg">
+                <% if item_list.image? %>
+                  <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %>
+                <% else %>
+                  <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
+                <% end %>
+              </div>
+              <div class="article_word_box">
+                <div class="article_word_box_left">
+                </div>
+                <div class="article_word_box_right">
+                  <div class="article_title">
+                    <div class="title_name">
+                      <%= link_to item_list.list_name , item_list_path(item_list) %>
+                    </div>    
+                  </div> 
+                  <div class="artcle_user_info">
+                    <div class="user_box">
+                      <div class="user_box_top_name">
+                          <div class="user_name"><span><%= item_list.user.name %></span></div>
+                          <div class="user_job_name">WEB DESIGNER</div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </li>
+          <% end %>
+        </ul> 
+      </div>
+    
+  <% end %>
+</div>

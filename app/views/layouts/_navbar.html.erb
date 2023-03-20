@@ -1,55 +1,64 @@
-  <header>
+<header>
   <nav>
-    <% if logged_in? %>
-    <a class="nav_logo" href="/"> 
-       <div class="nav_img_box">
-          <div class= "nav_img">
-            <span class="material-icons">watch</span>
-          </div>
+    <ul class= menu_left>
+      <% if logged_in? %>
+        <div class="nav_title_box">
+          <%= link_to root_path do %>
+            <div class="nav_img">
+              <%= image_tag "nav_logo.png" %>
+            </div>
+            <p>Fully<span style="font-weight:500; font-size:24px; color:#334461;"> β版</span></p>
+          <% end %>
         </div>
-        <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
-      </a>
-    <% else %>
-      <a class="nav_logo" href="/"> 
-       <div class="nav_img_box">
-          <div class= "nav_img">
-            <span class="material-icons">watch</span>
-          </div>
+        <div class="nav_book">
+          <li>
+              <%= link_to user_path(current_user) do %>
+                <span class="material-symbols-outlined">person</span>
+              <% end %>
+          </li>
         </div>
-        <div class= "nav_title"><p class= "title">&nbsp;Future Weapon&nbsp;</p></div>
-      </a>
-   
+      <% else %>
+        <div class="nav_title_box">
+          <%= link_to root_path do %>
+            <div class="nav_img">
+              <%= image_tag "nav_logo.png" %>
+            </div>
+            <p>Fully<span style="font-weight:500; font-size:24px; color:#334461;"> β版</span><span style="font-weight:500; font-size:20px; color:#334461;"> &emsp;いまから出来る.気づくデジタル疲れ解消</span></p>
+          <% end %>
+        </div>
+      <% end %>
+    </ul>
 
-    <% end %>
+    
     <ul class= menu_right>
       <% if logged_in? %>
         <div class="plus_box">
-          <li><%= link_to '+', new_item_list_path , { class: 'plus' }%></li>
-          <li><%= link_to 'review item', new_item_list_path , { class: 'plus_itemlist' }%></li>
+          <li><%= link_to new_item_list_path , { class: 'plus_itemlist' } do %>
+            <span class="material-symbols-outlined">draw</span>
+            <span class="plus_box_title">感情をキロク</span>
+          <% end %></li>
         </div>
         <ul class="menu">
           <li>
             <a href=""><span class="material-icons">account_circle</span></a>
             <ul>
+              <li><%= link_to 'プロフィール', user_path(current_user) , { class: 'profile' }%></li> 
               <li>
-                <%= link_to image_tag("/assets/logout.png"), logout_path, { method: :delete } %>
-                <%= link_to 'Logout', logout_path, { method: :delete, class: "logout" }%>
+                <%= link_to logout_path, { method: :delete, class: "logout" } do %>
+                  <%= image_tag asset_path("logout.png") %>
+                  <p>Logout</p>
+                <% end %>
               </li>
             </ul>
           </li>
           <%= javascript_pack_tag 'navbar' %>
         </ul>
-
       <% else %>
-        <li><%= link_to 'Sign Up', signup_path , { class: 'signup' }%></li>
-        <li><%= link_to 'Login', login_path , { class: 'login' }%></li>
+        <li><%= link_to 'ログイン', login_path , { class: 'login' }%></li>
+        <li><%= link_to '登録', signup_path , { class: 'signup' }%></li>
       <% end %>
     </ul>
-
-    
-  
-
   </nav>
+  <%= render 'layouts/flash_messages' %>
 </header>
 
-<%= render 'layouts/flash_messages' %>

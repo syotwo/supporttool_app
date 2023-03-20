@@ -1,25 +1,39 @@
-# README
+# Future Weapon
+- ガジェット共有コミュニティーです。  
+「社会システムの不健全さ」を「個人が強度の健康を持って対応している」現代において、いまの自分の気分を知り、『未来へ生き抜く武器（ガジェット）を手に取る』という体験を作り出せたら、不安定な社会を人々の生活がより豊かになるという仮説のもとに作成。
+自分に対するストレスダメージを可視化することもできます。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# URL
+- http://www.supporttool-app.xyz/
 
-Things you may want to cover:
+<img width="1067" alt="スクリーンショット 2021-04-01 15 45 37" src="https://user-images.githubusercontent.com/44368100/113254533-ac4e6000-9301-11eb-8042-d44e0390df09.png">
 
-* Ruby version
-ruby 2.7.1p83
-rails 6.0.3.1
-* System dependencies
+# 使用技術
+- Ruby 2.7.1, 
+- Ruby on Rails 6.0.3.1
+- Mysql 8.0.19
+- Sass, jQuery
+- Docker/Docker-compose
+- Nginx, unicorn
+- AWS (VPC, EC2, RDS for MySQL, Route53, ACM, ALB)
+- Circle CI
+- Git, Github
+- RSpec
+- Text Analytics API | Microsoft Azure
 
-* Configuration
+# 機能一覧
+- 認証機能
+- アイテムリスト作成機能
+- 画像アップロード機能
+- アイテムの追加機能
+- 検索機能
+- パフォーマンス検知機能
+- ストレス検知機能
+- グラフ描画機能
 
-* Database creation
+# インフラ構成図
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...

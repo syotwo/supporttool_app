@@ -1,8 +1,8 @@
 class ItemListsController < ApplicationController
-  before_action :require_user_logged_in, only: [:create, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update, :destroy]
-  
-  def index  
+  before_action :require_user_logged_in, only: %i[create edit update destroy]
+  before_action :correct_user, only: %i[edit update destroy]
+
+  def index
   end
 
   def show
@@ -23,20 +23,22 @@ class ItemListsController < ApplicationController
     # binding.pry
 
     if @item_list.save
-      flash[:success] = 'リストを投稿しました'
+      flash[:success] = 'メモを作成しました。'
       redirect_to item_list_path(@item_list.id)
       # redirect_to @item_listが省略型
-      #リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
+      # リンクのパスとしてモデルオブジェクトが渡されると自動でidにリンクされる
     else
-      flash.now[:danger] = 'リストの投稿に失敗しました。'
+      flash.now[:danger] = 'メモの作成に失敗しました。'
       render :new
     end
   end
 
   def edit
+    @item_list = ItemList.find(params[:id])
   end
 
   def update
+    # binding.pry
     if @item_list.update(item_list_params)
       redirect_to @item_list
     else
@@ -46,7 +48,7 @@ class ItemListsController < ApplicationController
 
   def destroy
     @item_list.destroy
-    flash[:success] = 'Support-Kitを削除しました'
+    flash[:success] = 'メモを削除しました。'
     redirect_to root_path
   end
 
@@ -54,16 +56,13 @@ class ItemListsController < ApplicationController
 
   # Strong Parameter
   def item_list_params
-    params.require(:item_list).permit(:list_name, :image, :list_description, :list_item_type)
+    params.require(:item_list).permit(:list_name, :list_stressor, :image, :list_description, :list_item_type, category_ids: [])
   end
 
   def correct_user
     @item_list = current_user.item_lists.find_by(id: params[:id])
-    unless @item_list
-      redirect_to root_url
-    end
+    redirect_to root_url unless @item_list
   end
 
   # binding.pry
 end
-

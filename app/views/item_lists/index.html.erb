@@ -1,43 +1,13 @@
-<%= render 'layouts/navbar' %>
 <div class="item_list_index">
     <% if logged_in? %>
         <%= search_form_for @search do |f| %>
-        <%= f.search_field :list_name_cont, placeholder: "How are you feeling?" %>
+        <%= f.search_field :list_name_cont, placeholder: "How Are You Feeling?" %>
         <button type="submit" id="search">
           <span class="material-icons">search</span>
         </button>
       <% end %>
     <% end %>
-    <div class="itemlist">
-      <ul class="main">
-        <% @item_lists.each do |item_list| %>
-          <li>
-            <div class="itemlist_topimg">
-              <% if item_list.image? %>
-                <%= link_to image_tag(item_list.image.url), item_list_path(item_list) %> 
-              <% else %>
-                <%= link_to image_tag("/assets/default.png"), item_list_path(item_list) %>
-              <% end %>
-            </div>
-            <div class="itemlist_word">
-              <div class="box_text">
-                <div class="list_name">
-                  <%= link_to item_list.list_name , item_list_path(item_list) %>
-                </div>
-                <% if item_list.list_description? %>
-                  <div class="list_description">
-                    <%= link_to item_list.list_description , item_list_path(item_list) %>
-                  </div>
-                <% else %>
-                <% end %>
-                <p>
-                  <span><%= item_list.user.name %></span> が
-                  <%= item_list.created_at.strftime("%Y-%m-%d %H:%M") %>
-                </p>
-              </div> 
-            </div> 
-          </li>
-        <% end %>
-      </ul> 
-    </div>
+    <p>Result</p>
+    <%= render 'layouts/article_index' %>
+  </div>
 </div>

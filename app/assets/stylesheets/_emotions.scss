@@ -3,76 +3,178 @@
 .emotion_index {
     .emotion_chartbox {
         margin: 70px auto;
-        padding: 30px 120px 80px 60px;
-        background: #7b9fc9;
+        padding: 30px 120px 50px 60px;
         width: 600px;
         border-radius: 8px;
+        box-shadow: 5px 5px 11px #d9d3c3,
+                    -5px -5px 11px #fffde9;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         h1 {
-            font-size: 38px;
+            position: relative;
+            left: 10px;
+            font-size: 35px;
             text-align: center;
             color: $font-color;
-            margin: 10px auto 40px;
+            margin: 0px auto 20px;
         }
         .chart{ 
             #chart-1 {
                 background-color: #c2c7ce;
                 padding: 40px 30px;
-                margin: 0 auto;
+                margin: 0px auto;
                 border-radius: 8px;  
             }
         }
     } 
 }
 
-.emotion_new {
-    background: $submit-card-color;
-    width: 550px;
-    margin: 70px auto;
-    padding: 40px 70px 30px;
+.emotion_new { 
+    width: 730px;
+    margin: 0px auto;
+    padding: 0px 0px 0px;
     border-radius: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     h1 {
-        font-size: 38px;
-        text-align: center;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        transform:rotateZ(0.03deg);
+        font-size: 28px;
+        font-weight: bold;
         color: $font-color;
-        margin: 0px auto 40px;
+        margin: 0px auto 30px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        
+       
     }    
     form {
+        width: 450px;
         margin: 0px auto;
-        .question_1 {
+        p.emotion_first_qa {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            transform:rotateZ(0.03deg);
+            margin: 0px 0px;
+            background:$card-color;
+            padding: 10px;
             color: $font_color;
-            font-size: 18px;
-        }
-        .question_2 {
-            font-size: 18px;
-            color: $text_font_color;
-            height: 33px;
+            font-size: 20px;
             border-radius: 8px;
-            margin: 0px 0px 20px;
-            padding: 7px 0px 0px 0px;
+            padding: 20px;
+            text-align: left;
+            color: $font-color;
+            font-size: 14px;
+         
         }
-        .emotion_select_box {
-            background-color: #C2C7CE;
-            border-radius: 4px;
-            padding: 40px 0px 40px 40px;
-            label {
-                font-size: 26px;
-                input {
-                    margin: 0px 6px 5px 30px;
+        .emotion_type_wrap {
+            margin-left: 0px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            transform:rotateZ(0.03deg);
+            p.name_select_morning_emotion {
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                text-align: left;
+                margin: 0px 0px 2px 19px;
+                font-weight: bold;
+                font-size: 18px;
+                color: $main-dark-sub-font-color;  
+                
+            }
+            .emotion_select_box {
+                display: flex;
+                border-radius: 4px;
+                padding: 0px 0px 21px 0px;
+                color: $item-list-form-condition-font-color;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 300;
+                justify-content: left;
+                margin: 0px 0px 0px 4px;
+                input[type=radio]{
+                    display: none;
                 }
-                #text {
+                input[type="radio"]:checked + label {
+                    background: $mood_select_hover-color;/* マウス選択時の背景色を指定する */
+                    color: #ffffff; /* マウス選択時のフォント色を指定する */
+                }
+                label {
                     display: block;
-                    margin: 0px 5px 0px 0px;
+                    margin: 0px 0px;
+                    border-radius: 40px;
+                    padding: 0px 13px;
+                    border-radius: 70% 60% 50% 50% / 50% 60% 70% 80%;
+                    span {
+                        font-size: 41px;
+                    }
+                    .mood_point {
+                        color: #89a3ca;
+                        font-size: 6px;
+                    }
                 }
+                
             }
-            .pleasure {
-                font-size: 26px;
-                input {
-                    margin: 0px 6px 5px 0px;
+        }
+        .rest_type_wrap {
+            .name_box_select_night_smartphone{
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                text-align: left;
+                margin: 0px 0px 0px 14px;
+                font-weight: bold;
+                font-size: 18px;
+                color: $main-dark-sub-font-color;  
+            }
+            .cheack_box_rest {
+                color: $main-dark-sub-font-color;  
+                margin: 23px 0px 0px 12px;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                input[type=radio]{
+                    display: none;
+                }
+                input[type="radio"]:checked + label {
+                    background: $mood_select_hover-color;/* マウス選択時の背景色を指定する */
+                    color: #ffffff; /* マウス選択時のフォント色を指定する */
+                }
+                label {
+                    width: 100px;
+                    background-color: #fff;
+                    margin: 0px 10px 0px 0px;
+                    border-radius: 40px;
+                    padding: 15px 20px;
+                    border-radius: 70% 60% 50% 50% / 50% 60% 70% 80%;
                 }
             }
         }
+        .before_sleep_type_wrap{
+            .name_box_select_night_smartphone {
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                text-align: left;
+                margin: 20px 0px 0px 15px;
+                font-weight: bold;
+                font-size: 18px;
+                color: $main-dark-sub-font-color;     
+            }
+            .cheack_box_before_sleep {
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                transform:rotateZ(0.03deg);
+                margin: 23px 0px 0px 15px;
+                color: $main-dark-sub-font-color; 
+                input[type=radio]{
+                    display: none;
+                }
+                input[type="radio"]:checked + label {
+                    background: $mood_select_hover-color;/* マウス選択時の背景色を指定する */
+                    color: #ffffff; /* マウス選択時のフォント色を指定する */
+                }
+                label {
+                    background-color: #fff;
+                    margin: 0px 10px 0px 0px;
+                    border-radius: 40px;
+                    padding: 15px 20px;
+                    border-radius: 70% 60% 50% 50% / 50% 60% 70% 80%;
+                }
+            }
+        }
+        
     }
     textarea {
         width: 300px;
@@ -87,17 +189,17 @@
     }
     .submit{
         text-align: right;
-        margin: 25px 0px 10px 454px;
+        margin: 25px 0px 10px 380px;
         padding: 17px 25px;
-        background: $accent-color;
+        background: $submit-color;
         border: none;
-        border-radius: 8px;
+        border-radius: 40px;
         color: $submit-font-color;
         font-weight: bold;
         font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
         &:hover {
-            filter: brightness(130%);
+            filter: brightness(110%);
           }
     }
     p {
@@ -108,3 +210,25 @@
     }
 }
 
+/* デザインB（タブレット） */
+@media screen and (max-width: 600px) {
+    /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
+    .emotion_new {
+        width: 100%;
+        margin: 0;
+        
+        form {
+            p.emotion_first_qa {
+               width: 300px;
+               box-sizing: border-box;
+               margin: 0 auto;
+            }
+            .emotion_type_wrap {
+                p.emotion_select_top_name {
+                    box-sizing: border-box;
+                }
+            }
+           
+        }
+    }
+}

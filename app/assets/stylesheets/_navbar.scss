@@ -2,115 +2,138 @@
 @import "_variables";
 
 header {
-    background: $main-color;
-    height: 60px;
-    padding: 1px 0px;
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10000;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    background-size: contain;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 80px 0px 80px;
-    a.nav_logo {
-        display: block;
+    padding: 0px 40px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    ul.menu_left {
+        display: flex;  
+    .nav_title_box a {
         display: flex;
-        font-size: 20px;
         text-decoration: none;
-        vertical-align: middle;
-        margin: auto 0px;
-        filter: brightness(110%);
-        .nav_img_box {
-            .nav_img {
-                position:relative; 
-                right: -2px;
-                top: 2px;
-                margin: 0px 0px 0px 0px;
-                background-color: $accent-color;
-                background: linear-gradient(to bottom, $accent-color, #c92c7d);
-                border-radius: 8px;
-                transform:skewX(-12deg); 
-                span {
+        margin: 5px 0px; 
+        filter: brightness(104%);
+        position: relative;
+        right: 1px;
+        .nav_img {
+            margin: 0px 0px 0px 0px;
+            img {
                 display: block;
-                transform:skewX(12deg); 
-                font-size: 32px;
-                padding: 6px 6px;
-                color: $navfont-color;
-                
-                }
+                width: 40px;    
+                padding: 0px;  
+                margin: 0px 0px;  
+                // background: linear-gradient(to top,#033353, #033353);
+                border-radius: 20px;
+                position: relative;
+                top: 0px;
             }
-
         }
-        
-        .nav_title {
-            display: flex;
-            .title {
-                font-family: 'Exo', sans-serif;
-                color: $navfont-color; 
-                line-height: 1.5em;
-                font-size: 33px; 
-                letter-spacing: -2px;
-                margin: auto 0px;
-                white-space: nowrap;
-                padding: 0px;
-                position:relative; 
-                right: -3px;
-                top: 1px;
+        p {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            transform:rotateZ(0.03deg);
+            line-height: 1.5em;
+            font-weight: bold;
+            font-size: 25px; 
+            letter-spacing: 0.5px;
+            margin: auto 0px;
+            white-space: nowrap;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            right: -7px;
+            color: $main-dark-font-color;//非対応のブラウザでの文字色を設定
+            // background: $accent-color;//背景色にグラデーションを指定
+            // -webkit-background-clip: text;//テキストでくり抜く
+            // -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+            span {
+                font-size: 20px;
             }
-        }  
+        } 
     }
+    .nav_book {      
+        text-decoration: none;
+        margin: 7px 40px; 
+        li {
+            list-style: none;
+            a {
+                span {
+                    font-size: 35px;
+                    color: $main-dark-font-color;//非対応のブラウザでの文字色を設定
+                }
+                
+            }
+        }
+    }
+    
+        
+    }
+    
     ul.menu_right {
         list-style-type: none;
         display: flex;
         color: $navfont-color;
         padding: 0;
-        margin: 12px 0px;
         .plus_box {
             display: flex;
             &:hover {
-                filter: brightness(120%);
+                filter: brightness(110%);
                 transition: 0.1s;
               }
             li {
-                a.plus {
-                    background: $accent-color;
-                    text-decoration: none;
-                    vertical-align: middle;
-                    display: inline-block;
-                    text-align: center;
-                    width: 35px;
-                    height: 35px;
-                    font-weight: 300;
-                    font-size: 32px;
-                    color: $submit-font-color;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-                    position:relative; 
-                    top: 0px; 
-                    left: 10px;
-                    padding: 2px 0px 2px 5px;
-                    border-radius: 8px 0px 0px 8px;
-                }
-                .plus_itemlist {
+                margin: 0px 10px 0px 0px;
+                // a.plus {
+                //     font-family: 'M PLUS Rounded 1c', sans-serif;
+                //     transform:rotateZ(0.03deg);
+                //     text-decoration: none;
+                //     vertical-align: middle;
+                //     display: inline-block;
+                //     text-align: center;
+                //     width: 35px;
+                //     height: 35px;
+                //     font-weight: 300;
+                //     font-size: 25px;
+                //     color: $submit-font-color;
+                //     position:relative; 
+                //     top: 2px; 
+                //     left: 56px;
+                //     border-radius: 40px 0px 0px 40px;
+                // }
+               
+                .plus_itemlist {    
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                    transform:rotateZ(0.03deg);
                     background: $accent-color;
                     white-space: nowrap;
                     text-decoration: none;
                     vertical-align: middle;
                     color: $submit-font-color;
                     display: block;
-                    font-weight: bold;
-                    font-size: 15px;
+                    font-weight: 800;
+                    font-size: 16px;
                     height: 35px;
-                    margin: 0px 0px 0px 8px;
-                    padding: 2px 14px 2px 2px;
-                    line-height: 2.3em;
+                    margin: 3px 0px 0px 8px;
+                    padding: 0px 20px 3px 30px;
+                    // line-height: 2.4em;
                     letter-spacing: 0em;
-                    border-radius: 0px 8px 8px 0px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    border-radius: 40px;
+                    span.material-symbols-outlined {
+                        position: relative;
+                        top: 6px;
+                    }
+                    span.plus_box_title {
+                        margin: 0px;
+                        line-height: 0.3;
+
+                    }
+                    
                 }
             }
         }
@@ -125,19 +148,16 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $font-color;
-                font-weight: bold;
-                font-size: 17px;
-                background: $accent-color;
-                padding: 3px 17px;
-                border-radius: 8px;
+                font-weight: 800;
+                font-size: 15px;
+                padding: 4px 25px 5px;
+                border-radius: 40px;
                 margin: auto 10px;
-                border: solid 2px $accent-color;
-                position: relative;
-                bottom: 1px;
+                color: $main-white-font-color; 
+                background: $accent-color;
                 filter: brightness(103%);
                 &:hover {
-                    filter: brightness(130%);
+                    filter: brightness(110%);
                     transition: 0.1s;
                   }
             }
@@ -146,19 +166,16 @@ nav {
                 display: block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: $accent-color;
-                font-weight: bold;
-                font-size: 17px;
-                background: $main-color;
-                padding: 3px 17px;
-                border-radius: 8px;
+                color: $font-color;  
+                font-weight: 800;
+                font-size: 15px;
+                color: $main-dark-font-color;
+                padding: 4px 0px;
                 margin: auto 0px;
-                border: solid 2px $accent-color;
-                position: relative;
-                bottom: 1px;
-                filter: brightness(107%);
+                border-radius: 50px;  
+                filter: brightness(103%);
                 &:hover {
-                    filter: brightness(130%);
+                    filter: brightness(107%);
                     transition: 0.1s;
                   }
             }
@@ -175,22 +192,23 @@ nav {
         color: white;
         padding: 0px 0px 0px 4px;
         position: relative;
-        bottom: 4px;
+        bottom: 0px;
         left: 5px;
         li {
             list-style: none;
+            a {
+                color: $main-dark-color;
+                span {
+                    font-size: 41px;
+                    margin: 0;
+                    padding: 0;
+                    border-radius: 20px;
+                }
+            }
             &:hover {
                 filter: brightness(120%);
                 transition: 0.1s;
               }
-            a {
-                color: white;
-                span {
-                    font-size: 46px;
-                    color: $navfont_color;
-                }
-                
-            }
         }
     }  
     .menu ul {
@@ -204,28 +222,50 @@ nav {
         margin: 0px 0px 0px 0px;
         li {
             position: relative;
-            right: 142px;
-            display: flex;
-            img {
-                display: block;
-                width: 20px;
-                height: 20px;
-                position: relative;
-                top: 15px;
-                left: 40px;
-            }
-            .logout {  
-                box-shadow: 0 0 20px #114775;
+            z-index:10000;
+            right: 198px;
+            a.profile {
+                display: flex;  
                 text-decoration: none;
-                background: #fbfbfd;
-                border-radius: 2px;
-                padding: 10px 50px 10px 55px ;
+                background: #F6F7F8;
+                border-radius: 8px 8px 0px 0px;
+                padding: 20px 0px 20px 40px;
+                width: 200px;
+                z-index: 30;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                margin: 0;
                 color: $font-color;
-                font-size: 18px;
-                font-weight: 500;
+                font-size: 19px;
+                font-weight: 700;
+                letter-spacing: -0.04em;
+            }
+            a.logout {
+                display: flex;  
+                text-decoration: none;
+                background: #F6F7F8;
+                border-radius: 0px 0px 8px 8px;
+                padding: 20px 0px 20px 40px;
+                width: 200px;
+                z-index: 30;
                 &:hover {
                     background-color: $card-color;
                   }
+                  img {
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    position: relative;
+                    top: 6px;
+                    margin: 0px 10px 0px 0px;
+                }
+                p {
+                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+                    margin: 0;
+                    color: $font-color;
+                    font-size: 19px;
+                    font-weight: 500;
+                    letter-spacing: -0.04em;
+                }
 
             }   
         } 
@@ -233,17 +273,82 @@ nav {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
     nav {
-        padding: 0px 20px;
-        justify-content: left;
-        #item_list_search {
-            margin: 10px 0px 10px 10px;
-            width: 100px;
-            #q_list_name_cont {
-                width: 100px; 
+        display: flex;
+        
+        padding: 0px;
+        margin: 0px 20px 0px 10px;
+        max-width: 100%;
+        height: auto;
+
+        ul.menu_left {
+            padding: 0;
+            .nav_title_box {
+                a {
+                    margin: 10px auto;  
+                    .nav_img {
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            margin: 0;
+                            margin: 0px 0px 0px 20px;
+                        }
+                    }
+                    p {
+                        font-size: 25px;
+                        letter-spacing: -0.02em;
+                        line-height: 1.13;
+                        span {
+                            
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .nav_book {
+                display: none;
+            }
+
+        }
+        
+        
+        ul.menu_right{
+            margin: 21px 0px ;
+            .plus_box {
+                order: 2;
+            }
+            .menu {
+                order: 1;
+            }
+            a.signup {
+                padding: 0px 15px 0px 15px;
+                font-size: 11px;
+                height: 35px;
+            }
+            a.login {
+                padding: 0px 5px;
+                font-size: 11px;
+                margin: 0px;
+                height: 35px;
+            }
+            .plus_box {
+                display: none;
+                li {
+                    a.plus_itemlist {
+                        font-size: 13px;
+                        padding: 0px 10px;
+                    }
+                }
+
             }
         }
-
+        li {
+            span {
+                display: block;
+                position: relative;
+                bottom: 130;
+            }
+        }
     }
 }
